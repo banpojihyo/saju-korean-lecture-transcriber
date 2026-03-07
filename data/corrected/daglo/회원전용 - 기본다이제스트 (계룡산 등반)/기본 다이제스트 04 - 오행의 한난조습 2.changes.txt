@@ -1,0 +1,12 @@
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\reference\daglo\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 04 - 오행의 한난조습 2.txt
+output: data\corrected\daglo\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 04 - 오행의 한난조습 2.corrected.txt
+script_only_output: data\corrected\daglo\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 04 - 오행의 한난조습 2.script.txt
+applied_rules: 1
+changed_chars: 1
+term_hits_after_correction: 14
+script_lines_after_cleanup: 19
+dict_replace_added: 0
+dict_terms_added: 0
+
+[applied replacements]
+사두에 -> 사주에 (x1)
