@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 from pathlib import Path
 
 
@@ -122,6 +123,32 @@ def manual_pairs() -> list[tuple[str, str]]:
     ]
 
 
+TIMESTAMP_SPEAKER_RE = re.compile(
+    r"^\s*\d{1,2}:\d{2}(?::\d{2})?\s+화자\s*\d+\s*$"
+)
+
+
+def build_script_only_text(text: str) -> str:
+    lines = text.splitlines()
+    kept: list[str] = []
+    for line in lines:
+        stripped = line.strip()
+        if TIMESTAMP_SPEAKER_RE.match(stripped):
+            continue
+        if not stripped:
+            if kept and kept[-1] != "":
+                kept.append("")
+            continue
+        kept.append(stripped)
+
+    while kept and kept[0] == "":
+        kept.pop(0)
+    while kept and kept[-1] == "":
+        kept.pop()
+
+    return "\n".join(kept) + ("\n" if kept else "")
+
+
 def main() -> int:
     args = parse_args()
     source = Path(args.source_file)
@@ -143,6 +170,7 @@ def main() -> int:
         relative = Path(source.name)
 
     output_path = output_root / relative.parent / f"{source.stem}.corrected{source.suffix}"
+    script_path = output_root / relative.parent / f"{source.stem}.script{source.suffix}"
     report_path = output_root / relative.parent / f"{source.stem}.changes.txt"
 
     text = source.read_text(encoding="utf-8")
@@ -165,8 +193,11 @@ def main() -> int:
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(text, encoding="utf-8")
+    script_only_text = build_script_only_text(text)
+    script_path.write_text(script_only_text, encoding="utf-8")
 
     corrected_term_hits = sum(1 for term in domain_terms if term in text)
+    script_lines = sum(1 for line in script_only_text.splitlines() if line.strip())
     changed_chars = sum(1 for a, b in zip(original_text, text) if a != b) + abs(
         len(original_text) - len(text)
     )
@@ -174,9 +205,11 @@ def main() -> int:
     lines: list[str] = []
     lines.append(f"source: {source}")
     lines.append(f"output: {output_path}")
+    lines.append(f"script_only_output: {script_path}")
     lines.append(f"applied_rules: {len(applied)}")
     lines.append(f"changed_chars: {changed_chars}")
     lines.append(f"term_hits_after_correction: {corrected_term_hits}")
+    lines.append(f"script_lines_after_cleanup: {script_lines}")
     lines.append("")
     lines.append("[applied replacements]")
     for wrong, right, count in applied:
@@ -185,6 +218,7 @@ def main() -> int:
 
     print(f"[DONE] source: {source}")
     print(f"[DONE] corrected: {output_path}")
+    print(f"[DONE] script-only: {script_path}")
     print(f"[DONE] report: {report_path}")
     print(f"[DONE] applied rules: {len(applied)}")
     return 0
