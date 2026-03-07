@@ -1,0 +1,16 @@
+﻿source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??06 - ?붿쓽 ?뺤뇿媛뺤빟.txt
+output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??06 - ?붿쓽 ?뺤뇿媛뺤빟.corrected.txt
+script_only_output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??06 - ?붿쓽 ?뺤뇿媛뺤빟.script.txt
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 37
+script_lines_after_cleanup: 50
+dict_replace_added: 1
+dict_terms_added: 0
+
+[applied replacements]
+?댁옄留??좎깮 -> ?댁젣留??좎깮 (x2)
+
+[dict replace added]
+?댁옄留??좎깮 -> ?댁젣留??좎깮
+

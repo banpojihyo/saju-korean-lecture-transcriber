@@ -54,3 +54,22 @@ py refine_output_dict.py `
 ```powershell
 py refine_output_dict.py --dry-run
 ```
+
+## 5) Daglo 교정본 생성 (`raw` -> `corr`)
+
+Daglo 원본 텍스트는 `data/daglo/raw`, 교정 결과는 `data/daglo/corr`를 사용합니다.
+
+```powershell
+py correct_daglo_file.py `
+  --source-file "data/daglo/raw/회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 04 - 오행의 한난조습 2.txt" `
+  --dict-dir ".\\dict"
+```
+
+필요하면 루트 경로를 직접 지정할 수 있습니다.
+
+```powershell
+py correct_daglo_file.py `
+  --source-file "<raw 경로의 txt>" `
+  --input-root "data/daglo/raw" `
+  --output-root "data/daglo/corr"
+```

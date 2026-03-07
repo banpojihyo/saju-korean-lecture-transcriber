@@ -16,12 +16,12 @@ from pathlib import Path
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Correct one Daglo transcript and save to data/corrected/daglo."
+        description="Correct one Daglo transcript and save to data/daglo/corr."
     )
     parser.add_argument(
         "--source-file",
         required=True,
-        help="Path to a Daglo txt file (for example: daglo/.../foo.txt).",
+        help="Path to a Daglo txt file (for example: data/daglo/raw/.../foo.txt).",
     )
     parser.add_argument(
         "--dict-dir",
@@ -30,13 +30,16 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--input-root",
-        default="daglo",
-        help="Input root used to preserve relative folder structure (default: ./daglo).",
+        default="data/daglo/raw",
+        help=(
+            "Input root used to preserve relative folder structure "
+            "(default: ./data/daglo/raw)."
+        ),
     )
     parser.add_argument(
         "--output-root",
-        default="data/corrected/daglo",
-        help="Output root for corrected files (default: ./data/corrected/daglo).",
+        default="data/daglo/corr",
+        help="Output root for corrected files (default: ./data/daglo/corr).",
     )
     parser.add_argument(
         "--no-update-dict",
