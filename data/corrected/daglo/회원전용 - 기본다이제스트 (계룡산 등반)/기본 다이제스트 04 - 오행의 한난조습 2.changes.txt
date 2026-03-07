@@ -15,3 +15,6 @@ dict_terms_added: 0
 토복수 -> 토극수 (x2 across corrected+script)
 방약왕세 -> 강약왕세 (x2 across corrected+script)
 고친 -> 고층 (x4 across corrected+script)
+
+[manual corrections 2026-03-08]
+사주가 나나니까 -> 사주가 난하니까 (x2 across corrected+script)
