@@ -10,3 +10,8 @@ dict_terms_added: 0
 
 [applied replacements]
 사두에 -> 사주에 (x1)
+
+[manual corrections 2026-03-08]
+토복수 -> 토극수 (x2 across corrected+script)
+방약왕세 -> 강약왕세 (x2 across corrected+script)
+고친 -> 고층 (x4 across corrected+script)
