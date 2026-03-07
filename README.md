@@ -37,3 +37,20 @@ py transcribe_videos.py `
 
 - `<영상파일명>.txt`
 - `<영상파일명>.srt`
+
+## 4) 기존 output 자동 보정 + dict 자동 갱신
+
+`dict/replace.csv`, `dict/terms.csv`를 기반으로 `output`의 TXT/SRT를 보정하고,
+자주 등장하는 용어/오인식 후보를 사전에 자동 추가합니다.
+
+```powershell
+py refine_output_dict.py `
+  --output-dir ".\output" `
+  --dict-dir ".\dict"
+```
+
+먼저 변경 내용을 확인만 하려면:
+
+```powershell
+py refine_output_dict.py --dry-run
+```
