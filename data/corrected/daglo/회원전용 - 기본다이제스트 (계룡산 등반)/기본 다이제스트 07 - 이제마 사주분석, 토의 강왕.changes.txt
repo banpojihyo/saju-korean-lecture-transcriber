@@ -3,8 +3,10 @@ output: data\corrected\daglo\회원전용 - 기본다이제스트 (계룡산 등
 script_only_output: data\corrected\daglo\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.script.txt
 applied_rules: 48
 changed_chars: 28466
-term_hits_after_correction: 72
+term_hits_after_correction: 82
 script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
 
 [applied replacements]
 신자진 국을 지르고요 -> 신자진 국을 이루고요 (x1)

@@ -38,6 +38,11 @@ def parse_args() -> argparse.Namespace:
         default="data/corrected/daglo",
         help="Output root for corrected files (default: ./data/corrected/daglo).",
     )
+    parser.add_argument(
+        "--no-update-dict",
+        action="store_true",
+        help="Do not update dict/replace.csv and dict/terms.csv from applied corrections.",
+    )
     return parser.parse_args()
 
 
@@ -55,17 +60,160 @@ def load_replace_pairs(path: Path) -> list[tuple[str, str]]:
     return pairs
 
 
-def load_terms(path: Path) -> set[str]:
-    terms: set[str] = set()
+def load_terms(path: Path) -> list[str]:
+    terms: list[str] = []
+    seen: set[str] = set()
     if not path.exists():
         return terms
     with path.open("r", encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
             term = (row.get("term") or "").strip()
-            if term:
-                terms.add(term)
+            if not term or term in seen:
+                continue
+            seen.add(term)
+            terms.append(term)
     return terms
+
+
+def write_replace_pairs(path: Path, pairs: list[tuple[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["wrong", "right"])
+        for wrong, right in pairs:
+            writer.writerow([wrong, right])
+
+
+def write_terms(path: Path, terms: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["term"])
+        for term in terms:
+            writer.writerow([term])
+
+
+def merge_replace_pairs(
+    existing: list[tuple[str, str]], applied: list[tuple[str, str, int]]
+) -> tuple[list[tuple[str, str]], list[tuple[str, str]]]:
+    merged = existing.copy()
+    seen = set(existing)
+    added: list[tuple[str, str]] = []
+    for wrong, right, _ in applied:
+        pair = (wrong, right)
+        if pair in seen:
+            continue
+        seen.add(pair)
+        merged.append(pair)
+        added.append(pair)
+    return merged, added
+
+
+KOREAN_RE = re.compile(r"[가-힣]")
+TRAILING_SUFFIXES = (
+    "으로는",
+    "로는",
+    "이라면",
+    "라면",
+    "다면은",
+    "다면",
+    "에는",
+    "에서",
+    "으로",
+    "하다",
+    "했다",
+    "하는",
+    "하게",
+    "하며",
+    "하면",
+    "하죠",
+    "해요",
+    "입니다",
+    "이다",
+    "라고",
+    "하고",
+    "이며",
+    "에게",
+    "부터",
+    "까지",
+    "처럼",
+    "다",
+    "께서",
+    "께",
+    "의",
+    "를",
+    "을",
+    "은",
+    "는",
+    "이",
+    "가",
+    "에",
+    "도",
+    "만",
+    "와",
+    "과",
+)
+
+REJECT_ENDINGS = (
+    "다면",
+    "한다",
+    "했다",
+    "해요",
+    "하고",
+    "가면",
+    "해질",
+    "하는",
+    "한",
+)
+
+
+def normalize_term_candidate(text: str) -> str:
+    candidate = text.strip()
+    if " " in candidate:
+        return ""
+    if not KOREAN_RE.search(candidate):
+        return ""
+    if candidate.isdigit():
+        return ""
+
+    # Peel one grammatical tail when present.
+    for suffix in TRAILING_SUFFIXES:
+        if candidate.endswith(suffix) and len(candidate) - len(suffix) >= 2:
+            candidate = candidate[: -len(suffix)]
+            break
+
+    for ending in REJECT_ENDINGS:
+        if candidate.endswith(ending):
+            return ""
+
+    if len(candidate) < 2 or len(candidate) > 20:
+        return ""
+    if not KOREAN_RE.search(candidate):
+        return ""
+    return candidate
+
+
+def is_term_candidate(text: str) -> bool:
+    return bool(normalize_term_candidate(text))
+
+
+def merge_terms_from_applied(
+    existing_terms: list[str], applied: list[tuple[str, str, int]]
+) -> tuple[list[str], list[str]]:
+    merged = existing_terms.copy()
+    seen = set(existing_terms)
+    added: list[str] = []
+    for _, right, _ in applied:
+        normalized = normalize_term_candidate(right)
+        if not normalized:
+            continue
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        merged.append(normalized)
+        added.append(normalized)
+    return merged, added
 
 
 def manual_pairs() -> list[tuple[str, str]]:
@@ -176,8 +324,11 @@ def main() -> int:
     text = source.read_text(encoding="utf-8")
     original_text = text
 
-    replace_pairs = load_replace_pairs(dict_dir / "replace.csv")
-    domain_terms = load_terms(dict_dir / "terms.csv")
+    replace_path = dict_dir / "replace.csv"
+    terms_path = dict_dir / "terms.csv"
+
+    replace_pairs = load_replace_pairs(replace_path)
+    domain_terms = load_terms(terms_path)
     all_pairs = replace_pairs + manual_pairs()
 
     # Longer source phrase first to avoid partial overlap issues.
@@ -196,7 +347,22 @@ def main() -> int:
     script_only_text = build_script_only_text(text)
     script_path.write_text(script_only_text, encoding="utf-8")
 
-    corrected_term_hits = sum(1 for term in domain_terms if term in text)
+    added_replace_pairs: list[tuple[str, str]] = []
+    added_terms: list[str] = []
+    if not args.no_update_dict:
+        merged_replace_pairs, added_replace_pairs = merge_replace_pairs(
+            replace_pairs, applied
+        )
+        merged_terms, added_terms = merge_terms_from_applied(domain_terms, applied)
+        if added_replace_pairs:
+            write_replace_pairs(replace_path, merged_replace_pairs)
+        if added_terms:
+            write_terms(terms_path, merged_terms)
+        domain_terms_for_count = merged_terms
+    else:
+        domain_terms_for_count = domain_terms
+
+    corrected_term_hits = sum(1 for term in domain_terms_for_count if term in text)
     script_lines = sum(1 for line in script_only_text.splitlines() if line.strip())
     changed_chars = sum(1 for a, b in zip(original_text, text) if a != b) + abs(
         len(original_text) - len(text)
@@ -210,10 +376,22 @@ def main() -> int:
     lines.append(f"changed_chars: {changed_chars}")
     lines.append(f"term_hits_after_correction: {corrected_term_hits}")
     lines.append(f"script_lines_after_cleanup: {script_lines}")
+    lines.append(f"dict_replace_added: {len(added_replace_pairs)}")
+    lines.append(f"dict_terms_added: {len(added_terms)}")
     lines.append("")
     lines.append("[applied replacements]")
     for wrong, right, count in applied:
         lines.append(f"{wrong} -> {right} (x{count})")
+    if added_replace_pairs:
+        lines.append("")
+        lines.append("[dict replace added]")
+        for wrong, right in added_replace_pairs:
+            lines.append(f"{wrong} -> {right}")
+    if added_terms:
+        lines.append("")
+        lines.append("[dict terms added]")
+        for term in added_terms:
+            lines.append(term)
     report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     print(f"[DONE] source: {source}")
@@ -221,6 +399,8 @@ def main() -> int:
     print(f"[DONE] script-only: {script_path}")
     print(f"[DONE] report: {report_path}")
     print(f"[DONE] applied rules: {len(applied)}")
+    print(f"[DONE] dict replace added: {len(added_replace_pairs)}")
+    print(f"[DONE] dict terms added: {len(added_terms)}")
     return 0
 
 
