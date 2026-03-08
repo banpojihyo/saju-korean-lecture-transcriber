@@ -16,8 +16,9 @@ context_skipped_hits: 0
 감복 -> 갑목 (x1)
 
 [re-correction appended]
-base_commit: 6b983d4
-recorrect_commit: 121b9b6
+[121b9b6 - 2026-03-08 21:27:13 +0900]
+commit: 121b9b6
+commit_date: 2026-03-08 21:27:13 +0900
 record_format: changes-report
 
 [re-correction result]
