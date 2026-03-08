@@ -1,18 +1,50 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.txt
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.script.txt
-applied_rules: 1
-changed_chars: 2
-term_hits_after_correction: 39
+applied_rules: 3
+changed_chars: 15
+term_hits_after_correction: 40
 script_lines_after_cleanup: 94
 dict_replace_added: 0
 dict_terms_added: 0
-context_skipped_rules: 2
-context_skipped_hits: 7
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
 4조 -> 사주 (x1)
-
-[skipped by context]
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x6)
+
+[re-correction appended]
+base_commit: 6b983d4
+recorrect_commit: 121b9b6
+delta_lines: 27
+
+[delta (before -> re-corrected)]
+--- before
++++ re-corrected
+@@ -1,16 +1,18 @@
+-source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.txt
++source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.txt
+ output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.corrected.txt
+ script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.script.txt
+-applied_rules: 3
+-changed_chars: 15
+-term_hits_after_correction: 40
++applied_rules: 1
++changed_chars: 2
++term_hits_after_correction: 39
+ script_lines_after_cleanup: 94
+ dict_replace_added: 0
+ dict_terms_added: 0
+-context_skipped_rules: 0
+-context_skipped_hits: 0
++context_skipped_rules: 2
++context_skipped_hits: 7
+ 
+ [applied replacements]
+ 4조 -> 사주 (x1)
++
++[skipped by context]
+ 채용 -> 체용 (x1)
+ 감묵 -> 갑목 (x6)

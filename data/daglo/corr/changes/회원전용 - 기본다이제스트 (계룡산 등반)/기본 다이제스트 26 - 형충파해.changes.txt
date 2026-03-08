@@ -1,4 +1,4 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.txt
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.txt
 output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.script.txt
 applied_rules: 0
@@ -11,3 +11,18 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[re-correction appended]
+base_commit: 6b983d4
+recorrect_commit: 121b9b6
+delta_lines: 8
+
+[delta (before -> re-corrected)]
+--- before
++++ re-corrected
+@@ -1,4 +1,4 @@
+-source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.txt
++source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.txt
+ output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.corrected.txt
+ script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.script.txt
+ applied_rules: 0

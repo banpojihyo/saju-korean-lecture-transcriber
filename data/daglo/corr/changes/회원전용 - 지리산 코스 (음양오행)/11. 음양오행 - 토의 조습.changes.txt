@@ -1,17 +1,46 @@
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.script.txt
-applied_rules: 1
-changed_chars: 27749
+applied_rules: 2
+changed_chars: 27751
 term_hits_after_correction: 56
 script_lines_after_cleanup: 125
 dict_replace_added: 0
 dict_terms_added: 0
-context_skipped_rules: 1
-context_skipped_hits: 2
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
 10성 -> 십성 (x1)
-
-[skipped by context]
 감묵 -> 갑목 (x2)
+
+[re-correction appended]
+base_commit: 6b983d4
+recorrect_commit: 121b9b6
+delta_lines: 24
+
+[delta (before -> re-corrected)]
+--- before
++++ re-corrected
+@@ -1,15 +1,17 @@
+ source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.txt
+ output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.corrected.txt
+ script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.script.txt
+-applied_rules: 2
+-changed_chars: 27751
++applied_rules: 1
++changed_chars: 27749
+ term_hits_after_correction: 56
+ script_lines_after_cleanup: 125
+ dict_replace_added: 0
+ dict_terms_added: 0
+-context_skipped_rules: 0
+-context_skipped_hits: 0
++context_skipped_rules: 1
++context_skipped_hits: 2
+ 
+ [applied replacements]
+ 10성 -> 십성 (x1)
++
++[skipped by context]
+ 감묵 -> 갑목 (x2)

@@ -1,4 +1,4 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.txt
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.script.txt
 applied_rules: 2
@@ -13,3 +13,18 @@ context_skipped_hits: 0
 [applied replacements]
 10성 -> 십성 (x6)
 관사를 -> 관살을 (x1)
+
+[re-correction appended]
+base_commit: 6b983d4
+recorrect_commit: 121b9b6
+delta_lines: 8
+
+[delta (before -> re-corrected)]
+--- before
++++ re-corrected
+@@ -1,4 +1,4 @@
+-source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.txt
++source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.txt
+ output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.corrected.txt
+ script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.script.txt
+ applied_rules: 2

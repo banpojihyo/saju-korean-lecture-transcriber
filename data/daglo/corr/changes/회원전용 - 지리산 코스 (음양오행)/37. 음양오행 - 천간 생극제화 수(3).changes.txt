@@ -1,17 +1,45 @@
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
-applied_rules: 1
+applied_rules: 2
 changed_chars: 26420
 term_hits_after_correction: 50
 script_lines_after_cleanup: 149
 dict_replace_added: 0
 dict_terms_added: 0
-context_skipped_rules: 1
-context_skipped_hits: 2
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
 10성 -> 십성 (x2)
-
-[skipped by context]
 감묵 -> 갑목 (x2)
+
+[re-correction appended]
+base_commit: 6b983d4
+recorrect_commit: 121b9b6
+delta_lines: 23
+
+[delta (before -> re-corrected)]
+--- before
++++ re-corrected
+@@ -1,15 +1,17 @@
+ source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
+ output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
+ script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
+-applied_rules: 2
++applied_rules: 1
+ changed_chars: 26420
+ term_hits_after_correction: 50
+ script_lines_after_cleanup: 149
+ dict_replace_added: 0
+ dict_terms_added: 0
+-context_skipped_rules: 0
+-context_skipped_hits: 0
++context_skipped_rules: 1
++context_skipped_hits: 2
+ 
+ [applied replacements]
+ 10성 -> 십성 (x2)
++
++[skipped by context]
+ 감묵 -> 갑목 (x2)

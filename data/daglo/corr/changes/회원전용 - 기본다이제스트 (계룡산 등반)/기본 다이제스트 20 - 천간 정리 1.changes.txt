@@ -1,20 +1,54 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
 output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
 applied_rules: 3
-changed_chars: 9
+changed_chars: 19
 term_hits_after_correction: 38
 script_lines_after_cleanup: 72
 dict_replace_added: 0
 dict_terms_added: 0
-context_skipped_rules: 2
-context_skipped_hits: 8
+context_skipped_rules: 1
+context_skipped_hits: 3
 
 [applied replacements]
 1주 -> 일주 (x3)
 1조 -> 일주 (x2)
-감묵 -> 갑목 (x1)
+감묵 -> 갑목 (x6)
 
 [skipped by context]
 귀신 -> 기신 (x3)
-감묵 -> 갑목 (x5)
+
+[re-correction appended]
+base_commit: 6b983d4
+recorrect_commit: 121b9b6
+delta_lines: 28
+
+[delta (before -> re-corrected)]
+--- before
++++ re-corrected
+@@ -1,19 +1,20 @@
+-source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
++source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+ output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
+ script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
+ applied_rules: 3
+-changed_chars: 19
++changed_chars: 9
+ term_hits_after_correction: 38
+ script_lines_after_cleanup: 72
+ dict_replace_added: 0
+ dict_terms_added: 0
+-context_skipped_rules: 1
+-context_skipped_hits: 3
++context_skipped_rules: 2
++context_skipped_hits: 8
+ 
+ [applied replacements]
+ 1주 -> 일주 (x3)
+ 1조 -> 일주 (x2)
+-감묵 -> 갑목 (x6)
++감묵 -> 갑목 (x1)
+ 
+ [skipped by context]
+ 귀신 -> 기신 (x3)
++감묵 -> 갑목 (x5)
