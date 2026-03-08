@@ -5,8 +5,8 @@ Input:
   data/daglo/corr/script/**/*.txt
 
 Output:
-  data/ai/<agent_name>/md/**/*.md
-  data/ai/<agent_name>/txt/**/*.txt
+  data/summary/<agent_name>/md/**/*.md
+  data/summary/<agent_name>/txt/**/*.txt
 """
 
 from __future__ import annotations
@@ -109,7 +109,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-root",
-        default="data/ai",
+        default="data/summary",
         help="Output root directory for AI results.",
     )
     parser.add_argument(

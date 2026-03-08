@@ -1,4 +1,4 @@
-# AI 요약 생성 규칙 (corr/script -> data/ai)
+# AI 요약 생성 규칙 (corr/script -> data/summary)
 
 ## 1) 목적
 - `data/daglo/corr/script`의 스크립트를 기반으로 학습용 요약본을 자동 생성한다.
@@ -6,10 +6,10 @@
 - 생성 형식은 사용자가 요청한 3개 블록 구조를 반드시 따른다.
 
 ## 2) 출력 경로 규칙
-- 루트: `data/ai/{AI Agent}/`
+- 루트: `data/summary/{AI Agent}/`
 - 하위 폴더:
-- `data/ai/{AI Agent}/md/`
-- `data/ai/{AI Agent}/txt/`
+- `data/summary/{AI Agent}/md/`
+- `data/summary/{AI Agent}/txt/`
 - 원본 `data/daglo/corr/script`의 하위 폴더/파일명을 그대로 복제한다.
 - 확장자:
 - `md` 폴더: `*.md`
@@ -41,7 +41,7 @@
 ```powershell
 py generate_ai_summaries.py `
   --input-root "data/daglo/corr/script" `
-  --output-root "data/ai" `
+  --output-root "data/summary" `
   --agent-name "GPT-5.3-Codex"
 ```
 
@@ -52,7 +52,7 @@ py generate_ai_summaries.py `
 $env:OPENAI_API_KEY="YOUR_API_KEY"
 py generate_ai_summaries_api.py `
   --input-root "data/daglo/corr/script" `
-  --output-root "data/ai" `
+  --output-root "data/summary" `
   --agent-name "GPT-5.3-Codex" `
   --model "gpt-5" `
   --temperature 0.2 `
@@ -65,7 +65,7 @@ py generate_ai_summaries_api.py `
 - 3단계: 최종 템플릿 합성
 
 ## 5) 운영 원칙
-- 요약 결과는 원본을 덮어쓰지 않고 `data/ai`에 별도 저장한다.
+- 요약 결과는 원본을 덮어쓰지 않고 `data/summary`에 별도 저장한다.
 - 신규/재생성 시에도 폴더 구조 일관성을 유지한다.
 - 사용자 요구가 없으면 기존 `corr/script`와 `dict` 파일은 수정하지 않는다.
 - API 키를 대화/로그/커밋에 평문으로 남기지 않는다.
