@@ -1,0 +1,15 @@
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.script.txt
+applied_rules: 2
+changed_chars: 29107
+term_hits_after_correction: 45
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+10성 -> 십성 (x3)
+사조를 -> 사주를 (x2)
