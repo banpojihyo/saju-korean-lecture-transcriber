@@ -1,0 +1,99 @@
+# Daglo 교정 규칙서 (2026-03-08 기준)
+
+## 1) 목표
+- 미교정 Daglo 스크립트를 `replace.csv`, `terms.csv` 기반으로 자연스럽게 교정한다.
+- 문맥상 어색할 수 있는 치환은 자동 적용하지 않고 보수적으로 건너뛴다.
+- 교정 과정에서 확인된 유효 치환/용어를 사전에 반영해 다음 교정을 쉽게 만든다.
+
+## 2) 기본 입출력 구조
+- 입력: `data/daglo/raw/**/*.txt`
+- 출력:
+- `data/daglo/corr/corrected/**/*.corrected.txt`
+- `data/daglo/corr/script/**/*.script.txt`
+- `data/daglo/corr/changes/**/*.changes.txt`
+
+## 3) 교정 규칙(핵심)
+- 교정 규칙 소스:
+- `dict/replace.csv`
+- `correct_daglo_file.py`의 `manual_pairs()`
+- 적용 순서:
+- `wrong` 문자열 길이가 긴 규칙부터 우선 적용(부분 중첩 오적용 방지)
+- 문맥 필터:
+- `PAIR_CONTEXT_RULES` 대상(예: `귀신->기신`, `무반->무관`, `고친->고층`)은 include/exclude 문맥을 모두 통과해야 적용
+- 4자 이하 한글 치환은 다음 2가지 모두 만족 시에만 적용
+- 어절 경계(`is_word_boundary`) 만족
+- 주변 ±120자 내 도메인 키워드(`DOMAIN_CONTEXT_KEYWORDS`) 존재
+- 필터를 통과하지 못한 치환은 적용하지 않고 `skipped by context`로 기록
+
+## 4) 자연스러운 교정 원칙
+- 일괄 치환 금지: 문맥 근거 없는 짧은 토큰 치환은 하지 않는다.
+- 의미 충돌 가능성이 있으면 보수적으로 유지한다.
+- 사주/명리 도메인 문맥에서만 의미가 확정되는 치환만 적용한다.
+
+## 5) 사전(`replace.csv`, `terms.csv`) 업데이트 규칙
+- 기본값은 자동 업데이트(옵션 `--no-update-dict` 미사용 기준)
+- `replace.csv`:
+- 이번 실행에서 실제 적용된 `(wrong, right)`만 신규 추가
+- 중복 pair는 추가하지 않음
+- `terms.csv`:
+- 적용된 `right`에서 용어 후보를 정규화 후 추가
+- 공백 포함, 숫자만, 한글 미포함, 길이 비정상(2자 미만/20자 초과) 제외
+- 조사/어미 꼬리(`TRAILING_SUFFIXES`) 제거 후 후보화
+- 일반 서술형 종결(`REJECT_ENDINGS`)은 제외
+
+## 6) `.changes` 기록 규칙
+- 블록 시작 헤더: `[commit - YYYY-MM-DD HH:MM:SS]`
+- 예: `[121b9b6 - 2026-03-08 21:27:13]`
+- 각 블록은 아래 구조 유지:
+- `source`, `output`, `script_only_output`
+- 집계 메타(`applied_rules`, `changed_chars`, `dict_replace_added`, `context_skipped_*` 등)
+- `[applied replacements]` (필수)
+- `[skipped by context]`, `[dict replace added]`, `[dict terms added]` (해당 시)
+- 재교정 시 원칙:
+- 기존 블록을 덮어쓰지 않고 하단에 새 블록을 추가(이력 보존)
+
+## 7) 실행 절차
+1. 대상 선정
+- 신규(raw만 있고 corrected 없음) 또는 재교정 대상 파일 목록을 확정
+2. 교정 실행
+- 파일별 `correct_daglo_file.py` 실행
+3. 결과 검토
+- `changes`의 `applied/skipped` 확인
+- 문맥상 부자연스러운 치환이 없는지 샘플 점검
+4. 사전 반영 확인
+- `dict/replace.csv`, `dict/terms.csv` 신규 항목 점검
+5. 이력 보존
+- 재교정은 `.changes` 기존 내용을 유지한 채 새 블록 append
+
+## 8) 단일 파일 실행 예시
+```powershell
+py correct_daglo_file.py `
+  --source-file "data/daglo/raw/회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 04 - 오행의 한난조습 2.txt" `
+  --dict-dir ".\dict" `
+  --input-root "data/daglo/raw" `
+  --output-root "data/daglo/corr"
+```
+
+## 9) 신규 raw 일괄 실행 예시(미교정 대상만)
+```powershell
+$rawRoot = "data/daglo/raw"
+$corrRoot = "data/daglo/corr/corrected"
+
+Get-ChildItem $rawRoot -Recurse -Filter *.txt | ForEach-Object {
+  $rel = Resolve-Path $_.FullName | ForEach-Object { $_.Path.Substring((Resolve-Path $rawRoot).Path.Length).TrimStart('\') }
+  $corr = Join-Path $corrRoot ([System.IO.Path]::ChangeExtension($rel, ".corrected.txt"))
+  if (-not (Test-Path $corr)) {
+    py correct_daglo_file.py `
+      --source-file $_.FullName `
+      --dict-dir ".\dict" `
+      --input-root "data/daglo/raw" `
+      --output-root "data/daglo/corr"
+  }
+}
+```
+
+## 10) 체크리스트
+- 문맥 기반 필터(`PAIR_CONTEXT_RULES`, `DOMAIN_CONTEXT_KEYWORDS`) 유지 확인
+- 짧은 한글 치환의 경계/문맥 검사 유지 확인
+- 사전 자동 업데이트 결과 검토
+- `.changes` 이력 append 원칙 준수 확인
