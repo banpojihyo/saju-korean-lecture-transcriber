@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08T21:45:00+09:00]
+[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.script.txt
@@ -15,7 +15,7 @@ context_skipped_hits: 0
 사조를 -> 사주를 (x2)
 귀신 -> 기신 (x1)
 
-[121b9b6 - 2026-03-08T21:27:13+09:00]
+[121b9b6 - 2026-03-08 21:27:13]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.script.txt
