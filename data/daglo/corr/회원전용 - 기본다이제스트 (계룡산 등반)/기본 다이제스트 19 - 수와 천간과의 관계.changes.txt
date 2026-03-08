@@ -1,0 +1,12 @@
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.txt
+output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.corrected.txt
+script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.script.txt
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 39
+script_lines_after_cleanup: 91
+dict_replace_added: 0
+dict_terms_added: 0
+
+[applied replacements]
+감묵 -> 갑목 (x1)

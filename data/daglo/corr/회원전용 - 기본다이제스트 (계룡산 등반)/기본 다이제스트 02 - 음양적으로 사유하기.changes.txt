@@ -1,0 +1,12 @@
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.txt
+output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.corrected.txt
+script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.script.txt
+applied_rules: 1
+changed_chars: 6
+term_hits_after_correction: 18
+script_lines_after_cleanup: 51
+dict_replace_added: 0
+dict_terms_added: 0
+
+[applied replacements]
+감묵 -> 갑목 (x3)

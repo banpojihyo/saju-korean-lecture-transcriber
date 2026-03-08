@@ -1,0 +1,16 @@
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.txt
+output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.corrected.txt
+script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.script.txt
+applied_rules: 5
+changed_chars: 12
+term_hits_after_correction: 50
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+
+[applied replacements]
+왕세강약 -> 왕쇠강약 (x2)
+사조를 -> 사주를 (x2)
+4조 -> 사주 (x1)
+귀신 -> 기신 (x2)
+감묵 -> 갑목 (x2)

@@ -1,0 +1,15 @@
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 4
+changed_chars: 12314
+term_hits_after_correction: 60
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+
+[applied replacements]
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x7)

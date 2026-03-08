@@ -1,0 +1,11 @@
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.txt
+output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.corrected.txt
+script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 26 - 형충파해.script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 40
+script_lines_after_cleanup: 81
+dict_replace_added: 0
+dict_terms_added: 0
+
+[applied replacements]
