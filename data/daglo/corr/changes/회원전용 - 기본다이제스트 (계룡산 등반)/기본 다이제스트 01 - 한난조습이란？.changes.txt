@@ -7,6 +7,8 @@ term_hits_after_correction: 49
 script_lines_after_cleanup: 111
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
 이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)

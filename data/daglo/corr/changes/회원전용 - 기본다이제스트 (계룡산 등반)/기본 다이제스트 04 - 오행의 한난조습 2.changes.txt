@@ -1,21 +1,18 @@
-﻿source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??04 - ?ㅽ뻾???쒕궃議곗뒿 2.txt
-output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??04 - ?ㅽ뻾???쒕궃議곗뒿 2.corrected.txt
-script_only_output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??04 - ?ㅽ뻾???쒕궃議곗뒿 2.script.txt
-applied_rules: 1
-changed_chars: 1
-term_hits_after_correction: 14
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 04 - 오행의 한난조습 2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 04 - 오행의 한난조습 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 04 - 오행의 한난조습 2.script.txt
+applied_rules: 5
+changed_chars: 7
+term_hits_after_correction: 16
 script_lines_after_cleanup: 19
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
-?щ몢??-> ?ъ＜??(x1)
-
-[manual corrections 2026-03-08]
-?좊났??-> ?좉레??(x2 across corrected+script)
-諛⑹빟?뺤꽭 -> 媛뺤빟?뺤꽭 (x2 across corrected+script)
-怨좎튇 -> 怨좎링 (x4 across corrected+script)
-
-[manual corrections 2026-03-08]
-?ъ＜媛 ?섎굹?덇퉴 -> ?ъ＜媛 ?쒗븯?덇퉴 (x2 across corrected+script)
-
+방약왕세 -> 강약왕세 (x1)
+나나니까 -> 난하니까 (x1)
+사두에 -> 사주에 (x1)
+토복수 -> 토극수 (x1)
+고친 -> 고층 (x2)

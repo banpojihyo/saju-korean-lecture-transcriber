@@ -176,73 +176,42 @@ REJECT_ENDINGS = (
     "한",
 )
 
-DOMAIN_CONTEXT_KEYWORDS = (
-    "사주",
-    "명리",
-    "오행",
-    "천간",
-    "지지",
-    "갑목",
-    "을목",
-    "병화",
-    "정화",
-    "무토",
-    "기토",
-    "경금",
-    "신금",
-    "임수",
-    "계수",
-    "왕쇠강약",
-    "강약",
-    "한난조습",
-    "십성",
-    "일간",
-    "일주",
-    "월주",
-    "시주",
-    "연주",
-    "용신",
-    "희신",
-    "기신",
-    "관살",
-    "식상",
-    "재성",
-    "인성",
-    "비겁",
-    "체용",
-    "격국",
-    "통변",
-    "건록",
-    "수생목",
-    "금극목",
-    "목극토",
-)
-
-# Extra guards for terms that are common Korean words in non-astrology context.
-PAIR_CONTEXT_HINTS: dict[tuple[str, str], tuple[str, ...]] = {
-    ("채용", "체용"): ("체용", "사주", "용신", "오행"),
-    ("귀신", "기신"): ("기신", "희신", "용신", "사주"),
-    ("고친", "고층"): ("고층", "중층", "저층", "층위"),
+PAIR_CONTEXT_RULES: dict[tuple[str, str], dict[str, tuple[str, ...]]] = {
+    # Ambiguous in general Korean; apply only with 사주 맥락.
+    ("귀신", "기신"): {
+        "include": (
+            "사주",
+            "사조",
+            "초년",
+            "월",
+            "연",
+            "대운",
+            "일지",
+            "월지",
+            "연지",
+            "용신",
+            "희신",
+            "기신",
+            "십성",
+            "관살",
+            "재성",
+            "인성",
+            "비겁",
+            "식상",
+        ),
+        "exclude": ("천지", "유령", "강시", "드라큐라", "소복", "무섭", "안 보"),
+    },
+    # Keep historical/military usage when context points to it.
+    ("무반", "무관"): {
+        "include": ("관살", "관성", "직업", "관직", "상관", "정관"),
+        "exclude": ("문관", "무과", "경복궁", "창경궁", "궁궐"),
+    },
+    # Building-floor context only.
+    ("고친", "고층"): {
+        "include": ("지하", "반지하", "고층", "저층", "중층", "아파트", "건물"),
+        "exclude": ("고친다", "고친 게", "고친 걸", "고친 후"),
+    },
 }
-
-
-def is_hangul_syllable(ch: str) -> bool:
-    return "가" <= ch <= "힣"
-
-
-def is_hangul_word(text: str) -> bool:
-    return bool(text) and all(is_hangul_syllable(ch) for ch in text)
-
-
-def has_token_boundary_with_suffix(text: str, start: int, end: int) -> bool:
-    left_ok = start == 0 or not is_hangul_syllable(text[start - 1])
-    if not left_ok:
-        return False
-    if end >= len(text):
-        return True
-    if not is_hangul_syllable(text[end]):
-        return True
-    return any(text.startswith(suffix, end) for suffix in TRAILING_SUFFIXES)
 
 
 def has_context_keyword(
@@ -257,26 +226,17 @@ def has_context_keyword(
 def should_apply_replacement(
     text: str, start: int, end: int, wrong: str, right: str
 ) -> bool:
-    # Phrase-level rules are considered context-safe enough as-is.
-    if " " in wrong or len(wrong) >= 5:
+    # Apply all rules by default. Only ambiguous pairs are context-gated.
+    pair_rule = PAIR_CONTEXT_RULES.get((wrong, right))
+    if not pair_rule:
         return True
 
-    # Numeric/ascii mixed rules are mostly deterministic ASR artifacts.
-    if not is_hangul_word(wrong):
-        return True
-
-    # For short Hangul tokens, enforce lexical boundary + domain context.
-    if len(wrong) <= 4:
-        if not has_token_boundary_with_suffix(text, start, end):
-            return False
-        if not has_context_keyword(text, start, end, DOMAIN_CONTEXT_KEYWORDS):
-            return False
-
-    # Additional strict hints for highly ambiguous pairs.
-    pair_hints = PAIR_CONTEXT_HINTS.get((wrong, right))
-    if pair_hints and not has_context_keyword(text, start, end, pair_hints, window=80):
+    includes = pair_rule.get("include", ())
+    excludes = pair_rule.get("exclude", ())
+    if excludes and has_context_keyword(text, start, end, excludes, window=120):
         return False
-
+    if includes and not has_context_keyword(text, start, end, includes, window=120):
+        return False
     return True
 
 
@@ -488,7 +448,14 @@ def main() -> int:
 
     replace_pairs = load_replace_pairs(replace_path)
     domain_terms = load_terms(terms_path)
-    all_pairs = replace_pairs + manual_pairs()
+    all_pairs_raw = replace_pairs + manual_pairs()
+    all_pairs: list[tuple[str, str]] = []
+    seen_pairs: set[tuple[str, str]] = set()
+    for pair in all_pairs_raw:
+        if pair in seen_pairs:
+            continue
+        seen_pairs.add(pair)
+        all_pairs.append(pair)
 
     # Longer source phrase first to avoid partial overlap issues.
     all_pairs.sort(key=lambda p: len(p[0]), reverse=True)

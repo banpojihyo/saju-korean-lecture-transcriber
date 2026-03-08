@@ -7,6 +7,8 @@ term_hits_after_correction: 34
 script_lines_after_cleanup: 52
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
 과목 하나 따로 건드려야 돼. -> 갑목 하나 따로 건드려야 돼. (x1)

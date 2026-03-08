@@ -1,12 +1,14 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.txt
-output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.corrected.txt
-script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.script.txt
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.script.txt
 applied_rules: 2
 changed_chars: 3
 term_hits_after_correction: 33
 script_lines_after_cleanup: 81
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
 사조를 -> 사주를 (x2)

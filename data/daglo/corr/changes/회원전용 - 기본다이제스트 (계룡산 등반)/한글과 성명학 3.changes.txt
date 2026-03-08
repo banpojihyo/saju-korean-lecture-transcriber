@@ -1,12 +1,14 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.txt
-output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.corrected.txt
-script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.script.txt
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.script.txt
 applied_rules: 3
 changed_chars: 7
 term_hits_after_correction: 43
 script_lines_after_cleanup: 102
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
 사두에 -> 사주에 (x1)

@@ -1,16 +1,14 @@
-﻿source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??06 - ?붿쓽 ?뺤뇿媛뺤빟.txt
-output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??06 - ?붿쓽 ?뺤뇿媛뺤빟.corrected.txt
-script_only_output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??06 - ?붿쓽 ?뺤뇿媛뺤빟.script.txt
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.script.txt
 applied_rules: 1
 changed_chars: 2
 term_hits_after_correction: 37
 script_lines_after_cleanup: 50
-dict_replace_added: 1
+dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
-?댁옄留??좎깮 -> ?댁젣留??좎깮 (x2)
-
-[dict replace added]
-?댁옄留??좎깮 -> ?댁젣留??좎깮
-
+이자마 선생 -> 이제마 선생 (x2)

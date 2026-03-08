@@ -1,12 +1,14 @@
 source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt
-output: data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.corrected.txt
-script_only_output: data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.script.txt
-applied_rules: 50
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.script.txt
+applied_rules: 48
 changed_chars: 28466
-term_hits_after_correction: 83
+term_hits_after_correction: 82
 script_lines_after_cleanup: 105
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
 
 [applied replacements]
 신자진 국을 지르고요 -> 신자진 국을 이루고요 (x1)
@@ -54,8 +56,10 @@ dict_terms_added: 0
 1조 -> 일주 (x1)
 채용 -> 체용 (x1)
 귀신 -> 기신 (x2)
-무반 -> 무관 (x2)
 감묵 -> 갑목 (x9)
 감복 -> 갑목 (x1)
 걸록 -> 건록 (x1)
+
+[skipped by context]
+무반 -> 무관 (x2)
 고친 -> 고층 (x1)

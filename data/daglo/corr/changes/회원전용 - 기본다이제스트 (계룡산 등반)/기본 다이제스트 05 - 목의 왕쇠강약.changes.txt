@@ -1,17 +1,19 @@
-﻿source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??05 - 紐⑹쓽 ?뺤뇿媛뺤빟.txt
-output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??05 - 紐⑹쓽 ?뺤뇿媛뺤빟.corrected.txt
-script_only_output: data\daglo\corr\?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)\湲곕낯 ?ㅼ씠?쒖뒪??05 - 紐⑹쓽 ?뺤뇿媛뺤빟.script.txt
-applied_rules: 5
-changed_chars: 23706
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.script.txt
+applied_rules: 6
+changed_chars: 23705
 term_hits_after_correction: 54
 script_lines_after_cleanup: 105
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
 
 [applied replacements]
-?뺤꽭媛뺤빟 -> ?뺤뇿媛뺤빟 (x5)
-10??-> ??꽦 (x2)
-?ъ“瑜?-> ?ъ＜瑜?(x3)
-媛먮У -> 媛묐ぉ (x3)
-嫄몃줉 -> 嫄대줉 (x1)
-
+왕세강약 -> 왕쇠강약 (x5)
+강세왕략 -> 왕쇠강약 (x1)
+10성 -> 십성 (x2)
+사조를 -> 사주를 (x3)
+감묵 -> 갑목 (x3)
+걸록 -> 건록 (x1)

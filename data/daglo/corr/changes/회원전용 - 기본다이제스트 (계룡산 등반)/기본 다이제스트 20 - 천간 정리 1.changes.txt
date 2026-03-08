@@ -1,15 +1,19 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
-output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
-script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
-applied_rules: 4
-changed_chars: 22
-term_hits_after_correction: 39
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
+applied_rules: 3
+changed_chars: 19
+term_hits_after_correction: 38
 script_lines_after_cleanup: 72
 dict_replace_added: 0
 dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
 
 [applied replacements]
 1주 -> 일주 (x3)
 1조 -> 일주 (x2)
-귀신 -> 기신 (x3)
 감묵 -> 갑목 (x6)
+
+[skipped by context]
+귀신 -> 기신 (x3)
