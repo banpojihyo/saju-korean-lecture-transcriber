@@ -34,8 +34,10 @@
 - 복잡한 개념/흐름의 단계별 설명
 
 ## 4) 실행 스크립트
-- 파일: `generate_ai_summaries.py`
-- 기본 실행:
+- 휴리스틱(로컬) 버전: `generate_ai_summaries.py`
+- API 고품질 버전: `generate_ai_summaries_api.py`
+
+### 4-1) 휴리스틱 버전(빠른 생성)
 ```powershell
 py generate_ai_summaries.py `
   --input-root "data/daglo/corr/script" `
@@ -43,7 +45,27 @@ py generate_ai_summaries.py `
   --agent-name "GPT-5.3-Codex"
 ```
 
+### 4-2) API 고품질 버전(권장)
+환경변수에 API 키를 넣고 실행한다.
+
+```powershell
+$env:OPENAI_API_KEY="YOUR_API_KEY"
+py generate_ai_summaries_api.py `
+  --input-root "data/daglo/corr/script" `
+  --output-root "data/ai" `
+  --agent-name "GPT-5.3-Codex" `
+  --model "gpt-5" `
+  --temperature 0.2 `
+  --overwrite
+```
+
+고품질 버전은 긴 원문을 다음 흐름으로 처리한다.
+- 1단계: 원문 chunk 단위 요약
+- 2단계: chunk 요약 병합(길이 초과 시 재귀 압축)
+- 3단계: 최종 템플릿 합성
+
 ## 5) 운영 원칙
 - 요약 결과는 원본을 덮어쓰지 않고 `data/ai`에 별도 저장한다.
 - 신규/재생성 시에도 폴더 구조 일관성을 유지한다.
 - 사용자 요구가 없으면 기존 `corr/script`와 `dict` 파일은 수정하지 않는다.
+- API 키를 대화/로그/커밋에 평문으로 남기지 않는다.
