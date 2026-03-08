@@ -213,6 +213,68 @@ PAIR_CONTEXT_RULES: dict[tuple[str, str], dict[str, tuple[str, ...]]] = {
     },
 }
 
+DOMAIN_CONTEXT_KEYWORDS = (
+    "사주",
+    "오행",
+    "음양",
+    "천간",
+    "지지",
+    "십성",
+    "육친",
+    "한난조습",
+    "생극제화",
+    "왕쇠강약",
+    "일간",
+    "월간",
+    "연간",
+    "일지",
+    "월지",
+    "연지",
+    "대운",
+    "세운",
+    "용신",
+    "희신",
+    "기신",
+    "관살",
+    "관성",
+    "재성",
+    "인성",
+    "비겁",
+    "식상",
+    "비견",
+    "겁재",
+    "식신",
+    "상관",
+    "편재",
+    "정재",
+    "편관",
+    "정관",
+    "편인",
+    "정인",
+    "갑목",
+    "을목",
+    "병화",
+    "정화",
+    "무토",
+    "기토",
+    "경금",
+    "신금",
+    "임수",
+    "계수",
+)
+
+WORD_CHAR_RE = re.compile(r"[가-힣A-Za-z0-9]")
+
+
+def is_short_korean_token(text: str) -> bool:
+    return bool(text) and len(text) <= 4 and bool(re.fullmatch(r"[가-힣]+", text))
+
+
+def is_word_boundary(text: str, start: int, end: int) -> bool:
+    left_ok = start == 0 or not WORD_CHAR_RE.match(text[start - 1])
+    right_ok = end >= len(text) or not WORD_CHAR_RE.match(text[end])
+    return left_ok and right_ok
+
 
 def has_context_keyword(
     text: str, start: int, end: int, keywords: tuple[str, ...], window: int = 120
@@ -226,17 +288,23 @@ def has_context_keyword(
 def should_apply_replacement(
     text: str, start: int, end: int, wrong: str, right: str
 ) -> bool:
-    # Apply all rules by default. Only ambiguous pairs are context-gated.
+    # Ambiguous pairs are always context-gated.
     pair_rule = PAIR_CONTEXT_RULES.get((wrong, right))
-    if not pair_rule:
-        return True
+    if pair_rule:
+        includes = pair_rule.get("include", ())
+        excludes = pair_rule.get("exclude", ())
+        if excludes and has_context_keyword(text, start, end, excludes, window=120):
+            return False
+        if includes and not has_context_keyword(text, start, end, includes, window=120):
+            return False
 
-    includes = pair_rule.get("include", ())
-    excludes = pair_rule.get("exclude", ())
-    if excludes and has_context_keyword(text, start, end, excludes, window=120):
-        return False
-    if includes and not has_context_keyword(text, start, end, includes, window=120):
-        return False
+    # Short Korean token replacements are risky; require word-boundary + domain context.
+    if is_short_korean_token(wrong):
+        if not is_word_boundary(text, start, end):
+            return False
+        if not has_context_keyword(text, start, end, DOMAIN_CONTEXT_KEYWORDS, window=120):
+            return False
+
     return True
 
 
