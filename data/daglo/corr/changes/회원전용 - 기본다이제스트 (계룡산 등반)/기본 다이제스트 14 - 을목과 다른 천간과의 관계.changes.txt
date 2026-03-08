@@ -1,11 +1,12 @@
-source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.txt
-output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.corrected.txt
-script_only_output: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\corr\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.script.txt
-applied_rules: 0
-changed_chars: 0
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.script.txt
+applied_rules: 1
+changed_chars: 1
 term_hits_after_correction: 34
 script_lines_after_cleanup: 52
 dict_replace_added: 0
 dict_terms_added: 0
 
 [applied replacements]
+과목 하나 따로 건드려야 돼. -> 갑목 하나 따로 건드려야 돼. (x1)
