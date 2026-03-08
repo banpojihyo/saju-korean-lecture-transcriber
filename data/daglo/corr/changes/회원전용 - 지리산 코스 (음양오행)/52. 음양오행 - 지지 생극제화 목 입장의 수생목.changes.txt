@@ -1,16 +1,18 @@
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\52. 음양오행 - 지지 생극제화 목 입장의 수생목.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\52. 음양오행 - 지지 생극제화 목 입장의 수생목.script.txt
-applied_rules: 3
-changed_chars: 5
-term_hits_after_correction: 46
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 45
 script_lines_after_cleanup: 117
 dict_replace_added: 0
 dict_terms_added: 0
-context_skipped_rules: 0
-context_skipped_hits: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
 
 [applied replacements]
 활을 봐야 -> 화를 봐야 (x1)
+
+[skipped by context]
 귀신 -> 기신 (x1)
 감묵 -> 갑목 (x1)

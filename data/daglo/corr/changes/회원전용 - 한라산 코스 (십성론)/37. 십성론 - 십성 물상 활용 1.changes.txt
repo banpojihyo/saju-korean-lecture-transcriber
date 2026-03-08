@@ -1,4 +1,4 @@
-source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.txt
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.script.txt
 applied_rules: 1

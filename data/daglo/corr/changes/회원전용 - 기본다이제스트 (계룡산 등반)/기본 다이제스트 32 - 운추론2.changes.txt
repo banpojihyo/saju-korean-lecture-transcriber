@@ -1,6 +1,6 @@
-source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2 (기본 다이제스트 마지막 회차).txt
-output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2 (기본 다이제스트 마지막 회차).corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2 (기본 다이제스트 마지막 회차).script.txt
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.script.txt
 applied_rules: 2
 changed_chars: 4
 term_hits_after_correction: 35
