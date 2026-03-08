@@ -455,8 +455,9 @@ def manual_pairs() -> list[tuple[str, str]]:
     ]
 
 
-TIMESTAMP_SPEAKER_RE = re.compile(
-    r"^\s*\d{1,2}:\d{2}(?::\d{2})?\s+화자\s*\d+\s*$"
+# Remove timestamp-only lines (mm:ss / hh:mm:ss) and timestamp+speaker lines.
+TIMESTAMP_LINE_RE = re.compile(
+    r"^\s*(?:\d{1,2}:)?\d{1,2}:\d{2}(?:\s*화자\s*\d+)?\s*$"
 )
 
 
@@ -465,7 +466,7 @@ def build_script_only_text(text: str) -> str:
     kept: list[str] = []
     for line in lines:
         stripped = line.strip()
-        if TIMESTAMP_SPEAKER_RE.match(stripped):
+        if TIMESTAMP_LINE_RE.match(stripped):
             continue
         if not stripped:
             if kept and kept[-1] != "":
