@@ -1,3 +1,4 @@
+[02b2401 - 2026-03-08T21:45:00+09:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.script.txt
@@ -15,13 +16,7 @@ context_skipped_hits: 0
 4조 -> 사주 (x1)
 채용 -> 체용 (x8)
 
-[re-correction appended]
-[121b9b6 - 2026-03-08 21:27:13 +0900]
-commit: 121b9b6
-commit_date: 2026-03-08 21:27:13 +0900
-record_format: changes-report
-
-[re-correction result]
+[121b9b6 - 2026-03-08T21:27:13+09:00]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.script.txt

@@ -1,3 +1,4 @@
+[84d171f - 2026-03-08T21:17:09+09:00]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\17. 음양오행 - 수의 한난조습.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\17. 음양오행 - 수의 한난조습.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\17. 음양오행 - 수의 한난조습.script.txt
@@ -13,13 +14,7 @@ context_skipped_hits: 0
 [applied replacements]
 감묵 -> 갑목 (x1)
 
-[re-correction appended]
-[121b9b6 - 2026-03-08 21:27:13 +0900]
-commit: 121b9b6
-commit_date: 2026-03-08 21:27:13 +0900
-record_format: changes-report
-
-[re-correction result]
+[121b9b6 - 2026-03-08T21:27:13+09:00]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\17. 음양오행 - 수의 한난조습.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\17. 음양오행 - 수의 한난조습.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\17. 음양오행 - 수의 한난조습.script.txt

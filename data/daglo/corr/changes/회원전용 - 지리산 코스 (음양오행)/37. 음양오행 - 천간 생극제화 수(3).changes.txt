@@ -1,3 +1,4 @@
+[84d171f - 2026-03-08T21:17:09+09:00]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
@@ -14,13 +15,7 @@ context_skipped_hits: 0
 10성 -> 십성 (x2)
 감묵 -> 갑목 (x2)
 
-[re-correction appended]
-[121b9b6 - 2026-03-08 21:27:13 +0900]
-commit: 121b9b6
-commit_date: 2026-03-08 21:27:13 +0900
-record_format: changes-report
-
-[re-correction result]
+[121b9b6 - 2026-03-08T21:27:13+09:00]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
