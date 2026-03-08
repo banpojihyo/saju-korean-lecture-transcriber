@@ -58,6 +58,11 @@ py refine_output_dict.py --dry-run
 ## 5) Daglo 교정본 생성 (`raw` -> `corr`)
 
 Daglo 원본 텍스트는 `data/daglo/raw`, 교정 결과는 `data/daglo/corr`를 사용합니다.
+생성 파일은 아래 하위 폴더로 자동 분리됩니다.
+
+- `data/daglo/corr/corrected` (`*.corrected.txt`)
+- `data/daglo/corr/script` (`*.script.txt`)
+- `data/daglo/corr/changes` (`*.changes.txt`)
 
 ```powershell
 py correct_daglo_file.py `

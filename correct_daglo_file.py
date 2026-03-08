@@ -16,7 +16,10 @@ from pathlib import Path
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Correct one Daglo transcript and save to data/daglo/corr."
+        description=(
+            "Correct one Daglo transcript and save into "
+            "data/daglo/corr/{corrected,script,changes}."
+        )
     )
     parser.add_argument(
         "--source-file",
@@ -39,7 +42,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-root",
         default="data/daglo/corr",
-        help="Output root for corrected files (default: ./data/daglo/corr).",
+        help=(
+            "Output root. Files are written under "
+            "{output_root}/corrected, {output_root}/script, {output_root}/changes."
+        ),
     )
     parser.add_argument(
         "--no-update-dict",
@@ -320,9 +326,13 @@ def main() -> int:
         # Fallback: preserve source filename under output root.
         relative = Path(source.name)
 
-    output_path = output_root / relative.parent / f"{source.stem}.corrected{source.suffix}"
-    script_path = output_root / relative.parent / f"{source.stem}.script{source.suffix}"
-    report_path = output_root / relative.parent / f"{source.stem}.changes.txt"
+    output_path = (
+        output_root / "corrected" / relative.parent / f"{source.stem}.corrected{source.suffix}"
+    )
+    script_path = (
+        output_root / "script" / relative.parent / f"{source.stem}.script{source.suffix}"
+    )
+    report_path = output_root / "changes" / relative.parent / f"{source.stem}.changes.txt"
 
     text = source.read_text(encoding="utf-8")
     original_text = text
