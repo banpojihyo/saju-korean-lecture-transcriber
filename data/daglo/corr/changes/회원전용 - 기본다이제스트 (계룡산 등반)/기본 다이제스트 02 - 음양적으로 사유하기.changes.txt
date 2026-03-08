@@ -16,30 +16,22 @@ context_skipped_hits: 0
 [re-correction appended]
 base_commit: 6b983d4
 recorrect_commit: 121b9b6
-delta_lines: 24
+record_format: changes-report
 
-[delta (before -> re-corrected)]
---- before
-+++ re-corrected
-@@ -1,14 +1,16 @@
--source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.txt
-+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.txt
- output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.corrected.txt
- script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.script.txt
--applied_rules: 1
--changed_chars: 6
-+applied_rules: 0
-+changed_chars: 0
- term_hits_after_correction: 18
- script_lines_after_cleanup: 51
- dict_replace_added: 0
- dict_terms_added: 0
--context_skipped_rules: 0
--context_skipped_hits: 0
-+context_skipped_rules: 1
-+context_skipped_hits: 3
- 
- [applied replacements]
-+
-+[skipped by context]
- 감묵 -> 갑목 (x3)
+[re-correction result]
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 18
+script_lines_after_cleanup: 51
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+
+[skipped by context]
+감묵 -> 갑목 (x3)

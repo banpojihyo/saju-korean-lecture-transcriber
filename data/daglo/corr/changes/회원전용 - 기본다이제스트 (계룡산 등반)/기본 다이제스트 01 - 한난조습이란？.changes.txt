@@ -19,39 +19,30 @@ context_skipped_hits: 0
 [re-correction appended]
 base_commit: 6b983d4
 recorrect_commit: 121b9b6
-delta_lines: 33
+record_format: changes-report
 
-[delta (before -> re-corrected)]
---- before
-+++ re-corrected
-@@ -1,17 +1,24 @@
--source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
-+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
- output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.corrected.txt
- script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.script.txt
--applied_rules: 4
--changed_chars: 264
-+applied_rules: 3
-+changed_chars: 261
- term_hits_after_correction: 49
- script_lines_after_cleanup: 111
--dict_replace_added: 0
-+dict_replace_added: 3
- dict_terms_added: 0
--context_skipped_rules: 0
--context_skipped_hits: 0
-+context_skipped_rules: 1
-+context_skipped_hits: 3
- 
- [applied replacements]
- 이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)
- 만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데 (x1)
- 이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데 (x1)
-+
-+[skipped by context]
- 사조를 -> 사주를 (x3)
-+
-+[dict replace added]
-+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다.
-+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데
-+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데
+[re-correction result]
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.script.txt
+applied_rules: 3
+changed_chars: 261
+term_hits_after_correction: 49
+script_lines_after_cleanup: 111
+dict_replace_added: 3
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)
+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데 (x1)
+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x3)
+
+[dict replace added]
+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다.
+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데
+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데

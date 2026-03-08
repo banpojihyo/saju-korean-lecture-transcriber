@@ -16,14 +16,20 @@ context_skipped_hits: 0
 [re-correction appended]
 base_commit: 6b983d4
 recorrect_commit: 121b9b6
-delta_lines: 8
+record_format: changes-report
 
-[delta (before -> re-corrected)]
---- before
-+++ re-corrected
-@@ -1,4 +1,4 @@
--source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
-+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
- output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
- script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
- applied_rules: 1
+[re-correction result]
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
+applied_rules: 1
+changed_chars: 233
+term_hits_after_correction: 48
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+10성 -> 십성 (x2)

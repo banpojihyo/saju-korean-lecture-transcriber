@@ -20,30 +20,23 @@ context_skipped_hits: 1
 [re-correction appended]
 base_commit: 6b983d4
 recorrect_commit: 121b9b6
-delta_lines: 24
+record_format: changes-report
 
-[delta (before -> re-corrected)]
---- before
-+++ re-corrected
-@@ -1,18 +1,17 @@
- source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.txt
- output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.corrected.txt
- script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.script.txt
--applied_rules: 2
-+applied_rules: 1
- changed_chars: 36216
- term_hits_after_correction: 51
- script_lines_after_cleanup: 161
- dict_replace_added: 0
- dict_terms_added: 0
- context_skipped_rules: 1
--context_skipped_hits: 1
-+context_skipped_hits: 3
- 
- [applied replacements]
- 10성 -> 십성 (x1)
--귀신 -> 기신 (x2)
- 
- [skipped by context]
--귀신 -> 기신 (x1)
-+귀신 -> 기신 (x3)
+[re-correction result]
+source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.script.txt
+applied_rules: 1
+changed_chars: 36216
+term_hits_after_correction: 51
+script_lines_after_cleanup: 161
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+10성 -> 십성 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x3)
