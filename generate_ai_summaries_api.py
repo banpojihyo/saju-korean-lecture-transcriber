@@ -8,8 +8,8 @@ Features:
 - Domain glossary injection from dict/terms.csv
 - Preserves folder structure:
     data/daglo/corr/script/**/*.txt
-      -> data/summary/{agent}/md/**/*.md
-      -> data/summary/{agent}/txt/**/*.txt
+      -> data/summaries/{agent}/md/**/*.md
+      -> data/summaries/{agent}/txt/**/*.txt
 """
 
 from __future__ import annotations
@@ -38,7 +38,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-root",
-        default="data/summary",
+        default="data/summaries",
         help="Output root for AI summaries.",
     )
     parser.add_argument(
