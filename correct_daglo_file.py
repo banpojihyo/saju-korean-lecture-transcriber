@@ -176,6 +176,148 @@ REJECT_ENDINGS = (
     "한",
 )
 
+DOMAIN_CONTEXT_KEYWORDS = (
+    "사주",
+    "명리",
+    "오행",
+    "천간",
+    "지지",
+    "갑목",
+    "을목",
+    "병화",
+    "정화",
+    "무토",
+    "기토",
+    "경금",
+    "신금",
+    "임수",
+    "계수",
+    "왕쇠강약",
+    "강약",
+    "한난조습",
+    "십성",
+    "일간",
+    "일주",
+    "월주",
+    "시주",
+    "연주",
+    "용신",
+    "희신",
+    "기신",
+    "관살",
+    "식상",
+    "재성",
+    "인성",
+    "비겁",
+    "체용",
+    "격국",
+    "통변",
+    "건록",
+    "수생목",
+    "금극목",
+    "목극토",
+)
+
+# Extra guards for terms that are common Korean words in non-astrology context.
+PAIR_CONTEXT_HINTS: dict[tuple[str, str], tuple[str, ...]] = {
+    ("채용", "체용"): ("체용", "사주", "용신", "오행"),
+    ("귀신", "기신"): ("기신", "희신", "용신", "사주"),
+    ("고친", "고층"): ("고층", "중층", "저층", "층위"),
+}
+
+
+def is_hangul_syllable(ch: str) -> bool:
+    return "가" <= ch <= "힣"
+
+
+def is_hangul_word(text: str) -> bool:
+    return bool(text) and all(is_hangul_syllable(ch) for ch in text)
+
+
+def has_token_boundary_with_suffix(text: str, start: int, end: int) -> bool:
+    left_ok = start == 0 or not is_hangul_syllable(text[start - 1])
+    if not left_ok:
+        return False
+    if end >= len(text):
+        return True
+    if not is_hangul_syllable(text[end]):
+        return True
+    return any(text.startswith(suffix, end) for suffix in TRAILING_SUFFIXES)
+
+
+def has_context_keyword(
+    text: str, start: int, end: int, keywords: tuple[str, ...], window: int = 120
+) -> bool:
+    left = max(0, start - window)
+    right = min(len(text), end + window)
+    snippet = text[left:right]
+    return any(keyword in snippet for keyword in keywords)
+
+
+def should_apply_replacement(
+    text: str, start: int, end: int, wrong: str, right: str
+) -> bool:
+    # Phrase-level rules are considered context-safe enough as-is.
+    if " " in wrong or len(wrong) >= 5:
+        return True
+
+    # Numeric/ascii mixed rules are mostly deterministic ASR artifacts.
+    if not is_hangul_word(wrong):
+        return True
+
+    # For short Hangul tokens, enforce lexical boundary + domain context.
+    if len(wrong) <= 4:
+        if not has_token_boundary_with_suffix(text, start, end):
+            return False
+        if not has_context_keyword(text, start, end, DOMAIN_CONTEXT_KEYWORDS):
+            return False
+
+    # Additional strict hints for highly ambiguous pairs.
+    pair_hints = PAIR_CONTEXT_HINTS.get((wrong, right))
+    if pair_hints and not has_context_keyword(text, start, end, pair_hints, window=80):
+        return False
+
+    return True
+
+
+def apply_context_aware_replacements(
+    text: str, rules: list[tuple[str, str]]
+) -> tuple[str, list[tuple[str, str, int]], list[tuple[str, str, int]]]:
+    applied: list[tuple[str, str, int]] = []
+    skipped: list[tuple[str, str, int]] = []
+
+    for wrong, right in rules:
+        if wrong not in text:
+            continue
+
+        segments: list[str] = []
+        last = 0
+        applied_count = 0
+        skipped_count = 0
+
+        for match in re.finditer(re.escape(wrong), text):
+            start, end = match.span()
+            if should_apply_replacement(text, start, end, wrong, right):
+                segments.append(text[last:start])
+                segments.append(right)
+                last = end
+                applied_count += 1
+            else:
+                skipped_count += 1
+
+        if applied_count == 0:
+            if skipped_count > 0:
+                skipped.append((wrong, right, skipped_count))
+            continue
+
+        segments.append(text[last:])
+        text = "".join(segments)
+        applied.append((wrong, right, applied_count))
+        if skipped_count > 0:
+            skipped.append((wrong, right, skipped_count))
+
+    return text, applied, skipped
+
 
 def normalize_term_candidate(text: str) -> str:
     candidate = text.strip()
@@ -351,15 +493,11 @@ def main() -> int:
     # Longer source phrase first to avoid partial overlap issues.
     all_pairs.sort(key=lambda p: len(p[0]), reverse=True)
 
-    applied: list[tuple[str, str, int]] = []
-    for wrong, right in all_pairs:
-        if wrong not in text:
-            continue
-        count = text.count(wrong)
-        text = text.replace(wrong, right)
-        applied.append((wrong, right, count))
+    text, applied, skipped_by_context = apply_context_aware_replacements(text, all_pairs)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
+    script_path.parent.mkdir(parents=True, exist_ok=True)
+    report_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(text, encoding="utf-8")
     script_only_text = build_script_only_text(text)
     script_path.write_text(script_only_text, encoding="utf-8")
@@ -395,10 +533,19 @@ def main() -> int:
     lines.append(f"script_lines_after_cleanup: {script_lines}")
     lines.append(f"dict_replace_added: {len(added_replace_pairs)}")
     lines.append(f"dict_terms_added: {len(added_terms)}")
+    lines.append(f"context_skipped_rules: {len(skipped_by_context)}")
+    lines.append(
+        f"context_skipped_hits: {sum(count for _, _, count in skipped_by_context)}"
+    )
     lines.append("")
     lines.append("[applied replacements]")
     for wrong, right, count in applied:
         lines.append(f"{wrong} -> {right} (x{count})")
+    if skipped_by_context:
+        lines.append("")
+        lines.append("[skipped by context]")
+        for wrong, right, count in skipped_by_context:
+            lines.append(f"{wrong} -> {right} (x{count})")
     if added_replace_pairs:
         lines.append("")
         lines.append("[dict replace added]")
@@ -416,6 +563,7 @@ def main() -> int:
     print(f"[DONE] script-only: {script_path}")
     print(f"[DONE] report: {report_path}")
     print(f"[DONE] applied rules: {len(applied)}")
+    print(f"[DONE] context skipped rules: {len(skipped_by_context)}")
     print(f"[DONE] dict replace added: {len(added_replace_pairs)}")
     print(f"[DONE] dict terms added: {len(added_terms)}")
     return 0
