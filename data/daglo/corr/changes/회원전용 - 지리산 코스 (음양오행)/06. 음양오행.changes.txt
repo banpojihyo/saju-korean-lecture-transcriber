@@ -214,3 +214,57 @@ context_skipped_hits: 10
 목국토 -> 목극토 (x6)
 귀신 -> 기신 (x2)
 고친 -> 고층 (x1)
+
+[9b2220c - 2026-03-10 01:32:03]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.script.txt
+applied_rules: 6
+changed_chars: 13
+term_hits_after_correction: 53
+script_lines_after_cleanup: 148
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 10
+
+[applied replacements]
+관묵이에요 -> 갑목이에요 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x2)
+사모기 -> 사목이 (x1)
+4조 -> 사주 (x2)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+목국토 -> 목극토 (x6)
+귀신 -> 기신 (x2)
+고친 -> 고층 (x1)
+
+[9b2220c - 2026-03-10 01:32:56]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.script.txt
+applied_rules: 6
+changed_chars: 13
+term_hits_after_correction: 54
+script_lines_after_cleanup: 148
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 10
+
+[applied replacements]
+관묵이에요 -> 갑목이에요 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x2)
+사모기 -> 사목이 (x1)
+4조 -> 사주 (x2)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+목국토 -> 목극토 (x6)
+귀신 -> 기신 (x2)
+고친 -> 고층 (x1)

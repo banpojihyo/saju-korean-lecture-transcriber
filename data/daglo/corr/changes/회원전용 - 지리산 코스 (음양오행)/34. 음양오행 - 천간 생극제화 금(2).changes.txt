@@ -151,3 +151,53 @@ context_skipped_hits: 3
 [skipped by context]
 사조를 -> 사주를 (x1)
 감묵 -> 갑목 (x2)
+
+[9b2220c - 2026-03-10 01:32:05]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).script.txt
+applied_rules: 5
+changed_chars: 1510
+term_hits_after_correction: 39
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 4
+
+[applied replacements]
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+감묵은 -> 갑목은 (x1)
+관묵의 -> 갑목의 (x1)
+관묵이 -> 갑목이 (x2)
+
+[skipped by context]
+생국제화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+감묵 -> 갑목 (x2)
+
+[9b2220c - 2026-03-10 01:32:57]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).script.txt
+applied_rules: 6
+changed_chars: 1510
+term_hits_after_correction: 40
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[applied replacements]
+생국제화 -> 생극제화 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+감묵은 -> 갑목은 (x1)
+관묵의 -> 갑목의 (x1)
+관묵이 -> 갑목이 (x2)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+감묵 -> 갑목 (x2)

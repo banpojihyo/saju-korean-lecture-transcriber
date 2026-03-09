@@ -125,3 +125,63 @@ context_skipped_hits: 6
 토국수 -> 토극수 (x2)
 심금 -> 신금 (x1)
 고친 -> 고층 (x2)
+
+[9b2220c - 2026-03-10 01:32:06]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.script.txt
+applied_rules: 6
+changed_chars: 27
+term_hits_after_correction: 50
+script_lines_after_cleanup: 120
+dict_replace_added: 1
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 8
+
+[applied replacements]
+다음 주에 수대한남조습을 하겠습니다. -> 다음 주에 수의 한난조습을 하겠습니다. (x1)
+모기 개입 -> 목이 개입 (x3)
+생극재화 -> 생극제화 (x1)
+심금은 -> 신금은 (x2)
+심금이 -> 신금이 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+토국수도 -> 토극수도 (x1)
+생극재화 -> 생극제화 (x1)
+생국제화 -> 생극제화 (x1)
+토국수 -> 토극수 (x2)
+심금 -> 신금 (x1)
+고친 -> 고층 (x2)
+
+[dict replace added]
+다음 주에 수대한남조습을 하겠습니다. -> 다음 주에 수의 한난조습을 하겠습니다.
+
+[9b2220c - 2026-03-10 01:32:59]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.script.txt
+applied_rules: 7
+changed_chars: 29
+term_hits_after_correction: 50
+script_lines_after_cleanup: 120
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 6
+
+[applied replacements]
+다음 주에 수대한남조습을 하겠습니다. -> 다음 주에 수의 한난조습을 하겠습니다. (x1)
+모기 개입 -> 목이 개입 (x3)
+생극재화 -> 생극제화 (x2)
+생국제화 -> 생극제화 (x1)
+심금은 -> 신금은 (x2)
+심금이 -> 신금이 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+토국수도 -> 토극수도 (x1)
+토국수 -> 토극수 (x2)
+심금 -> 신금 (x1)
+고친 -> 고층 (x2)

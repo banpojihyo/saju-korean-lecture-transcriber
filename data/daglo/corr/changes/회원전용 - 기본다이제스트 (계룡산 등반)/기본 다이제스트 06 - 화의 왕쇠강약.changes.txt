@@ -29,3 +29,37 @@ context_skipped_hits: 0
 
 [applied replacements]
 이자마 선생 -> 이제마 선생 (x2)
+
+[9b2220c - 2026-03-10 01:32:01]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.script.txt
+applied_rules: 2
+changed_chars: 6853
+term_hits_after_correction: 40
+script_lines_after_cleanup: 50
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+이자마 선생 -> 이제마 선생 (x2)
+생극 재화 -> 생극제화 (x1)
+
+[9b2220c - 2026-03-10 01:32:54]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 06 - 화의 왕쇠강약.script.txt
+applied_rules: 2
+changed_chars: 6853
+term_hits_after_correction: 40
+script_lines_after_cleanup: 50
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+이자마 선생 -> 이제마 선생 (x2)
+생극 재화 -> 생극제화 (x1)

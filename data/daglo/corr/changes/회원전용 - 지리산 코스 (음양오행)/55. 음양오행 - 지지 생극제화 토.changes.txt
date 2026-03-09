@@ -46,3 +46,43 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[9b2220c - 2026-03-10 01:32:07]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.script.txt
+applied_rules: 2
+changed_chars: 1213
+term_hits_after_correction: 54
+script_lines_after_cleanup: 154
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+오행생극재화 -> 오행생극제화 (x1)
+생극 재화 -> 생극제화 (x1)
+
+[skipped by context]
+토복수 -> 토극수 (x1)
+
+[9b2220c - 2026-03-10 01:32:59]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.script.txt
+applied_rules: 2
+changed_chars: 1213
+term_hits_after_correction: 54
+script_lines_after_cleanup: 154
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+오행생극재화 -> 오행생극제화 (x1)
+생극 재화 -> 생극제화 (x1)
+
+[skipped by context]
+토복수 -> 토극수 (x1)

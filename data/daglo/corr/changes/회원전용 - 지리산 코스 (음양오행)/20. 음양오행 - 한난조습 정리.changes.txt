@@ -120,3 +120,53 @@ CG -> 시지 (x1)
 왕세강약 -> 왕쇠강약 (x1)
 심금을 -> 신금을 (x1)
 심금 -> 신금 (x2)
+
+[9b2220c - 2026-03-10 01:32:04]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.script.txt
+applied_rules: 4
+changed_chars: 451
+term_hits_after_correction: 45
+script_lines_after_cleanup: 127
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 5
+
+[applied replacements]
+음향 오행 -> 음양 오행 (x1)
+생극 재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+CG -> 시지 (x1)
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x1)
+생극재화 -> 생극제화 (x1)
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x2)
+
+[9b2220c - 2026-03-10 01:32:57]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.script.txt
+applied_rules: 5
+changed_chars: 452
+term_hits_after_correction: 45
+script_lines_after_cleanup: 127
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 4
+
+[applied replacements]
+음향 오행 -> 음양 오행 (x1)
+생극 재화 -> 생극제화 (x1)
+생극재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+CG -> 시지 (x1)
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x1)
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x2)

@@ -77,3 +77,49 @@ context_skipped_hits: 2
 [skipped by context]
 심금이 -> 신금이 (x1)
 심금 -> 신금 (x1)
+
+[9b2220c - 2026-03-10 01:32:02]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.script.txt
+applied_rules: 4
+changed_chars: 3950
+term_hits_after_correction: 45
+script_lines_after_cleanup: 102
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+생극 재화 -> 생극제화 (x1)
+사두에 -> 사주에 (x1)
+4조 -> 사주 (x2)
+1주 -> 일주 (x2)
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+심금 -> 신금 (x1)
+
+[9b2220c - 2026-03-10 01:32:54]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 3.script.txt
+applied_rules: 4
+changed_chars: 3950
+term_hits_after_correction: 45
+script_lines_after_cleanup: 102
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+생극 재화 -> 생극제화 (x1)
+사두에 -> 사주에 (x1)
+4조 -> 사주 (x2)
+1주 -> 일주 (x2)
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+심금 -> 신금 (x1)

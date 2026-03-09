@@ -27,3 +27,35 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[9b2220c - 2026-03-10 01:32:04]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\08. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\08. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\08. 음양오행.script.txt
+applied_rules: 1
+changed_chars: 26097
+term_hits_after_correction: 57
+script_lines_after_cleanup: 144
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+생극 재화 -> 생극제화 (x7)
+
+[9b2220c - 2026-03-10 01:32:55]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\08. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\08. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\08. 음양오행.script.txt
+applied_rules: 1
+changed_chars: 26097
+term_hits_after_correction: 57
+script_lines_after_cleanup: 144
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+생극 재화 -> 생극제화 (x7)
