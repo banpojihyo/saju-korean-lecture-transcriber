@@ -48,3 +48,21 @@ context_skipped_hits: 0
 [applied replacements]
 사조를 -> 사주를 (x2)
 귀신 -> 기신 (x1)
+
+[4643436 - 2026-03-10 00:49:22]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.script.txt
+applied_rules: 3
+changed_chars: 4
+term_hits_after_correction: 62
+script_lines_after_cleanup: 98
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+한란조습 -> 한난조습 (x1)
+사조를 -> 사주를 (x2)
+귀신 -> 기신 (x1)

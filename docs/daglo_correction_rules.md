@@ -32,6 +32,7 @@
 - 반복 확인된 ASR 오인식은 `dict/topics/<theme>/replace.csv`에 우선 반영한다.
 - `관여예요`, `정관여예요`처럼 문장형으로만 의미가 확정되는 항목은 단일 단어 치환보다 phrase-level exact replacement를 우선한다.
 - `관묵 -> 갑목`, `항만조습 -> 한난조습`, `모기 개입 -> 목이 개입`처럼 반복 검증된 고신뢰 도메인 오인식은 짧은 토큰 필터보다 우선 적용할 수 있다.
+- `cg -> 시지`처럼 짧은 영문/혼합 토큰 오인식도 도메인상 의미가 확정되면 `FORCE_DOMAIN_REPLACEMENTS`와 `replace.csv`에 함께 넣어 우선 적용한다.
 
 ## 5) 사전(`replace.csv`, `terms.csv`) 업데이트 규칙
 - 기본값은 자동 업데이트(옵션 `--no-update-dict` 미사용 기준)
@@ -45,6 +46,7 @@
 - 조사/어미 꼬리(`TRAILING_SUFFIXES`) 제거 후 후보화
 - 일반 서술형 종결(`REJECT_ENDINGS`)은 제외
 - 따라서 `한난조습`, `갑목` 같은 단일 용어는 `terms.csv` 대상이지만, `목이 개입`, `조건인 거예요`, `그게 관이에요` 같은 문장형 보정은 `terms.csv` 대상이 아니다.
+- `시지`, `진술축미`, `한난조습`처럼 정규 용어로 환원되는 치환 결과는 `terms.csv`에 유지한다.
 
 ## 6) `.changes` 기록 규칙
 - 블록 시작 헤더: `[commit - YYYY-MM-DD HH:MM:SS]`

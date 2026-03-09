@@ -47,3 +47,23 @@ context_skipped_hits: 0
 
 [applied replacements]
 4조 -> 사주 (x1)
+
+[4643436 - 2026-03-10 00:49:23]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.script.txt
+applied_rules: 5
+changed_chars: 21200
+term_hits_after_correction: 40
+script_lines_after_cleanup: 94
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+10성 -> 십성 (x2)
+4조 -> 사주 (x1)
+cg -> 시지 (x1)
+Cg -> 시지 (x1)
+CG -> 시지 (x2)
