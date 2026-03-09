@@ -146,3 +146,55 @@ py generate_study_pack_gemini.py `
 - `--terms-path <csv>`: 사용할 용어 사전을 직접 지정
 - `--max-files <N>`: 테스트용 소량 실행
 - `--sleep-sec <float>`: 요청 사이 대기(쿼터 관리)
+
+## 9) 통합 AI 파이프라인 (OpenAI/Gemini 선택)
+
+`run_ai_pipeline.py`는 `ai summaries`와 `study pack` 요구를 병합한 통합 실행 파일입니다.
+
+- 공급자 선택: `--provider openai|gemini`
+- 출력 스타일 선택: `--style summary|study-pack|merged`
+- 주제 선택: `--topic saju|security|network|math|philosophy_east|philosophy_west|vocal|...`
+- 출력 형식 선택: `--output-format md|txt|both`
+
+출력 경로:
+
+- `data/ai_outputs/<agent-name>/<provider>/<style>/md/**/*.md`
+- `data/ai_outputs/<agent-name>/<provider>/<style>/txt/**/*.txt`
+
+OpenAI 예시:
+
+```powershell
+$env:OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+py run_ai_pipeline.py `
+  --provider openai `
+  --style merged `
+  --topic saju `
+  --input-root "data/daglo/corr/script" `
+  --output-root "data/ai_outputs" `
+  --agent-name "Unified-AI" `
+  --model "gpt-5" `
+  --output-format both `
+  --max-files 3 `
+  --overwrite
+```
+
+Gemini 예시:
+
+```powershell
+$env:GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+py run_ai_pipeline.py `
+  --provider gemini `
+  --style merged `
+  --topic saju `
+  --input-root "data/daglo/corr/script" `
+  --output-root "data/ai_outputs" `
+  --agent-name "Unified-AI" `
+  --model "gemini-2.5-flash" `
+  --output-format both `
+  --max-files 3 `
+  --overwrite
+```
+
+참고:
+
+- 기존 `generate_ai_summaries*.py`, `generate_study_pack_gemini.py`는 호환을 위해 그대로 유지됩니다.
