@@ -123,7 +123,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--agent-name",
         default="Unified-AI",
-        help="Agent folder name under output root.",
+        help="Agent folder name under output root and topic.",
     )
     parser.add_argument(
         "--output-format",
@@ -840,7 +840,7 @@ def main() -> int:
     terms_paths = resolve_terms_paths(args)
     terms = load_terms(terms_paths)
 
-    output_base = Path(args.output_root) / args.agent_name / args.provider / args.style
+    output_base = Path(args.output_root) / args.topic / args.agent_name
     md_root = output_base / "md"
     txt_root = output_base / "txt"
 

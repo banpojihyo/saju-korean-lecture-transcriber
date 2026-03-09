@@ -158,8 +158,8 @@ py generate_study_pack_gemini.py `
 
 출력 경로:
 
-- `data/summaries/<agent-name>/<provider>/<style>/md/**/*.md`
-- `data/summaries/<agent-name>/<provider>/<style>/txt/**/*.txt`
+- `data/summaries/<topic>/<agent-name>/md/**/*.md`
+- `data/summaries/<topic>/<agent-name>/txt/**/*.txt`
 
 OpenAI 예시:
 
