@@ -160,6 +160,7 @@ py generate_study_pack_gemini.py `
 - API 한도 초과(429/RESOURCE_EXHAUSTED) 발생 시, 작업을 취소하지 않고 해당 시점까지 생성된 내용을 `partial` 결과로 저장합니다.
 - 기본값은 OpenAI 기준 `openai + gpt-5.3-chat-latest + saju + merged + both`입니다.
 - 권장 기본 세팅은 `--agent-name "GPT-5.3-Chat-Latest"`, `--chunk-chars 6000`, `--max-output-tokens 5000`, `--final-retries 3`입니다.
+- `--temperature`는 Gemini나 OpenAI 호환 커스텀 엔드포인트용 옵션으로 두고, 공식 OpenAI API 호출에서는 기본적으로 보내지 않습니다.
 
 출력 경로:
 
@@ -186,6 +187,11 @@ py run_ai_pipeline.py `
   --overwrite
 ```
 
+OpenAI 메모:
+
+- 공식 OpenAI 기본 경로(`https://api.openai.com/v1`)에서는 `temperature`를 기본적으로 보내지 않습니다.
+- `gpt-5.3-chat-latest` 같은 최신 OpenAI 모델은 `temperature` 미지원 응답을 반환할 수 있습니다.
+
 Gemini 예시:
 
 ```powershell
@@ -202,6 +208,10 @@ py run_ai_pipeline.py `
   --max-files 3 `
   --overwrite
 ```
+
+Gemini 메모:
+
+- `--temperature`는 Gemini 쪽에서 그대로 사용됩니다.
 
 참고:
 

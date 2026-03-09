@@ -150,7 +150,10 @@ def parse_args() -> argparse.Namespace:
         "--temperature",
         type=float,
         default=0.2,
-        help="Sampling temperature.",
+        help=(
+            "Sampling temperature. Primarily used for Gemini or custom-compatible "
+            "providers; official OpenAI runs omit it by default."
+        ),
     )
     parser.add_argument(
         "--max-output-tokens",
@@ -799,7 +802,7 @@ class OpenAIClient(BaseClient):
         self.model = model
         self.temperature = temperature
         self.max_output_tokens = max_output_tokens
-        self._omit_temperature = False
+        self._omit_temperature = self.base_url == "https://api.openai.com/v1"
 
     def _build_body(
         self,
