@@ -317,6 +317,35 @@ MOK_MISRECOGNITION_PAIRS = (
     ("관무기", "갑목이"),
 )
 
+SAJU_RAW_PRIORITY_PAIRS = frozenset(
+    (
+        *GITO_AMBIGUOUS_PAIRS,
+        *GYESU_AMBIGUOUS_PAIRS,
+        *MOK_MISRECOGNITION_PAIRS,
+        ("배수 기포를 만나면은", "계수를 만나면은"),
+        ("계수 배수가 붙는 순간", "계수가 붙는 순간"),
+        ("배수가 가장 음해요.", "계수가 가장 음해요."),
+        ("배수로 축축하게 적셔야 되나?", "계수로 축축하게 적셔야 되나?"),
+        ("배수로 연결되면은", "계수로 연결되면은"),
+        ("배수의 가치가 제대로 발현되는 거죠.", "계수의 가치가 제대로 발현되는 거죠."),
+        ("관무기, 사무기라는 것은", "갑목이 사목이라는 것은"),
+        ("그게 수생무기라고요.", "그게 수생목이라고요."),
+        ("요수생무기라고요.", "요 수생목이라고요."),
+        ("수생무기라고요.", "수생목이라고요."),
+        ("수생무기라고 할 때", "수생목이라고 할 때"),
+        ("수생모기 기준이니까.", "수생목이 기준이니까."),
+        ("수생모기지는", "수생목이지는"),
+        ("수생모기 저", "수생목이 저"),
+        ("생무기 빛을 본 것은", "생목이 빛을 본 것은"),
+        ("생모기 풀어서 쓰려면", "생목이 풀어서 쓰려면"),
+        ("이 모기 생모기면", "이 목이 생목이면"),
+        (
+            "사모기 빛을 보는 것과 생모기 빛을 보는 거의 작용이 달라지겠죠.",
+            "사목이 빛을 보는 것과 생목이 빛을 보는 것의 작용이 달라지겠죠.",
+        ),
+    )
+)
+
 PAIR_CONTEXT_RULES: dict[tuple[str, str], dict[str, tuple[str, ...]]] = {
     # Ambiguous in general Korean; apply only with 사주 맥락.
     ("귀신", "기신"): {
@@ -629,13 +658,13 @@ def should_apply_replacement(
     if (wrong, right) in FORCE_DOMAIN_REPLACEMENTS:
         return True
 
-    if CURRENT_DICT_TOPIC == "saju" and CURRENT_SOURCE_UNDER_SAJU_RAW:
-        if (
-            (wrong, right) in GITO_AMBIGUOUS_PAIRS
-            or (wrong, right) in GYESU_AMBIGUOUS_PAIRS
-            or (wrong, right) in MOK_MISRECOGNITION_PAIRS
-        ):
+    if CURRENT_DICT_TOPIC == "saju":
+        if CURRENT_SOURCE_UNDER_SAJU_RAW and (wrong, right) in SAJU_RAW_PRIORITY_PAIRS:
             return True
+        if (wrong, right) in SAJU_RAW_PRIORITY_PAIRS and not has_context_keyword(
+            text, start, end, DOMAIN_CONTEXT_KEYWORDS, window=120
+        ):
+            return False
 
     # Ambiguous pairs are always context-gated.
     pair_rule = PAIR_CONTEXT_RULES.get((wrong, right))
