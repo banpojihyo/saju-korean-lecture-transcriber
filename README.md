@@ -46,13 +46,16 @@ Get-ChildItem "data/daglo/raw" -Recurse -Filter *.txt | ForEach-Object {
 }
 ```
 
-## 5) 주제별 사전 분리 운영 (권장)
+## 5) 주제별 사전 분리 운영
 
-`correct_daglo_file.py`는 `--dict-dir`를 지원하므로 주제별 폴더 분리가 가능합니다.
+현재 사전 구조는 아래처럼 분리되어 있습니다.
 
 ```text
 dict/
+  replace.csv
+  terms.csv
   common/{replace.csv,terms.csv}
+  topics/saju/{replace.csv,terms.csv}
   topics/network/{replace.csv,terms.csv}
   topics/security/{replace.csv,terms.csv}
   topics/math/{replace.csv,terms.csv}
@@ -60,7 +63,22 @@ dict/
   topics/essay/{replace.csv,terms.csv}
 ```
 
-현재는 `--dict-dir` 하나를 선택해 실행합니다.
+- `dict/topics/saju`는 기존 루트 사전을 복사해 초기화되어 있습니다.
+- `dict/common`은 전 주제 공통 오탈자/용어를 담는 용도입니다.
+- `dict/topics/<theme>`는 주제 특화 사전을 담는 용도입니다.
+
+`run_topic_correction.py`를 사용하면 `common + topic`을 병합해 교정할 수 있습니다.
+교정 중 새로 발견된 항목은 기본적으로 해당 topic 사전에만 반영됩니다.
+
+```powershell
+py run_topic_correction.py `
+  --topic network `
+  --source-file "<raw 경로의 txt>" `
+  --input-root "data/daglo/raw" `
+  --output-root "data/daglo/corr"
+```
+
+필요하면 기존 방식대로 특정 사전 폴더 하나만 직접 지정할 수도 있습니다.
 
 ```powershell
 py correct_daglo_file.py `
