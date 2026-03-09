@@ -21,7 +21,7 @@ py -m pip install -r requirements.txt
 ```powershell
 py correct_daglo_file.py `
   --source-file "data/daglo/raw/회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 04 - 오행의 한난조습 2.txt" `
-  --dict-dir ".\dict"
+  --dict-dir ".\dict\topics\saju"
 ```
 
 필요하면 입출력 루트를 직접 지정할 수 있습니다.
@@ -29,7 +29,7 @@ py correct_daglo_file.py `
 ```powershell
 py correct_daglo_file.py `
   --source-file "<raw 경로의 txt>" `
-  --dict-dir ".\dict" `
+  --dict-dir ".\dict\topics\<theme>" `
   --input-root "data/daglo/raw" `
   --output-root "data/daglo/corr"
 ```
@@ -40,7 +40,7 @@ py correct_daglo_file.py `
 Get-ChildItem "data/daglo/raw" -Recurse -Filter *.txt | ForEach-Object {
   py correct_daglo_file.py `
     --source-file $_.FullName `
-    --dict-dir ".\dict" `
+    --dict-dir ".\dict\topics\<theme>" `
     --input-root "data/daglo/raw" `
     --output-root "data/daglo/corr"
 }
@@ -60,12 +60,17 @@ dict/
   topics/security/{replace.csv,terms.csv}
   topics/math/{replace.csv,terms.csv}
   topics/philosophy/{replace.csv,terms.csv}
+  topics/philosophy_east/{replace.csv,terms.csv}
+  topics/philosophy_west/{replace.csv,terms.csv}
+  topics/vocal/{replace.csv,terms.csv}
   topics/essay/{replace.csv,terms.csv}
 ```
 
 - `dict/topics/saju`는 기존 루트 사전을 복사해 초기화되어 있습니다.
 - `dict/common`은 전 주제 공통 오탈자/용어를 담는 용도입니다.
 - `dict/topics/<theme>`는 주제 특화 사전을 담는 용도입니다.
+- `dict/topics/philosophy_east`, `dict/topics/philosophy_west`를 권장하며, `dict/topics/philosophy`는 통합형(호환)입니다.
+- 루트 `dict/replace.csv`, `dict/terms.csv`는 기존 스크립트 호환용입니다. 당장은 유지하는 것을 권장합니다.
 
 `run_topic_correction.py`를 사용하면 `common + topic`을 병합해 교정할 수 있습니다.
 교정 중 새로 발견된 항목은 기본적으로 해당 topic 사전에만 반영됩니다.
@@ -89,12 +94,12 @@ py correct_daglo_file.py `
 ## 6) 기존 output(TXT/SRT) 후처리 + dict 갱신
 
 `refine_output_dict.py`는 `output` 폴더의 TXT/SRT를 사전 기반으로 보정하고,
-새로운 용어/오인식 후보를 `dict/replace.csv`, `dict/terms.csv`에 추가합니다.
+새로운 용어/오인식 후보를 지정한 `--dict-dir` 아래 csv에 추가합니다.
 
 ```powershell
 py refine_output_dict.py `
   --output-dir ".\output" `
-  --dict-dir ".\dict"
+  --dict-dir ".\dict\topics\saju"
 ```
 
 변경 사항만 먼저 보려면:
