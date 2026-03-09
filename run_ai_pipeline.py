@@ -643,6 +643,81 @@ def make_repair_prompt(
 """
 
 
+def is_quota_exceeded_error(error: Exception) -> bool:
+    msg = str(error).lower()
+    quota_signals = (
+        "http 429",
+        "resource_exhausted",
+        "quota exceeded",
+        "rate limit",
+    )
+    return any(sig in msg for sig in quota_signals)
+
+
+def compose_partial_output(
+    style: str,
+    stage: str,
+    chunk_notes: list[str],
+    merged_notes: list[str],
+    result_text: str,
+    error: Exception,
+) -> str:
+    error_line = str(error).splitlines()[0].strip()
+    lines: list[str] = [
+        "## ⚠️ 부분 결과 안내",
+        f"- 생성 중단 지점: `{stage}`",
+        "- 사유: API 요청 한도 초과(429/RESOURCE_EXHAUSTED)",
+        "- 아래 내용은 한도 초과 직전까지 생성된 결과입니다.",
+    ]
+    if error_line:
+        lines.append(f"- 오류 요약: `{error_line}`")
+    lines.append("")
+
+    if result_text.strip():
+        lines.append(result_text.strip())
+        return "\n".join(lines).strip()
+
+    if merged_notes:
+        lines.append("## 한도 초과 전 통합 노트")
+        for idx, note in enumerate(merged_notes, start=1):
+            lines.append(f"### 통합 노트 {idx}")
+            lines.append(note.strip())
+            lines.append("")
+        return "\n".join(lines).strip()
+
+    if chunk_notes:
+        lines.append("## 한도 초과 전 청크 요약")
+        for idx, note in enumerate(chunk_notes, start=1):
+            lines.append(f"### 청크 {idx}")
+            lines.append(note.strip())
+            lines.append("")
+        return "\n".join(lines).strip()
+
+    # Nothing was generated before hitting quota.
+    if style == "summary":
+        lines.append("## 🔖 핵심 주제별로 나눠서 정리")
+        lines.append("- (생성된 내용 없음)")
+    elif style == "study-pack":
+        lines.append("## 🔖 핵심 주제별로 나눠서 정리")
+        lines.append("- (생성된 내용 없음)")
+        lines.append("## 📑 시험문제")
+        lines.append("- (생성된 내용 없음)")
+        lines.append("## 📗 꼭 공부해야 할 내용")
+        lines.append("- (생성된 내용 없음)")
+    else:
+        lines.append("## 🔖 핵심 주제별로 나눠서 정리")
+        lines.append("- (생성된 내용 없음)")
+        lines.append("## 🧠 핵심 개념 맵")
+        lines.append("- (생성된 내용 없음)")
+        lines.append("## 📑 시험문제")
+        lines.append("- (생성된 내용 없음)")
+        lines.append("## 🎯 시험 포인트/혼동 주의")
+        lines.append("- (생성된 내용 없음)")
+        lines.append("## 📗 꼭 공부해야 할 내용")
+        lines.append("- (생성된 내용 없음)")
+    return "\n".join(lines).strip()
+
+
 def extract_openai_text(payload: dict) -> str:
     text = payload.get("output_text")
     if isinstance(text, str) and text.strip():
@@ -917,70 +992,95 @@ def render_one_file(
     if exists and not overwrite:
         return False, f"[SKIP] {rel}"
 
+    def write_outputs(content: str) -> None:
+        if should_write_md:
+            md_path.parent.mkdir(parents=True, exist_ok=True)
+            md_path.write_text(content, encoding="utf-8")
+        if should_write_txt:
+            txt_path.parent.mkdir(parents=True, exist_ok=True)
+            txt_path.write_text(content, encoding="utf-8")
+
     text = src.read_text(encoding="utf-8")
     chunks = split_long_text(text, max_chars=chunk_chars)
     if not chunks:
         chunks = [text]
 
+    stage = "init"
     chunk_notes: list[str] = []
-    for idx, chunk in enumerate(chunks, start=1):
-        chunk_prompt = make_chunk_prompt(
-            file_name=src.name,
-            chunk_idx=idx,
-            chunk_total=len(chunks),
-            chunk_text=chunk,
-            glossary=glossary_terms,
-        )
-        chunk_notes.append(client.call(system_prompt, chunk_prompt))
+    merged_notes: list[str] = []
+    result_text = ""
 
-    merged_notes = chunk_notes
-    while len(merged_notes) > 1 and sum(len(n) for n in merged_notes) > merge_limit_chars:
-        merged: list[str] = []
-        group_size = 6
-        total_groups = (len(merged_notes) + group_size - 1) // group_size
-        for i in range(0, len(merged_notes), group_size):
-            group = merged_notes[i : i + group_size]
-            merge_prompt = make_merge_prompt(group, i // group_size + 1, total_groups)
-            merged.append(client.call(system_prompt, merge_prompt))
-        merged_notes = merged
+    try:
+        for idx, chunk in enumerate(chunks, start=1):
+            stage = f"chunk {idx}/{len(chunks)}"
+            chunk_prompt = make_chunk_prompt(
+                file_name=src.name,
+                chunk_idx=idx,
+                chunk_total=len(chunks),
+                chunk_text=chunk,
+                glossary=glossary_terms,
+            )
+            chunk_notes.append(client.call(system_prompt, chunk_prompt))
 
-    final_prompt = make_final_prompt(src.name, merged_notes, glossary_terms, style)
-    result_text = client.call(system_prompt, final_prompt)
+        merged_notes = chunk_notes
+        while len(merged_notes) > 1 and sum(len(n) for n in merged_notes) > merge_limit_chars:
+            merged: list[str] = []
+            group_size = 6
+            total_groups = (len(merged_notes) + group_size - 1) // group_size
+            for i in range(0, len(merged_notes), group_size):
+                stage = f"merge {i // group_size + 1}/{total_groups}"
+                group = merged_notes[i : i + group_size]
+                merge_prompt = make_merge_prompt(group, i // group_size + 1, total_groups)
+                merged.append(client.call(system_prompt, merge_prompt))
+            merged_notes = merged
 
-    retry_count = max(0, final_retries)
-    base_limit = getattr(client, "max_output_tokens", 3200)
-    for attempt in range(retry_count):
-        if not looks_incomplete_output(result_text, style):
-            break
-        repair_prompt = make_repair_prompt(
-            file_name=src.name,
-            merged_notes=merged_notes,
-            glossary=glossary_terms,
-            style=style,
-            previous_output=result_text,
-        )
-        boosted_limit = min(8192, int(base_limit * (2 ** (attempt + 1))))
-        result_text = client.call(
-            system_prompt,
-            repair_prompt,
-            max_output_tokens=boosted_limit,
-        )
+        stage = "final"
+        final_prompt = make_final_prompt(src.name, merged_notes, glossary_terms, style)
+        result_text = client.call(system_prompt, final_prompt)
 
-    if looks_incomplete_output(result_text, style):
-        raise RuntimeError(
-            "Final output appears incomplete after retries. "
-            "Increase --max-output-tokens or --final-retries."
-        )
+        retry_count = max(0, final_retries)
+        base_limit = getattr(client, "max_output_tokens", 3200)
+        for attempt in range(retry_count):
+            if not looks_incomplete_output(result_text, style):
+                break
+            stage = f"repair {attempt + 1}/{retry_count}"
+            repair_prompt = make_repair_prompt(
+                file_name=src.name,
+                merged_notes=merged_notes,
+                glossary=glossary_terms,
+                style=style,
+                previous_output=result_text,
+            )
+            boosted_limit = min(8192, int(base_limit * (2 ** (attempt + 1))))
+            result_text = client.call(
+                system_prompt,
+                repair_prompt,
+                max_output_tokens=boosted_limit,
+            )
 
-    result = ensure_header(result_text, src.stem, style)
+        if looks_incomplete_output(result_text, style):
+            raise RuntimeError(
+                "Final output appears incomplete after retries. "
+                "Increase --max-output-tokens or --final-retries."
+            )
 
-    if should_write_md:
-        md_path.parent.mkdir(parents=True, exist_ok=True)
-        md_path.write_text(result, encoding="utf-8")
-    if should_write_txt:
-        txt_path.parent.mkdir(parents=True, exist_ok=True)
-        txt_path.write_text(result, encoding="utf-8")
-    return True, f"[DONE] {rel} (chunks={len(chunks)})"
+        result = ensure_header(result_text, src.stem, style)
+        write_outputs(result)
+        return True, f"[DONE] {rel} (chunks={len(chunks)})"
+
+    except Exception as e:
+        if is_quota_exceeded_error(e):
+            partial = compose_partial_output(
+                style=style,
+                stage=stage,
+                chunk_notes=chunk_notes,
+                merged_notes=merged_notes or chunk_notes,
+                result_text=result_text,
+                error=e,
+            )
+            write_outputs(ensure_header(partial, src.stem, style))
+            return True, f"[PARTIAL] {rel} (stage={stage}; quota exceeded)"
+        raise
 
 
 def main() -> int:
@@ -1025,6 +1125,7 @@ def main() -> int:
     )
 
     done = 0
+    partial = 0
     skipped = 0
     failed = 0
 
@@ -1050,7 +1151,10 @@ def main() -> int:
             )
             print(f"[{idx}/{len(files)}] {msg}")
             if wrote:
-                done += 1
+                if msg.startswith("[PARTIAL]"):
+                    partial += 1
+                else:
+                    done += 1
             else:
                 skipped += 1
         except Exception as e:
@@ -1060,7 +1164,10 @@ def main() -> int:
         if args.sleep_sec > 0:
             time.sleep(args.sleep_sec)
 
-    print(f"[SUMMARY] total={len(files)} done={done} skipped={skipped} failed={failed}")
+    print(
+        f"[SUMMARY] total={len(files)} done={done} partial={partial} "
+        f"skipped={skipped} failed={failed}"
+    )
     print(f"[SUMMARY] output={output_base}")
     return 0 if failed == 0 else 2
 

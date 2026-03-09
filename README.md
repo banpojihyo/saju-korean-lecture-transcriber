@@ -157,6 +157,7 @@ py generate_study_pack_gemini.py `
 - 출력 형식 선택: `--output-format md|txt|both`
 - 최종 출력 보강 재시도: `--final-retries <N>` (기본 2, 중간 끊김 대응)
 - 중간 끊김 재시도 시 `max_output_tokens`를 자동으로 단계적으로 늘려 재생성합니다.
+- API 한도 초과(429/RESOURCE_EXHAUSTED) 발생 시, 작업을 취소하지 않고 해당 시점까지 생성된 내용을 `partial` 결과로 저장합니다.
 
 출력 경로:
 
