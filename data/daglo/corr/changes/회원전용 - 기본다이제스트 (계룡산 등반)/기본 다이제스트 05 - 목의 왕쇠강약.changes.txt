@@ -93,3 +93,61 @@ context_skipped_hits: 8
 감묵이 -> 갑목이 (x1)
 감묵 -> 갑목 (x1)
 걸록 -> 건록 (x1)
+
+[7673968 - 2026-03-10 01:20:07]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.script.txt
+applied_rules: 5
+changed_chars: 23698
+term_hits_after_correction: 58
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 10
+
+[applied replacements]
+감묵한테 -> 갑목한테 (x1)
+강세왕략 -> 왕쇠강약 (x1)
+10성 -> 십성 (x2)
+사조를 -> 사주를 (x3)
+감묵이 -> 갑목이 (x1)
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x5)
+수생모기 -> 수생목이 (x1)
+감묵이 -> 갑목이 (x1)
+생모기 -> 생목이 (x1)
+감묵 -> 갑목 (x1)
+걸록 -> 건록 (x1)
+
+[7673968 - 2026-03-10 01:22:15]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.script.txt
+applied_rules: 6
+changed_chars: 23698
+term_hits_after_correction: 59
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 1
+context_skipped_rules: 4
+context_skipped_hits: 8
+
+[applied replacements]
+수생모기지는 -> 수생목이지는 (x1)
+감묵한테 -> 갑목한테 (x1)
+강세왕략 -> 왕쇠강약 (x1)
+10성 -> 십성 (x2)
+사조를 -> 사주를 (x3)
+감묵이 -> 갑목이 (x1)
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x5)
+감묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x1)
+걸록 -> 건록 (x1)
+
+[dict terms added]
+수생목이지

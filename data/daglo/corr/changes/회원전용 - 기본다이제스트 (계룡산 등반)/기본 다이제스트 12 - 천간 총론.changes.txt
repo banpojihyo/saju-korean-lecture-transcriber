@@ -96,3 +96,72 @@ context_skipped_hits: 16
 감묵이 -> 갑목이 (x3)
 심금 -> 신금 (x1)
 감묵 -> 갑목 (x9)
+
+[7673968 - 2026-03-10 01:20:06]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 12 - 천간 총론.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 12 - 천간 총론.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 12 - 천간 총론.script.txt
+applied_rules: 9
+changed_chars: 39
+term_hits_after_correction: 38
+script_lines_after_cleanup: 53
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 9
+context_skipped_hits: 19
+
+[applied replacements]
+심금은 -> 신금은 (x2)
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x2)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x4)
+감묵이 -> 갑목이 (x7)
+목국토 -> 목극토 (x1)
+생모기 -> 생목이 (x1)
+감묵 -> 갑목 (x3)
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x1)
+심금은 -> 신금은 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x3)
+생무기 -> 생목이 (x1)
+생모기 -> 생목이 (x1)
+사모기 -> 사목이 (x1)
+심금 -> 신금 (x1)
+감묵 -> 갑목 (x9)
+
+[7673968 - 2026-03-10 01:22:15]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 12 - 천간 총론.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 12 - 천간 총론.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 12 - 천간 총론.script.txt
+applied_rules: 11
+changed_chars: 46
+term_hits_after_correction: 38
+script_lines_after_cleanup: 53
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 16
+
+[applied replacements]
+사모기 빛을 보는 것과 생모기 빛을 보는 거의 작용이 달라지겠죠. -> 사목이 빛을 보는 것과 생목이 빛을 보는 것의 작용이 달라지겠죠. (x1)
+생무기 빛을 본 것은 -> 생목이 빛을 본 것은 (x1)
+심금은 -> 신금은 (x2)
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x2)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x4)
+감묵이 -> 갑목이 (x7)
+목국토 -> 목극토 (x1)
+생모기 -> 생목이 (x1)
+감묵 -> 갑목 (x3)
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x1)
+심금은 -> 신금은 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x3)
+심금 -> 신금 (x1)
+감묵 -> 갑목 (x9)

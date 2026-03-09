@@ -195,3 +195,80 @@ OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
 심금 -> 신금 (x3)
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x2)
+
+[7673968 - 2026-03-10 01:20:06]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 14
+changed_chars: 12091
+term_hits_after_correction: 64
+script_lines_after_cleanup: 105
+dict_replace_added: 2
+dict_terms_added: 1
+context_skipped_rules: 4
+context_skipped_hits: 7
+
+[applied replacements]
+배수로 축축하게 적셔야 되나? -> 계수로 축축하게 적셔야 되나? (x1)
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+배수가 가장 음해요. -> 계수가 가장 음해요. (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+감묵한테 -> 갑목한테 (x1)
+10성 -> 십성 (x1)
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x1)
+사조를 -> 사주를 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x3)
+관묵이 -> 갑목이 (x2)
+심금 -> 신금 (x1)
+
+[skipped by context]
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x3)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x2)
+
+[dict replace added]
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이
+OEM으로 얘기하면 -> 오행으로 얘기하면
+
+[dict terms added]
+갑목한테
+
+[7673968 - 2026-03-10 01:22:15]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 14
+changed_chars: 12091
+term_hits_after_correction: 66
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 7
+
+[applied replacements]
+배수로 축축하게 적셔야 되나? -> 계수로 축축하게 적셔야 되나? (x1)
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+배수가 가장 음해요. -> 계수가 가장 음해요. (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+감묵한테 -> 갑목한테 (x1)
+10성 -> 십성 (x1)
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x1)
+사조를 -> 사주를 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x3)
+관묵이 -> 갑목이 (x2)
+심금 -> 신금 (x1)
+
+[skipped by context]
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x3)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x2)

@@ -295,6 +295,28 @@ GITO_AMBIGUOUS_PAIRS = (
     ("기포라고요", "기토라고요"),
 )
 
+GYESU_AMBIGUOUS_PAIRS = (
+    ("배수", "계수"),
+    ("배수가", "계수가"),
+    ("배수는", "계수는"),
+    ("배수의", "계수의"),
+    ("배수에", "계수에"),
+    ("배수로", "계수로"),
+    ("배수도", "계수도"),
+    ("배수고", "계수고"),
+    ("배수를", "계수를"),
+)
+
+MOK_MISRECOGNITION_PAIRS = (
+    ("생무기", "생목이"),
+    ("사무기", "사목이"),
+    ("생모기", "생목이"),
+    ("사모기", "사목이"),
+    ("수생무기", "수생목이"),
+    ("수생모기", "수생목이"),
+    ("관무기", "갑목이"),
+)
+
 PAIR_CONTEXT_RULES: dict[tuple[str, str], dict[str, tuple[str, ...]]] = {
     # Ambiguous in general Korean; apply only with 사주 맥락.
     ("귀신", "기신"): {
@@ -483,6 +505,38 @@ for pair in GITO_AMBIGUOUS_PAIRS:
         "exclude": ("거품", "비누", "기포제", "탄산", "산소", "포말", "공기방울", "발포"),
     }
 
+for pair in GYESU_AMBIGUOUS_PAIRS:
+    PAIR_CONTEXT_RULES[pair] = {
+        "include": (
+            "사주",
+            "오행",
+            "일간",
+            "월간",
+            "연간",
+            "시간",
+            "일지",
+            "월지",
+            "연지",
+            "시지",
+            "천간",
+            "지지",
+            "계수",
+            "임수",
+            "갑목",
+            "을목",
+            "병화",
+            "정화",
+            "기토",
+            "무토",
+            "토극수",
+            "생목화",
+            "조호",
+            "한난조습",
+            "운",
+        ),
+        "exclude": ("배수로", "배수구", "배수관", "배수펌프", "배수시설", "배수층", "배수판", "배수구멍"),
+    }
+
 DOMAIN_CONTEXT_KEYWORDS = (
     "사주",
     "오행",
@@ -535,6 +589,9 @@ DOMAIN_CONTEXT_KEYWORDS = (
 
 WORD_CHAR_RE = re.compile(r"[가-힣A-Za-z0-9]")
 
+CURRENT_DICT_TOPIC = ""
+CURRENT_SOURCE_UNDER_SAJU_RAW = False
+
 FORCE_DOMAIN_REPLACEMENTS = {
     ("항만조습", "한난조습"),
     ("항만조습이에요", "한난조습이에요"),
@@ -571,6 +628,14 @@ def should_apply_replacement(
 ) -> bool:
     if (wrong, right) in FORCE_DOMAIN_REPLACEMENTS:
         return True
+
+    if CURRENT_DICT_TOPIC == "saju" and CURRENT_SOURCE_UNDER_SAJU_RAW:
+        if (
+            (wrong, right) in GITO_AMBIGUOUS_PAIRS
+            or (wrong, right) in GYESU_AMBIGUOUS_PAIRS
+            or (wrong, right) in MOK_MISRECOGNITION_PAIRS
+        ):
+            return True
 
     # Ambiguous pairs are always context-gated.
     pair_rule = PAIR_CONTEXT_RULES.get((wrong, right))
@@ -786,6 +851,8 @@ def manual_pairs() -> list[tuple[str, str]]:
         *GEUK_AMBIGUOUS_PAIRS,
         *SINGEUM_AMBIGUOUS_PAIRS,
         *GITO_AMBIGUOUS_PAIRS,
+        *GYESU_AMBIGUOUS_PAIRS,
+        *MOK_MISRECOGNITION_PAIRS,
         ("규정시키는 게 관여예요.", "규정시키는 게 관이에요."),
         ("그게 관여예요.", "그게 관이에요."),
         ("이게 관여예요.", "이게 관이에요."),
@@ -830,6 +897,8 @@ def build_script_only_text(text: str) -> str:
 
 
 def main() -> int:
+    global CURRENT_DICT_TOPIC, CURRENT_SOURCE_UNDER_SAJU_RAW
+
     args = parse_args()
     source = Path(args.source_file)
     if not source.exists():
@@ -842,12 +911,19 @@ def main() -> int:
 
     source_abs = source.resolve()
     input_root_abs = input_root.resolve()
+    input_root_parts = tuple(part.lower() for part in input_root_abs.parts)
+    daglo_raw_parts = ("data", "daglo", "raw")
+    is_daglo_raw_root = input_root_parts[-len(daglo_raw_parts) :] == daglo_raw_parts
 
     try:
         relative = source_abs.relative_to(input_root_abs)
+        CURRENT_SOURCE_UNDER_SAJU_RAW = is_daglo_raw_root
     except ValueError:
         # Fallback: preserve source filename under output root.
         relative = Path(source.name)
+        CURRENT_SOURCE_UNDER_SAJU_RAW = False
+
+    CURRENT_DICT_TOPIC = dict_dir.name.lower()
 
     output_path = (
         output_root / "corrected" / relative.parent / f"{source.stem}.corrected{source.suffix}"
