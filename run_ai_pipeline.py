@@ -196,6 +196,15 @@ def parse_args() -> argparse.Namespace:
         help="Optional delay between files.",
     )
     parser.add_argument(
+        "--final-retries",
+        type=int,
+        default=2,
+        help=(
+            "Additional retries for final generation when output looks incomplete. "
+            "Default: 2."
+        ),
+    )
+    parser.add_argument(
         "--overwrite",
         action="store_true",
         help="Overwrite existing output files.",
@@ -532,6 +541,108 @@ def make_final_prompt(
 """
 
 
+def required_sections(style: str) -> list[str]:
+    if style == "summary":
+        return [
+            "## 🔖 핵심 주제별로 나눠서 정리",
+            "## 🧠 핵심 개념 맵",
+            "## 🎯 시험 포인트",
+            "## ⚠️ 혼동 주의",
+        ]
+    if style == "study-pack":
+        return [
+            "## 🔖 핵심 주제별로 나눠서 정리",
+            "## 📑 시험문제",
+            "## 📗 꼭 공부해야 할 내용",
+        ]
+    return [
+        "## 🔖 핵심 주제별로 나눠서 정리",
+        "## 🧠 핵심 개념 맵",
+        "## 📑 시험문제",
+        "## 🎯 시험 포인트/혼동 주의",
+        "## 📗 꼭 공부해야 할 내용",
+    ]
+
+
+def looks_incomplete_output(text: str, style: str) -> bool:
+    stripped = text.strip()
+    if not stripped:
+        return True
+
+    # Prefer exact template checks when available, but do not require exact wording.
+    exact_hits = sum(1 for sec in required_sections(style) if sec in stripped)
+
+    if style == "summary":
+        min_sections = 4
+        keywords = ("주제", "개념", "시험", "주의")
+    elif style == "study-pack":
+        min_sections = 3
+        keywords = ("주제", "시험", "공부")
+    else:
+        min_sections = 5
+        keywords = ("주제", "개념", "시험", "공부")
+
+    lines = [ln.rstrip() for ln in stripped.splitlines()]
+    if not lines:
+        return True
+
+    top_level_sections = sum(1 for ln in lines if ln.startswith("## "))
+    any_headings = sum(1 for ln in lines if ln.startswith("#"))
+    if top_level_sections < min_sections and any_headings < (min_sections + 2):
+        return True
+
+    if exact_hits == 0:
+        for kw in keywords:
+            if kw not in stripped:
+                return True
+
+    if len(stripped) < 240:
+        return True
+
+    last = lines[-1].strip()
+    if not last:
+        return True
+    if last.startswith(("### ", "## ")):
+        return True
+    if last in {"-", "1.", "2.", "3.", "4.", "5."}:
+        return True
+
+    return False
+
+
+def make_repair_prompt(
+    file_name: str,
+    merged_notes: list[str],
+    glossary: list[str],
+    style: str,
+    previous_output: str,
+) -> str:
+    notes_text = "\n\n====\n\n".join(merged_notes)
+    glossary_text = ", ".join(glossary) if glossary else "(없음)"
+    template = final_template(style)
+    return f"""[파일]
+{file_name}
+
+[용어 힌트]
+{glossary_text}
+
+[지시]
+직전 출력이 중간에서 끊겼다.
+이전 출력은 참고만 하고, 처음부터 끝까지 전체 결과를 다시 완성해서 작성하라.
+섹션 누락/중간 끊김/미완성 소제목(예: '### 주제'로 끝남) 없이 완성형으로 출력하라.
+출력 길이가 길어질 경우 각 bullet을 1~2문장으로 간결하게 유지하라.
+
+[출력 템플릿]
+{template}
+
+[직전 불완전 출력]
+{previous_output}
+
+[통합 노트]
+{notes_text}
+"""
+
+
 def extract_openai_text(payload: dict) -> str:
     text = payload.get("output_text")
     if isinstance(text, str) and text.strip():
@@ -590,7 +701,13 @@ def extract_gemini_text(payload: dict) -> str:
 
 
 class BaseClient:
-    def call(self, system_prompt: str, user_prompt: str, retries: int = 5) -> str:
+    def call(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        retries: int = 5,
+        max_output_tokens: int | None = None,
+    ) -> str:
         raise NotImplementedError
 
 
@@ -609,12 +726,19 @@ class OpenAIClient(BaseClient):
         self.temperature = temperature
         self.max_output_tokens = max_output_tokens
 
-    def call(self, system_prompt: str, user_prompt: str, retries: int = 5) -> str:
+    def call(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        retries: int = 5,
+        max_output_tokens: int | None = None,
+    ) -> str:
         url = f"{self.base_url}/responses"
+        output_limit = max_output_tokens or self.max_output_tokens
         body = {
             "model": self.model,
             "temperature": self.temperature,
-            "max_output_tokens": self.max_output_tokens,
+            "max_output_tokens": output_limit,
             "input": [
                 {
                     "role": "system",
@@ -674,14 +798,21 @@ class GeminiClient(BaseClient):
         self.temperature = temperature
         self.max_output_tokens = max_output_tokens
 
-    def call(self, system_prompt: str, user_prompt: str, retries: int = 5) -> str:
+    def call(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        retries: int = 5,
+        max_output_tokens: int | None = None,
+    ) -> str:
         url = f"{self.base_url}/models/{self.model}:generateContent"
+        output_limit = max_output_tokens or self.max_output_tokens
         body = {
             "system_instruction": {"parts": [{"text": system_prompt}]},
             "contents": [{"parts": [{"text": user_prompt}]}],
             "generationConfig": {
                 "temperature": self.temperature,
-                "maxOutputTokens": self.max_output_tokens,
+                "maxOutputTokens": output_limit,
             },
         }
         data = json.dumps(body).encode("utf-8")
@@ -753,7 +884,7 @@ def ensure_header(text: str, stem: str, style: str) -> str:
     elif style == "study-pack":
         title = f"# {display_stem} Study Pack"
     else:
-        title = f"# {display_stem} Merged Study Pack"
+        title = f"# {display_stem} 통합 학습 패키지"
     return f"{title}\n\n{text.rstrip()}\n"
 
 
@@ -769,6 +900,7 @@ def render_one_file(
     chunk_chars: int,
     merge_limit_chars: int,
     glossary_terms: list[str],
+    final_retries: int,
     overwrite: bool,
 ) -> tuple[bool, str]:
     md_path = (md_root / rel).with_suffix(".md")
@@ -813,7 +945,34 @@ def render_one_file(
         merged_notes = merged
 
     final_prompt = make_final_prompt(src.name, merged_notes, glossary_terms, style)
-    result = ensure_header(client.call(system_prompt, final_prompt), src.stem, style)
+    result_text = client.call(system_prompt, final_prompt)
+
+    retry_count = max(0, final_retries)
+    base_limit = getattr(client, "max_output_tokens", 3200)
+    for attempt in range(retry_count):
+        if not looks_incomplete_output(result_text, style):
+            break
+        repair_prompt = make_repair_prompt(
+            file_name=src.name,
+            merged_notes=merged_notes,
+            glossary=glossary_terms,
+            style=style,
+            previous_output=result_text,
+        )
+        boosted_limit = min(8192, int(base_limit * (2 ** (attempt + 1))))
+        result_text = client.call(
+            system_prompt,
+            repair_prompt,
+            max_output_tokens=boosted_limit,
+        )
+
+    if looks_incomplete_output(result_text, style):
+        raise RuntimeError(
+            "Final output appears incomplete after retries. "
+            "Increase --max-output-tokens or --final-retries."
+        )
+
+    result = ensure_header(result_text, src.stem, style)
 
     if should_write_md:
         md_path.parent.mkdir(parents=True, exist_ok=True)
@@ -886,6 +1045,7 @@ def main() -> int:
                 chunk_chars=args.chunk_chars,
                 merge_limit_chars=args.merge_limit_chars,
                 glossary_terms=glossary,
+                final_retries=args.final_retries,
                 overwrite=args.overwrite,
             )
             print(f"[{idx}/{len(files)}] {msg}")

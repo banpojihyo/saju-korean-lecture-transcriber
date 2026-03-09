@@ -155,6 +155,8 @@ py generate_study_pack_gemini.py `
 - 출력 스타일 선택: `--style summary|study-pack|merged`
 - 주제 선택: `--topic saju|security|network|math|philosophy_east|philosophy_west|vocal|...`
 - 출력 형식 선택: `--output-format md|txt|both`
+- 최종 출력 보강 재시도: `--final-retries <N>` (기본 2, 중간 끊김 대응)
+- 중간 끊김 재시도 시 `max_output_tokens`를 자동으로 단계적으로 늘려 재생성합니다.
 
 출력 경로:
 
