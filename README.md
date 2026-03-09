@@ -120,3 +120,31 @@ py legacy/transcribe_videos.py `
   --model large-v3 `
   --language ko
 ```
+
+## 8) Gemini로 학습 패키지 일괄 생성
+
+`generate_study_pack_gemini.py`는 스크립트 텍스트를 순회하면서 아래 3가지를 한 번에 생성합니다.
+
+- 핵심 주제별 정리
+- 예상 시험문제 5개(정답/해설 포함)
+- 꼭 공부해야 할 핵심 요약 노트
+
+출력 경로는 `data/study_packs/<agent-name>/{md,txt}`이며, 입력 폴더 구조를 그대로 유지합니다.
+
+```powershell
+$env:GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+py generate_study_pack_gemini.py `
+  --input-root "data/daglo/corr/script" `
+  --output-root "data/study_packs" `
+  --agent-name "Gemini-Study-Pack" `
+  --topic security `
+  --model "gemini-2.5-flash" `
+  --overwrite
+```
+
+주요 옵션:
+
+- `--topic <name>`: `dict/topics/<name>/terms.csv`를 자동 사용
+- `--terms-path <csv>`: 사용할 용어 사전을 직접 지정
+- `--max-files <N>`: 테스트용 소량 실행
+- `--sleep-sec <float>`: 요청 사이 대기(쿼터 관리)
