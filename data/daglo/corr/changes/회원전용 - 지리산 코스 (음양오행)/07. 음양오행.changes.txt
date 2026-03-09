@@ -73,3 +73,81 @@ context_skipped_hits: 7
 
 [skipped by context]
 감묵 -> 갑목 (x7)
+
+[f38c38b - 2026-03-10 00:41:28]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.script.txt
+applied_rules: 4
+changed_chars: 26093
+term_hits_after_correction: 50
+script_lines_after_cleanup: 142
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 14
+
+[applied replacements]
+한남조습을 지난 시간에 할 때 -> 한난조습을 지난 시간에 할 때 (x1)
+한난조석을 이렇게 구분하셔서 -> 한난조습을 이렇게 구분하셔서 (x1)
+고지식한 관여예요. -> 고지식한 관이에요. (x1)
+10성 -> 십성 (x2)
+
+[skipped by context]
+감묵 -> 갑목 (x7)
+관묵 -> 갑목 (x7)
+
+[f38c38b - 2026-03-10 00:42:36]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.script.txt
+applied_rules: 5
+changed_chars: 26097
+term_hits_after_correction: 51
+script_lines_after_cleanup: 142
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 16
+
+[applied replacements]
+한남조습을 지난 시간에 할 때 -> 한난조습을 지난 시간에 할 때 (x1)
+한난조석을 이렇게 구분하셔서 -> 한난조습을 이렇게 구분하셔서 (x1)
+고지식한 관여예요. -> 고지식한 관이에요. (x1)
+10성 -> 십성 (x2)
+관묵이 -> 갑목이 (x2)
+
+[skipped by context]
+관묵한테 -> 갑목한테 (x1)
+관묵은 -> 갑목은 (x1)
+관묵의 -> 갑목의 (x1)
+관묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x7)
+관묵 -> 갑목 (x5)
+
+[f38c38b - 2026-03-10 00:44:36]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.script.txt
+applied_rules: 9
+changed_chars: 26097
+term_hits_after_correction: 51
+script_lines_after_cleanup: 142
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 7
+
+[applied replacements]
+한남조습을 지난 시간에 할 때 -> 한난조습을 지난 시간에 할 때 (x1)
+한난조석을 이렇게 구분하셔서 -> 한난조습을 이렇게 구분하셔서 (x1)
+고지식한 관여예요. -> 고지식한 관이에요. (x1)
+관묵한테 -> 갑목한테 (x1)
+10성 -> 십성 (x2)
+관묵은 -> 갑목은 (x1)
+관묵의 -> 갑목의 (x1)
+관묵이 -> 갑목이 (x3)
+관묵 -> 갑목 (x1)
+
+[skipped by context]
+감묵 -> 갑목 (x7)

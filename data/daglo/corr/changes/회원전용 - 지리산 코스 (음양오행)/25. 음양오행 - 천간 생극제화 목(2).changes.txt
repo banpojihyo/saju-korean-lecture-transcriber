@@ -51,3 +51,45 @@ context_skipped_hits: 16
 
 [skipped by context]
 감묵 -> 갑목 (x16)
+
+[f38c38b - 2026-03-10 00:41:30]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).script.txt
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 40
+script_lines_after_cleanup: 133
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 19
+
+[applied replacements]
+감묵 -> 갑목 (x1)
+
+[skipped by context]
+감묵 -> 갑목 (x16)
+관묵 -> 갑목 (x3)
+
+[f38c38b - 2026-03-10 00:42:36]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).script.txt
+applied_rules: 4
+changed_chars: 8
+term_hits_after_correction: 40
+script_lines_after_cleanup: 133
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 16
+
+[applied replacements]
+관묵이면 -> 갑목이면 (x1)
+관묵이죠 -> 갑목이죠 (x1)
+관묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x1)
+
+[skipped by context]
+감묵 -> 갑목 (x16)

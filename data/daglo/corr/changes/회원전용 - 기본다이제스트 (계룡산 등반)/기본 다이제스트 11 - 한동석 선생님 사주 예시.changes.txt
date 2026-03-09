@@ -81,3 +81,51 @@ OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
 [skipped by context]
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x7)
+
+[f38c38b - 2026-03-10 00:41:27]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 4
+changed_chars: 12079
+term_hits_after_correction: 60
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 10
+
+[applied replacements]
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x7)
+관묵 -> 갑목 (x2)
+
+[f38c38b - 2026-03-10 00:42:35]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 5
+changed_chars: 12083
+term_hits_after_correction: 60
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 8
+
+[applied replacements]
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+관묵이 -> 갑목이 (x2)
+
+[skipped by context]
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x7)

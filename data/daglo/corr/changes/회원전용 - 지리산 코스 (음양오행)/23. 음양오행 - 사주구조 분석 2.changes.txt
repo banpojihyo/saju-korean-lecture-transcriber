@@ -58,3 +58,49 @@ context_skipped_hits: 4
 
 [skipped by context]
 걸록 -> 건록 (x4)
+
+[f38c38b - 2026-03-10 00:41:30]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.script.txt
+applied_rules: 4
+changed_chars: 6
+term_hits_after_correction: 50
+script_lines_after_cleanup: 136
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 5
+
+[applied replacements]
+이게 정관여예요. -> 이게 정관이에요. (x1)
+사조를 -> 사주를 (x1)
+4조 -> 사주 (x1)
+1주 -> 일주 (x1)
+
+[skipped by context]
+걸록 -> 건록 (x4)
+관묵 -> 갑목 (x1)
+
+[f38c38b - 2026-03-10 00:42:36]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.script.txt
+applied_rules: 5
+changed_chars: 8
+term_hits_after_correction: 51
+script_lines_after_cleanup: 136
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 4
+
+[applied replacements]
+이게 정관여예요. -> 이게 정관이에요. (x1)
+관묵이든지 -> 갑목이든지 (x1)
+사조를 -> 사주를 (x1)
+4조 -> 사주 (x1)
+1주 -> 일주 (x1)
+
+[skipped by context]
+걸록 -> 건록 (x4)

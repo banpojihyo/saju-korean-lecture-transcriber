@@ -33,3 +33,24 @@ context_skipped_hits: 1
 
 [skipped by context]
 귀신 -> 기신 (x1)
+
+[f38c38b - 2026-03-10 00:41:30]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\29. 음양오행 - 천간 생극제화 화(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\29. 음양오행 - 천간 생극제화 화(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\29. 음양오행 - 천간 생극제화 화(3).script.txt
+applied_rules: 3
+changed_chars: 8
+term_hits_after_correction: 36
+script_lines_after_cleanup: 113
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+규정시키는 게 관여예요. -> 규정시키는 게 관이에요. (x1)
+그게 관여예요. -> 그게 관이에요. (x2)
+이게 관여예요. -> 이게 관이에요. (x1)
+
+[skipped by context]
+귀신 -> 기신 (x1)

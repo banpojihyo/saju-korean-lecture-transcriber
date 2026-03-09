@@ -29,17 +29,22 @@
 - 일괄 치환 금지: 문맥 근거 없는 짧은 토큰 치환은 하지 않는다.
 - 의미 충돌 가능성이 있으면 보수적으로 유지한다.
 - 사주/명리 도메인 문맥에서만 의미가 확정되는 치환만 적용한다.
+- 반복 확인된 ASR 오인식은 `dict/topics/<theme>/replace.csv`에 우선 반영한다.
+- `관여예요`, `정관여예요`처럼 문장형으로만 의미가 확정되는 항목은 단일 단어 치환보다 phrase-level exact replacement를 우선한다.
+- `관묵 -> 갑목`, `항만조습 -> 한난조습`, `모기 개입 -> 목이 개입`처럼 반복 검증된 고신뢰 도메인 오인식은 짧은 토큰 필터보다 우선 적용할 수 있다.
 
 ## 5) 사전(`replace.csv`, `terms.csv`) 업데이트 규칙
 - 기본값은 자동 업데이트(옵션 `--no-update-dict` 미사용 기준)
 - `replace.csv`:
 - 이번 실행에서 실제 적용된 `(wrong, right)`만 신규 추가
 - 중복 pair는 추가하지 않음
+- 조사/어미가 붙은 문장형 교정은 `replace.csv`에만 넣고, `terms.csv`에는 넣지 않는다.
 - `terms.csv`:
 - 적용된 `right`에서 용어 후보를 정규화 후 추가
 - 공백 포함, 숫자만, 한글 미포함, 길이 비정상(2자 미만/20자 초과) 제외
 - 조사/어미 꼬리(`TRAILING_SUFFIXES`) 제거 후 후보화
 - 일반 서술형 종결(`REJECT_ENDINGS`)은 제외
+- 따라서 `한난조습`, `갑목` 같은 단일 용어는 `terms.csv` 대상이지만, `목이 개입`, `조건인 거예요`, `그게 관이에요` 같은 문장형 보정은 `terms.csv` 대상이 아니다.
 
 ## 6) `.changes` 기록 규칙
 - 블록 시작 헤더: `[commit - YYYY-MM-DD HH:MM:SS]`
@@ -69,7 +74,7 @@
 ```powershell
 py correct_daglo_file.py `
   --source-file "data/daglo/raw/회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 04 - 오행의 한난조습 2.txt" `
-  --dict-dir ".\dict" `
+  --dict-dir ".\dict\topics\saju" `
   --input-root "data/daglo/raw" `
   --output-root "data/daglo/corr"
 ```
@@ -85,7 +90,7 @@ Get-ChildItem $rawRoot -Recurse -Filter *.txt | ForEach-Object {
   if (-not (Test-Path $corr)) {
     py correct_daglo_file.py `
       --source-file $_.FullName `
-      --dict-dir ".\dict" `
+      --dict-dir ".\dict\topics\saju" `
       --input-root "data/daglo/raw" `
       --output-root "data/daglo/corr"
   }

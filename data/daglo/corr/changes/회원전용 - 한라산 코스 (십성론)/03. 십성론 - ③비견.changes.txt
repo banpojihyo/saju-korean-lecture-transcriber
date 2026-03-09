@@ -54,3 +54,45 @@ context_skipped_hits: 6
 [skipped by context]
 채용 -> 체용 (x4)
 감묵 -> 갑목 (x2)
+
+[f38c38b - 2026-03-10 00:41:31]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.script.txt
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 49
+script_lines_after_cleanup: 99
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 7
+
+[applied replacements]
+감묵 -> 갑목 (x1)
+
+[skipped by context]
+채용 -> 체용 (x4)
+감묵 -> 갑목 (x2)
+관묵 -> 갑목 (x1)
+
+[f38c38b - 2026-03-10 00:42:37]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.script.txt
+applied_rules: 2
+changed_chars: 4
+term_hits_after_correction: 49
+script_lines_after_cleanup: 99
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 6
+
+[applied replacements]
+관묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x1)
+
+[skipped by context]
+채용 -> 체용 (x4)
+감묵 -> 갑목 (x2)

@@ -56,3 +56,70 @@ context_skipped_hits: 4
 [skipped by context]
 왕세강약 -> 왕쇠강약 (x1)
 감묵 -> 갑목 (x3)
+
+[f38c38b - 2026-03-10 00:41:29]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 48
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 7
+
+[applied replacements]
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x1)
+나나니까 -> 난하니까 (x1)
+토복수 -> 토극수 (x1)
+감묵 -> 갑목 (x3)
+관묵 -> 갑목 (x1)
+
+[f38c38b - 2026-03-10 00:42:36]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 48
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 8
+
+[applied replacements]
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x1)
+나나니까 -> 난하니까 (x1)
+토복수 -> 토극수 (x1)
+관묵은 -> 갑목은 (x1)
+감묵 -> 갑목 (x3)
+관묵 -> 갑목 (x1)
+
+[f38c38b - 2026-03-10 00:44:36]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.script.txt
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 48
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 6
+
+[applied replacements]
+관묵은 -> 갑목은 (x1)
+
+[skipped by context]
+왕세강약 -> 왕쇠강약 (x1)
+나나니까 -> 난하니까 (x1)
+토복수 -> 토극수 (x1)
+감묵 -> 갑목 (x3)
