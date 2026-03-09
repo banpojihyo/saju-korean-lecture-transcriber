@@ -26,59 +26,59 @@ SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+")
 
 TOPIC_SYSTEM_GUIDE: dict[str, str] = {
     "general": (
-        "여러 강의 도메인에 공통 적용 가능한 중립적 학습 자료를 작성한다. "
-        "정의-근거-적용 순서로 정리한다."
+        "Create neutral study material that can be reused across lecture topics. "
+        "Organize the result in the order of definition, rationale, and application."
     ),
     "saju": (
-        "사주/명리학 강의 맥락을 우선한다. "
-        "음양, 오행, 천간, 지지, 십성, 용신, 왕쇠강약, 생극제화 같은 용어를 정확히 사용한다."
+        "Prioritize the context of saju and myeongri lectures. "
+        "Use terms such as eumyang, ohaeng, cheongan, jiji, yugchin, sibseong, singang-sinyak, and hap-chung-hyeong-pa-hae precisely."
     ),
     "network": (
-        "네트워크 공학 강의 맥락을 우선한다. "
-        "OSI/TCP-IP 계층, 패킷 흐름, 라우팅, 프로토콜 동작, 성능 지표를 명확히 구분한다."
+        "Prioritize the context of network engineering lectures. "
+        "Clearly distinguish layers, packet flow, routing, protocol behavior, and performance metrics."
     ),
     "security": (
-        "정보보안 강의 맥락을 우선한다. "
-        "위협-취약점-대응 흐름과 CIA(기밀성/무결성/가용성), 인증/인가, 암호, 운영 보안을 정확히 구분한다."
+        "Prioritize the context of information security lectures. "
+        "Clearly distinguish threats, vulnerabilities, controls, CIA, authentication, authorization, cryptography, and operational security."
     ),
     "math": (
-        "수학 강의 맥락을 우선한다. "
-        "정의-정리-예시-적용 흐름으로 쓰고, 위상수학/딥러닝/강화학습 용어를 혼동 없이 사용한다."
+        "Prioritize the context of mathematics lectures. "
+        "Keep definitions, theorems, examples, and applications clearly separated."
     ),
     "philosophy": (
-        "철학 강의 맥락을 우선한다. "
-        "개념 정의, 사상가 관점 차이, 논증 구조를 중심으로 정리한다."
+        "Prioritize the context of philosophy lectures. "
+        "Focus on conceptual definitions, differences between thinkers, and argument structures."
     ),
     "philosophy_east": (
-        "동양철학 강의 맥락을 우선한다. "
-        "유가/도가/불교 및 성리학 개념을 맥락에 맞게 구분해 정리한다."
+        "Prioritize the context of East Asian philosophy lectures. "
+        "Keep Confucian, Daoist, Buddhist, and Neo-Confucian concepts properly distinguished."
     ),
     "philosophy_west": (
-        "서양철학 강의 맥락을 우선한다. "
-        "인식론/존재론/윤리학 틀과 사상가별 문제의식을 비교해 정리한다."
+        "Prioritize the context of Western philosophy lectures. "
+        "Compare epistemology, metaphysics, ethics, and each thinker's central question."
     ),
     "vocal": (
-        "보컬 수업 맥락을 우선한다. "
-        "발성, 호흡, 공명, 성구 전환, 리듬/표현을 실습 관점으로 정리한다."
+        "Prioritize the context of vocal training lectures. "
+        "Organize breathing, resonance, registration, rhythm, and expression from a practice perspective."
     ),
     "essay": (
-        "논술/글쓰기 강의 맥락을 우선한다. "
-        "논제 분석, 주장-근거-반박 구조, 문단 구성과 표현 전략을 중심으로 정리한다."
+        "Prioritize the context of writing and essay lectures. "
+        "Focus on prompt analysis, claim-evidence-counterargument structure, and paragraph organization."
     ),
 }
 
 STYLE_GUIDE: dict[str, str] = {
     "summary": (
-        "목표: 핵심 요약과 시험 대비 포인트 정리.\n"
-        "결과는 핵심 주제, 핵심 개념, 시험 포인트, 혼동 주의를 중심으로 작성한다."
+        "Goal: produce a compact study summary for review and exams.\n"
+        "Include key topics, key concepts, exam points, and practical cautions."
     ),
     "study-pack": (
-        "목표: 학습자가 바로 공부할 수 있는 패키지 제작.\n"
-        "결과는 주제별 정리, 시험문제 5개, 핵심 요약 노트 중심으로 작성한다."
+        "Goal: produce a study pack a learner can use immediately.\n"
+        "Include topic summaries, five exam questions, and a concise study note."
     ),
     "merged": (
-        "목표: summary와 study-pack의 장점을 결합한 통합 결과 생성.\n"
-        "결과는 주제별 정리 + 핵심 개념맵 + 시험문제 + 시험 포인트/혼동 주의 + 핵심 요약 노트를 포함한다."
+        "Goal: combine the strengths of summary and study-pack into one result.\n"
+        "Include topic summaries, concept map, exam questions, exam points, practical cautions, and a study note."
     ),
 }
 
@@ -92,8 +92,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--provider",
         choices=PROVIDERS,
-        required=True,
-        help="AI provider to use.",
+        default="openai",
+        help="AI provider to use (default: openai).",
     )
     parser.add_argument(
         "--style",
@@ -103,8 +103,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--topic",
-        default="general",
-        help="Topic profile used for system prompt and dictionary hints.",
+        default="saju",
+        help="Topic profile used for system prompt and dictionary hints (default: saju).",
     )
     parser.add_argument(
         "--input-root",
@@ -122,7 +122,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--agent-name",
-        default="Unified-AI",
+        default="GPT-5.3-Chat-Latest",
         help="Agent folder name under output root and topic.",
     )
     parser.add_argument(
@@ -155,13 +155,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max-output-tokens",
         type=int,
-        default=3200,
+        default=5000,
         help="Max output tokens per request.",
     )
     parser.add_argument(
         "--chunk-chars",
         type=int,
-        default=8000,
+        default=6000,
         help="Approx chars per chunk for long transcripts.",
     )
     parser.add_argument(
@@ -198,10 +198,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--final-retries",
         type=int,
-        default=2,
+        default=3,
         help=(
             "Additional retries for final generation when output looks incomplete. "
-            "Default: 2."
+            "Default: 3."
         ),
     )
     parser.add_argument(
@@ -214,7 +214,7 @@ def parse_args() -> argparse.Namespace:
 
 def provider_default_model(provider: str) -> str:
     if provider == "openai":
-        return "gpt-5"
+        return "gpt-5.3-chat-latest"
     return "gemini-2.5-flash"
 
 
@@ -351,15 +351,16 @@ def build_system_prompt(topic: str, style: str) -> str:
     topic_text = TOPIC_SYSTEM_GUIDE.get(topic, TOPIC_SYSTEM_GUIDE["general"])
     style_text = STYLE_GUIDE[style]
     return (
-        "당신은 강의 대본을 학습용 자료로 재구성하는 전문가다.\n"
-        f"주제 지침: {topic_text}\n"
-        f"출력 스타일: {style_text}\n"
-        "규칙:\n"
-        "1) 원문에 없는 사실을 만들지 않는다.\n"
-        "2) 단정이 어려운 경우 조건부/중립 표현을 사용한다.\n"
-        "3) 출력은 한국어 마크다운으로 작성한다.\n"
-        "4) 요청한 섹션 헤더/형식을 정확히 지킨다.\n"
-        "5) 불필요한 서론, 면책 문구, 메타 발화를 쓰지 않는다.\n"
+        "You are a specialist who turns lecture transcripts into structured study material.\n"
+        "Write the final output in Korean.\n"
+        f"Topic guidance: {topic_text}\n"
+        f"Output style: {style_text}\n"
+        "Rules:\n"
+        "1) Do not invent facts that are not supported by the transcript.\n"
+        "2) If uncertainty remains, use conditional or neutral wording.\n"
+        "3) Output must be clear markdown.\n"
+        "4) Follow the requested section titles and structure exactly.\n"
+        "5) Do not add filler, meta commentary, or self-reference.\n"
     )
 
 
@@ -370,58 +371,59 @@ def make_chunk_prompt(
     chunk_text: str,
     glossary: list[str],
 ) -> str:
-    glossary_text = ", ".join(glossary) if glossary else "(없음)"
-    return f"""[파일]
+    glossary_text = ", ".join(glossary) if glossary else "(none)"
+    return f"""[FILE]
 {file_name}
 
-[용어 힌트]
+[GLOSSARY HINTS]
 {glossary_text}
 
-[지시]
-아래는 전체 강의의 일부 조각({chunk_idx}/{chunk_total})이다.
-핵심만 추려 조각 노트를 작성하라.
+[TASK]
+This is chunk {chunk_idx}/{chunk_total} from one lecture transcript.
+Extract only the essential points for downstream merging.
+Write the note in Korean.
 
-[출력 형식]
-### 조각 핵심 주제
+[OUTPUT FORMAT]
+### Chunk Topics
 - ...
 
-### 조각 핵심 개념
-- 개념명: 설명
+### Chunk Concepts
+- concept: explanation
 
-### 조각 시험 포인트
+### Chunk Exam Points
 - ...
 
-### 조각 혼동 주의
+### Chunk Practical Cautions
 - ...
 
-[원문]
+[TRANSCRIPT]
 {chunk_text}
 """
 
 
 def make_merge_prompt(group_notes: list[str], group_idx: int, total_groups: int) -> str:
     joined = "\n\n---\n\n".join(group_notes)
-    return f"""[지시]
-아래는 같은 파일에서 나온 조각 노트들이다.
-중복을 제거하고 핵심만 남겨 통합 노트로 압축하라.
+    return f"""[TASK]
+Below are chunk notes from the same source file.
+Remove duplication and merge them into one coherent Korean note.
 
-[출력 형식]
-### 통합 핵심 주제
+[OUTPUT FORMAT]
+### Merged Topics
 - ...
 
-### 통합 핵심 개념
-- 개념명: 설명
+### Merged Concepts
+- concept: explanation
 
-### 통합 시험 포인트
+### Merged Exam Points
 - ...
 
-### 통합 혼동 주의
+### Merged Practical Cautions
 - ...
 
-[현재 그룹]
+[GROUP]
 {group_idx}/{total_groups}
 
-[입력 노트]
+[INPUT NOTES]
 {joined}
 """
 
@@ -429,83 +431,82 @@ def make_merge_prompt(group_notes: list[str], group_idx: int, total_groups: int)
 def final_template(style: str) -> str:
     if style == "summary":
         return (
-            "## 🔖 핵심 주제별로 나눠서 정리\n"
-            "### 주제 1\n"
+            "## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac\n"
+            "### \uc8fc\uc81c 1\n"
             "- ...\n"
-            "### 주제 2\n"
+            "### \uc8fc\uc81c 2\n"
             "- ...\n\n"
-            "## 🧠 핵심 개념 맵\n"
-            "- 개념: 설명\n\n"
-            "## 🎯 시험 포인트\n"
+            "## \ud575\uc2ec \uac1c\ub150 \ub9f5\n"
+            "- \uac1c\ub150: \uc124\uba85\n\n"
+            "## \uc2dc\ud5d8 \ud3ec\uc778\ud2b8\n"
             "- ...\n\n"
-            "## ⚠️ 혼동 주의\n"
+            "## \uc2e4\uc804 \uc8fc\uc758\uc0ac\ud56d\n"
             "- ..."
         )
     if style == "study-pack":
         return (
-            "## 🔖 핵심 주제별로 나눠서 정리\n"
-            "### 주제 1\n"
+            "## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac\n"
+            "### \uc8fc\uc81c 1\n"
             "- ...\n"
-            "### 주제 2\n"
+            "### \uc8fc\uc81c 2\n"
             "- ...\n\n"
-            "## 📑 시험문제\n"
-            "### 핵심 개념 1\n"
-            "1. 예상 문제: ...\n"
-            "2. 정답 및 해설: ...\n"
-            "### 핵심 개념 2\n"
-            "1. 예상 문제: ...\n"
-            "2. 정답 및 해설: ...\n"
-            "### 핵심 개념 3\n"
-            "1. 예상 문제: ...\n"
-            "2. 정답 및 해설: ...\n"
-            "### 핵심 개념 4\n"
-            "1. 예상 문제: ...\n"
-            "2. 정답 및 해설: ...\n"
-            "### 핵심 개념 5\n"
-            "1. 예상 문제: ...\n"
-            "2. 정답 및 해설: ...\n\n"
-            "## 📗 꼭 공부해야 할 내용\n"
-            "### 핵심 키워드 정의\n"
+            "## \uc608\uc0c1 \uc2dc\ud5d8\ubb38\uc81c\n"
+            "### \ud575\uc2ec \uac1c\ub150 1\n"
+            "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+            "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+            "### \ud575\uc2ec \uac1c\ub150 2\n"
+            "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+            "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+            "### \ud575\uc2ec \uac1c\ub150 3\n"
+            "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+            "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+            "### \ud575\uc2ec \uac1c\ub150 4\n"
+            "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+            "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+            "### \ud575\uc2ec \uac1c\ub150 5\n"
+            "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+            "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n\n"
+            "## \uaf2d \uacf5\ubd80\ud574\uc57c \ud560 \ub0b4\uc6a9\n"
+            "### \ud575\uc2ec \ud0a4\uc6cc\ub4dc\uc640 \uc815\uc758\n"
             "- ...\n"
-            "### 단계별 이해\n"
+            "### \ub2e8\uacc4\ubcc4 \uc774\ud574\n"
             "1. ...\n"
             "2. ...\n"
             "3. ..."
         )
-    # merged
     return (
-        "## 🔖 핵심 주제별로 나눠서 정리\n"
-        "### 주제 1\n"
+        "## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac\n"
+        "### \uc8fc\uc81c 1\n"
         "- ...\n"
-        "### 주제 2\n"
+        "### \uc8fc\uc81c 2\n"
         "- ...\n\n"
-        "## 🧠 핵심 개념 맵\n"
-        "- 개념: 설명\n\n"
-        "## 📑 시험문제\n"
-        "### 핵심 개념 1\n"
-        "1. 예상 문제: ...\n"
-        "2. 정답 및 해설: ...\n"
-        "### 핵심 개념 2\n"
-        "1. 예상 문제: ...\n"
-        "2. 정답 및 해설: ...\n"
-        "### 핵심 개념 3\n"
-        "1. 예상 문제: ...\n"
-        "2. 정답 및 해설: ...\n"
-        "### 핵심 개념 4\n"
-        "1. 예상 문제: ...\n"
-        "2. 정답 및 해설: ...\n"
-        "### 핵심 개념 5\n"
-        "1. 예상 문제: ...\n"
-        "2. 정답 및 해설: ...\n\n"
-        "## 🎯 시험 포인트/혼동 주의\n"
-        "### 시험 포인트\n"
+        "## \ud575\uc2ec \uac1c\ub150 \ub9f5\n"
+        "- \uac1c\ub150: \uc124\uba85\n\n"
+        "## \uc608\uc0c1 \uc2dc\ud5d8\ubb38\uc81c\n"
+        "### \ud575\uc2ec \uac1c\ub150 1\n"
+        "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+        "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+        "### \ud575\uc2ec \uac1c\ub150 2\n"
+        "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+        "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+        "### \ud575\uc2ec \uac1c\ub150 3\n"
+        "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+        "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+        "### \ud575\uc2ec \uac1c\ub150 4\n"
+        "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+        "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n"
+        "### \ud575\uc2ec \uac1c\ub150 5\n"
+        "1. \uc608\uc0c1 \ubb38\uc81c: ...\n"
+        "2. \uc815\ub2f5 \ubc0f \ud574\uc124: ...\n\n"
+        "## \uc2dc\ud5d8 \ud3ec\uc778\ud2b8\uc640 \uc2e4\uc804 \uc8fc\uc758\uc0ac\ud56d\n"
+        "### \uc2dc\ud5d8 \ud3ec\uc778\ud2b8\n"
         "- ...\n"
-        "### 혼동 주의\n"
+        "### \uc2e4\uc804 \uc8fc\uc758\uc0ac\ud56d\n"
         "- ...\n\n"
-        "## 📗 꼭 공부해야 할 내용\n"
-        "### 핵심 키워드 정의\n"
+        "## \uaf2d \uacf5\ubd80\ud574\uc57c \ud560 \ub0b4\uc6a9\n"
+        "### \ud575\uc2ec \ud0a4\uc6cc\ub4dc\uc640 \uc815\uc758\n"
         "- ...\n"
-        "### 단계별 이해\n"
+        "### \ub2e8\uacc4\ubcc4 \uc774\ud574\n"
         "1. ...\n"
         "2. ...\n"
         "3. ..."
@@ -519,24 +520,24 @@ def make_final_prompt(
     style: str,
 ) -> str:
     notes_text = "\n\n====\n\n".join(merged_notes)
-    glossary_text = ", ".join(glossary) if glossary else "(없음)"
+    glossary_text = ", ".join(glossary) if glossary else "(none)"
     template = final_template(style)
-    return f"""[파일]
+    return f"""[FILE]
 {file_name}
 
-[용어 힌트]
+[GLOSSARY HINTS]
 {glossary_text}
 
-[지시]
-아래 통합 노트를 바탕으로 결과를 작성하라.
-사용자가 채팅에 요청한 답변처럼 자연스럽고 완결된 마크다운 형태로 작성하라.
-파일 첨부 안내, 메타 문장, 사족은 금지한다.
+[TASK]
+Write the final output in Korean based on the merged notes below.
+The result must be compact, study-friendly markdown.
+Do not add file notices, meta comments, or self-reference.
+Follow the template exactly.
 
-반드시 아래 출력 템플릿 구조를 따른다.
-[출력 템플릿]
+[TEMPLATE]
 {template}
 
-[통합 노트]
+[MERGED NOTES]
 {notes_text}
 """
 
@@ -544,23 +545,23 @@ def make_final_prompt(
 def required_sections(style: str) -> list[str]:
     if style == "summary":
         return [
-            "## 🔖 핵심 주제별로 나눠서 정리",
-            "## 🧠 핵심 개념 맵",
-            "## 🎯 시험 포인트",
-            "## ⚠️ 혼동 주의",
+            "## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac",
+            "## \ud575\uc2ec \uac1c\ub150 \ub9f5",
+            "## \uc2dc\ud5d8 \ud3ec\uc778\ud2b8",
+            "## \uc2e4\uc804 \uc8fc\uc758\uc0ac\ud56d",
         ]
     if style == "study-pack":
         return [
-            "## 🔖 핵심 주제별로 나눠서 정리",
-            "## 📑 시험문제",
-            "## 📗 꼭 공부해야 할 내용",
+            "## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac",
+            "## \uc608\uc0c1 \uc2dc\ud5d8\ubb38\uc81c",
+            "## \uaf2d \uacf5\ubd80\ud574\uc57c \ud560 \ub0b4\uc6a9",
         ]
     return [
-        "## 🔖 핵심 주제별로 나눠서 정리",
-        "## 🧠 핵심 개념 맵",
-        "## 📑 시험문제",
-        "## 🎯 시험 포인트/혼동 주의",
-        "## 📗 꼭 공부해야 할 내용",
+        "## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac",
+        "## \ud575\uc2ec \uac1c\ub150 \ub9f5",
+        "## \uc608\uc0c1 \uc2dc\ud5d8\ubb38\uc81c",
+        "## \uc2dc\ud5d8 \ud3ec\uc778\ud2b8\uc640 \uc2e4\uc804 \uc8fc\uc758\uc0ac\ud56d",
+        "## \uaf2d \uacf5\ubd80\ud574\uc57c \ud560 \ub0b4\uc6a9",
     ]
 
 
@@ -569,18 +570,17 @@ def looks_incomplete_output(text: str, style: str) -> bool:
     if not stripped:
         return True
 
-    # Prefer exact template checks when available, but do not require exact wording.
     exact_hits = sum(1 for sec in required_sections(style) if sec in stripped)
 
     if style == "summary":
         min_sections = 4
-        keywords = ("주제", "개념", "시험", "주의")
+        keywords = ("\uc8fc\uc81c", "\uac1c\ub150", "\uc2dc\ud5d8", "\uc8fc\uc758")
     elif style == "study-pack":
         min_sections = 3
-        keywords = ("주제", "시험", "공부")
+        keywords = ("\uc8fc\uc81c", "\uc2dc\ud5d8", "\uacf5\ubd80")
     else:
         min_sections = 5
-        keywords = ("주제", "개념", "시험", "공부")
+        keywords = ("\uc8fc\uc81c", "\uac1c\ub150", "\uc2dc\ud5d8", "\uacf5\ubd80")
 
     lines = [ln.rstrip() for ln in stripped.splitlines()]
     if not lines:
@@ -618,27 +618,27 @@ def make_repair_prompt(
     previous_output: str,
 ) -> str:
     notes_text = "\n\n====\n\n".join(merged_notes)
-    glossary_text = ", ".join(glossary) if glossary else "(없음)"
+    glossary_text = ", ".join(glossary) if glossary else "(none)"
     template = final_template(style)
-    return f"""[파일]
+    return f"""[FILE]
 {file_name}
 
-[용어 힌트]
+[GLOSSARY HINTS]
 {glossary_text}
 
-[지시]
-직전 출력이 중간에서 끊겼다.
-이전 출력은 참고만 하고, 처음부터 끝까지 전체 결과를 다시 완성해서 작성하라.
-섹션 누락/중간 끊김/미완성 소제목(예: '### 주제'로 끝남) 없이 완성형으로 출력하라.
-출력 길이가 길어질 경우 각 bullet을 1~2문장으로 간결하게 유지하라.
+[TASK]
+The previous output was cut off.
+Regenerate the entire final result from start to finish in Korean.
+Do not leave missing sections, half-finished headings, or trailing bullets.
+If length becomes an issue, keep each bullet concise.
 
-[출력 템플릿]
+[TEMPLATE]
 {template}
 
-[직전 불완전 출력]
+[PREVIOUS INCOMPLETE OUTPUT]
 {previous_output}
 
-[통합 노트]
+[MERGED NOTES]
 {notes_text}
 """
 
@@ -664,13 +664,13 @@ def compose_partial_output(
 ) -> str:
     error_line = str(error).splitlines()[0].strip()
     lines: list[str] = [
-        "## ⚠️ 부분 결과 안내",
-        f"- 생성 중단 지점: `{stage}`",
-        "- 사유: API 요청 한도 초과(429/RESOURCE_EXHAUSTED)",
-        "- 아래 내용은 한도 초과 직전까지 생성된 결과입니다.",
+        "## \ubd80\ubd84 \uacb0\uacfc \uc548\ub0b4",
+        f"- \uc0dd\uc131 \uc911\ub2e8 \uc9c0\uc810: `{stage}`",
+        "- \uc0ac\uc720: API \uc694\uccad \ud55c\ub3c4 \ucd08\uacfc (429/RESOURCE_EXHAUSTED)",
+        "- \uc544\ub798 \ub0b4\uc6a9\uc740 \ud55c\ub3c4 \ucd08\uacfc \uc9c1\uc804\uae4c\uc9c0 \uc0dd\uc131\ub41c \uacb0\uacfc\uc785\ub2c8\ub2e4.",
     ]
     if error_line:
-        lines.append(f"- 오류 요약: `{error_line}`")
+        lines.append(f"- \uc624\ub958 \uc694\uc57d: `{error_line}`")
     lines.append("")
 
     if result_text.strip():
@@ -678,43 +678,42 @@ def compose_partial_output(
         return "\n".join(lines).strip()
 
     if merged_notes:
-        lines.append("## 한도 초과 전 통합 노트")
+        lines.append("## \ud55c\ub3c4 \ucd08\uacfc \uc804 \ud1b5\ud569 \ub178\ud2b8")
         for idx, note in enumerate(merged_notes, start=1):
-            lines.append(f"### 통합 노트 {idx}")
+            lines.append(f"### \ud1b5\ud569 \ub178\ud2b8 {idx}")
             lines.append(note.strip())
             lines.append("")
         return "\n".join(lines).strip()
 
     if chunk_notes:
-        lines.append("## 한도 초과 전 청크 요약")
+        lines.append("## \ud55c\ub3c4 \ucd08\uacfc \uc804 \uccad\ud06c \uc694\uc57d")
         for idx, note in enumerate(chunk_notes, start=1):
-            lines.append(f"### 청크 {idx}")
+            lines.append(f"### \uccad\ud06c {idx}")
             lines.append(note.strip())
             lines.append("")
         return "\n".join(lines).strip()
 
-    # Nothing was generated before hitting quota.
     if style == "summary":
-        lines.append("## 🔖 핵심 주제별로 나눠서 정리")
-        lines.append("- (생성된 내용 없음)")
+        lines.append("## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
     elif style == "study-pack":
-        lines.append("## 🔖 핵심 주제별로 나눠서 정리")
-        lines.append("- (생성된 내용 없음)")
-        lines.append("## 📑 시험문제")
-        lines.append("- (생성된 내용 없음)")
-        lines.append("## 📗 꼭 공부해야 할 내용")
-        lines.append("- (생성된 내용 없음)")
+        lines.append("## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
+        lines.append("## \uc608\uc0c1 \uc2dc\ud5d8\ubb38\uc81c")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
+        lines.append("## \uaf2d \uacf5\ubd80\ud574\uc57c \ud560 \ub0b4\uc6a9")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
     else:
-        lines.append("## 🔖 핵심 주제별로 나눠서 정리")
-        lines.append("- (생성된 내용 없음)")
-        lines.append("## 🧠 핵심 개념 맵")
-        lines.append("- (생성된 내용 없음)")
-        lines.append("## 📑 시험문제")
-        lines.append("- (생성된 내용 없음)")
-        lines.append("## 🎯 시험 포인트/혼동 주의")
-        lines.append("- (생성된 내용 없음)")
-        lines.append("## 📗 꼭 공부해야 할 내용")
-        lines.append("- (생성된 내용 없음)")
+        lines.append("## \ud575\uc2ec \uc8fc\uc81c\ubcc4 \uc815\ub9ac")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
+        lines.append("## \ud575\uc2ec \uac1c\ub150 \ub9f5")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
+        lines.append("## \uc608\uc0c1 \uc2dc\ud5d8\ubb38\uc81c")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
+        lines.append("## \uc2dc\ud5d8 \ud3ec\uc778\ud2b8\uc640 \uc2e4\uc804 \uc8fc\uc758\uc0ac\ud56d")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
+        lines.append("## \uaf2d \uacf5\ubd80\ud574\uc57c \ud560 \ub0b4\uc6a9")
+        lines.append("- (\uc0dd\uc131\ub41c \ub0b4\uc6a9 \uc5c6\uc74c)")
     return "\n".join(lines).strip()
 
 
@@ -800,19 +799,16 @@ class OpenAIClient(BaseClient):
         self.model = model
         self.temperature = temperature
         self.max_output_tokens = max_output_tokens
+        self._omit_temperature = False
 
-    def call(
+    def _build_body(
         self,
         system_prompt: str,
         user_prompt: str,
-        retries: int = 5,
-        max_output_tokens: int | None = None,
-    ) -> str:
-        url = f"{self.base_url}/responses"
-        output_limit = max_output_tokens or self.max_output_tokens
+        output_limit: int,
+    ) -> dict:
         body = {
             "model": self.model,
-            "temperature": self.temperature,
             "max_output_tokens": output_limit,
             "input": [
                 {
@@ -825,7 +821,19 @@ class OpenAIClient(BaseClient):
                 },
             ],
         }
-        data = json.dumps(body).encode("utf-8")
+        if not self._omit_temperature:
+            body["temperature"] = self.temperature
+        return body
+
+    def call(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        retries: int = 5,
+        max_output_tokens: int | None = None,
+    ) -> str:
+        url = f"{self.base_url}/responses"
+        output_limit = max_output_tokens or self.max_output_tokens
         headers = {
             "Content-Type": "application/json",
             "Authorization": f"Bearer {self.api_key}",
@@ -833,6 +841,8 @@ class OpenAIClient(BaseClient):
 
         last_err: Exception | None = None
         for attempt in range(1, retries + 1):
+            body = self._build_body(system_prompt, user_prompt, output_limit)
+            data = json.dumps(body).encode("utf-8")
             req = urllib.request.Request(url=url, data=data, headers=headers, method="POST")
             try:
                 with urllib.request.urlopen(req, timeout=240) as resp:
@@ -848,6 +858,13 @@ class OpenAIClient(BaseClient):
                     detail = e.read().decode("utf-8", errors="ignore")
                 except Exception:
                     detail = str(e)
+                if (
+                    not self._omit_temperature
+                    and e.code == 400
+                    and "Unsupported parameter: 'temperature'" in detail
+                ):
+                    self._omit_temperature = True
+                    continue
                 last_err = RuntimeError(f"HTTP {e.code}: {detail}")
             except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, RuntimeError) as e:
                 last_err = e
@@ -995,10 +1012,10 @@ def render_one_file(
     def write_outputs(content: str) -> None:
         if should_write_md:
             md_path.parent.mkdir(parents=True, exist_ok=True)
-            md_path.write_text(content, encoding="utf-8")
+            md_path.write_text(content, encoding="utf-8-sig")
         if should_write_txt:
             txt_path.parent.mkdir(parents=True, exist_ok=True)
-            txt_path.write_text(content, encoding="utf-8")
+            txt_path.write_text(content, encoding="utf-8-sig")
 
     text = src.read_text(encoding="utf-8")
     chunks = split_long_text(text, max_chars=chunk_chars)

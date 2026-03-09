@@ -155,9 +155,11 @@ py generate_study_pack_gemini.py `
 - 출력 스타일 선택: `--style summary|study-pack|merged`
 - 주제 선택: `--topic saju|security|network|math|philosophy_east|philosophy_west|vocal|...`
 - 출력 형식 선택: `--output-format md|txt|both`
-- 최종 출력 보강 재시도: `--final-retries <N>` (기본 2, 중간 끊김 대응)
+- 최종 출력 보강 재시도: `--final-retries <N>` (기본 3, 중간 끊김 대응)
 - 중간 끊김 재시도 시 `max_output_tokens`를 자동으로 단계적으로 늘려 재생성합니다.
 - API 한도 초과(429/RESOURCE_EXHAUSTED) 발생 시, 작업을 취소하지 않고 해당 시점까지 생성된 내용을 `partial` 결과로 저장합니다.
+- 기본값은 OpenAI 기준 `openai + gpt-5.3-chat-latest + saju + merged + both`입니다.
+- 권장 기본 세팅은 `--agent-name "GPT-5.3-Chat-Latest"`, `--chunk-chars 6000`, `--max-output-tokens 5000`, `--final-retries 3`입니다.
 
 출력 경로:
 
@@ -174,9 +176,12 @@ py run_ai_pipeline.py `
   --topic saju `
   --input-root "data/daglo/corr/script" `
   --output-root "data/summaries" `
-  --agent-name "Unified-AI" `
-  --model "gpt-5" `
+  --agent-name "GPT-5.3-Chat-Latest" `
+  --model "gpt-5.3-chat-latest" `
   --output-format both `
+  --chunk-chars 6000 `
+  --max-output-tokens 5000 `
+  --final-retries 3 `
   --max-files 3 `
   --overwrite
 ```
