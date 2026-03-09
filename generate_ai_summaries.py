@@ -125,7 +125,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--terms-path",
-        default="dict/terms.csv",
+        default="dict/common/terms.csv",
         help="Domain term dictionary path used to prioritize keywords.",
     )
     return parser.parse_args()

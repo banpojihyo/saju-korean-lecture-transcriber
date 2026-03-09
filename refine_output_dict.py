@@ -176,8 +176,8 @@ class TranscriptFile:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Auto-correct output transcripts using dict/replace.csv and "
-            "auto-grow dict/replace.csv + dict/terms.csv from output text."
+            "Auto-correct output transcripts using <dict-dir>/replace.csv and "
+            "auto-grow <dict-dir>/replace.csv + <dict-dir>/terms.csv from output text."
         )
     )
     parser.add_argument(
@@ -187,8 +187,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--dict-dir",
-        default="dict",
-        help="Directory containing replace.csv and terms.csv (default: ./dict)",
+        default="dict/common",
+        help="Directory containing replace.csv and terms.csv (default: ./dict/common)",
     )
     parser.add_argument(
         "--replace-file",

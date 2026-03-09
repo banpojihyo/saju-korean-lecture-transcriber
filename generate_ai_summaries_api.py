@@ -5,7 +5,7 @@ Features:
 - API key via env var (`OPENAI_API_KEY`) or CLI
 - OpenAI Responses API with retry/backoff
 - Long-text context management (chunk -> merge -> final synthesis)
-- Domain glossary injection from dict/terms.csv
+- Domain glossary injection from dict/common/terms.csv
 - Preserves folder structure:
     data/daglo/corr/script/**/*.txt
       -> data/summaries/{agent}/md/**/*.md
@@ -92,7 +92,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--terms-path",
-        default="dict/terms.csv",
+        default="dict/common/terms.csv",
         help="Domain terms CSV for glossary injection.",
     )
     parser.add_argument(

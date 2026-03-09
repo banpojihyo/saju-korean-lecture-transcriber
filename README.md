@@ -52,8 +52,6 @@ Get-ChildItem "data/daglo/raw" -Recurse -Filter *.txt | ForEach-Object {
 
 ```text
 dict/
-  replace.csv
-  terms.csv
   common/{replace.csv,terms.csv}
   topics/saju/{replace.csv,terms.csv}
   topics/network/{replace.csv,terms.csv}
@@ -66,11 +64,11 @@ dict/
   topics/essay/{replace.csv,terms.csv}
 ```
 
-- `dict/topics/saju`는 기존 루트 사전을 복사해 초기화되어 있습니다.
+- `dict/topics/saju`는 기존 사주 사전을 기준으로 초기화되어 있습니다.
 - `dict/common`은 전 주제 공통 오탈자/용어를 담는 용도입니다.
 - `dict/topics/<theme>`는 주제 특화 사전을 담는 용도입니다.
 - `dict/topics/philosophy_east`, `dict/topics/philosophy_west`를 권장하며, `dict/topics/philosophy`는 통합형(호환)입니다.
-- 루트 `dict/replace.csv`, `dict/terms.csv`는 기존 스크립트 호환용입니다. 당장은 유지하는 것을 권장합니다.
+- `correct_daglo_file.py`와 `refine_output_dict.py`의 기본 `--dict-dir`는 `dict/common`입니다.
 
 `run_topic_correction.py`를 사용하면 `common + topic`을 병합해 교정할 수 있습니다.
 교정 중 새로 발견된 항목은 기본적으로 해당 topic 사전에만 반영됩니다.

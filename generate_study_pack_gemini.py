@@ -87,7 +87,7 @@ def parse_args() -> argparse.Namespace:
         help=(
             "Terms CSV path. If omitted: "
             "dict/topics/<topic>/terms.csv (when --topic is set), "
-            "otherwise dict/terms.csv."
+            "otherwise dict/common/terms.csv."
         ),
     )
     parser.add_argument(
@@ -138,7 +138,7 @@ def resolve_terms_path(args: argparse.Namespace) -> Path:
         return Path(args.terms_path)
     if args.topic:
         return Path("dict") / "topics" / args.topic / "terms.csv"
-    return Path("dict/terms.csv")
+    return Path("dict/common/terms.csv")
 
 
 def load_terms(path: Path) -> list[str]:

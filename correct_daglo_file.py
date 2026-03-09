@@ -2,7 +2,7 @@
 """Create a corrected Daglo transcript copy in a separate folder.
 
 This applies:
-1) dict/replace.csv base replacements
+1) dict/common/replace.csv base replacements
 2) high-confidence manual replacements for common ASR mistakes
 """
 
@@ -28,8 +28,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--dict-dir",
-        default="dict",
-        help="Directory containing replace.csv and terms.csv (default: ./dict).",
+        default="dict/common",
+        help="Directory containing replace.csv and terms.csv (default: ./dict/common).",
     )
     parser.add_argument(
         "--input-root",
@@ -50,7 +50,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--no-update-dict",
         action="store_true",
-        help="Do not update dict/replace.csv and dict/terms.csv from applied corrections.",
+        help="Do not update <dict-dir>/replace.csv and <dict-dir>/terms.csv from applied corrections.",
     )
     return parser.parse_args()
 
