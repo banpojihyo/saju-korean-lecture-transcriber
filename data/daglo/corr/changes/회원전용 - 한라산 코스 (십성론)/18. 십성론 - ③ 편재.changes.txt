@@ -47,3 +47,39 @@ context_skipped_hits: 0
 
 [applied replacements]
 사조를 -> 사주를 (x1)
+
+[6201e60 - 2026-03-10 00:56:28]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.script.txt
+applied_rules: 3
+changed_chars: 22561
+term_hits_after_correction: 47
+script_lines_after_cleanup: 101
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+10성 -> 십성 (x2)
+심금을 -> 신금을 (x1)
+사조를 -> 사주를 (x1)
+
+[6201e60 - 2026-03-10 00:57:19]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.script.txt
+applied_rules: 3
+changed_chars: 22561
+term_hits_after_correction: 47
+script_lines_after_cleanup: 101
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+10성 -> 십성 (x2)
+심금을 -> 신금을 (x1)
+사조를 -> 사주를 (x1)

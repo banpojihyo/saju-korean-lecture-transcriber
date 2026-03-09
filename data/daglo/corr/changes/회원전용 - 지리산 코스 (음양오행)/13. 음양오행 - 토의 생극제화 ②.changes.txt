@@ -48,3 +48,49 @@ context_skipped_hits: 0
 모기 개입 -> 목이 개입 (x4)
 10성 -> 십성 (x3)
 사조를 -> 사주를 (x2)
+
+[6201e60 - 2026-03-10 00:56:29]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.script.txt
+applied_rules: 3
+changed_chars: 29107
+term_hits_after_correction: 45
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 3
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x4)
+10성 -> 십성 (x3)
+사조를 -> 사주를 (x2)
+
+[skipped by context]
+목국토에 -> 목극토에 (x1)
+토국수 -> 토극수 (x1)
+목국토 -> 목극토 (x1)
+
+[6201e60 - 2026-03-10 00:57:21]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.script.txt
+applied_rules: 3
+changed_chars: 29107
+term_hits_after_correction: 45
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 3
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x4)
+10성 -> 십성 (x3)
+사조를 -> 사주를 (x2)
+
+[skipped by context]
+목국토에 -> 목극토에 (x1)
+토국수 -> 토극수 (x1)
+목국토 -> 목극토 (x1)

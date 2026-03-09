@@ -94,3 +94,51 @@ cg -> 시지 (x3)
 
 [skipped by context]
 감묵 -> 갑목 (x2)
+
+[6201e60 - 2026-03-10 00:56:29]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.script.txt
+applied_rules: 6
+changed_chars: 27758
+term_hits_after_correction: 59
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x1)
+진술층미 -> 진술축미 (x2)
+한란조습 -> 한난조습 (x3)
+10성 -> 십성 (x1)
+감묵에 -> 갑목에 (x1)
+cg -> 시지 (x3)
+
+[skipped by context]
+감묵 -> 갑목 (x1)
+
+[6201e60 - 2026-03-10 00:57:20]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.script.txt
+applied_rules: 6
+changed_chars: 27758
+term_hits_after_correction: 59
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x1)
+진술층미 -> 진술축미 (x2)
+한란조습 -> 한난조습 (x3)
+10성 -> 십성 (x1)
+감묵에 -> 갑목에 (x1)
+cg -> 시지 (x3)
+
+[skipped by context]
+감묵 -> 갑목 (x1)

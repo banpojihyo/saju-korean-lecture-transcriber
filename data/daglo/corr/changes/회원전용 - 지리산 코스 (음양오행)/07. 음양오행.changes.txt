@@ -151,3 +151,90 @@ context_skipped_hits: 7
 
 [skipped by context]
 감묵 -> 갑목 (x7)
+
+[6201e60 - 2026-03-10 00:56:28]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.script.txt
+applied_rules: 12
+changed_chars: 26097
+term_hits_after_correction: 52
+script_lines_after_cleanup: 142
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 14
+context_skipped_hits: 46
+
+[applied replacements]
+한남조습을 지난 시간에 할 때 -> 한난조습을 지난 시간에 할 때 (x1)
+한난조석을 이렇게 구분하셔서 -> 한난조습을 이렇게 구분하셔서 (x1)
+고지식한 관여예요. -> 고지식한 관이에요. (x1)
+목국토도 -> 목극토도 (x1)
+10성 -> 십성 (x2)
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x2)
+심금에 -> 신금에 (x2)
+감묵의 -> 갑목의 (x1)
+관묵의 -> 갑목의 (x1)
+관묵이 -> 갑목이 (x2)
+심금 -> 신금 (x1)
+
+[skipped by context]
+감묵이잖아요 -> 갑목이잖아요 (x1)
+감묵이면 -> 갑목이면 (x1)
+목국토가 -> 목극토가 (x5)
+관묵한테 -> 갑목한테 (x1)
+심금은 -> 신금은 (x1)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x4)
+목국토 -> 목극토 (x16)
+관묵은 -> 갑목은 (x1)
+관묵이 -> 갑목이 (x1)
+심금 -> 신금 (x3)
+감묵 -> 갑목 (x6)
+관묵 -> 갑목 (x4)
+
+[6201e60 - 2026-03-10 00:57:20]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\07. 음양오행.script.txt
+applied_rules: 14
+changed_chars: 26097
+term_hits_after_correction: 52
+script_lines_after_cleanup: 142
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 13
+context_skipped_hits: 41
+
+[applied replacements]
+한남조습을 지난 시간에 할 때 -> 한난조습을 지난 시간에 할 때 (x1)
+한난조석을 이렇게 구분하셔서 -> 한난조습을 이렇게 구분하셔서 (x1)
+고지식한 관여예요. -> 고지식한 관이에요. (x1)
+감묵이잖아요 -> 갑목이잖아요 (x1)
+목국토가 -> 목극토가 (x1)
+목국토도 -> 목극토도 (x1)
+10성 -> 십성 (x2)
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x2)
+심금에 -> 신금에 (x2)
+감묵의 -> 갑목의 (x1)
+관묵의 -> 갑목의 (x1)
+관묵이 -> 갑목이 (x2)
+심금 -> 신금 (x1)
+
+[skipped by context]
+감묵이면 -> 갑목이면 (x1)
+목국토가 -> 목극토가 (x4)
+관묵한테 -> 갑목한테 (x1)
+심금은 -> 신금은 (x1)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x3)
+목국토 -> 목극토 (x15)
+관묵은 -> 갑목은 (x1)
+관묵이 -> 갑목이 (x1)
+심금 -> 신금 (x3)
+감묵 -> 갑목 (x5)
+관묵 -> 갑목 (x4)

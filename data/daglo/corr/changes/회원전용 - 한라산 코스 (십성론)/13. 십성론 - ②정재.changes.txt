@@ -101,3 +101,71 @@ context_skipped_hits: 6
 [skipped by context]
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x5)
+
+[6201e60 - 2026-03-10 00:56:27]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.script.txt
+applied_rules: 7
+changed_chars: 19721
+term_hits_after_correction: 44
+script_lines_after_cleanup: 82
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 12
+context_skipped_hits: 42
+
+[applied replacements]
+감묵한테 -> 갑목한테 (x2)
+10성 -> 십성 (x3)
+심금의 -> 신금의 (x1)
+심금이 -> 신금이 (x6)
+감묵의 -> 갑목의 (x1)
+심금 -> 신금 (x2)
+감묵 -> 갑목 (x3)
+
+[skipped by context]
+관묵이니까 -> 갑목이니까 (x1)
+심금은 -> 신금은 (x4)
+심금의 -> 신금의 (x2)
+심금이 -> 신금이 (x8)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x1)
+관묵의 -> 갑목의 (x1)
+관묵이 -> 갑목이 (x1)
+심금 -> 신금 (x17)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x3)
+관묵 -> 갑목 (x2)
+
+[6201e60 - 2026-03-10 00:57:19]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.script.txt
+applied_rules: 10
+changed_chars: 19731
+term_hits_after_correction: 44
+script_lines_after_cleanup: 82
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 23
+
+[applied replacements]
+관묵이니까 -> 갑목이니까 (x1)
+감묵한테 -> 갑목한테 (x2)
+10성 -> 십성 (x3)
+심금의 -> 신금의 (x2)
+심금이 -> 신금이 (x9)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x2)
+관묵의 -> 갑목의 (x1)
+심금 -> 신금 (x3)
+감묵 -> 갑목 (x4)
+
+[skipped by context]
+심금은 -> 신금은 (x4)
+심금의 -> 신금의 (x1)
+심금이 -> 신금이 (x5)
+심금 -> 신금 (x12)
+채용 -> 체용 (x1)

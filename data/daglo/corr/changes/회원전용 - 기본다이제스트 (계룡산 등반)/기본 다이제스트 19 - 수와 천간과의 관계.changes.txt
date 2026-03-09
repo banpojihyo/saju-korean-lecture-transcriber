@@ -31,3 +31,50 @@ context_skipped_hits: 1
 
 [skipped by context]
 감묵 -> 갑목 (x1)
+
+[6201e60 - 2026-03-10 00:56:35]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.script.txt
+applied_rules: 2
+changed_chars: 5
+term_hits_after_correction: 39
+script_lines_after_cleanup: 91
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 7
+
+[applied replacements]
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x4)
+
+[skipped by context]
+토국수가 -> 토극수가 (x1)
+심금을 -> 신금을 (x1)
+토국수 -> 토극수 (x3)
+심금 -> 신금 (x1)
+감묵 -> 갑목 (x1)
+
+[6201e60 - 2026-03-10 00:57:22]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.script.txt
+applied_rules: 5
+changed_chars: 9
+term_hits_after_correction: 40
+script_lines_after_cleanup: 91
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+토국수가 -> 토극수가 (x1)
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x4)
+심금을 -> 신금을 (x1)
+토국수 -> 토극수 (x2)
+
+[skipped by context]
+감묵 -> 갑목 (x1)

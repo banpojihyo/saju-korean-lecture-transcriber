@@ -49,3 +49,65 @@ context_skipped_hits: 3
 
 [skipped by context]
 감묵 -> 갑목 (x3)
+
+[6201e60 - 2026-03-10 00:56:34]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.script.txt
+applied_rules: 8
+changed_chars: 19
+term_hits_after_correction: 50
+script_lines_after_cleanup: 158
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 7
+context_skipped_hits: 36
+
+[applied replacements]
+심금이나 -> 신금이나 (x1)
+심금은 -> 신금은 (x1)
+심금의 -> 신금의 (x2)
+심금이 -> 신금이 (x6)
+심금에 -> 신금에 (x1)
+심금을 -> 신금을 (x3)
+감묵이 -> 갑목이 (x2)
+심금 -> 신금 (x1)
+
+[skipped by context]
+심금한테 -> 신금한테 (x1)
+심금의 -> 신금의 (x3)
+심금이 -> 신금이 (x2)
+심금에 -> 신금에 (x2)
+심금을 -> 신금을 (x5)
+심금 -> 신금 (x22)
+감묵 -> 갑목 (x1)
+
+[6201e60 - 2026-03-10 00:57:25]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.script.txt
+applied_rules: 9
+changed_chars: 31
+term_hits_after_correction: 50
+script_lines_after_cleanup: 158
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 14
+
+[applied replacements]
+심금한테 -> 신금한테 (x1)
+심금이나 -> 신금이나 (x1)
+심금은 -> 신금은 (x1)
+심금의 -> 신금의 (x5)
+심금이 -> 신금이 (x6)
+심금에 -> 신금에 (x2)
+심금을 -> 신금을 (x8)
+감묵이 -> 갑목이 (x2)
+심금 -> 신금 (x3)
+
+[skipped by context]
+심금이 -> 신금이 (x2)
+심금에 -> 신금에 (x1)
+심금 -> 신금 (x10)
+감묵 -> 갑목 (x1)

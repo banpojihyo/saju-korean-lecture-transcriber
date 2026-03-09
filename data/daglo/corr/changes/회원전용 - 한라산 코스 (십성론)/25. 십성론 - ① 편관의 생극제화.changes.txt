@@ -42,3 +42,47 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[6201e60 - 2026-03-10 00:56:32]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.script.txt
+applied_rules: 2
+changed_chars: 4
+term_hits_after_correction: 45
+script_lines_after_cleanup: 92
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 10
+
+[applied replacements]
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x2)
+
+[skipped by context]
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x7)
+
+[6201e60 - 2026-03-10 00:57:19]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.script.txt
+applied_rules: 3
+changed_chars: 9
+term_hits_after_correction: 45
+script_lines_after_cleanup: 92
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[applied replacements]
+심금이 -> 신금이 (x3)
+심금을 -> 신금을 (x3)
+심금 -> 신금 (x3)
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+심금 -> 신금 (x2)

@@ -129,3 +129,69 @@ OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
 [skipped by context]
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x7)
+
+[6201e60 - 2026-03-10 00:56:36]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 11
+changed_chars: 12089
+term_hits_after_correction: 61
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 9
+
+[applied replacements]
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+감묵한테 -> 갑목한테 (x1)
+10성 -> 십성 (x1)
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x1)
+사조를 -> 사주를 (x1)
+감묵이 -> 갑목이 (x3)
+관묵이 -> 갑목이 (x2)
+심금 -> 신금 (x1)
+
+[skipped by context]
+심금을 -> 신금을 (x1)
+감묵의 -> 갑목의 (x1)
+심금 -> 신금 (x3)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x3)
+
+[6201e60 - 2026-03-10 00:57:22]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 12
+changed_chars: 12091
+term_hits_after_correction: 61
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 7
+
+[applied replacements]
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+감묵한테 -> 갑목한테 (x1)
+10성 -> 십성 (x1)
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x1)
+사조를 -> 사주를 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x3)
+관묵이 -> 갑목이 (x2)
+심금 -> 신금 (x1)
+
+[skipped by context]
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x3)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x2)

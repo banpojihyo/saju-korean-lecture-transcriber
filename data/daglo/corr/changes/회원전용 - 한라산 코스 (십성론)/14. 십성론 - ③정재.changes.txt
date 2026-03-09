@@ -56,3 +56,49 @@ context_skipped_hits: 7
 
 [skipped by context]
 채용 -> 체용 (x7)
+
+[6201e60 - 2026-03-10 00:56:28]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.script.txt
+applied_rules: 5
+changed_chars: 22023
+term_hits_after_correction: 38
+script_lines_after_cleanup: 89
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 7
+
+[applied replacements]
+심금이잖아요 -> 신금이잖아요 (x1)
+10성 -> 십성 (x7)
+심금이 -> 신금이 (x1)
+4조 -> 사주 (x1)
+채용 -> 체용 (x1)
+
+[skipped by context]
+채용 -> 체용 (x7)
+
+[6201e60 - 2026-03-10 00:57:19]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.script.txt
+applied_rules: 5
+changed_chars: 22023
+term_hits_after_correction: 38
+script_lines_after_cleanup: 89
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 7
+
+[applied replacements]
+심금이잖아요 -> 신금이잖아요 (x1)
+10성 -> 십성 (x7)
+심금이 -> 신금이 (x1)
+4조 -> 사주 (x1)
+채용 -> 체용 (x1)
+
+[skipped by context]
+채용 -> 체용 (x7)

@@ -94,3 +94,67 @@ context_skipped_hits: 14
 
 [skipped by context]
 감묵 -> 갑목 (x14)
+
+[6201e60 - 2026-03-10 00:56:31]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
+applied_rules: 8
+changed_chars: 30
+term_hits_after_correction: 42
+script_lines_after_cleanup: 129
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 17
+
+[applied replacements]
+관묵이잖아요 -> 갑목이잖아요 (x1)
+관묵이에요 -> 갑목이에요 (x1)
+관묵이니까 -> 갑목이니까 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x5)
+감묵에 -> 갑목에 (x3)
+관묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x2)
+
+[skipped by context]
+감묵한테 -> 갑목한테 (x1)
+감묵의 -> 갑목의 (x1)
+감묵이 -> 갑목이 (x2)
+감묵에 -> 갑목에 (x1)
+목국토 -> 목극토 (x4)
+관묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x6)
+관묵 -> 갑목 (x1)
+
+[6201e60 - 2026-03-10 00:57:24]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
+applied_rules: 9
+changed_chars: 39
+term_hits_after_correction: 42
+script_lines_after_cleanup: 129
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 9
+
+[applied replacements]
+관묵이잖아요 -> 갑목이잖아요 (x1)
+관묵이에요 -> 갑목이에요 (x1)
+관묵이니까 -> 갑목이니까 (x1)
+감묵의 -> 갑목의 (x2)
+감묵이 -> 갑목이 (x6)
+감묵에 -> 갑목에 (x3)
+목국토 -> 목극토 (x1)
+관묵이 -> 갑목이 (x2)
+감묵 -> 갑목 (x3)
+
+[skipped by context]
+감묵한테 -> 갑목한테 (x1)
+감묵이 -> 갑목이 (x1)
+감묵에 -> 갑목에 (x1)
+목국토 -> 목극토 (x3)
+감묵 -> 갑목 (x3)

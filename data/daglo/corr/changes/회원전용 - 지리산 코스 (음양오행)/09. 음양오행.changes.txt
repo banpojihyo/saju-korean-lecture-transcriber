@@ -75,3 +75,53 @@ context_skipped_hits: 1
 
 [skipped by context]
 사조를 -> 사주를 (x1)
+
+[6201e60 - 2026-03-10 00:56:29]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.script.txt
+applied_rules: 5
+changed_chars: 29268
+term_hits_after_correction: 51
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 6
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x3)
+10성 -> 십성 (x2)
+심금에 -> 신금에 (x1)
+심금을 -> 신금을 (x1)
+1주 -> 일주 (x3)
+
+[skipped by context]
+목국토가 -> 목극토가 (x1)
+사조를 -> 사주를 (x1)
+목국토 -> 목극토 (x4)
+
+[6201e60 - 2026-03-10 00:57:20]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.script.txt
+applied_rules: 5
+changed_chars: 29268
+term_hits_after_correction: 51
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 6
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x3)
+10성 -> 십성 (x2)
+심금에 -> 신금에 (x1)
+심금을 -> 신금을 (x1)
+1주 -> 일주 (x3)
+
+[skipped by context]
+목국토가 -> 목극토가 (x1)
+사조를 -> 사주를 (x1)
+목국토 -> 목극토 (x4)

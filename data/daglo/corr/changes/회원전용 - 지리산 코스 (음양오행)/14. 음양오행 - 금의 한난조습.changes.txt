@@ -49,3 +49,56 @@ context_skipped_hits: 2
 
 [skipped by context]
 금극무 -> 금극목 (x2)
+
+[6201e60 - 2026-03-10 00:56:29]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
+applied_rules: 4
+changed_chars: 8
+term_hits_after_correction: 47
+script_lines_after_cleanup: 147
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 36
+
+[applied replacements]
+심금은 -> 신금은 (x2)
+심금이 -> 신금이 (x3)
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x2)
+
+[skipped by context]
+심금은 -> 신금은 (x3)
+심금이 -> 신금이 (x10)
+심금에 -> 신금에 (x2)
+금극무 -> 금극목 (x2)
+심금 -> 신금 (x19)
+
+[6201e60 - 2026-03-10 00:57:21]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
+applied_rules: 5
+changed_chars: 16
+term_hits_after_correction: 47
+script_lines_after_cleanup: 147
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 20
+
+[applied replacements]
+심금은 -> 신금은 (x3)
+심금이 -> 신금이 (x9)
+심금에 -> 신금에 (x1)
+심금을 -> 신금을 (x1)
+심금 -> 신금 (x2)
+
+[skipped by context]
+심금은 -> 신금은 (x2)
+심금이 -> 신금이 (x4)
+심금에 -> 신금에 (x1)
+금극무 -> 금극목 (x2)
+심금 -> 신금 (x11)

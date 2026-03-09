@@ -94,3 +94,71 @@ context_skipped_hits: 6
 
 [skipped by context]
 감묵 -> 갑목 (x6)
+
+[6201e60 - 2026-03-10 00:56:35]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 15 - 병화와 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 15 - 병화와 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 15 - 병화와 다른 천간과의 관계.script.txt
+applied_rules: 5
+changed_chars: 8
+term_hits_after_correction: 40
+script_lines_after_cleanup: 83
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 12
+context_skipped_hits: 46
+
+[applied replacements]
+심금은 -> 신금은 (x1)
+심금이 -> 신금이 (x1)
+심금에 -> 신금에 (x1)
+심금을 -> 신금을 (x4)
+1주 -> 일주 (x1)
+
+[skipped by context]
+심금이에요 -> 신금이에요 (x1)
+심금은 -> 신금은 (x1)
+심금의 -> 신금의 (x3)
+심금이 -> 신금이 (x6)
+심금에 -> 신금에 (x4)
+심금을 -> 신금을 (x2)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x4)
+관묵의 -> 갑목의 (x1)
+심금 -> 신금 (x16)
+감묵 -> 갑목 (x6)
+관묵 -> 갑목 (x1)
+
+[6201e60 - 2026-03-10 00:57:22]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 15 - 병화와 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 15 - 병화와 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 15 - 병화와 다른 천간과의 관계.script.txt
+applied_rules: 8
+changed_chars: 23
+term_hits_after_correction: 41
+script_lines_after_cleanup: 83
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 9
+context_skipped_hits: 19
+
+[applied replacements]
+심금이에요 -> 신금이에요 (x1)
+심금은 -> 신금은 (x2)
+심금의 -> 신금의 (x3)
+심금이 -> 신금이 (x3)
+심금에 -> 신금에 (x4)
+심금을 -> 신금을 (x5)
+감묵의 -> 갑목의 (x2)
+1주 -> 일주 (x1)
+
+[skipped by context]
+심금이 -> 신금이 (x3)
+심금에 -> 신금에 (x1)
+심금을 -> 신금을 (x1)
+감묵은 -> 갑목은 (x1)
+감묵의 -> 갑목의 (x2)
+관묵의 -> 갑목의 (x1)
+심금 -> 신금 (x5)
+감묵 -> 갑목 (x4)
+관묵 -> 갑목 (x1)

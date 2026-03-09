@@ -76,3 +76,45 @@ CG -> 시지 (x1)
 [skipped by context]
 사조를 -> 사주를 (x1)
 감묵 -> 갑목 (x3)
+
+[6201e60 - 2026-03-10 00:56:31]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\27. 음양오행 - 천간 생극제화 화(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\27. 음양오행 - 천간 생극제화 화(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\27. 음양오행 - 천간 생극제화 화(1).script.txt
+applied_rules: 3
+changed_chars: 9
+term_hits_after_correction: 36
+script_lines_after_cleanup: 109
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+사두에 -> 사주에 (x1)
+감묵은 -> 갑목은 (x3)
+CG -> 시지 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+
+[6201e60 - 2026-03-10 00:57:27]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\27. 음양오행 - 천간 생극제화 화(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\27. 음양오행 - 천간 생극제화 화(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\27. 음양오행 - 천간 생극제화 화(1).script.txt
+applied_rules: 3
+changed_chars: 9
+term_hits_after_correction: 36
+script_lines_after_cleanup: 109
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+사두에 -> 사주에 (x1)
+감묵은 -> 갑목은 (x3)
+CG -> 시지 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)

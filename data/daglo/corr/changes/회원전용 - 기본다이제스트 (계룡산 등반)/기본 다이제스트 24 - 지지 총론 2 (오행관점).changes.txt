@@ -27,3 +27,43 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[6201e60 - 2026-03-10 00:56:36]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 24 - 지지 총론 2 (오행관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 24 - 지지 총론 2 (오행관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 24 - 지지 총론 2 (오행관점).script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 37
+script_lines_after_cleanup: 58
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 5
+
+[applied replacements]
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+토국수 -> 토극수 (x3)
+심금 -> 신금 (x1)
+
+[6201e60 - 2026-03-10 00:57:26]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 24 - 지지 총론 2 (오행관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 24 - 지지 총론 2 (오행관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 24 - 지지 총론 2 (오행관점).script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 37
+script_lines_after_cleanup: 58
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 5
+
+[applied replacements]
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+토국수 -> 토극수 (x3)
+심금 -> 신금 (x1)

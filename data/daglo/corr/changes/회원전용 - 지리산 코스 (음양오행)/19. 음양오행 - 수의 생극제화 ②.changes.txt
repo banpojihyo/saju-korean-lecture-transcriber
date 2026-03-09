@@ -71,3 +71,60 @@ context_skipped_hits: 1
 
 [skipped by context]
 수색묵 -> 수생목 (x1)
+
+[6201e60 - 2026-03-10 00:56:30]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.script.txt
+applied_rules: 3
+changed_chars: 10
+term_hits_after_correction: 50
+script_lines_after_cleanup: 116
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 30
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x3)
+토국수에 -> 토극수에 (x2)
+수색묵 -> 수생목 (x1)
+
+[skipped by context]
+토국수는 -> 토극수는 (x3)
+토국수의 -> 토극수의 (x1)
+토국수가 -> 토극수가 (x1)
+토국수에 -> 토극수에 (x1)
+토국수로 -> 토극수로 (x2)
+토국수죠 -> 토극수죠 (x2)
+수색묵 -> 수생목 (x1)
+토국수 -> 토극수 (x19)
+
+[6201e60 - 2026-03-10 00:57:23]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.script.txt
+applied_rules: 5
+changed_chars: 15
+term_hits_after_correction: 50
+script_lines_after_cleanup: 116
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 7
+context_skipped_hits: 22
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x3)
+토국수는 -> 토극수는 (x2)
+토국수에 -> 토극수에 (x3)
+수색묵 -> 수생목 (x1)
+토국수 -> 토극수 (x2)
+
+[skipped by context]
+토국수는 -> 토극수는 (x1)
+토국수의 -> 토극수의 (x1)
+토국수가 -> 토극수가 (x1)
+토국수로 -> 토극수로 (x2)
+토국수죠 -> 토극수죠 (x2)
+수색묵 -> 수생목 (x1)
+토국수 -> 토극수 (x14)

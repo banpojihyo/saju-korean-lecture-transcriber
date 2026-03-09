@@ -51,3 +51,50 @@ context_skipped_hits: 2
 
 [skipped by context]
 감묵 -> 갑목 (x2)
+
+[6201e60 - 2026-03-10 00:56:33]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
+applied_rules: 2
+changed_chars: 26420
+term_hits_after_correction: 50
+script_lines_after_cleanup: 149
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 6
+
+[applied replacements]
+10성 -> 십성 (x2)
+감묵이 -> 갑목이 (x1)
+
+[skipped by context]
+토국수의 -> 토극수의 (x1)
+감묵이 -> 갑목이 (x1)
+토국수 -> 토극수 (x1)
+목국토 -> 목극토 (x2)
+감묵 -> 갑목 (x1)
+
+[6201e60 - 2026-03-10 00:57:23]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
+applied_rules: 3
+changed_chars: 26420
+term_hits_after_correction: 51
+script_lines_after_cleanup: 149
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 4
+
+[applied replacements]
+토국수의 -> 토극수의 (x1)
+10성 -> 십성 (x2)
+감묵이 -> 갑목이 (x1)
+
+[skipped by context]
+감묵이 -> 갑목이 (x1)
+목국토 -> 목극토 (x2)
+감묵 -> 갑목 (x1)

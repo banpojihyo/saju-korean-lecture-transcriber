@@ -46,3 +46,49 @@ context_skipped_hits: 0
 [applied replacements]
 한난조석 -> 한난조습 (x1)
 사조를 -> 사주를 (x1)
+
+[6201e60 - 2026-03-10 00:56:37]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).script.txt
+applied_rules: 4
+changed_chars: 5
+term_hits_after_correction: 49
+script_lines_after_cleanup: 104
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+한난조석 -> 한난조습 (x1)
+심금의 -> 신금의 (x1)
+심금에 -> 신금에 (x2)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+심금 -> 신금 (x1)
+
+[6201e60 - 2026-03-10 00:57:26]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).script.txt
+applied_rules: 4
+changed_chars: 5
+term_hits_after_correction: 49
+script_lines_after_cleanup: 104
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+한난조석 -> 한난조습 (x1)
+심금의 -> 신금의 (x1)
+심금에 -> 신금에 (x2)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+심금 -> 신금 (x1)

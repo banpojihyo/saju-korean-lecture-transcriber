@@ -32,3 +32,45 @@ context_skipped_hits: 1
 
 [skipped by context]
 사조를 -> 사주를 (x1)
+
+[6201e60 - 2026-03-10 00:56:32]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.script.txt
+applied_rules: 2
+changed_chars: 3
+term_hits_after_correction: 45
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+사조를 -> 사주를 (x2)
+토국수 -> 토극수 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+심금 -> 신금 (x1)
+
+[6201e60 - 2026-03-10 00:57:24]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.script.txt
+applied_rules: 2
+changed_chars: 3
+term_hits_after_correction: 45
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+사조를 -> 사주를 (x2)
+토국수 -> 토극수 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+심금 -> 신금 (x1)

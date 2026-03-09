@@ -63,3 +63,68 @@ context_skipped_hits: 8
 [skipped by context]
 귀신 -> 기신 (x3)
 감묵 -> 갑목 (x5)
+
+[6201e60 - 2026-03-10 00:56:34]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
+applied_rules: 9
+changed_chars: 26
+term_hits_after_correction: 38
+script_lines_after_cleanup: 72
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 27
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x1)
+심금은 -> 신금은 (x2)
+심금의 -> 신금의 (x2)
+심금이 -> 신금이 (x2)
+심금에 -> 신금에 (x3)
+심금을 -> 신금을 (x4)
+감묵은 -> 갑목은 (x2)
+1주 -> 일주 (x3)
+1조 -> 일주 (x2)
+
+[skipped by context]
+심금은 -> 신금은 (x2)
+심금의 -> 신금의 (x1)
+심금이 -> 신금이 (x2)
+심금을 -> 신금을 (x1)
+감묵이 -> 갑목이 (x3)
+심금 -> 신금 (x11)
+귀신 -> 기신 (x3)
+감묵 -> 갑목 (x4)
+
+[6201e60 - 2026-03-10 00:57:23]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
+applied_rules: 12
+changed_chars: 41
+term_hits_after_correction: 38
+script_lines_after_cleanup: 72
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 7
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x1)
+심금은 -> 신금은 (x4)
+심금의 -> 신금의 (x3)
+심금이 -> 신금이 (x4)
+심금에 -> 신금에 (x3)
+심금을 -> 신금을 (x5)
+감묵은 -> 갑목은 (x2)
+감묵이 -> 갑목이 (x3)
+심금 -> 신금 (x1)
+1주 -> 일주 (x3)
+1조 -> 일주 (x2)
+감묵 -> 갑목 (x1)
+
+[skipped by context]
+심금 -> 신금 (x4)
+귀신 -> 기신 (x3)

@@ -68,3 +68,43 @@ context_skipped_hits: 1
 
 [skipped by context]
 사조를 -> 사주를 (x1)
+
+[6201e60 - 2026-03-10 00:56:30]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.script.txt
+applied_rules: 1
+changed_chars: 4
+term_hits_after_correction: 38
+script_lines_after_cleanup: 130
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x2)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+토국수 -> 토극수 (x1)
+
+[6201e60 - 2026-03-10 00:57:22]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.script.txt
+applied_rules: 1
+changed_chars: 4
+term_hits_after_correction: 38
+script_lines_after_cleanup: 130
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+모기 개입 -> 목이 개입 (x2)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+토국수 -> 토극수 (x1)

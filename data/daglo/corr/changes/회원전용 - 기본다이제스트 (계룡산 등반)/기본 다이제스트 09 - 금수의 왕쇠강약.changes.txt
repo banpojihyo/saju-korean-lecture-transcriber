@@ -46,3 +46,49 @@ context_skipped_hits: 0
 [applied replacements]
 활을 봐야 -> 화를 봐야 (x1)
 모기 개입 -> 목이 개입 (x1)
+
+[6201e60 - 2026-03-10 00:56:36]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 09 - 금수의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 09 - 금수의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 09 - 금수의 왕쇠강약.script.txt
+applied_rules: 2
+changed_chars: 4
+term_hits_after_correction: 38
+script_lines_after_cleanup: 99
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 6
+
+[applied replacements]
+활을 봐야 -> 화를 봐야 (x1)
+모기 개입 -> 목이 개입 (x1)
+
+[skipped by context]
+토국수가 -> 토극수가 (x1)
+심금이 -> 신금이 (x1)
+토국수 -> 토극수 (x3)
+심금 -> 신금 (x1)
+
+[6201e60 - 2026-03-10 00:57:21]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 09 - 금수의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 09 - 금수의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 09 - 금수의 왕쇠강약.script.txt
+applied_rules: 2
+changed_chars: 4
+term_hits_after_correction: 38
+script_lines_after_cleanup: 99
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 6
+
+[applied replacements]
+활을 봐야 -> 화를 봐야 (x1)
+모기 개입 -> 목이 개입 (x1)
+
+[skipped by context]
+토국수가 -> 토극수가 (x1)
+심금이 -> 신금이 (x1)
+토국수 -> 토극수 (x3)
+심금 -> 신금 (x1)
