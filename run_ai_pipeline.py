@@ -117,8 +117,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--output-root",
-        default="data/ai_outputs",
-        help="Output root (default: data/ai_outputs).",
+        default="data/summaries",
+        help="Output root (default: data/summaries).",
     )
     parser.add_argument(
         "--agent-name",

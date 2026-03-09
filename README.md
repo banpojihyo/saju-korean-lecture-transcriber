@@ -158,8 +158,8 @@ py generate_study_pack_gemini.py `
 
 출력 경로:
 
-- `data/ai_outputs/<agent-name>/<provider>/<style>/md/**/*.md`
-- `data/ai_outputs/<agent-name>/<provider>/<style>/txt/**/*.txt`
+- `data/summaries/<agent-name>/<provider>/<style>/md/**/*.md`
+- `data/summaries/<agent-name>/<provider>/<style>/txt/**/*.txt`
 
 OpenAI 예시:
 
@@ -170,7 +170,7 @@ py run_ai_pipeline.py `
   --style merged `
   --topic saju `
   --input-root "data/daglo/corr/script" `
-  --output-root "data/ai_outputs" `
+  --output-root "data/summaries" `
   --agent-name "Unified-AI" `
   --model "gpt-5" `
   --output-format both `
@@ -187,7 +187,7 @@ py run_ai_pipeline.py `
   --style merged `
   --topic saju `
   --input-root "data/daglo/corr/script" `
-  --output-root "data/ai_outputs" `
+  --output-root "data/summaries" `
   --agent-name "Unified-AI" `
   --model "gemini-2.5-flash" `
   --output-format both `
