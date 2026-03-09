@@ -37,3 +37,47 @@ context_skipped_hits: 8
 [skipped by context]
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x7)
+
+[adb45b7 - 2026-03-10 00:27:02]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 2
+changed_chars: 11535
+term_hits_after_correction: 0
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 9
+
+[applied replacements]
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+한난조석 -> 한난조습 (x1)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x7)
+
+[adb45b7 - 2026-03-10 00:29:13]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+applied_rules: 3
+changed_chars: 11536
+term_hits_after_correction: 0
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 8
+
+[applied replacements]
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x7)

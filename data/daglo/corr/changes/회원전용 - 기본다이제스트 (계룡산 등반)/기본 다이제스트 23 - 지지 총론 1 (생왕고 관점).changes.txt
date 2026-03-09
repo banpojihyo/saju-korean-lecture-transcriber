@@ -29,3 +29,20 @@ context_skipped_hits: 0
 
 [applied replacements]
 사조를 -> 사주를 (x1)
+
+[adb45b7 - 2026-03-10 00:27:03]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).script.txt
+applied_rules: 2
+changed_chars: 2
+term_hits_after_correction: 0
+script_lines_after_cleanup: 104
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+한난조석 -> 한난조습 (x1)
+사조를 -> 사주를 (x1)

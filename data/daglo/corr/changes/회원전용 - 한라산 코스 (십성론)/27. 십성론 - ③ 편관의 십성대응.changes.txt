@@ -33,3 +33,21 @@ context_skipped_hits: 3
 
 [skipped by context]
 채용 -> 체용 (x3)
+
+[adb45b7 - 2026-03-10 00:26:44]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 0
+script_lines_after_cleanup: 97
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+
+[skipped by context]
+채용 -> 체용 (x3)

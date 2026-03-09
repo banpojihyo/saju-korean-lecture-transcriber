@@ -31,3 +31,41 @@ context_skipped_hits: 0
 [applied replacements]
 10성 -> 십성 (x1)
 1주 -> 일주 (x1)
+
+[adb45b7 - 2026-03-10 00:26:47]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.script.txt
+applied_rules: 1
+changed_chars: 1
+term_hits_after_correction: 0
+script_lines_after_cleanup: 103
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+1주 -> 일주 (x1)
+
+[skipped by context]
+빅업 -> 비겁 (x3)
+
+[adb45b7 - 2026-03-10 00:29:12]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.script.txt
+applied_rules: 4
+changed_chars: 7
+term_hits_after_correction: 0
+script_lines_after_cleanup: 103
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+빅업에 식상이 발현이 잘 되어 있어요. -> 비겁에 식상이 발현이 잘 되어 있어요. (x1)
+식상으로 빅업을 잘 끌어서 써요. -> 식상으로 비겁을 잘 끌어서 써요. (x1)
+그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
+1주 -> 일주 (x1)

@@ -31,3 +31,43 @@ context_skipped_hits: 0
 [applied replacements]
 10성 -> 십성 (x4)
 1주 -> 일주 (x2)
+
+[adb45b7 - 2026-03-10 00:26:39]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.script.txt
+applied_rules: 3
+changed_chars: 16258
+term_hits_after_correction: 0
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+Millering -> 미러링 (x1)
+상광은 -> 상관은 (x1)
+1주 -> 일주 (x2)
+
+[skipped by context]
+빅업 -> 비겁 (x1)
+
+[adb45b7 - 2026-03-10 00:29:11]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.script.txt
+applied_rules: 4
+changed_chars: 16261
+term_hits_after_correction: 0
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+식신 상관은 다 같이 일관을 빅업의 출력이죠. -> 식신 상관은 다 같이 일간을 비겁의 출력이죠. (x1)
+Millering -> 미러링 (x1)
+상광은 -> 상관은 (x1)
+1주 -> 일주 (x2)

@@ -35,3 +35,23 @@ context_skipped_hits: 7
 수색묵 -> 수생목 (x4)
 감묵 -> 갑목 (x2)
 감복 -> 갑목 (x1)
+
+[adb45b7 - 2026-03-10 00:26:56]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 0
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 7
+
+[applied replacements]
+
+[skipped by context]
+수색묵 -> 수생목 (x4)
+감묵 -> 갑목 (x2)
+감복 -> 갑목 (x1)

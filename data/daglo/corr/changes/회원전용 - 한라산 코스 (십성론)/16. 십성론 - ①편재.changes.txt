@@ -27,3 +27,18 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[adb45b7 - 2026-03-10 00:26:42]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.script.txt
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 0
+script_lines_after_cleanup: 77
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]

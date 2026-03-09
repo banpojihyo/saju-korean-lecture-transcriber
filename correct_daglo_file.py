@@ -11,6 +11,8 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import subprocess
+from datetime import datetime
 from pathlib import Path
 
 
@@ -101,6 +103,33 @@ def write_terms(path: Path, terms: list[str]) -> None:
         writer.writerow(["term"])
         for term in terms:
             writer.writerow([term])
+
+
+def current_git_short_hash() -> str:
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+        )
+        commit = result.stdout.strip()
+        return commit or "working-tree"
+    except Exception:
+        return "working-tree"
+
+
+def append_change_report(path: Path, lines: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    header = f"[{current_git_short_hash()} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]"
+    block = "\n".join([header, *lines]).rstrip() + "\n"
+    if path.exists():
+        existing = path.read_text(encoding="utf-8").rstrip()
+        if existing:
+            path.write_text(existing + "\n\n" + block, encoding="utf-8")
+            return
+    path.write_text(block, encoding="utf-8")
 
 
 def merge_replace_pairs(
@@ -444,6 +473,50 @@ def manual_pairs() -> list[tuple[str, str]]:
         ("술을 봐야", "수를 봐야"),
         ("10점을", "십성을"),
         ("1가능에는", "일간으로는"),
+        ("빅업", "비겁"),
+        ("상광은", "상관은"),
+        ("Millering", "미러링"),
+        ("쟤를 양생", "재를 양생"),
+        ("음향 오행", "음양 오행"),
+        ("음향적으로는", "음양적으로는"),
+        ("음영오행", "음양오행"),
+        ("지금 음영오행을 했는데요.", "지금 음양오행을 했는데요."),
+        ("OEM으로는", "오행으로는"),
+        ("OEM으로 얘기하면", "오행으로 얘기하면"),
+        ("OEM을 한번", "오행을 한번"),
+        ("OEM 불교할 때", "오행 분류할 때"),
+        ("광풍 제월", "광풍제월"),
+        ("향랑조습", "한난조습"),
+        ("한난조석", "한난조습"),
+        ("한남조습", "한난조습"),
+        ("한남조사", "한난조습"),
+        ("한란교습", "한난조습"),
+        ("한남 조숙", "한난조습"),
+        ("왕세강력", "왕쇠강약"),
+        ("식신 상관은 다 같이 일관을 빅업의 출력이죠.", "식신 상관은 다 같이 일간을 비겁의 출력이죠."),
+        ("그래서 빅업에서 식상으로 진행되는", "그래서 비겁에서 식상으로 진행되는"),
+        ("그러니까 빅업을 운용을 잘한다면", "그러니까 비겁을 운용을 잘한다면"),
+        ("빅업에 식상이 발현이 잘 되어 있어요.", "비겁에 식상이 발현이 잘 되어 있어요."),
+        ("식상으로 빅업을 잘 끌어서 써요.", "식상으로 비겁을 잘 끌어서 써요."),
+        ("오늘은 오행의 향랑조습을", "오늘은 오행의 한난조습을"),
+        ("시간에는 왕세강력을", "시간에는 왕쇠강약을"),
+        ("귀신을 버린다고", "기신을 버린다고"),
+        ("귀신을 어떻게 다룰 수 있을까를", "기신을 어떻게 다룰 수 있을까를"),
+        ("한남조습으로 보자고요.", "한난조습으로 보자고요."),
+        ("음양의 한란교습을", "음양의 한난조습을"),
+        ("이 한란교습은", "이 한난조습은"),
+        ("요즘에 한남조석으로 궁합을", "요즘에 한난조습으로 궁합을"),
+        ("그대로 한남조습의 관계로", "그대로 한난조습의 관계로"),
+        ("그 내면에 있는 한남조습을", "그 내면에 있는 한난조습을"),
+        ("이런 한난조석과 다 연결돼 있다고", "이런 한난조습과 다 연결돼 있다고"),
+        ("지금 이걸 바탕으로 한남조습과", "지금 이걸 바탕으로 한난조습과"),
+        ("한남조습을 지난 시간에 할 때", "한난조습을 지난 시간에 할 때"),
+        ("한난조석을 이렇게 구분하셔서", "한난조습을 이렇게 구분하셔서"),
+        ("처음 우리가 했던 한난조석이", "처음 우리가 했던 한난조습이"),
+        ("명을 볼 때 명 전체 기준에서 한난조석 기세의 부분.", "명을 볼 때 명 전체 기준에서 한난조습 기세의 부분."),
+        ("오행의 한남조습을 지금 하고 있고요.", "오행의 한난조습을 지금 하고 있고요."),
+        ("이런 한남조습에서 이미 형식들이", "이런 한난조습에서 이미 형식들이"),
+        ("다음 주에 수대한남조습을 하겠습니다.", "다음 주에 수의 한난조습을 하겠습니다."),
         ("공관은", "상관은"),
         ("단락해도", "달라고 해도"),
         ("활을 봐야", "화를 봐야"),
@@ -593,7 +666,7 @@ def main() -> int:
         lines.append("[dict terms added]")
         for term in added_terms:
             lines.append(term)
-    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    append_change_report(report_path, lines)
 
     print(f"[DONE] source: {source}")
     print(f"[DONE] corrected: {output_path}")
