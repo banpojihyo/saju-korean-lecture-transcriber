@@ -745,14 +745,15 @@ def create_client(args: argparse.Namespace) -> BaseClient:
 
 
 def ensure_header(text: str, stem: str, style: str) -> str:
+    display_stem = stem[:-7] if stem.lower().endswith(".script") else stem
     if text.lstrip().startswith("# "):
         return text.rstrip() + "\n"
     if style == "summary":
-        title = f"# {stem} AI Summary"
+        title = f"# {display_stem} AI Summary"
     elif style == "study-pack":
-        title = f"# {stem} Study Pack"
+        title = f"# {display_stem} Study Pack"
     else:
-        title = f"# {stem} 통합 학습 패키지"
+        title = f"# {display_stem} Merged Study Pack"
     return f"{title}\n\n{text.rstrip()}\n"
 
 
