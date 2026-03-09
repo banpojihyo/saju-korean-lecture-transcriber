@@ -280,6 +280,21 @@ SINGEUM_AMBIGUOUS_PAIRS = (
     ("심금상관", "신금상관"),
 )
 
+GITO_AMBIGUOUS_PAIRS = (
+    ("기포", "기토"),
+    ("기포가", "기토가"),
+    ("기포는", "기토는"),
+    ("기포의", "기토의"),
+    ("기포에", "기토에"),
+    ("기포로", "기토로"),
+    ("기포도", "기토도"),
+    ("기포고", "기토고"),
+    ("기포를", "기토를"),
+    ("기포면", "기토면"),
+    ("기포면은", "기토면은"),
+    ("기포라고요", "기토라고요"),
+)
+
 PAIR_CONTEXT_RULES: dict[tuple[str, str], dict[str, tuple[str, ...]]] = {
     # Ambiguous in general Korean; apply only with 사주 맥락.
     ("귀신", "기신"): {
@@ -428,6 +443,44 @@ for pair in SINGEUM_AMBIGUOUS_PAIRS:
             "십성",
         ),
         "exclude": ("울리", "울렸", "울리는", "심금을 울", "가슴", "마음", "노래", "시구", "문장"),
+    }
+
+for pair in GITO_AMBIGUOUS_PAIRS:
+    PAIR_CONTEXT_RULES[pair] = {
+        "include": (
+            "사주",
+            "오행",
+            "일간",
+            "월간",
+            "연간",
+            "시간",
+            "일지",
+            "월지",
+            "연지",
+            "시지",
+            "천간",
+            "지지",
+            "기토",
+            "무토",
+            "임수",
+            "계수",
+            "갑목",
+            "을목",
+            "병화",
+            "정화",
+            "목",
+            "화",
+            "토",
+            "금",
+            "수",
+            "토극수",
+            "생목화",
+            "탁임",
+            "동류",
+            "운",
+            "관",
+        ),
+        "exclude": ("거품", "비누", "기포제", "탄산", "산소", "포말", "공기방울", "발포"),
     }
 
 DOMAIN_CONTEXT_KEYWORDS = (
@@ -732,6 +785,7 @@ def manual_pairs() -> list[tuple[str, str]]:
         *GAPMOK_AMBIGUOUS_PAIRS,
         *GEUK_AMBIGUOUS_PAIRS,
         *SINGEUM_AMBIGUOUS_PAIRS,
+        *GITO_AMBIGUOUS_PAIRS,
         ("규정시키는 게 관여예요.", "규정시키는 게 관이에요."),
         ("그게 관여예요.", "그게 관이에요."),
         ("이게 관여예요.", "이게 관이에요."),

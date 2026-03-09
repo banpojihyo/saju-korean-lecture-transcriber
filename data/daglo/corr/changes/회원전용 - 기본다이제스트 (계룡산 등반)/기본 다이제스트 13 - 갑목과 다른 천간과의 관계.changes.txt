@@ -27,3 +27,19 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[c03d0d2 - 2026-03-10 01:05:19]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.script.txt
+applied_rules: 1
+changed_chars: 1
+term_hits_after_correction: 39
+script_lines_after_cleanup: 92
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+기포를 -> 기토를 (x1)
