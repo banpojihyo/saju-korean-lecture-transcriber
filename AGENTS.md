@@ -8,6 +8,11 @@
 - If a turn is only a question/consultation and does not cause any project file changes, do not immediately write that turn to the log file.
 - Keep those no-change turns pending, and flush them later together with the next turn that does produce project file changes and will be committed.
 - When writing or updating log files, use UTF-8 so Korean text is not corrupted.
+- Use UTF-8 for all repository documents that may contain Korean text.
+
+## AGENTS.md Language
+- Keep `AGENTS.md` itself in English for instruction stability across environments and agent runtimes.
+- Korean may be added only as supplementary examples or clarification when truly needed.
 
 ## Git Commit / Push
 - After each assistant response, if project files were added/modified/deleted because of the work, select relevant files and run commit + push.
