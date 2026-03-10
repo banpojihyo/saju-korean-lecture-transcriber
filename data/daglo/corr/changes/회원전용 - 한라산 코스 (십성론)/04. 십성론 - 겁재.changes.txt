@@ -188,3 +188,34 @@ CG -> 시지 (x1)
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x3)
 고친 -> 고층 (x1)
+
+[working-tree - 2026-03-10 18:21:55]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 19732
+term_hits_after_correction: 54
+script_lines_after_cleanup: 90
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 7
+context_skipped_hits: 11
+
+[applied replacements]
+10성 -> 십성 (x3)
+감묵은 -> 갑목은 (x3)
+관묵은 -> 갑목은 (x1)
+감묵 -> 갑목 (x1)
+CG -> 시지 (x1)
+
+[skipped by context]
+감묵은 -> 갑목은 (x1)
+감묵이 -> 갑목이 (x2)
+목국토 -> 목극토 (x2)
+심금 -> 신금 (x1)
+채용 -> 체용 (x1)
+감묵 -> 갑목 (x3)
+고친 -> 고층 (x1)

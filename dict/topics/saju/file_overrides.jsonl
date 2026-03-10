@@ -1,4 +1,5 @@
 {"path":"회원전용 - 지리산 코스 (음양오행)/07. 음양오행.txt","wrong":"십관 십이지를 전부 다 한난 조수부로 다 나누셔야 돼요.","right":"십간 십이지를 전부 다 한난 조습으로 다 나누셔야 돼요.","note":"One-off lecture sentence fix"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"사모기에 한 모기 개입","right":"사목에 한 목이 개입","note":"Batch-reviewed file-scoped fix after candidate extraction"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"자월의 관목. 민으로 돼 있다고 해도","right":"자월의 갑목. 갑인으로 돼 있다고 해도","note":"User-confirmed line fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"원리적 접근으로 형성된 게 하두예요.","right":"원리적 접근으로 형성된 게 하도예요.","note":"User-confirmed line fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"접종을 만드셔서 통변","right":"접점을 만드셔서 통변","note":"User-confirmed line fix"}

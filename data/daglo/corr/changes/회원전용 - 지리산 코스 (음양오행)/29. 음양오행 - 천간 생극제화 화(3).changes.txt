@@ -170,3 +170,29 @@ context_skipped_hits: 2
 [skipped by context]
 심금 -> 신금 (x1)
 귀신 -> 기신 (x1)
+
+[working-tree - 2026-03-10 18:22:00]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\29. 음양오행 - 천간 생극제화 화(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\29. 음양오행 - 천간 생극제화 화(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\29. 음양오행 - 천간 생극제화 화(3).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 26582
+term_hits_after_correction: 37
+script_lines_after_cleanup: 113
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+규정시키는 게 관여예요. -> 규정시키는 게 관이에요. (x1)
+그게 관여예요. -> 그게 관이에요. (x2)
+이게 관여예요. -> 이게 관이에요. (x1)
+생극 재화 -> 생극제화 (x6)
+생극재화 -> 생극제화 (x2)
+
+[skipped by context]
+심금 -> 신금 (x1)
+귀신 -> 기신 (x1)

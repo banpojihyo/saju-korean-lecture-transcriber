@@ -44,3 +44,21 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[working-tree - 2026-03-10 18:22:01]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 233
+term_hits_after_correction: 50
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+10성 -> 십성 (x2)

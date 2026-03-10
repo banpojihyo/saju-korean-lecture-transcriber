@@ -117,3 +117,30 @@ CG -> 시지 (x2)
 [skipped by context]
 심금이 -> 신금이 (x1)
 심금 -> 신금 (x1)
+
+[working-tree - 2026-03-10 18:21:59]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 21200
+term_hits_after_correction: 41
+script_lines_after_cleanup: 94
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+10성 -> 십성 (x2)
+심금 -> 신금 (x1)
+4조 -> 사주 (x1)
+cg -> 시지 (x1)
+Cg -> 시지 (x1)
+CG -> 시지 (x2)
+
+[skipped by context]
+심금이 -> 신금이 (x1)
+심금 -> 신금 (x1)
