@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.script.txt
@@ -231,7 +231,7 @@ context_skipped_hits: 6
 심금이 -> 신금이 (x1)
 심금 -> 신금 (x4)
 
-[working-tree - 2026-03-10 18:22:00]
+[a88e443 - 2026-03-10 18:22:00]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.script.txt
@@ -260,3 +260,4 @@ context_skipped_hits: 6
 심금한테 -> 신금한테 (x1)
 심금이 -> 신금이 (x1)
 심금 -> 신금 (x4)
+

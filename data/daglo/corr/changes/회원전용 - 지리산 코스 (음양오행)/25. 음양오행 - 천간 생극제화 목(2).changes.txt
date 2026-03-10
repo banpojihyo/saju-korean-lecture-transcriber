@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).script.txt
@@ -321,7 +321,7 @@ context_skipped_hits: 7
 감묵한테 -> 갑목한테 (x2)
 감묵 -> 갑목 (x5)
 
-[working-tree - 2026-03-10 18:21:59]
+[a88e443 - 2026-03-10 18:21:59]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).script.txt
@@ -351,3 +351,4 @@ context_skipped_hits: 7
 [skipped by context]
 감묵한테 -> 갑목한테 (x2)
 감묵 -> 갑목 (x5)
+

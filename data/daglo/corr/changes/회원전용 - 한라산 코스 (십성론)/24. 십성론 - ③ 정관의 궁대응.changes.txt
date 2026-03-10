@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.script.txt
@@ -118,7 +118,7 @@ CG -> 시지 (x2)
 심금이 -> 신금이 (x1)
 심금 -> 신금 (x1)
 
-[working-tree - 2026-03-10 18:21:59]
+[a88e443 - 2026-03-10 18:21:59]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\24. 십성론 - ③ 정관의 궁대응.script.txt
@@ -144,3 +144,4 @@ CG -> 시지 (x2)
 [skipped by context]
 심금이 -> 신금이 (x1)
 심금 -> 신금 (x1)
+

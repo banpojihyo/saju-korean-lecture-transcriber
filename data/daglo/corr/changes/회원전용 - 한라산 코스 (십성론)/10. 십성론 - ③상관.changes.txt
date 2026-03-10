@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\10. 십성론 - ③상관.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\10. 십성론 - ③상관.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\10. 십성론 - ③상관.script.txt
@@ -98,7 +98,7 @@ context_skipped_hits: 10
 심금상관 -> 신금상관 (x2)
 심금 -> 신금 (x6)
 
-[working-tree - 2026-03-10 18:21:56]
+[a88e443 - 2026-03-10 18:21:56]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\10. 십성론 - ③상관.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\10. 십성론 - ③상관.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\10. 십성론 - ③상관.script.txt
@@ -125,3 +125,4 @@ context_skipped_hits: 10
 심금한테 -> 신금한테 (x2)
 심금상관 -> 신금상관 (x2)
 심금 -> 신금 (x6)
+

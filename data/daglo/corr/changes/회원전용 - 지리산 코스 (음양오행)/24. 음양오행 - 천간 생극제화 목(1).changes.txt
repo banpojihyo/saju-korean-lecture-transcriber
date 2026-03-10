@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
@@ -293,7 +293,7 @@ context_skipped_hits: 9
 목국토 -> 목극토 (x3)
 감묵 -> 갑목 (x3)
 
-[working-tree - 2026-03-10 18:21:59]
+[a88e443 - 2026-03-10 18:21:59]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
@@ -326,3 +326,4 @@ context_skipped_hits: 9
 감묵에 -> 갑목에 (x1)
 목국토 -> 목극토 (x3)
 감묵 -> 갑목 (x3)
+

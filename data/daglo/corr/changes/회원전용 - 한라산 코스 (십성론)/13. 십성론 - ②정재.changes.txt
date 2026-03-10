@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.script.txt
@@ -170,7 +170,7 @@ context_skipped_hits: 23
 심금 -> 신금 (x12)
 채용 -> 체용 (x1)
 
-[working-tree - 2026-03-10 18:21:57]
+[a88e443 - 2026-03-10 18:21:57]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.script.txt
@@ -206,3 +206,4 @@ context_skipped_hits: 23
 
 [dict terms added]
 갑목이니까
+

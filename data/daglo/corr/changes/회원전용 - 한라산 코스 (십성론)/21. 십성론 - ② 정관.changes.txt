@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\21. 십성론 - ② 정관.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\21. 십성론 - ② 정관.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\21. 십성론 - ② 정관.script.txt
@@ -252,7 +252,7 @@ context_skipped_hits: 1
 [skipped by context]
 심금 -> 신금 (x1)
 
-[working-tree - 2026-03-10 18:21:58]
+[a88e443 - 2026-03-10 18:21:58]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\21. 십성론 - ② 정관.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\21. 십성론 - ② 정관.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\21. 십성론 - ② 정관.script.txt
@@ -290,3 +290,4 @@ context_skipped_hits: 1
 공적이
 요런데
 유도리
+

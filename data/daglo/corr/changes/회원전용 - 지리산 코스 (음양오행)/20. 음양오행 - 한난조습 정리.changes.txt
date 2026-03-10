@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.script.txt
@@ -221,7 +221,7 @@ CG -> 시지 (x1)
 심금을 -> 신금을 (x1)
 심금 -> 신금 (x2)
 
-[working-tree - 2026-03-10 18:21:58]
+[a88e443 - 2026-03-10 18:21:58]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\20. 음양오행 - 한난조습 정리.script.txt
@@ -247,3 +247,4 @@ CG -> 시지 (x1)
 왕세강약 -> 왕쇠강약 (x1)
 심금을 -> 신금을 (x1)
 심금 -> 신금 (x2)
+

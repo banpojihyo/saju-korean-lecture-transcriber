@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.script.txt
@@ -218,7 +218,7 @@ context_skipped_hits: 6
 [dict replace added]
 다음 주에 수대한남조습을 하겠습니다. -> 다음 주에 수의 한난조습을 하겠습니다.
 
-[working-tree - 2026-03-10 18:21:57]
+[a88e443 - 2026-03-10 18:21:57]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.script.txt
@@ -248,3 +248,4 @@ context_skipped_hits: 6
 토국수 -> 토극수 (x2)
 심금 -> 신금 (x1)
 고친 -> 고층 (x2)
+

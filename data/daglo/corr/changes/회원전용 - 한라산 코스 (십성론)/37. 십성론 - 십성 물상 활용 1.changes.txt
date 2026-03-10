@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.script.txt
@@ -54,7 +54,7 @@ context_skipped_hits: 1
 [skipped by context]
 귀신 -> 기신 (x1)
 
-[working-tree - 2026-03-10 18:22:02]
+[a88e443 - 2026-03-10 18:22:02]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.script.txt
@@ -74,3 +74,4 @@ context_skipped_hits: 1
 
 [skipped by context]
 귀신 -> 기신 (x1)
+

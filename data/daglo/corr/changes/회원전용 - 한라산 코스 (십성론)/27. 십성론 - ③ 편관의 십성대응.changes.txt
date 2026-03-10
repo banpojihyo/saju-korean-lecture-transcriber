@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.script.txt
@@ -92,7 +92,7 @@ context_skipped_hits: 3
 [skipped by context]
 채용 -> 체용 (x3)
 
-[working-tree - 2026-03-10 18:22:00]
+[a88e443 - 2026-03-10 18:22:00]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.script.txt
@@ -113,3 +113,4 @@ context_skipped_hits: 3
 
 [skipped by context]
 채용 -> 체용 (x3)
+

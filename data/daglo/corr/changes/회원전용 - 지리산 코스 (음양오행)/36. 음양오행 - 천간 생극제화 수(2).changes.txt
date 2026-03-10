@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\36. 음양오행 - 천간 생극제화 수(2).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\36. 음양오행 - 천간 생극제화 수(2).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\36. 음양오행 - 천간 생극제화 수(2).script.txt
@@ -159,7 +159,7 @@ context_skipped_hits: 13
 감묵 -> 갑목 (x1)
 고친 -> 고층 (x1)
 
-[working-tree - 2026-03-10 18:22:02]
+[a88e443 - 2026-03-10 18:22:02]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\36. 음양오행 - 천간 생극제화 수(2).txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\36. 음양오행 - 천간 생극제화 수(2).corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\36. 음양오행 - 천간 생극제화 수(2).script.txt
@@ -191,3 +191,4 @@ context_skipped_hits: 13
 심금 -> 신금 (x5)
 감묵 -> 갑목 (x1)
 고친 -> 고층 (x1)
+

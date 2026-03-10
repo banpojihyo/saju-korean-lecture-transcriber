@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.script.txt
@@ -271,7 +271,7 @@ cg -> 시지 (x3)
 Cg -> 시지 (x1)
 CG -> 시지 (x6)
 
-[working-tree - 2026-03-10 18:21:59]
+[a88e443 - 2026-03-10 18:21:59]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.script.txt
@@ -317,3 +317,4 @@ context_skipped_hits: 0
 cg -> 시지 (x3)
 Cg -> 시지 (x1)
 CG -> 시지 (x6)
+

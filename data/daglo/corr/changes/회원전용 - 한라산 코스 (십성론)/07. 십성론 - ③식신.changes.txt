@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.script.txt
@@ -89,7 +89,7 @@ cg -> 시지 (x3)
 Cg -> 시지 (x1)
 CG -> 시지 (x1)
 
-[working-tree - 2026-03-10 18:21:56]
+[a88e443 - 2026-03-10 18:21:56]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\07. 십성론 - ③식신.script.txt
@@ -111,3 +111,4 @@ context_skipped_hits: 0
 cg -> 시지 (x3)
 Cg -> 시지 (x1)
 CG -> 시지 (x1)
+

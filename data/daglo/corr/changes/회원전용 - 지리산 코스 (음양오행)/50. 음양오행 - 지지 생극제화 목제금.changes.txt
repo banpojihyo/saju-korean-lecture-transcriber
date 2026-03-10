@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.script.txt
@@ -76,7 +76,7 @@ context_skipped_hits: 0
 [applied replacements]
 생극 재화 -> 생극제화 (x1)
 
-[working-tree - 2026-03-10 18:22:06]
+[a88e443 - 2026-03-10 18:22:06]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.script.txt
@@ -93,3 +93,4 @@ context_skipped_hits: 0
 
 [applied replacements]
 생극 재화 -> 생극제화 (x1)
+

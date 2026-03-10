@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.script.txt
@@ -53,7 +53,7 @@ context_skipped_hits: 12
 [skipped by context]
 귀신 -> 기신 (x12)
 
-[working-tree - 2026-03-10 18:21:54]
+[a88e443 - 2026-03-10 18:21:54]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.script.txt
@@ -72,3 +72,4 @@ context_skipped_hits: 12
 
 [skipped by context]
 귀신 -> 기신 (x12)
+

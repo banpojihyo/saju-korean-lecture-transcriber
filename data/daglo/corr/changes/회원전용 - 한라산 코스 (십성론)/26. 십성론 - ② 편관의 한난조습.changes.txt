@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\26. 십성론 - ② 편관의 한난조습.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\26. 십성론 - ② 편관의 한난조습.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\26. 십성론 - ② 편관의 한난조습.script.txt
@@ -113,7 +113,7 @@ context_skipped_hits: 0
 생극 재화를 -> 생극제화를 (x1)
 10성 -> 십성 (x3)
 
-[working-tree - 2026-03-10 18:21:59]
+[a88e443 - 2026-03-10 18:21:59]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\26. 십성론 - ② 편관의 한난조습.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\26. 십성론 - ② 편관의 한난조습.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\26. 십성론 - ② 편관의 한난조습.script.txt
@@ -131,3 +131,4 @@ context_skipped_hits: 0
 [applied replacements]
 생극 재화를 -> 생극제화를 (x1)
 10성 -> 십성 (x3)
+

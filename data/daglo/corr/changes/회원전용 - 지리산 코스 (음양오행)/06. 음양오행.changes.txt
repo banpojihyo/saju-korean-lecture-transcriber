@@ -1,4 +1,4 @@
-[84d171f - 2026-03-08 21:17:09]
+﻿[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.script.txt
@@ -269,7 +269,7 @@ context_skipped_hits: 10
 귀신 -> 기신 (x2)
 고친 -> 고층 (x1)
 
-[working-tree - 2026-03-10 18:21:55]
+[a88e443 - 2026-03-10 18:21:55]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.script.txt
@@ -298,7 +298,7 @@ context_skipped_hits: 11
 귀신 -> 기신 (x2)
 고친 -> 고층 (x1)
 
-[working-tree - 2026-03-10 18:30:27]
+[a88e443 - 2026-03-10 18:30:27]
 source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.script.txt
@@ -327,3 +327,4 @@ context_skipped_hits: 10
 목국토 -> 목극토 (x6)
 귀신 -> 기신 (x2)
 고친 -> 고층 (x1)
+

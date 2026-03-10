@@ -1,4 +1,4 @@
-[02b2401 - 2026-03-08 21:45:00]
+﻿[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.script.txt
@@ -116,7 +116,7 @@ context_skipped_hits: 7
 심금 -> 신금 (x4)
 고친 -> 고층 (x1)
 
-[working-tree - 2026-03-10 18:21:54]
+[a88e443 - 2026-03-10 18:21:54]
 source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.script.txt
@@ -148,3 +148,4 @@ context_skipped_hits: 7
 
 [dict terms added]
 신금이죠
+
