@@ -59,3 +59,19 @@ context_skipped_hits: 0
 
 [applied replacements]
 생극 재화 -> 생극제화 (x1)
+
+[8d43beb - 2026-03-10 13:45:36]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.script.txt
+applied_rules: 1
+changed_chars: 27977
+term_hits_after_correction: 46
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+생극 재화 -> 생극제화 (x1)

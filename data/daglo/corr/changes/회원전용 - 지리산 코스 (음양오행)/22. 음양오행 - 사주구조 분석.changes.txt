@@ -147,3 +147,31 @@ context_skipped_hits: 0
 cg -> 시지 (x3)
 Cg -> 시지 (x1)
 CG -> 시지 (x6)
+
+[8d43beb - 2026-03-10 13:45:33]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\22. 음양오행 - 사주구조 분석.script.txt
+applied_rules: 13
+changed_chars: 32062
+term_hits_after_correction: 55
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+오늘은 청년 들어가기 전에 사조의 공 공 군에 대한 해석을 할 거예요. -> 오늘은 천간 들어가기 전에 사주의 궁에 대한 해석을 할 거예요. (x1)
+자기 기준하고 다르게 텅벼놨다고 틀렸다고 얘기하는 거. -> 자기 기준하고 다르게 통변한다고 틀렸다고 얘기하는 거. (x1)
+가평 영리에서는 일간이 주가 돼요. -> 자평명리에서는 일간이 주가 돼요. (x1)
+생극, 재화 -> 생극제화 (x2)
+생극 재화 -> 생극제화 (x1)
+생급재화 -> 생극제화 (x1)
+심금은 -> 신금은 (x2)
+심금의 -> 신금의 (x1)
+심금이 -> 신금이 (x3)
+4조 -> 사주 (x1)
+cg -> 시지 (x3)
+Cg -> 시지 (x1)
+CG -> 시지 (x6)

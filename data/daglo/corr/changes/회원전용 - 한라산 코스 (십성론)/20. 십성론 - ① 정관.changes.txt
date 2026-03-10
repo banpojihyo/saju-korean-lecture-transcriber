@@ -80,3 +80,43 @@ context_skipped_hits: 0
 생극 재화 -> 생극제화 (x2)
 생극 재활 -> 생극제화 (x1)
 10성 -> 십성 (x6)
+
+[8d43beb - 2026-03-10 13:45:33]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.script.txt
+applied_rules: 5
+changed_chars: 15498
+term_hits_after_correction: 31
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+한난 조수부 -> 한난 조습 (x1)
+생극 재화 -> 생극제화 (x2)
+생극 재활 -> 생극제화 (x1)
+생극제화을 -> 생극제화를 (x1)
+10성 -> 십성 (x6)
+
+[8d43beb - 2026-03-10 13:48:26]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.script.txt
+applied_rules: 5
+changed_chars: 15498
+term_hits_after_correction: 31
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+한난 조수부 -> 한난 조습 (x1)
+생극 재화를 -> 생극제화를 (x1)
+생극 재활을 -> 생극제화를 (x1)
+생극 재화 -> 생극제화 (x1)
+10성 -> 십성 (x6)

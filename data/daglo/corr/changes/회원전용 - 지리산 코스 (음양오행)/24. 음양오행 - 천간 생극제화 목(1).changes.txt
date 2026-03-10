@@ -225,3 +225,70 @@ context_skipped_hits: 9
 감묵에 -> 갑목에 (x1)
 목국토 -> 목극토 (x3)
 감묵 -> 갑목 (x3)
+
+[8d43beb - 2026-03-10 13:45:34]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
+applied_rules: 10
+changed_chars: 19497
+term_hits_after_correction: 50
+script_lines_after_cleanup: 129
+dict_replace_added: 0
+dict_terms_added: 1
+context_skipped_rules: 5
+context_skipped_hits: 9
+
+[applied replacements]
+관묵이잖아요 -> 갑목이잖아요 (x1)
+관묵이에요 -> 갑목이에요 (x1)
+관묵이니까 -> 갑목이니까 (x1)
+생극 재화 -> 생극제화 (x1)
+감묵의 -> 갑목의 (x2)
+감묵이 -> 갑목이 (x6)
+감묵에 -> 갑목에 (x3)
+목국토 -> 목극토 (x1)
+관묵이 -> 갑목이 (x2)
+감묵 -> 갑목 (x3)
+
+[skipped by context]
+감묵한테 -> 갑목한테 (x1)
+감묵이 -> 갑목이 (x1)
+감묵에 -> 갑목에 (x1)
+목국토 -> 목극토 (x3)
+감묵 -> 갑목 (x3)
+
+[dict terms added]
+갑목이니까
+
+[8d43beb - 2026-03-10 13:48:27]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
+applied_rules: 10
+changed_chars: 19497
+term_hits_after_correction: 48
+script_lines_after_cleanup: 129
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 9
+
+[applied replacements]
+관묵이잖아요 -> 갑목이잖아요 (x1)
+생극 재화를 -> 생극제화를 (x1)
+관묵이에요 -> 갑목이에요 (x1)
+관묵이니까 -> 갑목이니까 (x1)
+감묵의 -> 갑목의 (x2)
+감묵이 -> 갑목이 (x6)
+감묵에 -> 갑목에 (x3)
+목국토 -> 목극토 (x1)
+관묵이 -> 갑목이 (x2)
+감묵 -> 갑목 (x3)
+
+[skipped by context]
+감묵한테 -> 갑목한테 (x1)
+감묵이 -> 갑목이 (x1)
+감묵에 -> 갑목에 (x1)
+목국토 -> 목극토 (x3)
+감묵 -> 갑목 (x3)

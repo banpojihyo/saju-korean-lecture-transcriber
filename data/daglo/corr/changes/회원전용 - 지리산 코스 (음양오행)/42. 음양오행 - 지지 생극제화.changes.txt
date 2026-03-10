@@ -62,3 +62,38 @@ context_skipped_hits: 0
 [applied replacements]
 생극 재화 -> 생극제화 (x9)
 10성 -> 십성 (x3)
+
+[8d43beb - 2026-03-10 13:45:36]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\42. 음양오행 - 지지 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\42. 음양오행 - 지지 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\42. 음양오행 - 지지 생극제화.script.txt
+applied_rules: 2
+changed_chars: 34539
+term_hits_after_correction: 73
+script_lines_after_cleanup: 146
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+생극 재화 -> 생극제화 (x9)
+10성 -> 십성 (x3)
+
+[8d43beb - 2026-03-10 13:48:29]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\42. 음양오행 - 지지 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\42. 음양오행 - 지지 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\42. 음양오행 - 지지 생극제화.script.txt
+applied_rules: 3
+changed_chars: 34539
+term_hits_after_correction: 73
+script_lines_after_cleanup: 146
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+생극 재화를 -> 생극제화를 (x4)
+생극 재화 -> 생극제화 (x5)
+10성 -> 십성 (x3)
