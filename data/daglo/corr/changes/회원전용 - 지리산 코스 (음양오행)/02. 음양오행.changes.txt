@@ -1,4 +1,4 @@
-﻿[84d171f - 2026-03-08 21:17:09]
+[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\02. 음양오행.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\02. 음양오행.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\02. 음양오행.script.txt
@@ -28,28 +28,3 @@ context_skipped_hits: 0
 
 [applied replacements]
 광풍 제월 -> 광풍제월 (x1)
-
-[a88e443 - 2026-03-10 18:21:55]
-source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\02. 음양오행.txt
-output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\02. 음양오행.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\02. 음양오행.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 1
-changed_chars: 34894
-term_hits_after_correction: 21
-script_lines_after_cleanup: 150
-dict_replace_added: 1
-dict_terms_added: 1
-context_skipped_rules: 0
-context_skipped_hits: 0
-
-[applied replacements]
-광풍 제월 -> 광풍제월 (x1)
-
-[dict replace added]
-광풍 제월 -> 광풍제월
-
-[dict terms added]
-광풍제월
-

@@ -1,4 +1,4 @@
-﻿[02b2401 - 2026-03-08 21:45:00]
+[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\34. 십성론 - ① 편인의 한난조습.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\34. 십성론 - ① 편인의 한난조습.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\34. 십성론 - ① 편인의 한난조습.script.txt
@@ -135,27 +135,3 @@ context_skipped_hits: 1
 
 [skipped by context]
 감묵 -> 갑목 (x1)
-
-[a88e443 - 2026-03-10 18:22:01]
-source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\34. 십성론 - ① 편인의 한난조습.txt
-output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\34. 십성론 - ① 편인의 한난조습.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\34. 십성론 - ① 편인의 한난조습.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 3
-changed_chars: 20595
-term_hits_after_correction: 49
-script_lines_after_cleanup: 115
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 1
-context_skipped_hits: 1
-
-[applied replacements]
-10성 -> 십성 (x3)
-관묵이 -> 갑목이 (x1)
-관묵에 -> 갑목에 (x1)
-
-[skipped by context]
-감묵 -> 갑목 (x1)
-

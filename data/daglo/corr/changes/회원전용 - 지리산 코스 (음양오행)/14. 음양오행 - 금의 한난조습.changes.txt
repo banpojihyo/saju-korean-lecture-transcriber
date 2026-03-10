@@ -1,4 +1,4 @@
-﻿[84d171f - 2026-03-08 21:17:09]
+[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
@@ -204,104 +204,6 @@ context_skipped_rules: 5
 context_skipped_hits: 20
 
 [applied replacements]
-생극 재화를 -> 생극제화를 (x4)
-생극 재화 -> 생극제화 (x1)
-생극재화를 -> 생극제화를 (x2)
-심금은 -> 신금은 (x3)
-심금이 -> 신금이 (x9)
-심금에 -> 신금에 (x1)
-심금을 -> 신금을 (x1)
-심금 -> 신금 (x2)
-
-[skipped by context]
-심금은 -> 신금은 (x2)
-심금이 -> 신금이 (x4)
-심금에 -> 신금에 (x1)
-금극무 -> 금극목 (x2)
-심금 -> 신금 (x11)
-
-[a88e443 - 2026-03-10 18:21:57]
-source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
-output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 8
-changed_chars: 369
-term_hits_after_correction: 49
-script_lines_after_cleanup: 147
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 5
-context_skipped_hits: 20
-
-[applied replacements]
-생극 재화를 -> 생극제화를 (x4)
-생극 재화 -> 생극제화 (x1)
-생극재화를 -> 생극제화를 (x2)
-심금은 -> 신금은 (x3)
-심금이 -> 신금이 (x9)
-심금에 -> 신금에 (x1)
-심금을 -> 신금을 (x1)
-심금 -> 신금 (x2)
-
-[skipped by context]
-심금은 -> 신금은 (x2)
-심금이 -> 신금이 (x4)
-심금에 -> 신금에 (x1)
-금극무 -> 금극목 (x2)
-심금 -> 신금 (x11)
-
-[working-tree - 2026-03-10 19:02:41]
-source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
-output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 8
-changed_chars: 369
-term_hits_after_correction: 49
-script_lines_after_cleanup: 147
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 5
-context_skipped_hits: 20
-
-[applied replacements]
-생극 재화를 -> 생극제화를 (x4)
-생극 재화 -> 생극제화 (x1)
-생극재화를 -> 생극제화를 (x2)
-심금은 -> 신금은 (x3)
-심금이 -> 신금이 (x9)
-심금에 -> 신금에 (x1)
-심금을 -> 신금을 (x1)
-심금 -> 신금 (x2)
-
-[skipped by context]
-심금은 -> 신금은 (x2)
-심금이 -> 신금이 (x4)
-심금에 -> 신금에 (x1)
-금극무 -> 금극목 (x2)
-심금 -> 신금 (x11)
-
-[working-tree - 2026-03-10 19:04:22]
-source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
-output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 10
-changed_chars: 372
-term_hits_after_correction: 49
-script_lines_after_cleanup: 147
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 5
-context_skipped_hits: 20
-
-[applied replacements]
-금곡목 -> 금극목 (x2)
-한묵 -> 한목 (x1)
 생극 재화를 -> 생극제화를 (x4)
 생극 재화 -> 생극제화 (x1)
 생극재화를 -> 생극제화를 (x2)

@@ -1,4 +1,4 @@
-﻿[02b2401 - 2026-03-08 21:45:00]
+[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\35. 십성론 - ② 편인의 궁대응.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\35. 십성론 - ② 편인의 궁대응.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\35. 십성론 - ② 편인의 궁대응.script.txt
@@ -135,35 +135,3 @@ CG -> 시지 (x6)
 심금이 -> 신금이 (x1)
 심금 -> 신금 (x1)
 귀신 -> 기신 (x3)
-
-[a88e443 - 2026-03-10 18:22:02]
-source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\35. 십성론 - ② 편인의 궁대응.txt
-output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\35. 십성론 - ② 편인의 궁대응.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\35. 십성론 - ② 편인의 궁대응.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 9
-changed_chars: 26212
-term_hits_after_correction: 44
-script_lines_after_cleanup: 113
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 3
-context_skipped_hits: 5
-
-[applied replacements]
-10성 -> 십성 (x5)
-심금은 -> 신금은 (x1)
-심금의 -> 신금의 (x1)
-심금이 -> 신금이 (x1)
-사조를 -> 사주를 (x1)
-심금 -> 신금 (x1)
-cg -> 시지 (x4)
-Cg -> 시지 (x1)
-CG -> 시지 (x6)
-
-[skipped by context]
-심금이 -> 신금이 (x1)
-심금 -> 신금 (x1)
-귀신 -> 기신 (x3)
-

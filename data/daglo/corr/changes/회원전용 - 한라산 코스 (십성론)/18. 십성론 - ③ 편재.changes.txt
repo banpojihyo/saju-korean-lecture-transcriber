@@ -1,4 +1,4 @@
-﻿[02b2401 - 2026-03-08 21:45:00]
+[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.script.txt
@@ -140,25 +140,3 @@ context_skipped_hits: 0
 10성 -> 십성 (x2)
 심금을 -> 신금을 (x1)
 사조를 -> 사주를 (x1)
-
-[a88e443 - 2026-03-10 18:21:58]
-source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.txt
-output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\18. 십성론 - ③ 편재.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 4
-changed_chars: 22545
-term_hits_after_correction: 50
-script_lines_after_cleanup: 101
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 0
-context_skipped_hits: 0
-
-[applied replacements]
-생극 재화 -> 생극제화 (x1)
-10성 -> 십성 (x2)
-심금을 -> 신금을 (x1)
-사조를 -> 사주를 (x1)
-

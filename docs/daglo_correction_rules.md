@@ -42,7 +42,9 @@
 - `file_overrides.jsonl`은 상대 raw 경로 + exact wrong/right 쌍을 저장하고, 지정한 파일에서만 적용한다.
 - `관묵 -> 갑목`, `항만조습 -> 한난조습`, `모기 개입 -> 목이 개입`처럼 반복 검증된 고신뢰 도메인 오인식은 짧은 토큰 필터보다 우선 적용할 수 있다.
 - `cg -> 시지`처럼 짧은 영문/혼합 토큰 오인식도 도메인상 의미가 확정되면 `FORCE_DOMAIN_REPLACEMENTS`와 `replace.csv`에 함께 넣어 우선 적용한다.
-- `감묵/관묵 -> 갑목`, `토국수/목국토 -> 토극수/목극토`, `심금 -> 신금`은 무조건 치환하지 않는다. `PAIR_CONTEXT_RULES`로 사주/오행 문맥을 확인한 뒤에만 적용한다.
+- `감묵/관묵 -> 갑목`, `심금 -> 신금`은 무조건 치환하지 않는다. `PAIR_CONTEXT_RULES`로 사주/오행 문맥을 확인한 뒤에만 적용한다.
+- 다만 `dict/topics/saju`를 쓰는 교정에서는 `목국토/토국수/토곡수`처럼 `극`이 `국/곡`으로 잘못 인식된 오행 상극 복합어를 regex 정규화로 우선 보정한다.
+- 같은 이유로 `한 무기/한 목이/한 목에/한묵`처럼 `한목` 계열이 띄어쓰기/ASR로 무너진 패턴도 `dict/topics/saju` 교정에서는 regex 정규화로 우선 보정한다.
 - `기포 -> 기토`, `배수 -> 계수`는 일반 한국어에서는 다른 뜻이 가능하므로 기본적으로 무조건 치환하지 않는다.
 - 다만 `dict/topics/saju`를 사용하면서 입력 루트가 `data/daglo/raw`인 경우에는 현재 사주 코퍼스 특성을 반영해 `기포 -> 기토`, `배수 -> 계수`를 더 공격적으로 적용할 수 있다.
 - `생무기/사무기/생모기/사모기/수생무기/수생모기/관무기`처럼 `목/갑목`이 `무기/모기`로 잘못 인식된 패턴은 일반 토큰 치환보다 phrase-level exact replacement를 우선한다.
@@ -103,7 +105,11 @@
 - 문맥상 부자연스러운 치환이 없는지 샘플 점검
 4. 사전 반영 확인
 - `dict/replace.csv`, `dict/file_overrides.jsonl`, `dict/terms.csv` 신규 항목 점검
-5. 이력 보존
+5. script 검토 기반 재교정
+- `corr/script`를 검토하면서 `@@ override: <wrong> => <right>` marker를 넣는다.
+- `script_review_to_overrides.py --topic <topic> --script-file <...> --clean-markers`로 marker를 `file_overrides.jsonl`로 변환한다.
+- 이후 다시 `raw -> 규칙/사전/override -> script` 순서로 재생성한다.
+6. 이력 보존
 - 재교정은 `.changes` 기존 내용을 유지한 채 새 블록 append
 
 ## 8) 단일 파일 실행 예시

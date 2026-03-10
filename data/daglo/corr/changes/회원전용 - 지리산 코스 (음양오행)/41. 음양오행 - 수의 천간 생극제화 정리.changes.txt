@@ -1,4 +1,4 @@
-﻿[84d171f - 2026-03-08 21:17:09]
+[84d171f - 2026-03-08 21:17:09]
 source: C:\Users\Administrator\saju-korean-lecture-transcriber\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.txt
 output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.script.txt
@@ -237,110 +237,6 @@ context_skipped_rules: 5
 context_skipped_hits: 8
 
 [applied replacements]
-생극, 재화 -> 생극제화 (x1)
-심금한테 -> 신금한테 (x1)
-심금이나 -> 신금이나 (x1)
-심금은 -> 신금은 (x3)
-심금의 -> 신금의 (x6)
-심금이 -> 신금이 (x7)
-심금에 -> 신금에 (x1)
-심금을 -> 신금을 (x4)
-기포가 -> 기토가 (x1)
-심금 -> 신금 (x3)
-
-[skipped by context]
-심금이나 -> 신금이나 (x1)
-심금의 -> 신금의 (x1)
-심금이 -> 신금이 (x1)
-심금 -> 신금 (x4)
-귀신 -> 기신 (x1)
-
-[a88e443 - 2026-03-10 18:22:03]
-source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.txt
-output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 10
-changed_chars: 106
-term_hits_after_correction: 57
-script_lines_after_cleanup: 171
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 5
-context_skipped_hits: 8
-
-[applied replacements]
-생극, 재화 -> 생극제화 (x1)
-심금한테 -> 신금한테 (x1)
-심금이나 -> 신금이나 (x1)
-심금은 -> 신금은 (x3)
-심금의 -> 신금의 (x6)
-심금이 -> 신금이 (x7)
-심금에 -> 신금에 (x1)
-심금을 -> 신금을 (x4)
-기포가 -> 기토가 (x1)
-심금 -> 신금 (x3)
-
-[skipped by context]
-심금이나 -> 신금이나 (x1)
-심금의 -> 신금의 (x1)
-심금이 -> 신금이 (x1)
-심금 -> 신금 (x4)
-귀신 -> 기신 (x1)
-
-[working-tree - 2026-03-10 19:02:42]
-source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.txt
-output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 10
-changed_chars: 106
-term_hits_after_correction: 57
-script_lines_after_cleanup: 171
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 5
-context_skipped_hits: 8
-
-[applied replacements]
-생극, 재화 -> 생극제화 (x1)
-심금한테 -> 신금한테 (x1)
-심금이나 -> 신금이나 (x1)
-심금은 -> 신금은 (x3)
-심금의 -> 신금의 (x6)
-심금이 -> 신금이 (x7)
-심금에 -> 신금에 (x1)
-심금을 -> 신금을 (x4)
-기포가 -> 기토가 (x1)
-심금 -> 신금 (x3)
-
-[skipped by context]
-심금이나 -> 신금이나 (x1)
-심금의 -> 신금의 (x1)
-심금이 -> 신금이 (x1)
-심금 -> 신금 (x4)
-귀신 -> 기신 (x1)
-
-[working-tree - 2026-03-10 19:04:24]
-source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.txt
-output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 12
-changed_chars: 109
-term_hits_after_correction: 57
-script_lines_after_cleanup: 171
-dict_replace_added: 0
-dict_terms_added: 0
-context_skipped_rules: 5
-context_skipped_hits: 8
-
-[applied replacements]
-토곡수 -> 토극수 (x2)
-수곡화 -> 수극화 (x1)
 생극, 재화 -> 생극제화 (x1)
 심금한테 -> 신금한테 (x1)
 심금이나 -> 신금이나 (x1)

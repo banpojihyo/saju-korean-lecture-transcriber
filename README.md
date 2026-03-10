@@ -130,7 +130,30 @@ py extract_correction_candidates.py `
   --regex "천관|장관|월감|가평 영리"
 ```
 
-## 8) Legacy: 로컬 전사 스크립트
+## 8) script 검토 marker -> override 변환
+
+`corr/script/*.script.txt`를 검토하면서 아래와 같은 marker 줄을 넣어두면:
+
+```text
+@@ override: 사모기에 한 모기 개입 => 사목에 한목이 개입
+```
+
+`script_review_to_overrides.py`가 해당 `script` 경로를 기준으로 raw 상대경로를 자동 추론해서 `dict/topics/<topic>/file_overrides.jsonl`에 반영합니다.
+
+```powershell
+py script_review_to_overrides.py `
+  --topic saju `
+  --script-file "data/daglo/corr/script/회원전용 - 지리산 코스 (음양오행)/06. 음양오행.script.txt" `
+  --clean-markers
+```
+
+- marker 형식: `@@ override: <wrong> => <right>`
+- `--clean-markers`를 주면 반영 후 marker 줄을 script 파일에서 제거합니다.
+- 동일한 `path + wrong`가 이미 있으면 `right`를 업데이트합니다.
+
+즉 workflow는 `script 검토 -> marker 기록 -> override 변환 -> raw 재생성` 순서로 가져가면 됩니다.
+
+## 9) Legacy: 로컬 전사 스크립트
 
 향후 재사용을 위해 로컬 전사 스크립트는 `legacy/transcribe_videos.py`로 이동했습니다.
 
@@ -143,7 +166,7 @@ py legacy/transcribe_videos.py `
   --language ko
 ```
 
-## 9) Gemini로 학습 패키지 일괄 생성
+## 10) Gemini로 학습 패키지 일괄 생성
 
 `generate_study_pack_gemini.py`는 스크립트 텍스트를 순회하면서 아래 3가지를 한 번에 생성합니다.
 
@@ -171,7 +194,7 @@ py generate_study_pack_gemini.py `
 - `--max-files <N>`: 테스트용 소량 실행
 - `--sleep-sec <float>`: 요청 사이 대기(쿼터 관리)
 
-## 10) 통합 AI 파이프라인 (OpenAI/Gemini 선택)
+## 11) 통합 AI 파이프라인 (OpenAI/Gemini 선택)
 
 `run_ai_pipeline.py`는 `ai summaries`와 `study pack` 요구를 병합한 통합 실행 파일입니다.
 

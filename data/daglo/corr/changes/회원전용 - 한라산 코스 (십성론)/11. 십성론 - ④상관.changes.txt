@@ -1,4 +1,4 @@
-﻿[02b2401 - 2026-03-08 21:45:00]
+[02b2401 - 2026-03-08 21:45:00]
 source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\11. 십성론 - ④상관.txt
 output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\11. 십성론 - ④상관.corrected.txt
 script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\11. 십성론 - ④상관.script.txt
@@ -110,31 +110,3 @@ context_skipped_hits: 0
 감묵 -> 갑목 (x1)
 cg -> 시지 (x2)
 CG -> 시지 (x2)
-
-[a88e443 - 2026-03-10 18:21:56]
-source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\11. 십성론 - ④상관.txt
-output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\11. 십성론 - ④상관.corrected.txt
-script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\11. 십성론 - ④상관.script.txt
-file_override_rules: 0
-file_override_hits: 0
-applied_rules: 7
-changed_chars: 5092
-term_hits_after_correction: 50
-script_lines_after_cleanup: 111
-dict_replace_added: 0
-dict_terms_added: 1
-context_skipped_rules: 0
-context_skipped_hits: 0
-
-[applied replacements]
-심금이니까 -> 신금이니까 (x1)
-10성 -> 십성 (x4)
-심금의 -> 신금의 (x1)
-심금 -> 신금 (x2)
-감묵 -> 갑목 (x1)
-cg -> 시지 (x2)
-CG -> 시지 (x2)
-
-[dict terms added]
-신금이니까
-
