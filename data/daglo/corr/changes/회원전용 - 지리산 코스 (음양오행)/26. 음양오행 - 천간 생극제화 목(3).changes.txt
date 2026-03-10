@@ -195,3 +195,89 @@ context_skipped_hits: 2
 [skipped by context]
 감묵이 -> 갑목이 (x1)
 감묵 -> 갑목 (x1)
+
+[working-tree - 2026-03-10 19:41:01]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 10
+changed_chars: 15746
+term_hits_after_correction: 55
+script_lines_after_cleanup: 131
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x4)
+생묵* -> 생목* (x2)
+묵생* -> 목생* (x1)
+감묵한테 -> 갑목한테 (x1)
+관묵한테 -> 갑목한테 (x2)
+10성 -> 십성 (x1)
+감묵은 -> 갑목은 (x2)
+감묵이 -> 갑목이 (x2)
+관묵이 -> 갑목이 (x1)
+관무기 -> 갑목이 (x1)
+
+[skipped by context]
+감묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x1)
+
+[working-tree - 2026-03-10 19:50:42]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 10
+changed_chars: 15746
+term_hits_after_correction: 55
+script_lines_after_cleanup: 131
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x4)
+생묵* -> 생목* (x2)
+묵생* -> 목생* (x1)
+감묵한테 -> 갑목한테 (x1)
+관묵한테 -> 갑목한테 (x2)
+10성 -> 십성 (x1)
+감묵은 -> 갑목은 (x2)
+감묵이 -> 갑목이 (x2)
+관묵이 -> 갑목이 (x1)
+관무기 -> 갑목이 (x1)
+
+[skipped by context]
+감묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x1)
+
+[working-tree - 2026-03-10 19:54:27]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 15746
+term_hits_after_correction: 55
+script_lines_after_cleanup: 131
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x4)
+생묵* -> 생목* (x2)
+묵생* -> 목생* (x1)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x6)
+10성 -> 십성 (x1)
+관무기 -> 갑목이 (x1)

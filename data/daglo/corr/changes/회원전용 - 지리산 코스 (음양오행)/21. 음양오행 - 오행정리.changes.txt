@@ -252,3 +252,64 @@ context_skipped_hits: 5
 심금이 -> 신금이 (x2)
 관사를 -> 관살을 (x1)
 심금 -> 신금 (x2)
+
+[working-tree - 2026-03-10 19:40:59]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.script.txt
+file_override_rules: 3
+file_override_hits: 3
+applied_rules: 4
+changed_chars: 23710
+term_hits_after_correction: 50
+script_lines_after_cleanup: 135
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 5
+
+[file overrides applied]
+자월의 관목. 민으로 돼 있다고 해도 -> 자월의 갑목. 갑인으로 돼 있다고 해도 (x1)
+원리적 접근으로 형성된 게 하두예요. -> 원리적 접근으로 형성된 게 하도예요. (x1)
+접종을 만드셔서 통변 -> 접점을 만드셔서 통변 (x1)
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+생극 재화를 -> 생극제화를 (x1)
+음향 오행 -> 음양 오행 (x1)
+4조 -> 사주 (x2)
+
+[skipped by context]
+심금이 -> 신금이 (x2)
+관사를 -> 관살을 (x1)
+심금 -> 신금 (x2)
+
+[working-tree - 2026-03-10 19:50:44]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.script.txt
+file_override_rules: 3
+file_override_hits: 3
+applied_rules: 5
+changed_chars: 23710
+term_hits_after_correction: 51
+script_lines_after_cleanup: 135
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+자월의 관목. 민으로 돼 있다고 해도 -> 자월의 갑목. 갑인으로 돼 있다고 해도 (x1)
+원리적 접근으로 형성된 게 하두예요. -> 원리적 접근으로 형성된 게 하도예요. (x1)
+접종을 만드셔서 통변 -> 접점을 만드셔서 통변 (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x2)
+토국수 -> 토극수 (x1)
+생극 재화를 -> 생극제화를 (x1)
+음향 오행 -> 음양 오행 (x1)
+4조 -> 사주 (x2)
+
+[skipped by context]
+관사를 -> 관살을 (x1)
