@@ -10,6 +10,17 @@ import sys
 import tempfile
 from pathlib import Path
 
+from correct_daglo_file import (
+    FILE_OVERRIDES_FILENAME,
+    TERM_STOPWORDS_FILENAME,
+    load_file_overrides,
+    load_stopwords,
+    merge_file_overrides,
+    merge_stopwords,
+    write_file_overrides,
+    write_stopwords,
+)
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -74,10 +85,16 @@ def ensure_dict_files(dict_dir: Path) -> None:
     dict_dir.mkdir(parents=True, exist_ok=True)
     replace_path = dict_dir / "replace.csv"
     terms_path = dict_dir / "terms.csv"
+    file_overrides_path = dict_dir / FILE_OVERRIDES_FILENAME
+    stopwords_path = dict_dir / TERM_STOPWORDS_FILENAME
     if not replace_path.exists():
         write_replace_pairs(replace_path, [])
     if not terms_path.exists():
         write_terms(terms_path, [])
+    if not file_overrides_path.exists():
+        write_file_overrides(file_overrides_path, [])
+    if not stopwords_path.exists():
+        write_stopwords(stopwords_path, set())
 
 
 def load_replace_pairs(path: Path) -> list[tuple[str, str]]:
@@ -179,16 +196,24 @@ def run_one_file(
 
     common_replace = load_replace_pairs(common_dir / "replace.csv")
     common_terms = load_terms(common_dir / "terms.csv")
+    common_file_overrides = load_file_overrides(common_dir / FILE_OVERRIDES_FILENAME)
+    common_stopwords = load_stopwords(common_dir / TERM_STOPWORDS_FILENAME)
     topic_replace = load_replace_pairs(topic_dir / "replace.csv")
     topic_terms = load_terms(topic_dir / "terms.csv")
+    topic_file_overrides = load_file_overrides(topic_dir / FILE_OVERRIDES_FILENAME)
+    topic_stopwords = load_stopwords(topic_dir / TERM_STOPWORDS_FILENAME)
 
     merged_replace = merge_replace_pairs(common_replace, topic_replace)
     merged_terms = merge_terms(common_terms, topic_terms)
+    merged_file_overrides = merge_file_overrides(common_file_overrides, topic_file_overrides)
+    merged_stopwords = merge_stopwords(common_stopwords, topic_stopwords)
 
     with tempfile.TemporaryDirectory(prefix="daglo-merged-dict-") as temp_dir:
         temp_dict = Path(temp_dir)
         write_replace_pairs(temp_dict / "replace.csv", merged_replace)
         write_terms(temp_dict / "terms.csv", merged_terms)
+        write_file_overrides(temp_dict / FILE_OVERRIDES_FILENAME, merged_file_overrides)
+        write_stopwords(temp_dict / TERM_STOPWORDS_FILENAME, merged_stopwords)
 
         cmd = [
             sys.executable,

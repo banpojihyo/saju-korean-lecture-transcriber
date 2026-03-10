@@ -1,0 +1,2 @@
+# File-scoped exact phrase overrides.
+# Format: {"path":"relative/raw/path.txt","wrong":"...","right":"...","note":"optional"}

@@ -1,6 +1,6 @@
 ﻿# daglo-script-corrector
 
-Daglo로 1차 전사된 강의 스크립트를 CSV 사전 기반으로 문맥 교정하는 CLI 프로젝트입니다.
+Daglo로 1차 전사된 강의 스크립트를 사전 + 파일별 override 기반으로 문맥 교정하는 CLI 프로젝트입니다.
 
 ## 1) 설치
 
@@ -52,26 +52,29 @@ Get-ChildItem "data/daglo/raw" -Recurse -Filter *.txt | ForEach-Object {
 
 ```text
 dict/
-  common/{replace.csv,terms.csv}
-  topics/saju/{replace.csv,terms.csv}
-  topics/network/{replace.csv,terms.csv}
-  topics/security/{replace.csv,terms.csv}
-  topics/math/{replace.csv,terms.csv}
-  topics/philosophy/{replace.csv,terms.csv}
-  topics/philosophy_east/{replace.csv,terms.csv}
-  topics/philosophy_west/{replace.csv,terms.csv}
-  topics/vocal/{replace.csv,terms.csv}
-  topics/essay/{replace.csv,terms.csv}
+  common/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/saju/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/network/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/security/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/math/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/philosophy/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/philosophy_east/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/philosophy_west/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/vocal/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
+  topics/essay/{replace.csv,terms.csv,file_overrides.jsonl,term_stopwords.txt}
 ```
 
 - `dict/topics/saju`는 기존 사주 사전을 기준으로 초기화되어 있습니다.
 - `dict/common`은 전 주제 공통 오탈자/용어를 담는 용도입니다.
 - `dict/topics/<theme>`는 주제 특화 사전을 담는 용도입니다.
+- `replace.csv`는 반복적으로 재사용할 수 있는 전역 치환 규칙만 둡니다.
+- `file_overrides.jsonl`은 특정 파일에서만 써야 하는 문장형 exact replacement를 둡니다.
+- `term_stopwords.txt`는 common 또는 topic 단위로 자동 `terms.csv` 갱신 시 들어가면 안 되는 일반어 stopword를 둡니다.
 - `dict/topics/philosophy_east`, `dict/topics/philosophy_west`를 권장하며, `dict/topics/philosophy`는 통합형(호환)입니다.
 - `correct_daglo_file.py`와 `refine_output_dict.py`의 기본 `--dict-dir`는 `dict/common`입니다.
 
 `run_topic_correction.py`를 사용하면 `common + topic`을 병합해 교정할 수 있습니다.
-교정 중 새로 발견된 항목은 기본적으로 해당 topic 사전에만 반영됩니다.
+교정 중 새로 발견된 항목은 기본적으로 해당 topic 사전에만 반영되지만, 자동 추가는 짧고 재사용 가능한 pair/term 위주로만 제한됩니다.
 
 ```powershell
 py run_topic_correction.py `
@@ -106,7 +109,28 @@ py refine_output_dict.py `
 py refine_output_dict.py --dry-run
 ```
 
-## 7) Legacy: 로컬 전사 스크립트
+## 7) 의심 구간 일괄 추출
+
+`extract_correction_candidates.py`는 `corr/script`를 훑으면서 아직 남아 있는 known-wrong phrase를 파일/줄/대략 timestamp와 함께 뽑아줍니다. `replace.csv`, `manual_pairs()`, `file_overrides.jsonl`에 있는 known-wrong phrase를 함께 참고합니다.
+
+```powershell
+py extract_correction_candidates.py `
+  --topic saju `
+  --target "회원전용 - 지리산 코스 (음양오행)" `
+  --script-root "data/daglo/corr/script" `
+  --corrected-root "data/daglo/corr/corrected"
+```
+
+필요하면 regex도 추가할 수 있습니다.
+
+```powershell
+py extract_correction_candidates.py `
+  --topic saju `
+  --target "회원전용 - 지리산 코스 (음양오행)" `
+  --regex "천관|장관|월감|가평 영리"
+```
+
+## 8) Legacy: 로컬 전사 스크립트
 
 향후 재사용을 위해 로컬 전사 스크립트는 `legacy/transcribe_videos.py`로 이동했습니다.
 
@@ -119,7 +143,7 @@ py legacy/transcribe_videos.py `
   --language ko
 ```
 
-## 8) Gemini로 학습 패키지 일괄 생성
+## 9) Gemini로 학습 패키지 일괄 생성
 
 `generate_study_pack_gemini.py`는 스크립트 텍스트를 순회하면서 아래 3가지를 한 번에 생성합니다.
 
@@ -147,7 +171,7 @@ py generate_study_pack_gemini.py `
 - `--max-files <N>`: 테스트용 소량 실행
 - `--sleep-sec <float>`: 요청 사이 대기(쿼터 관리)
 
-## 9) 통합 AI 파이프라인 (OpenAI/Gemini 선택)
+## 10) 통합 AI 파이프라인 (OpenAI/Gemini 선택)
 
 `run_ai_pipeline.py`는 `ai summaries`와 `study pack` 요구를 병합한 통합 실행 파일입니다.
 

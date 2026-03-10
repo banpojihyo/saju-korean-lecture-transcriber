@@ -1,7 +1,7 @@
-# Daglo 교정 규칙서 (2026-03-08 기준)
+# Daglo 교정 규칙서 (2026-03-10 기준)
 
 ## 1) 목표
-- 미교정 Daglo 스크립트를 `replace.csv`, `terms.csv` 기반으로 자연스럽게 교정한다.
+- 미교정 Daglo 스크립트를 `replace.csv`, `file_overrides.jsonl`, `terms.csv` 기반으로 자연스럽게 교정한다.
 - 문맥상 어색할 수 있는 치환은 자동 적용하지 않고 보수적으로 건너뛴다.
 - 교정 과정에서 확인된 유효 치환/용어를 사전에 반영해 다음 교정을 쉽게 만든다.
 
@@ -14,9 +14,11 @@
 
 ## 3) 교정 규칙(핵심)
 - 교정 규칙 소스:
-- `dict/replace.csv`
+- `dict/<theme>/replace.csv`
+- `dict/<theme>/file_overrides.jsonl`
 - `correct_daglo_file.py`의 `manual_pairs()`
 - 적용 순서:
+- 파일별 override exact replacement
 - `wrong` 문자열 길이가 긴 규칙부터 우선 적용(부분 중첩 오적용 방지)
 - 문맥 필터:
 - `PAIR_CONTEXT_RULES` 대상(예: `귀신->기신`, `무반->무관`, `고친->고층`)은 include/exclude 문맥을 모두 통과해야 적용
@@ -36,6 +38,8 @@
 - 예: `오늘은 청년 들어가기 전에 사조의 공 공 군에 대한 해석을 할 거예요. -> 오늘은 천간 들어가기 전에 사주의 궁에 대한 해석을 할 거예요.`
 - 같은 이유로 일반 한국어와 충돌할 수 있는 표현도 문맥이 닫힌 구문이면 exact phrase로만 교정한다.
 - 예: `이렇게 닥터이면은 -> 이렇게 박토이면은`은 토의 `박토/후토` 대비 문맥에서만 쓰고, `닥터 지바고` 같은 일반 표현은 건드리지 않는다.
+- 다만 1회성 exact phrase는 전역 `replace.csv`에 계속 누적하지 않고 `file_overrides.jsonl`로 분리한다.
+- `file_overrides.jsonl`은 상대 raw 경로 + exact wrong/right 쌍을 저장하고, 지정한 파일에서만 적용한다.
 - `관묵 -> 갑목`, `항만조습 -> 한난조습`, `모기 개입 -> 목이 개입`처럼 반복 검증된 고신뢰 도메인 오인식은 짧은 토큰 필터보다 우선 적용할 수 있다.
 - `cg -> 시지`처럼 짧은 영문/혼합 토큰 오인식도 도메인상 의미가 확정되면 `FORCE_DOMAIN_REPLACEMENTS`와 `replace.csv`에 함께 넣어 우선 적용한다.
 - `감묵/관묵 -> 갑목`, `토국수/목국토 -> 토극수/목극토`, `심금 -> 신금`은 무조건 치환하지 않는다. `PAIR_CONTEXT_RULES`로 사주/오행 문맥을 확인한 뒤에만 적용한다.
@@ -53,17 +57,24 @@
 - `오행생극재화`처럼 앞 단어가 붙은 복합어도 함께 정규화해 `오행생극제화`로 유지한다.
 - 특히 `심금 -> 신금`은 `심금을 울리다` 같은 일반 한국어 표현과 충돌하므로, `울리다/가슴/마음/노래` 문맥이 보이면 자동 치환하지 않는다.
 
-## 5) 사전(`replace.csv`, `terms.csv`) 업데이트 규칙
+## 5) 사전(`replace.csv`, `file_overrides.jsonl`, `terms.csv`) 업데이트 규칙
 - 기본값은 자동 업데이트(옵션 `--no-update-dict` 미사용 기준)
 - `replace.csv`:
-- 이번 실행에서 실제 적용된 `(wrong, right)`만 신규 추가
+- 이번 실행에서 실제 적용된 `(wrong, right)` 중 전역 재사용 가치가 높은 pair만 신규 추가
 - 중복 pair는 추가하지 않음
-- 조사/어미가 붙은 문장형 교정은 `replace.csv`에만 넣고, `terms.csv`에는 넣지 않는다.
+- 긴 문장형/구두점 포함 pair/3어절 이상 pair는 자동으로 `replace.csv`에 넣지 않는다.
+- 즉, `replace.csv` 자동 추가는 짧고 안전한 pair 위주로 제한한다.
+- 파일별 1회성 문장형 교정은 `file_overrides.jsonl`에 수동으로 넣는다.
+- `file_overrides.jsonl`:
+- 형식은 JSONL 한 줄당 1개 객체
+- 기본 필드: `path`, `wrong`, `right`, 선택 필드: `note`
+- `path`는 `data/daglo/raw` 기준 상대 경로 또는 glob 패턴이다.
 - `terms.csv`:
 - 적용된 `right`에서 용어 후보를 정규화 후 추가
 - 공백 포함, 숫자만, 한글 미포함, 길이 비정상(2자 미만/20자 초과) 제외
 - 조사/어미 꼬리(`TRAILING_SUFFIXES`) 제거 후 후보화
 - 일반 서술형 종결(`REJECT_ENDINGS`)은 제외
+- `dict/common/term_stopwords.txt` 또는 topic의 동일 파일에 있으면 자동 추가하지 않는다.
 - 따라서 `한난조습`, `갑목` 같은 단일 용어는 `terms.csv` 대상이지만, `목이 개입`, `조건인 거예요`, `그게 관이에요` 같은 문장형 보정은 `terms.csv` 대상이 아니다.
 - `시지`, `진술축미`, `한난조습`, `생목`, `사목`처럼 정규 용어로 환원되는 치환 결과는 `terms.csv`에 유지한다.
 - `생극제화`, `오행생극제화`처럼 반복 출현하는 핵심 복합 용어도 `terms.csv`에 유지한다.
@@ -74,7 +85,9 @@
 - 각 블록은 아래 구조 유지:
 - `source`, `output`, `script_only_output`
 - 집계 메타(`applied_rules`, `changed_chars`, `dict_replace_added`, `context_skipped_*` 등)
+- 집계 메타에 `file_override_rules`, `file_override_hits` 포함
 - `[applied replacements]` (필수)
+- `[file overrides applied]` (해당 시)
 - `[skipped by context]`, `[dict replace added]`, `[dict terms added]` (해당 시)
 - 재교정 시 원칙:
 - 기존 블록을 덮어쓰지 않고 하단에 새 블록을 추가(이력 보존)
@@ -86,9 +99,10 @@
 - 파일별 `correct_daglo_file.py` 실행
 3. 결과 검토
 - `changes`의 `applied/skipped` 확인
+- `file overrides applied`가 의도한 파일에서만 동작했는지 확인
 - 문맥상 부자연스러운 치환이 없는지 샘플 점검
 4. 사전 반영 확인
-- `dict/replace.csv`, `dict/terms.csv` 신규 항목 점검
+- `dict/replace.csv`, `dict/file_overrides.jsonl`, `dict/terms.csv` 신규 항목 점검
 5. 이력 보존
 - 재교정은 `.changes` 기존 내용을 유지한 채 새 블록 append
 
@@ -122,5 +136,7 @@ Get-ChildItem $rawRoot -Recurse -Filter *.txt | ForEach-Object {
 ## 10) 체크리스트
 - 문맥 기반 필터(`PAIR_CONTEXT_RULES`, `DOMAIN_CONTEXT_KEYWORDS`) 유지 확인
 - 짧은 한글 치환의 경계/문맥 검사 유지 확인
+- 전역 `replace.csv` 자동 추가가 문장형/파일특화 pair를 빨아들이지 않는지 확인
+- `term_stopwords.txt`가 일반어 유입을 막는지 확인
 - 사전 자동 업데이트 결과 검토
 - `.changes` 이력 append 원칙 준수 확인

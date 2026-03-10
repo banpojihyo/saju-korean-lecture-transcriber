@@ -10,8 +10,11 @@ from __future__ import annotations
 
 import argparse
 import csv
+import fnmatch
+import json
 import re
 import subprocess
+from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
@@ -57,6 +60,26 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+FILE_OVERRIDES_FILENAME = "file_overrides.jsonl"
+TERM_STOPWORDS_FILENAME = "term_stopwords.txt"
+AUTO_REPLACE_PAIR_RE = re.compile(r"^[가-힣A-Za-z0-9]+(?: [가-힣A-Za-z0-9]+)?$")
+
+
+@dataclass(frozen=True)
+class FileOverrideRule:
+    path: str
+    wrong: str
+    right: str
+    note: str = ""
+
+    def matches(self, relative_path: str) -> bool:
+        return fnmatch.fnmatch(relative_path, self.path)
+
+
+def normalize_relative_path(path: Path) -> str:
+    return path.as_posix()
+
+
 def load_replace_pairs(path: Path) -> list[tuple[str, str]]:
     pairs: list[tuple[str, str]] = []
     if not path.exists():
@@ -69,6 +92,43 @@ def load_replace_pairs(path: Path) -> list[tuple[str, str]]:
             if wrong and right and wrong != right:
                 pairs.append((wrong, right))
     return pairs
+
+
+def load_file_overrides(path: Path) -> list[FileOverrideRule]:
+    overrides: list[FileOverrideRule] = []
+    if not path.exists():
+        return overrides
+
+    with path.open("r", encoding="utf-8-sig") as f:
+        for line_no, raw_line in enumerate(f, start=1):
+            line = raw_line.strip()
+            if not line or line.startswith("#"):
+                continue
+
+            try:
+                payload = json.loads(line)
+            except json.JSONDecodeError as exc:
+                raise ValueError(
+                    f"invalid JSONL in {path} at line {line_no}: {exc}"
+                ) from exc
+
+            path_pattern = str(payload.get("path") or "").strip().replace("\\", "/")
+            wrong = str(payload.get("wrong") or "").strip()
+            right = str(payload.get("right") or "").strip()
+            note = str(payload.get("note") or "").strip()
+            if not path_pattern or not wrong or not right or wrong == right:
+                continue
+
+            overrides.append(
+                FileOverrideRule(
+                    path=path_pattern,
+                    wrong=wrong,
+                    right=right,
+                    note=note,
+                )
+            )
+
+    return overrides
 
 
 def load_terms(path: Path) -> list[str]:
@@ -87,6 +147,21 @@ def load_terms(path: Path) -> list[str]:
     return terms
 
 
+def load_stopwords(path: Path) -> set[str]:
+    stopwords: set[str] = set()
+    if not path.exists():
+        return stopwords
+
+    with path.open("r", encoding="utf-8-sig") as f:
+        for raw_line in f:
+            line = raw_line.split("#", 1)[0].strip()
+            if not line:
+                continue
+            stopwords.add(line)
+
+    return stopwords
+
+
 def write_replace_pairs(path: Path, pairs: list[tuple[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8-sig", newline="") as f:
@@ -96,6 +171,20 @@ def write_replace_pairs(path: Path, pairs: list[tuple[str, str]]) -> None:
             writer.writerow([wrong, right])
 
 
+def write_file_overrides(path: Path, overrides: list[FileOverrideRule]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        for override in overrides:
+            payload = {
+                "path": override.path,
+                "wrong": override.wrong,
+                "right": override.right,
+            }
+            if override.note:
+                payload["note"] = override.note
+            f.write(json.dumps(payload, ensure_ascii=False) + "\n")
+
+
 def write_terms(path: Path, terms: list[str]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8-sig", newline="") as f:
@@ -103,6 +192,14 @@ def write_terms(path: Path, terms: list[str]) -> None:
         writer.writerow(["term"])
         for term in terms:
             writer.writerow([term])
+
+
+def write_stopwords(path: Path, stopwords: set[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lines = sorted(stopwords)
+    with path.open("w", encoding="utf-8-sig", newline="") as f:
+        if lines:
+            f.write("\n".join(lines) + "\n")
 
 
 def current_git_short_hash() -> str:
@@ -139,6 +236,8 @@ def merge_replace_pairs(
     seen = set(existing)
     added: list[tuple[str, str]] = []
     for wrong, right, _ in applied:
+        if not is_auto_dict_replace_candidate(wrong, right):
+            continue
         pair = (wrong, right)
         if pair in seen:
             continue
@@ -146,6 +245,24 @@ def merge_replace_pairs(
         merged.append(pair)
         added.append(pair)
     return merged, added
+
+
+def merge_file_overrides(
+    existing: list[FileOverrideRule], incoming: list[FileOverrideRule]
+) -> list[FileOverrideRule]:
+    merged: list[FileOverrideRule] = []
+    seen: set[tuple[str, str, str]] = set()
+    for rule in existing + incoming:
+        key = (rule.path, rule.wrong, rule.right)
+        if key in seen:
+            continue
+        seen.add(key)
+        merged.append(rule)
+    return merged
+
+
+def merge_stopwords(first: set[str], second: set[str]) -> set[str]:
+    return set(first) | set(second)
 
 
 KOREAN_RE = re.compile(r"[가-힣]")
@@ -620,6 +737,8 @@ WORD_CHAR_RE = re.compile(r"[가-힣A-Za-z0-9]")
 
 CURRENT_DICT_TOPIC = ""
 CURRENT_SOURCE_UNDER_SAJU_RAW = False
+CURRENT_SOURCE_RELATIVE_PATH = ""
+CURRENT_TERM_STOPWORDS: set[str] = set()
 
 FORCE_DOMAIN_REPLACEMENTS = {
     ("항만조습", "한난조습"),
@@ -749,8 +868,35 @@ def apply_context_aware_replacements(
     return text, applied, skipped
 
 
+def apply_literal_replacements(
+    text: str, rules: list[tuple[str, str]]
+) -> tuple[str, list[tuple[str, str, int]]]:
+    applied: list[tuple[str, str, int]] = []
+    for wrong, right in rules:
+        count = text.count(wrong)
+        if count == 0:
+            continue
+        text = text.replace(wrong, right)
+        applied.append((wrong, right, count))
+    return text, applied
+
+
+def is_auto_dict_replace_candidate(wrong: str, right: str) -> bool:
+    if not wrong or not right or wrong == right:
+        return False
+    if len(wrong) > 20 or len(right) > 20:
+        return False
+    if not AUTO_REPLACE_PAIR_RE.fullmatch(wrong):
+        return False
+    if not AUTO_REPLACE_PAIR_RE.fullmatch(right):
+        return False
+    return True
+
+
 def normalize_term_candidate(text: str) -> str:
     candidate = text.strip()
+    if candidate in CURRENT_TERM_STOPWORDS:
+        return ""
     if " " in candidate:
         return ""
     if not KOREAN_RE.search(candidate):
@@ -768,6 +914,8 @@ def normalize_term_candidate(text: str) -> str:
         if candidate.endswith(ending):
             return ""
 
+    if candidate in CURRENT_TERM_STOPWORDS:
+        return ""
     if len(candidate) < 2 or len(candidate) > 20:
         return ""
     if not KOREAN_RE.search(candidate):
@@ -938,12 +1086,6 @@ def manual_pairs() -> list[tuple[str, str]]:
         ("기포면은 이게 정관여예요.", "기토면은 이게 정관이에요."),
         ("이게 정관여예요.", "이게 정관이에요."),
         ("상관은 사례 정관여예요.", "상관은 살의 정관이에요."),
-        ("오늘은 청년 들어가기 전에 사조의 공 공 군에 대한 해석을 할 거예요.", "오늘은 천간 들어가기 전에 사주의 궁에 대한 해석을 할 거예요."),
-        ("가평 영리에서는 일간이 주가 돼요.", "자평명리에서는 일간이 주가 돼요."),
-        ("자기 기준하고 다르게 텅벼놨다고 틀렸다고 얘기하는 거.", "자기 기준하고 다르게 통변한다고 틀렸다고 얘기하는 거."),
-        ("십관 십이지를 전부 다 한난 조수부로 다 나누셔야 돼요.", "십간 십이지를 전부 다 한난 조습으로 다 나누셔야 돼요."),
-        ("국민의 생극제화을 하겠습니다.", "정인의 생극제화를 하겠습니다."),
-        ("국민의 생급 재활을 하겠습니다.", "정인의 생극제화를 하겠습니다."),
         ("이렇게 닥터이면은", "이렇게 박토이면은"),
         ("만약에 속이 차갑 겉이 여래 있는데", "만약에 속이 차갑고 겉에 열이 있는데"),
         # Context-bound fixes: only convert '과목' where it clearly means '갑목'.
@@ -981,7 +1123,7 @@ def build_script_only_text(text: str) -> str:
 
 
 def main() -> int:
-    global CURRENT_DICT_TOPIC, CURRENT_SOURCE_UNDER_SAJU_RAW
+    global CURRENT_DICT_TOPIC, CURRENT_SOURCE_RELATIVE_PATH, CURRENT_SOURCE_UNDER_SAJU_RAW, CURRENT_TERM_STOPWORDS
 
     args = parse_args()
     source = Path(args.source_file)
@@ -1008,6 +1150,7 @@ def main() -> int:
         CURRENT_SOURCE_UNDER_SAJU_RAW = False
 
     CURRENT_DICT_TOPIC = dict_dir.name.lower()
+    CURRENT_SOURCE_RELATIVE_PATH = normalize_relative_path(relative)
 
     output_path = (
         output_root / "corrected" / relative.parent / f"{source.stem}.corrected{source.suffix}"
@@ -1022,9 +1165,17 @@ def main() -> int:
 
     replace_path = dict_dir / "replace.csv"
     terms_path = dict_dir / "terms.csv"
+    file_overrides_path = dict_dir / FILE_OVERRIDES_FILENAME
+    stopwords_path = dict_dir / TERM_STOPWORDS_FILENAME
 
     replace_pairs = load_replace_pairs(replace_path)
     domain_terms = load_terms(terms_path)
+    file_overrides = [
+        rule
+        for rule in load_file_overrides(file_overrides_path)
+        if rule.matches(CURRENT_SOURCE_RELATIVE_PATH)
+    ]
+    CURRENT_TERM_STOPWORDS = load_stopwords(stopwords_path)
     all_pairs_raw = replace_pairs + manual_pairs()
     all_pairs: list[tuple[str, str]] = []
     seen_pairs: set[tuple[str, str]] = set()
@@ -1037,6 +1188,9 @@ def main() -> int:
     # Longer source phrase first to avoid partial overlap issues.
     all_pairs.sort(key=lambda p: len(p[0]), reverse=True)
 
+    file_override_pairs = [(rule.wrong, rule.right) for rule in file_overrides]
+    file_override_pairs.sort(key=lambda p: len(p[0]), reverse=True)
+    text, file_override_applied = apply_literal_replacements(text, file_override_pairs)
     text, applied, skipped_by_context = apply_context_aware_replacements(text, all_pairs)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1071,6 +1225,10 @@ def main() -> int:
     lines.append(f"source: {source}")
     lines.append(f"output: {output_path}")
     lines.append(f"script_only_output: {script_path}")
+    lines.append(f"file_override_rules: {len(file_overrides)}")
+    lines.append(
+        f"file_override_hits: {sum(count for _, _, count in file_override_applied)}"
+    )
     lines.append(f"applied_rules: {len(applied)}")
     lines.append(f"changed_chars: {changed_chars}")
     lines.append(f"term_hits_after_correction: {corrected_term_hits}")
@@ -1082,6 +1240,11 @@ def main() -> int:
         f"context_skipped_hits: {sum(count for _, _, count in skipped_by_context)}"
     )
     lines.append("")
+    if file_override_applied:
+        lines.append("[file overrides applied]")
+        for wrong, right, count in file_override_applied:
+            lines.append(f"{wrong} -> {right} (x{count})")
+        lines.append("")
     lines.append("[applied replacements]")
     for wrong, right, count in applied:
         lines.append(f"{wrong} -> {right} (x{count})")
@@ -1106,6 +1269,8 @@ def main() -> int:
     print(f"[DONE] corrected: {output_path}")
     print(f"[DONE] script-only: {script_path}")
     print(f"[DONE] report: {report_path}")
+    print(f"[DONE] file override rules: {len(file_overrides)}")
+    print(f"[DONE] file override hits: {sum(count for _, _, count in file_override_applied)}")
     print(f"[DONE] applied rules: {len(applied)}")
     print(f"[DONE] context skipped rules: {len(skipped_by_context)}")
     print(f"[DONE] dict replace added: {len(added_replace_pairs)}")
