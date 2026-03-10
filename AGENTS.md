@@ -1,12 +1,17 @@
 # Repository Agent Rules
 
 ## Conversation Logging
-- Unless the user explicitly says not to, save every user question and assistant answer verbatim.
-- Log path: `conversation_logs/YYYY-MM-DD.md` (Asia/Seoul date).
-- If today's file does not exist, create it.
-- If today's file exists, append new turns.
+- Unless the user explicitly says not to, preserve every user question and assistant answer verbatim in the conversation log.
+- Log path: `conversation_logs/YYYY-MM-DD.md` using the Asia/Seoul date.
+- If the current day's file does not exist, create it when logging is flushed.
+- If the current day's file exists, append new turns.
+- If a turn is only a question/consultation and does not cause any project file changes, do not immediately write that turn to the log file.
+- Keep those no-change turns pending, and flush them later together with the next turn that does produce project file changes and will be committed.
+- When writing or updating log files, use UTF-8 so Korean text is not corrupted.
 
 ## Git Commit / Push
 - After each assistant response, if project files were added/modified/deleted because of the work, select relevant files and run commit + push.
 - If the turn is only a question/consultation and no project content changed, do not commit/push.
 - Do not include unrelated temporary files in commit.
+- Include the conversation log update in the same commit when a file-changing turn is committed.
+- Configure Git identity as `banpojihyo <1213hyunsu@naver.com>` before committing when needed.
