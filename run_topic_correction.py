@@ -222,6 +222,8 @@ def run_one_file(
             str(source_file),
             "--dict-dir",
             str(temp_dict),
+            "--topic-name",
+            topic_dir.name,
             "--input-root",
             input_root,
             "--output-root",

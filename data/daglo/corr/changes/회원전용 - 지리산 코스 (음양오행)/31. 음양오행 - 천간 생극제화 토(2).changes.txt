@@ -258,3 +258,64 @@ context_skipped_hits: 18
 목국토 -> 목극토 (x4)
 감묵 -> 갑목 (x1)
 
+[working-tree - 2026-03-10 19:02:42]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 8
+term_hits_after_correction: 47
+script_lines_after_cleanup: 114
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 18
+
+[applied replacements]
+수생무기라고 할 때 -> 수생목이라고 할 때 (x1)
+모기 개입 -> 목이 개입 (x1)
+기포라고요 -> 기토라고요 (x1)
+토국수가 -> 토극수가 (x1)
+기포가 -> 기토가 (x1)
+1주 -> 일주 (x1)
+
+[skipped by context]
+토국수는 -> 토극수는 (x1)
+토국수의 -> 토극수의 (x1)
+토국수에 -> 토극수에 (x1)
+목국토가 -> 목극토가 (x2)
+감묵이 -> 갑목이 (x1)
+토국수 -> 토극수 (x7)
+목국토 -> 목극토 (x4)
+감묵 -> 갑목 (x1)
+
+[working-tree - 2026-03-10 19:04:23]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 8
+changed_chars: 20
+term_hits_after_correction: 47
+script_lines_after_cleanup: 114
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+토국수 -> 토극수 (x8)
+토곡수 -> 토극수 (x1)
+목국토 -> 목극토 (x4)
+수생무기라고 할 때 -> 수생목이라고 할 때 (x1)
+모기 개입 -> 목이 개입 (x1)
+기포라고요 -> 기토라고요 (x1)
+기포가 -> 기토가 (x1)
+1주 -> 일주 (x1)
+
+[skipped by context]
+감묵이 -> 갑목이 (x1)
+감묵 -> 갑목 (x1)

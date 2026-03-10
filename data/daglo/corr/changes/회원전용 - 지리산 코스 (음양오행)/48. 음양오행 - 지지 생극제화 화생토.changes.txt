@@ -252,3 +252,59 @@ context_skipped_hits: 6
 귀신 -> 기신 (x3)
 감묵 -> 갑목 (x1)
 
+[working-tree - 2026-03-10 19:02:43]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 26349
+term_hits_after_correction: 49
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 6
+
+[applied replacements]
+생극 재화를 -> 생극제화를 (x2)
+생극, 재화 -> 생극제화 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+감묵이면 -> 갑목이면 (x1)
+감묵이 -> 갑목이 (x1)
+귀신 -> 기신 (x3)
+감묵 -> 갑목 (x1)
+
+[working-tree - 2026-03-10 19:04:24]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 26351
+term_hits_after_correction: 49
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 6
+
+[applied replacements]
+토곡수 -> 토극수 (x2)
+생극 재화를 -> 생극제화를 (x2)
+생극, 재화 -> 생극제화 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+감묵이면 -> 갑목이면 (x1)
+감묵이 -> 갑목이 (x1)
+귀신 -> 기신 (x3)
+감묵 -> 갑목 (x1)

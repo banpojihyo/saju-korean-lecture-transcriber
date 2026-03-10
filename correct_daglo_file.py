@@ -37,6 +37,11 @@ def parse_args() -> argparse.Namespace:
         help="Directory containing replace.csv and terms.csv (default: ./dict/common).",
     )
     parser.add_argument(
+        "--topic-name",
+        default="",
+        help="Logical topic name used for topic-specific correction rules.",
+    )
+    parser.add_argument(
         "--input-root",
         default="data/daglo/raw",
         help=(
@@ -734,6 +739,16 @@ DOMAIN_CONTEXT_KEYWORDS = (
 )
 
 WORD_CHAR_RE = re.compile(r"[가-힣A-Za-z0-9]")
+GEUK_COMPOUND_RE = re.compile(r"([목화토금수])[국곡]([목화토금수])")
+
+SAJU_REGEX_REPLACEMENTS: tuple[
+    tuple[re.Pattern[str], str, str, str], ...
+] = (
+    (re.compile(r"한\s*[무모]기"), "한목이", "한 무기", "한목이"),
+    (re.compile(r"한\s*목이"), "한목이", "한 목이", "한목이"),
+    (re.compile(r"한\s*목에"), "한목에", "한 목에", "한목에"),
+    (re.compile(r"한묵"), "한목", "한묵", "한목"),
+)
 
 CURRENT_DICT_TOPIC = ""
 CURRENT_SOURCE_UNDER_SAJU_RAW = False
@@ -878,6 +893,38 @@ def apply_literal_replacements(
             continue
         text = text.replace(wrong, right)
         applied.append((wrong, right, count))
+    return text, applied
+
+
+def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, int]]]:
+    if CURRENT_DICT_TOPIC != "saju":
+        return text, []
+
+    applied_counts: dict[tuple[str, str], int] = {}
+
+    def track_replacement(wrong: str, right: str) -> None:
+        key = (wrong, right)
+        applied_counts[key] = applied_counts.get(key, 0) + 1
+
+    def replace_geuk_compound(match: re.Match[str]) -> str:
+        wrong = match.group(0)
+        right = f"{match.group(1)}극{match.group(2)}"
+        track_replacement(wrong, right)
+        return right
+
+    text = GEUK_COMPOUND_RE.sub(replace_geuk_compound, text)
+
+    for pattern, replacement, wrong_label, right_label in SAJU_REGEX_REPLACEMENTS:
+        text, count = pattern.subn(replacement, text)
+        if count > 0:
+            applied_counts[(wrong_label, right_label)] = (
+                applied_counts.get((wrong_label, right_label), 0) + count
+            )
+
+    applied = [
+        (wrong, right, count) for (wrong, right), count in applied_counts.items() if count > 0
+    ]
+    applied.sort(key=lambda item: (len(item[0]), item[0]), reverse=True)
     return text, applied
 
 
@@ -1149,7 +1196,7 @@ def main() -> int:
         relative = Path(source.name)
         CURRENT_SOURCE_UNDER_SAJU_RAW = False
 
-    CURRENT_DICT_TOPIC = dict_dir.name.lower()
+    CURRENT_DICT_TOPIC = (args.topic_name or dict_dir.name).lower()
     CURRENT_SOURCE_RELATIVE_PATH = normalize_relative_path(relative)
 
     output_path = (
@@ -1191,7 +1238,9 @@ def main() -> int:
     file_override_pairs = [(rule.wrong, rule.right) for rule in file_overrides]
     file_override_pairs.sort(key=lambda p: len(p[0]), reverse=True)
     text, file_override_applied = apply_literal_replacements(text, file_override_pairs)
+    text, regex_applied = apply_saju_regex_replacements(text)
     text, applied, skipped_by_context = apply_context_aware_replacements(text, all_pairs)
+    reported_applied = regex_applied + applied
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     script_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1229,7 +1278,7 @@ def main() -> int:
     lines.append(
         f"file_override_hits: {sum(count for _, _, count in file_override_applied)}"
     )
-    lines.append(f"applied_rules: {len(applied)}")
+    lines.append(f"applied_rules: {len(reported_applied)}")
     lines.append(f"changed_chars: {changed_chars}")
     lines.append(f"term_hits_after_correction: {corrected_term_hits}")
     lines.append(f"script_lines_after_cleanup: {script_lines}")
@@ -1246,7 +1295,7 @@ def main() -> int:
             lines.append(f"{wrong} -> {right} (x{count})")
         lines.append("")
     lines.append("[applied replacements]")
-    for wrong, right, count in applied:
+    for wrong, right, count in reported_applied:
         lines.append(f"{wrong} -> {right} (x{count})")
     if skipped_by_context:
         lines.append("")
