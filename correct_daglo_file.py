@@ -964,6 +964,7 @@ SAJU_FAMILY_REPLACEMENT_RULES: tuple[
         False,
         (),
     ),
+    (re.compile(r"감목[가-힣]*"), "감목", "갑목", (), False, ()),
     (
         re.compile(r"현관[가-힣]*"),
         "현관",

@@ -215,3 +215,23 @@ context_skipped_hits: 0
 [applied replacements]
 갑묵/을묵 -> 갑목/을목 (x2)
 감묵 -> 갑목 (x3)
+
+[working-tree - 2026-03-12 01:11:30]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 02 - 음양적으로 사유하기.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 11
+term_hits_after_correction: 20
+script_lines_after_cleanup: 51
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x2)
+감목* -> 갑목* (x3)
+감묵 -> 갑목 (x3)
