@@ -203,3 +203,66 @@ context_skipped_hits: 0
 생극 재화를 -> 생극제화를 (x1)
 한난조석 -> 한난조습 (x1)
 사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-12 00:26:52]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 23841
+term_hits_after_correction: 51
+script_lines_after_cleanup: 104
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x4)
+생극 재화를 -> 생극제화를 (x1)
+한난조석 -> 한난조습 (x1)
+사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-12 00:48:08]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 23841
+term_hits_after_correction: 51
+script_lines_after_cleanup: 104
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x4)
+생극 재화를 -> 생극제화를 (x1)
+한난조석 -> 한난조습 (x1)
+사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-12 00:50:17]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 23841
+term_hits_after_correction: 51
+script_lines_after_cleanup: 104
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x4)
+생극 재화를 -> 생극제화를 (x1)
+한난조석 -> 한난조습 (x1)
+사조를 -> 사주를 (x1)

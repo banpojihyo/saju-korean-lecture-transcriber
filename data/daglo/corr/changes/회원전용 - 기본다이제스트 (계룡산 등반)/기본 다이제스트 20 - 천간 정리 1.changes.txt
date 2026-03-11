@@ -215,3 +215,94 @@ Muto -> 무토 (x3)
 [skipped by context]
 심금 -> 신금 (x1)
 귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 00:26:51]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 4870
+term_hits_after_correction: 41
+script_lines_after_cleanup: 72
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 4
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x22)
+갑묵/을묵 -> 갑목/을목 (x7)
+쟁제* -> 쟁재* (x4)
+심금 -> 신금 (x1)
+감묵 -> 갑목 (x6)
+모기 개입 -> 목이 개입 (x1)
+Muto -> 무토 (x3)
+1주 -> 일주 (x3)
+1조 -> 일주 (x2)
+
+[skipped by context]
+심금 -> 신금 (x1)
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 00:48:07]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 4870
+term_hits_after_correction: 41
+script_lines_after_cleanup: 72
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 4
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x22)
+갑묵/을묵 -> 갑목/을목 (x7)
+쟁제* -> 쟁재* (x4)
+심금 -> 신금 (x1)
+감묵 -> 갑목 (x6)
+모기 개입 -> 목이 개입 (x1)
+Muto -> 무토 (x3)
+1주 -> 일주 (x3)
+1조 -> 일주 (x2)
+
+[skipped by context]
+심금 -> 신금 (x1)
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 00:50:16]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 20 - 천간 정리 1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 10
+changed_chars: 4871
+term_hits_after_correction: 41
+script_lines_after_cleanup: 72
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 4
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x22)
+갑묵/을묵 -> 갑목/을목 (x7)
+쟁제* -> 쟁재* (x4)
+제를 -> 재를 (x1)
+심금 -> 신금 (x1)
+감묵 -> 갑목 (x6)
+모기 개입 -> 목이 개입 (x1)
+Muto -> 무토 (x3)
+1주 -> 일주 (x3)
+1조 -> 일주 (x2)
+
+[skipped by context]
+심금 -> 신금 (x1)
+귀신 -> 기신 (x3)

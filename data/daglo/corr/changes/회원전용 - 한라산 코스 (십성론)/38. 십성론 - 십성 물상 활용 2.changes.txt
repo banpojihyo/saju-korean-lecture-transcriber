@@ -188,3 +188,81 @@ context_skipped_hits: 0
 그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
 10성 -> 십성 (x1)
 1주 -> 일주 (x1)
+
+[working-tree - 2026-03-12 00:27:18]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 333
+term_hits_after_correction: 38
+script_lines_after_cleanup: 103
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x8)
+정제* -> 정재* (x15)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+빅업에 식상이 발현이 잘 되어 있어요. -> 비겁에 식상이 발현이 잘 되어 있어요. (x1)
+식상으로 빅업을 잘 끌어서 써요. -> 식상으로 비겁을 잘 끌어서 써요. (x1)
+그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
+10성 -> 십성 (x1)
+1주 -> 일주 (x1)
+
+[working-tree - 2026-03-12 00:48:35]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 333
+term_hits_after_correction: 38
+script_lines_after_cleanup: 103
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x8)
+정제* -> 정재* (x15)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+빅업에 식상이 발현이 잘 되어 있어요. -> 비겁에 식상이 발현이 잘 되어 있어요. (x1)
+식상으로 빅업을 잘 끌어서 써요. -> 식상으로 비겁을 잘 끌어서 써요. (x1)
+그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
+10성 -> 십성 (x1)
+1주 -> 일주 (x1)
+
+[working-tree - 2026-03-12 00:50:40]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 333
+term_hits_after_correction: 38
+script_lines_after_cleanup: 103
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x8)
+정제* -> 정재* (x15)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+빅업에 식상이 발현이 잘 되어 있어요. -> 비겁에 식상이 발현이 잘 되어 있어요. (x1)
+식상으로 빅업을 잘 끌어서 써요. -> 식상으로 비겁을 잘 끌어서 써요. (x1)
+그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
+10성 -> 십성 (x1)
+1주 -> 일주 (x1)

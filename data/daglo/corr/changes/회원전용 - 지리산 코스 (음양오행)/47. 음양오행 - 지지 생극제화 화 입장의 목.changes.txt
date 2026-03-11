@@ -180,3 +180,57 @@ context_skipped_hits: 0
 
 [applied replacements]
 감묵 -> 갑목 (x2)
+
+[working-tree - 2026-03-12 00:27:08]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 4
+term_hits_after_correction: 40
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+감묵 -> 갑목 (x2)
+
+[working-tree - 2026-03-12 00:48:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 4
+term_hits_after_correction: 40
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+감묵 -> 갑목 (x2)
+
+[working-tree - 2026-03-12 00:50:30]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 4
+term_hits_after_correction: 40
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+감묵 -> 갑목 (x2)

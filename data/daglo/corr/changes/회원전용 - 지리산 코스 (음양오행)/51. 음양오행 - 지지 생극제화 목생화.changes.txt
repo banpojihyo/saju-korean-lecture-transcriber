@@ -180,3 +180,69 @@ context_skipped_hits: 2
 
 [skipped by context]
 수색묵 -> 수생목 (x2)
+
+[working-tree - 2026-03-12 00:27:09]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 2
+changed_chars: 8
+term_hits_after_correction: 39
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[applied replacements]
+편제* -> 편재* (x3)
+묵생* -> 목생* (x5)
+
+[skipped by context]
+수색묵 -> 수생목 (x2)
+
+[working-tree - 2026-03-12 00:48:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 2
+changed_chars: 8
+term_hits_after_correction: 39
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[applied replacements]
+편제* -> 편재* (x3)
+묵생* -> 목생* (x5)
+
+[skipped by context]
+수색묵 -> 수생목 (x2)
+
+[working-tree - 2026-03-12 00:50:31]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\51. 음양오행 - 지지 생극제화 목생화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 2
+changed_chars: 8
+term_hits_after_correction: 39
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[applied replacements]
+편제* -> 편재* (x3)
+묵생* -> 목생* (x5)
+
+[skipped by context]
+수색묵 -> 수생목 (x2)

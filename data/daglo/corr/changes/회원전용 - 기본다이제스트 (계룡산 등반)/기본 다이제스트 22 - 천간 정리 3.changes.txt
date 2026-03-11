@@ -139,3 +139,72 @@ context_skipped_hits: 0
 감묵 -> 갑목 (x1)
 관사를 -> 관살을 (x2)
 죄수의 -> 계수의 (x1)
+
+[working-tree - 2026-03-12 00:26:51]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 12
+term_hits_after_correction: 39
+script_lines_after_cleanup: 47
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x3)
+편제* -> 편재* (x1)
+토곡수 -> 토극수 (x1)
+감묵 -> 갑목 (x1)
+관사를 -> 관살을 (x2)
+죄수의 -> 계수의 (x1)
+
+[working-tree - 2026-03-12 00:48:08]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 12
+term_hits_after_correction: 39
+script_lines_after_cleanup: 47
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x3)
+편제* -> 편재* (x1)
+토곡수 -> 토극수 (x1)
+감묵 -> 갑목 (x1)
+관사를 -> 관살을 (x2)
+죄수의 -> 계수의 (x1)
+
+[working-tree - 2026-03-12 00:50:16]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 22 - 천간 정리 3.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 12
+term_hits_after_correction: 39
+script_lines_after_cleanup: 47
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x3)
+편제* -> 편재* (x1)
+토곡수 -> 토극수 (x1)
+감묵 -> 갑목 (x1)
+관사를 -> 관살을 (x2)
+죄수의 -> 계수의 (x1)

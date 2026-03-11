@@ -262,3 +262,117 @@ context_skipped_hits: 3
 [skipped by context]
 식상재살 -> 식상제살 (x2)
 재살한다 -> 제살한다 (x1)
+
+[working-tree - 2026-03-12 00:27:16]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.script.txt
+file_override_rules: 3
+file_override_hits: 3
+applied_rules: 12
+changed_chars: 24803
+term_hits_after_correction: 43
+script_lines_after_cleanup: 97
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[file overrides applied]
+채용을 바꾸는 거고 -> 체용을 바꾸는 거고 (x1)
+채용을 바꾸는 것을 -> 체용을 바꾸는 것을 (x1)
+채용변 -> 체용변 (x1)
+
+[applied replacements]
+편제* -> 편재* (x3)
+제관* -> 재관* (x4)
+정제* -> 정재* (x2)
+겁제* -> 겁재* (x2)
+상관은 사례 정관여예요. -> 상관은 살의 정관이에요. (x1)
+식신 재살 -> 식신 제살 (x4)
+상관 재살 -> 상관 제살 (x2)
+식상재살은 -> 식상제살은 (x1)
+식상재살이 -> 식상제살이 (x3)
+재살한다고 -> 제살한다고 (x1)
+재살이라고 -> 제살이라고 (x1)
+10성 -> 십성 (x1)
+
+[skipped by context]
+식상재살 -> 식상제살 (x2)
+재살한다 -> 제살한다 (x1)
+
+[working-tree - 2026-03-12 00:48:33]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.script.txt
+file_override_rules: 3
+file_override_hits: 3
+applied_rules: 12
+changed_chars: 24803
+term_hits_after_correction: 43
+script_lines_after_cleanup: 97
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[file overrides applied]
+채용을 바꾸는 거고 -> 체용을 바꾸는 거고 (x1)
+채용을 바꾸는 것을 -> 체용을 바꾸는 것을 (x1)
+채용변 -> 체용변 (x1)
+
+[applied replacements]
+편제* -> 편재* (x3)
+제관* -> 재관* (x4)
+정제* -> 정재* (x2)
+겁제* -> 겁재* (x2)
+상관은 사례 정관여예요. -> 상관은 살의 정관이에요. (x1)
+식신 재살 -> 식신 제살 (x4)
+상관 재살 -> 상관 제살 (x2)
+식상재살은 -> 식상제살은 (x1)
+식상재살이 -> 식상제살이 (x3)
+재살한다고 -> 제살한다고 (x1)
+재살이라고 -> 제살이라고 (x1)
+10성 -> 십성 (x1)
+
+[skipped by context]
+식상재살 -> 식상제살 (x2)
+재살한다 -> 제살한다 (x1)
+
+[working-tree - 2026-03-12 00:50:38]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\27. 십성론 - ③ 편관의 십성대응.script.txt
+file_override_rules: 3
+file_override_hits: 3
+applied_rules: 12
+changed_chars: 24803
+term_hits_after_correction: 43
+script_lines_after_cleanup: 97
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[file overrides applied]
+채용을 바꾸는 거고 -> 체용을 바꾸는 거고 (x1)
+채용을 바꾸는 것을 -> 체용을 바꾸는 것을 (x1)
+채용변 -> 체용변 (x1)
+
+[applied replacements]
+편제* -> 편재* (x3)
+제관* -> 재관* (x4)
+정제* -> 정재* (x2)
+겁제* -> 겁재* (x2)
+상관은 사례 정관여예요. -> 상관은 살의 정관이에요. (x1)
+식신 재살 -> 식신 제살 (x4)
+상관 재살 -> 상관 제살 (x2)
+식상재살은 -> 식상제살은 (x1)
+식상재살이 -> 식상제살이 (x3)
+재살한다고 -> 제살한다고 (x1)
+재살이라고 -> 제살이라고 (x1)
+10성 -> 십성 (x1)
+
+[skipped by context]
+식상재살 -> 식상제살 (x2)
+재살한다 -> 제살한다 (x1)

@@ -151,3 +151,75 @@ context_skipped_hits: 0
 정제* -> 정재* (x13)
 겁제* -> 겁재* (x13)
 10성 -> 십성 (x2)
+
+[working-tree - 2026-03-12 00:27:17]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 287
+term_hits_after_correction: 52
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x2)
+제극인* -> 재극인* (x10)
+편제* -> 편재* (x15)
+정제* -> 정재* (x13)
+생제* -> 생재* (x1)
+겁제* -> 겁재* (x13)
+10성 -> 십성 (x2)
+
+[working-tree - 2026-03-12 00:48:34]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 287
+term_hits_after_correction: 52
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x2)
+제극인* -> 재극인* (x10)
+편제* -> 편재* (x15)
+정제* -> 정재* (x13)
+생제* -> 생재* (x1)
+겁제* -> 겁재* (x13)
+10성 -> 십성 (x2)
+
+[working-tree - 2026-03-12 00:50:39]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 287
+term_hits_after_correction: 52
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x2)
+제극인* -> 재극인* (x10)
+편제* -> 편재* (x15)
+정제* -> 정재* (x13)
+생제* -> 생재* (x1)
+겁제* -> 겁재* (x13)
+10성 -> 십성 (x2)

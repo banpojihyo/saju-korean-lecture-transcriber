@@ -111,3 +111,72 @@ context_skipped_hits: 3
 
 [skipped by context]
 사조를 -> 사주를 (x3)
+
+[working-tree - 2026-03-12 00:26:43]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 261
+term_hits_after_correction: 54
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)
+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데 (x1)
+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x3)
+
+[working-tree - 2026-03-12 00:48:02]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 261
+term_hits_after_correction: 54
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)
+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데 (x1)
+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x3)
+
+[working-tree - 2026-03-12 00:50:12]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 261
+term_hits_after_correction: 54
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)
+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데 (x1)
+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x3)

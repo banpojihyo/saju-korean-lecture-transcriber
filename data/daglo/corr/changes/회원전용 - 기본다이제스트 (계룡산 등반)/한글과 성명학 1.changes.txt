@@ -93,3 +93,63 @@ context_skipped_hits: 1
 
 [skipped by context]
 귀신 -> 기신 (x1)
+
+[working-tree - 2026-03-12 00:26:56]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 19
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+
+[skipped by context]
+귀신 -> 기신 (x1)
+
+[working-tree - 2026-03-12 00:48:10]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 19
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+
+[skipped by context]
+귀신 -> 기신 (x1)
+
+[working-tree - 2026-03-12 00:50:19]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 19
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+
+[skipped by context]
+귀신 -> 기신 (x1)

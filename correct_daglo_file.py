@@ -942,6 +942,12 @@ SAJU_FAMILY_REPLACEMENT_RULES: tuple[
     (re.compile(r"제극인[가-힣]*"), "제극인", "재극인", (), False, ()),
     (re.compile(r"6친[가-힣]*"), "6친", "육친", (), False, ()),
     (re.compile(r"겁제[가-힣]*"), "겁제", "겁재", (), False, ()),
+    (re.compile(r"제관[가-힣]*"), "제관", "재관", (), False, ()),
+    (re.compile(r"제탈[가-힣]*"), "제탈", "재탈", (), False, ()),
+    (re.compile(r"쟁제[가-힣]*"), "쟁제", "쟁재", (), False, ()),
+    (re.compile(r"탈제[가-힣]*"), "탈제", "탈재", (), False, ()),
+    (re.compile(r"손제[가-힣]*"), "손제", "손재", (), False, ()),
+    (re.compile(r"생제[가-힣]*"), "생제", "생재", (), False, ()),
     (
         re.compile(r"정제[가-힣]*"),
         "정제",
@@ -956,6 +962,58 @@ SAJU_FAMILY_REPLACEMENT_RULES: tuple[
         "편재",
         ("되", "돼"),
         False,
+        (),
+    ),
+)
+
+SAJU_CONTEXT_REGEX_RULES: tuple[
+    tuple[re.Pattern[str], str, str, str, tuple[str, ...], tuple[str, ...]],
+    ...,
+] = (
+    (
+        re.compile(r"(?<![가-힣A-Za-z0-9])제 관(?=(?:\s|에|은|는|을|를|이|가|의|으로|과|보다|형|적|$))"),
+        "재관",
+        "제 관",
+        "재관",
+        (),
+        (),
+    ),
+    (
+        re.compile(r"(?<![가-힣A-Za-z0-9])제 기준(?=(?:\s|에서|으로|은|는|이|가|의|을|를|도|만|$))"),
+        "재 기준",
+        "제 기준",
+        "재 기준",
+        (
+            "식상",
+            "식신",
+            "상관",
+            "정재",
+            "편재",
+            "재성",
+            "결과",
+            "과정",
+            "장소",
+            "공간",
+            "직장",
+            "매장",
+            "품목",
+        ),
+        (),
+    ),
+    (
+        re.compile(r"(?<![가-힣A-Za-z0-9])제를(?=\s*(?:보고|다루|찾|정하|운용|활용|만들|쓰|놓|갖))"),
+        "재를",
+        "제를",
+        "재를",
+        (),
+        (),
+    ),
+    (
+        re.compile(r"(?<![가-힣A-Za-z0-9])제는(?=\s*(?:장소|결과|공간))"),
+        "재는",
+        "제는",
+        "재는",
+        (),
         (),
     ),
 )
@@ -984,6 +1042,7 @@ SAJU_TERM_ALLOWED_COMPOUND_PREFIXES = (
     "겁재",
     "비겁",
     "식신",
+    "식상",
     "상관",
     "재성",
     "인성",
@@ -1152,6 +1211,27 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
         track_replacement(wrong, right)
         return right
 
+    def normalize_saju_contextual_patterns(source_text: str) -> str:
+        for pattern, replacement, wrong_label, right_label, include_keywords, exclude_keywords in (
+            SAJU_CONTEXT_REGEX_RULES
+        ):
+            def replace_contextual(match: re.Match[str]) -> str:
+                start, end = match.span()
+                if exclude_keywords and has_context_keyword(
+                    source_text, start, end, exclude_keywords, window=120
+                ):
+                    return match.group(0)
+                if include_keywords and not has_context_keyword(
+                    source_text, start, end, include_keywords, window=120
+                ):
+                    return match.group(0)
+                track_replacement(wrong_label, right_label)
+                return match.expand(replacement)
+
+            source_text = pattern.sub(replace_contextual, source_text)
+
+        return source_text
+
     def normalize_saju_term_families(source_text: str) -> str:
         for pattern, wrong_stem, right_stem, skip_prefixes, needs_context, exclude_contexts in (
             SAJU_FAMILY_REPLACEMENT_RULES
@@ -1161,7 +1241,7 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
                 suffix = token[len(wrong_stem) :]
                 start, end = match.span()
 
-                if wrong_stem in {"정제", "편제"} and start > 0 and WORD_CHAR_RE.match(
+                if wrong_stem in {"정제", "편제", "생제"} and start > 0 and WORD_CHAR_RE.match(
                     source_text[start - 1]
                 ):
                     if not any(
@@ -1192,6 +1272,7 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
 
         return source_text
 
+    text = normalize_saju_contextual_patterns(text)
     text = normalize_saju_term_families(text)
     text = GEUK_COMPOUND_RE.sub(replace_geuk_compound, text)
 
