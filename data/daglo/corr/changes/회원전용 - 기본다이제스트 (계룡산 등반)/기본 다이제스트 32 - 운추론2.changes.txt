@@ -69,3 +69,69 @@ context_skipped_hits: 0
 명을 볼 때 명 전체 기준에서 한난조석 기세의 부분. -> 명을 볼 때 명 전체 기준에서 한난조습 기세의 부분. (x1)
 사조를 -> 사주를 (x1)
 귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-11 19:49:06]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 8
+term_hits_after_correction: 37
+script_lines_after_cleanup: 59
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+명을 볼 때 명 전체 기준에서 한난조석 기세의 부분. -> 명을 볼 때 명 전체 기준에서 한난조습 기세의 부분. (x1)
+식신 재살 -> 식신 제살 (x1)
+한난조섭 -> 한난조습 (x2)
+사조를 -> 사주를 (x1)
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-11 19:50:42]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 8
+term_hits_after_correction: 37
+script_lines_after_cleanup: 59
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+명을 볼 때 명 전체 기준에서 한난조석 기세의 부분. -> 명을 볼 때 명 전체 기준에서 한난조습 기세의 부분. (x1)
+식신 재살 -> 식신 제살 (x1)
+한난조섭 -> 한난조습 (x2)
+사조를 -> 사주를 (x1)
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-11 19:55:19]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 8
+term_hits_after_correction: 37
+script_lines_after_cleanup: 59
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+명을 볼 때 명 전체 기준에서 한난조석 기세의 부분. -> 명을 볼 때 명 전체 기준에서 한난조습 기세의 부분. (x1)
+식신 재살 -> 식신 제살 (x1)
+한난조섭 -> 한난조습 (x2)
+사조를 -> 사주를 (x1)
+귀신 -> 기신 (x3)

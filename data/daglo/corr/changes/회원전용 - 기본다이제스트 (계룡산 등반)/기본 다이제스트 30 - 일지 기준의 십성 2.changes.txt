@@ -27,3 +27,63 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[working-tree - 2026-03-11 19:49:06]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 22
+term_hits_after_correction: 42
+script_lines_after_cleanup: 61
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x1)
+정제* -> 정재* (x13)
+겁제* -> 겁재* (x8)
+
+[working-tree - 2026-03-11 19:50:42]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 22
+term_hits_after_correction: 42
+script_lines_after_cleanup: 61
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x1)
+정제* -> 정재* (x13)
+겁제* -> 겁재* (x8)
+
+[working-tree - 2026-03-11 19:55:18]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 22
+term_hits_after_correction: 42
+script_lines_after_cleanup: 61
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x1)
+정제* -> 정재* (x13)
+겁제* -> 겁재* (x8)

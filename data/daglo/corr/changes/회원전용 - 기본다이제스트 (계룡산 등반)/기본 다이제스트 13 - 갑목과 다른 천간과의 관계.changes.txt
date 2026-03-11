@@ -94,3 +94,91 @@ context_skipped_hits: 0
 사무기 -> 사목이 (x1)
 생모기 -> 생목이 (x3)
 사모기 -> 사목이 (x1)
+
+[working-tree - 2026-03-11 19:49:03]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 16206
+term_hits_after_correction: 44
+script_lines_after_cleanup: 92
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+배수 기포를 만나면은 -> 계수를 만나면은 (x1)
+생무기인지 -> 생목인지 (x1)
+사무기인지 -> 사목인지 (x1)
+생무기 -> 생목이 (x3)
+사무기 -> 사목이 (x1)
+생모기 -> 생목이 (x3)
+사모기 -> 사목이 (x1)
+
+[skipped by context]
+생무기면 -> 생목이면 (x1)
+사무기고 -> 사목이고 (x1)
+
+[working-tree - 2026-03-11 19:50:39]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 16206
+term_hits_after_correction: 46
+script_lines_after_cleanup: 92
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+편제* -> 편재* (x3)
+정제* -> 정재* (x1)
+배수 기포를 만나면은 -> 계수를 만나면은 (x1)
+생무기인지 -> 생목인지 (x1)
+사무기인지 -> 사목인지 (x1)
+생무기 -> 생목이 (x3)
+사무기 -> 사목이 (x1)
+생모기 -> 생목이 (x3)
+사모기 -> 사목이 (x1)
+
+[skipped by context]
+생무기면 -> 생목이면 (x1)
+사무기고 -> 사목이고 (x1)
+
+[working-tree - 2026-03-11 19:55:16]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 13 - 갑목과 다른 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 16206
+term_hits_after_correction: 46
+script_lines_after_cleanup: 92
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+편제* -> 편재* (x3)
+정제* -> 정재* (x1)
+배수 기포를 만나면은 -> 계수를 만나면은 (x1)
+생무기인지 -> 생목인지 (x1)
+사무기인지 -> 사목인지 (x1)
+생무기 -> 생목이 (x3)
+사무기 -> 사목이 (x1)
+생모기 -> 생목이 (x3)
+사모기 -> 사목이 (x1)
+
+[skipped by context]
+생무기면 -> 생목이면 (x1)
+사무기고 -> 사목이고 (x1)

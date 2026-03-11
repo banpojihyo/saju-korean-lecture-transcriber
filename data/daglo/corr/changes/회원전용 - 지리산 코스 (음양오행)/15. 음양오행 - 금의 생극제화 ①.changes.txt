@@ -194,3 +194,72 @@ context_skipped_hits: 1
 
 [skipped by context]
 사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-11 19:49:09]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 445
+term_hits_after_correction: 41
+script_lines_after_cleanup: 130
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+모기 개입 -> 목이 개입 (x2)
+생급 재화 -> 생극제화 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-11 19:50:45]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 445
+term_hits_after_correction: 41
+script_lines_after_cleanup: 130
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+모기 개입 -> 목이 개입 (x2)
+생급 재화 -> 생극제화 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-11 19:55:22]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\15. 음양오행 - 금의 생극제화 ①.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 3
+changed_chars: 445
+term_hits_after_correction: 41
+script_lines_after_cleanup: 130
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+모기 개입 -> 목이 개입 (x2)
+생급 재화 -> 생극제화 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)

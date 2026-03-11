@@ -277,3 +277,84 @@ context_skipped_hits: 3
 
 [skipped by context]
 귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-11 19:49:14]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 26353
+term_hits_after_correction: 51
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+토곡수 -> 토극수 (x2)
+감묵 -> 갑목 (x1)
+생극 재화를 -> 생극제화를 (x2)
+생극, 재화 -> 생극제화 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-11 19:50:50]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 26353
+term_hits_after_correction: 51
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+토곡수 -> 토극수 (x2)
+감묵 -> 갑목 (x1)
+생극 재화를 -> 생극제화를 (x2)
+생극, 재화 -> 생극제화 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-11 19:55:27]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 26353
+term_hits_after_correction: 51
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+토곡수 -> 토극수 (x2)
+감묵 -> 갑목 (x1)
+생극 재화를 -> 생극제화를 (x2)
+생극, 재화 -> 생극제화 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x3)

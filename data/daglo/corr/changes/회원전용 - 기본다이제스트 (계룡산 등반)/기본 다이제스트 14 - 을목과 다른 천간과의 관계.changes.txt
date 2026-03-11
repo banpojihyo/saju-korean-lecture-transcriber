@@ -32,3 +32,59 @@ context_skipped_hits: 0
 
 [dict replace added]
 과목 하나 따로 건드려야 돼. -> 갑목 하나 따로 건드려야 돼.
+
+[working-tree - 2026-03-11 19:49:03]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 1
+term_hits_after_correction: 36
+script_lines_after_cleanup: 52
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+과목 하나 따로 건드려야 돼. -> 갑목 하나 따로 건드려야 돼. (x1)
+
+[working-tree - 2026-03-11 19:50:40]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 2
+changed_chars: 3
+term_hits_after_correction: 37
+script_lines_after_cleanup: 52
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+정제* -> 정재* (x2)
+과목 하나 따로 건드려야 돼. -> 갑목 하나 따로 건드려야 돼. (x1)
+
+[working-tree - 2026-03-11 19:55:16]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 2
+changed_chars: 3
+term_hits_after_correction: 37
+script_lines_after_cleanup: 52
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+정제* -> 정재* (x2)
+과목 하나 따로 건드려야 돼. -> 갑목 하나 따로 건드려야 돼. (x1)

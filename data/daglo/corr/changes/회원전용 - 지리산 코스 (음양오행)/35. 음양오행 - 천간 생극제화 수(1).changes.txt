@@ -302,3 +302,96 @@ context_skipped_hits: 5
 [skipped by context]
 수색묵 -> 수생목 (x4)
 감복 -> 갑목 (x1)
+
+[working-tree - 2026-03-11 19:49:12]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 16
+term_hits_after_correction: 55
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 10
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x1)
+갑묵/을묵 -> 갑목/을목 (x1)
+수국화 -> 수극화 (x1)
+생묵* -> 생목* (x1)
+목국토 -> 목극토 (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x2)
+
+[skipped by context]
+수색묵은 -> 수생목은 (x2)
+수색묵이 -> 수생목이 (x2)
+수색묵 -> 수생목 (x4)
+감복이 -> 갑목이 (x1)
+감복 -> 갑목 (x1)
+
+[working-tree - 2026-03-11 19:50:48]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 16
+term_hits_after_correction: 55
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 10
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x1)
+갑묵/을묵 -> 갑목/을목 (x1)
+수국화 -> 수극화 (x1)
+생묵* -> 생목* (x1)
+목국토 -> 목극토 (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x2)
+
+[skipped by context]
+수색묵은 -> 수생목은 (x2)
+수색묵이 -> 수생목이 (x2)
+수색묵 -> 수생목 (x4)
+감복이 -> 갑목이 (x1)
+감복 -> 갑목 (x1)
+
+[working-tree - 2026-03-11 19:55:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\35. 음양오행 - 천간 생극제화 수(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 16
+term_hits_after_correction: 55
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 10
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x1)
+갑묵/을묵 -> 갑목/을목 (x1)
+수국화 -> 수극화 (x1)
+생묵* -> 생목* (x1)
+목국토 -> 목극토 (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x2)
+
+[skipped by context]
+수색묵은 -> 수생목은 (x2)
+수색묵이 -> 수생목이 (x2)
+수색묵 -> 수생목 (x4)
+감복이 -> 갑목이 (x1)
+감복 -> 갑목 (x1)

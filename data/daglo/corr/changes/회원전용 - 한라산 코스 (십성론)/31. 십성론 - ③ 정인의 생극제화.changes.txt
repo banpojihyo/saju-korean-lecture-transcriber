@@ -366,3 +366,93 @@ context_skipped_hits: 0
 생급 재활을 -> 생극제화를 (x1)
 관무기 -> 갑목이 (x1)
 4조 -> 사주 (x1)
+
+[working-tree - 2026-03-11 19:49:20]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 14112
+term_hits_after_correction: 49
+script_lines_after_cleanup: 108
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x8)
+갑묵/을묵 -> 갑목/을목 (x1)
+제극인* -> 재극인* (x19)
+편제* -> 편재* (x1)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x4)
+감묵 -> 갑목 (x2)
+생극 재활을 -> 생극제화를 (x1)
+생급 재활을 -> 생극제화를 (x1)
+관무기 -> 갑목이 (x1)
+4조 -> 사주 (x1)
+
+[working-tree - 2026-03-11 19:50:56]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 14112
+term_hits_after_correction: 49
+script_lines_after_cleanup: 108
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x8)
+갑묵/을묵 -> 갑목/을목 (x1)
+제극인* -> 재극인* (x19)
+편제* -> 편재* (x1)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x4)
+감묵 -> 갑목 (x2)
+생극 재활을 -> 생극제화를 (x1)
+생급 재활을 -> 생극제화를 (x1)
+관무기 -> 갑목이 (x1)
+4조 -> 사주 (x1)
+
+[working-tree - 2026-03-11 19:55:32]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\31. 십성론 - ③ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 14112
+term_hits_after_correction: 49
+script_lines_after_cleanup: 108
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x8)
+갑묵/을묵 -> 갑목/을목 (x1)
+제극인* -> 재극인* (x19)
+편제* -> 편재* (x1)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x4)
+감묵 -> 갑목 (x2)
+생극 재활을 -> 생극제화를 (x1)
+생급 재활을 -> 생극제화를 (x1)
+관무기 -> 갑목이 (x1)
+4조 -> 사주 (x1)

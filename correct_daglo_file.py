@@ -889,6 +889,107 @@ SAJU_REGEX_REPLACEMENTS: tuple[
     ),
 )
 
+SAJU_TERM_CONTEXT_KEYWORDS = (
+    "사주",
+    "오행",
+    "음양",
+    "십성",
+    "육친",
+    "생극제화",
+    "한난조습",
+    "왕쇠강약",
+    "일간",
+    "월간",
+    "연간",
+    "시간",
+    "일지",
+    "월지",
+    "연지",
+    "시지",
+    "대운",
+    "세운",
+    "용신",
+    "희신",
+    "기신",
+    "관살",
+    "관성",
+    "재성",
+    "인성",
+    "비겁",
+    "식상",
+    "비견",
+    "겁재",
+    "식신",
+    "상관",
+    "편재",
+    "정재",
+    "편관",
+    "정관",
+    "편인",
+    "정인",
+    "명리학",
+    "역학",
+    "통변",
+    "궁대응",
+    "천간",
+    "지지",
+)
+
+SAJU_FAMILY_REPLACEMENT_RULES: tuple[
+    tuple[re.Pattern[str], str, str, tuple[str, ...], bool, tuple[str, ...]],
+    ...,
+] = (
+    (re.compile(r"제극인[가-힣]*"), "제극인", "재극인", (), False, ()),
+    (re.compile(r"6친[가-힣]*"), "6친", "육친", (), False, ()),
+    (re.compile(r"겁제[가-힣]*"), "겁제", "겁재", (), False, ()),
+    (
+        re.compile(r"정제[가-힣]*"),
+        "정제",
+        "정재",
+        ("되", "돼", "해", "해서", "했"),
+        False,
+        ("노론", "소론", "남인", "벽파", "시파"),
+    ),
+    (
+        re.compile(r"편제[가-힣]*"),
+        "편제",
+        "편재",
+        ("되", "돼"),
+        False,
+        (),
+    ),
+)
+
+SAJU_TERM_ALLOWED_COMPOUND_PREFIXES = (
+    "일지",
+    "월지",
+    "연지",
+    "시지",
+    "일간",
+    "월간",
+    "연간",
+    "시간",
+    "일제",
+    "월제",
+    "연제",
+    "시제",
+    "정관",
+    "편관",
+    "정인",
+    "편인",
+    "생",
+    "식신생",
+    "식상생",
+    "비견",
+    "겁재",
+    "비겁",
+    "식신",
+    "상관",
+    "재성",
+    "인성",
+    "관성",
+)
+
 CURRENT_DICT_TOPIC = ""
 CURRENT_SOURCE_UNDER_SAJU_RAW = False
 CURRENT_SOURCE_RELATIVE_PATH = ""
@@ -1051,6 +1152,47 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
         track_replacement(wrong, right)
         return right
 
+    def normalize_saju_term_families(source_text: str) -> str:
+        for pattern, wrong_stem, right_stem, skip_prefixes, needs_context, exclude_contexts in (
+            SAJU_FAMILY_REPLACEMENT_RULES
+        ):
+            def replace_family(match: re.Match[str]) -> str:
+                token = match.group(0)
+                suffix = token[len(wrong_stem) :]
+                start, end = match.span()
+
+                if wrong_stem in {"정제", "편제"} and start > 0 and WORD_CHAR_RE.match(
+                    source_text[start - 1]
+                ):
+                    if not any(
+                        source_text[:start].endswith(prefix)
+                        for prefix in SAJU_TERM_ALLOWED_COMPOUND_PREFIXES
+                    ):
+                        return token
+
+                if skip_prefixes and any(suffix.startswith(prefix) for prefix in skip_prefixes):
+                    return token
+
+                if exclude_contexts and has_context_keyword(
+                    source_text, start, end, exclude_contexts, window=120
+                ):
+                    return token
+
+                if needs_context and not has_context_keyword(
+                    source_text, start, end, SAJU_TERM_CONTEXT_KEYWORDS, window=120
+                ):
+                    return token
+
+                replacement = right_stem + suffix
+                if replacement != token:
+                    track_replacement(f"{wrong_stem}*", f"{right_stem}*")
+                return replacement
+
+            source_text = pattern.sub(replace_family, source_text)
+
+        return source_text
+
+    text = normalize_saju_term_families(text)
     text = GEUK_COMPOUND_RE.sub(replace_geuk_compound, text)
 
     for pattern, replacement, wrong_label, right_label in SAJU_REGEX_REPLACEMENTS:

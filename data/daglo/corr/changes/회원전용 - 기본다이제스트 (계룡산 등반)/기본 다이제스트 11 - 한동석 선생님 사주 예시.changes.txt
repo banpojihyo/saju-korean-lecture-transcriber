@@ -272,3 +272,102 @@ OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
 심금 -> 신금 (x3)
 채용 -> 체용 (x1)
 감묵 -> 갑목 (x2)
+
+[working-tree - 2026-03-11 19:49:03]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 12096
+term_hits_after_correction: 66
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x6)
+갑묵/을묵 -> 갑목/을목 (x3)
+묵생* -> 목생* (x1)
+심금 -> 신금 (x1)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x7)
+배수로 축축하게 적셔야 되나? -> 계수로 축축하게 적셔야 되나? (x1)
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+배수가 가장 음해요. -> 계수가 가장 음해요. (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+심금 -> 신금 (x1)
+채용 -> 체용 (x1)
+
+[working-tree - 2026-03-11 19:50:39]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 12096
+term_hits_after_correction: 66
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x6)
+갑묵/을묵 -> 갑목/을목 (x3)
+묵생* -> 목생* (x1)
+심금 -> 신금 (x1)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x7)
+배수로 축축하게 적셔야 되나? -> 계수로 축축하게 적셔야 되나? (x1)
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+배수가 가장 음해요. -> 계수가 가장 음해요. (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+심금 -> 신금 (x1)
+채용 -> 체용 (x1)
+
+[working-tree - 2026-03-11 19:55:16]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 11 - 한동석 선생님 사주 예시.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 12096
+term_hits_after_correction: 66
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x6)
+갑묵/을묵 -> 갑목/을목 (x3)
+묵생* -> 목생* (x1)
+심금 -> 신금 (x1)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x7)
+배수로 축축하게 적셔야 되나? -> 계수로 축축하게 적셔야 되나? (x1)
+처음 우리가 했던 한난조석이 -> 처음 우리가 했던 한난조습이 (x1)
+배수가 가장 음해요. -> 계수가 가장 음해요. (x1)
+OEM으로 얘기하면 -> 오행으로 얘기하면 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+심금 -> 신금 (x1)
+채용 -> 체용 (x1)

@@ -138,3 +138,69 @@ context_skipped_hits: 0
 수국화 -> 수극화 (x3)
 생극 재화 -> 생극제화 (x1)
 1조 -> 일주 (x1)
+
+[working-tree - 2026-03-11 19:49:13]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 28355
+term_hits_after_correction: 58
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+정제* -> 정재* (x1)
+수국화 -> 수극화 (x3)
+생극 재화 -> 생극제화 (x1)
+1조 -> 일주 (x1)
+
+[working-tree - 2026-03-11 19:50:49]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 28355
+term_hits_after_correction: 58
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+정제* -> 정재* (x2)
+수국화 -> 수극화 (x3)
+생극 재화 -> 생극제화 (x1)
+1조 -> 일주 (x1)
+
+[working-tree - 2026-03-11 19:55:26]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 28355
+term_hits_after_correction: 58
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+정제* -> 정재* (x2)
+수국화 -> 수극화 (x3)
+생극 재화 -> 생극제화 (x1)
+1조 -> 일주 (x1)
