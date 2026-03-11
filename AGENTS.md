@@ -5,6 +5,7 @@
 - Log path: `conversation_logs/YYYY-MM-DD.md` using the Asia/Seoul date.
 - If the current day's file does not exist, create it when logging is flushed.
 - If the current day's file exists, append new turns.
+- Keep each day's conversation log in chronological order. If delayed or pending turns would be out of order, insert or reorder them by timestamp instead of blindly appending them at the end.
 - If a turn is only a question/consultation and does not cause any project file changes, do not immediately write that turn to the log file.
 - Keep those no-change turns pending, and flush them later together with the next turn that does produce project file changes and will be committed.
 - When writing or updating log files, use UTF-8 so Korean text is not corrupted.
