@@ -541,3 +541,61 @@ context_skipped_hits: 0
 기포라고요 -> 기토라고요 (x1)
 기포가 -> 기토가 (x1)
 1주 -> 일주 (x1)
+
+[working-tree - 2026-03-12 00:56:37]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 26
+term_hits_after_correction: 50
+script_lines_after_cleanup: 114
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+편제* -> 편재* (x1)
+토국수 -> 토극수 (x8)
+토곡수 -> 토극수 (x1)
+정제* -> 정재* (x2)
+목국토 -> 목극토 (x4)
+감묵 -> 갑목 (x1)
+수생무기라고 할 때 -> 수생목이라고 할 때 (x1)
+모기 개입 -> 목이 개입 (x1)
+기포라고요 -> 기토라고요 (x1)
+기포가 -> 기토가 (x1)
+1주 -> 일주 (x1)
+
+[working-tree - 2026-03-12 01:03:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 26
+term_hits_after_correction: 50
+script_lines_after_cleanup: 114
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+편제* -> 편재* (x1)
+토국수 -> 토극수 (x8)
+토곡수 -> 토극수 (x1)
+정제* -> 정재* (x2)
+목국토 -> 목극토 (x4)
+감묵 -> 갑목 (x1)
+수생무기라고 할 때 -> 수생목이라고 할 때 (x1)
+모기 개입 -> 목이 개입 (x1)
+기포라고요 -> 기토라고요 (x1)
+기포가 -> 기토가 (x1)
+1주 -> 일주 (x1)

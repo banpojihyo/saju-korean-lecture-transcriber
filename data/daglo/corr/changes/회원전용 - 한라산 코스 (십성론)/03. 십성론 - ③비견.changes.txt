@@ -366,3 +366,65 @@ context_skipped_hits: 1
 
 [skipped by context]
 채용 -> 체용 (x1)
+
+[working-tree - 2026-03-12 00:56:44]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.script.txt
+file_override_rules: 3
+file_override_hits: 4
+applied_rules: 6
+changed_chars: 26
+term_hits_after_correction: 51
+script_lines_after_cleanup: 99
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+수화는 채용이 다르다 -> 수화는 체용이 다르다 (x1)
+채용이 바뀌어서 -> 체용이 바뀌어서 (x2)
+죄수는 -> 계수는 (x1)
+
+[applied replacements]
+제탈* -> 재탈* (x3)
+제관* -> 재관* (x8)
+쟁제* -> 쟁재* (x1)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x3)
+채로 놓고 -> 체로 놓고 (x2)
+
+[skipped by context]
+채용 -> 체용 (x1)
+
+[working-tree - 2026-03-12 01:03:32]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\03. 십성론 - ③비견.script.txt
+file_override_rules: 3
+file_override_hits: 4
+applied_rules: 6
+changed_chars: 26
+term_hits_after_correction: 51
+script_lines_after_cleanup: 99
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+수화는 채용이 다르다 -> 수화는 체용이 다르다 (x1)
+채용이 바뀌어서 -> 체용이 바뀌어서 (x2)
+죄수는 -> 계수는 (x1)
+
+[applied replacements]
+제탈* -> 재탈* (x3)
+제관* -> 재관* (x8)
+쟁제* -> 쟁재* (x1)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x3)
+채로 놓고 -> 체로 놓고 (x2)
+
+[skipped by context]
+채용 -> 체용 (x1)

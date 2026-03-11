@@ -188,3 +188,53 @@ Muto -> 무토 (x1)
 [skipped by context]
 무투에 -> 무토에 (x1)
 무투 -> 무토 (x1)
+
+[working-tree - 2026-03-12 00:56:37]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 10706
+term_hits_after_correction: 60
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+제관* -> 재관* (x2)
+생제* -> 생재* (x6)
+Muto -> 무토 (x1)
+무투는 -> 무토는 (x1)
+
+[skipped by context]
+무투에 -> 무토에 (x1)
+무투 -> 무토 (x1)
+
+[working-tree - 2026-03-12 01:03:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 10706
+term_hits_after_correction: 60
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+제관* -> 재관* (x2)
+생제* -> 생재* (x6)
+Muto -> 무토 (x1)
+무투는 -> 무토는 (x1)
+
+[skipped by context]
+무투에 -> 무토에 (x1)
+무투 -> 무토 (x1)

@@ -230,3 +230,55 @@ context_skipped_hits: 0
 쟤를 양생 -> 재를 양생 (x1)
 한남 조숙 -> 한난조습 (x1)
 10성 -> 십성 (x11)
+
+[working-tree - 2026-03-12 00:56:46]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 12244
+term_hits_after_correction: 38
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x11)
+제 관 -> 재관 (x1)
+정제* -> 정재* (x15)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+현재 -> 편재 (x2)
+쟤를 양생 -> 재를 양생 (x1)
+한남 조숙 -> 한난조습 (x1)
+10성 -> 십성 (x11)
+
+[working-tree - 2026-03-12 01:03:35]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 12244
+term_hits_after_correction: 38
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x11)
+제 관 -> 재관 (x1)
+정제* -> 정재* (x15)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+현재 -> 편재 (x2)
+쟤를 양생 -> 재를 양생 (x1)
+한남 조숙 -> 한난조습 (x1)
+10성 -> 십성 (x11)

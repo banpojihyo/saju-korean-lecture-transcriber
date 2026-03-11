@@ -403,3 +403,63 @@ context_skipped_hits: 0
 겁제* -> 겁재* (x3)
 감묵 -> 갑목 (x3)
 사조를 -> 사주를 (x3)
+
+[working-tree - 2026-03-12 00:56:40]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 26
+term_hits_after_correction: 50
+script_lines_after_cleanup: 163
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x4)
+제극인* -> 재극인* (x1)
+편제* -> 편재* (x2)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+제탈* -> 재탈* (x1)
+제관* -> 재관* (x1)
+정제* -> 정재* (x1)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x1)
+겁제* -> 겁재* (x3)
+감묵 -> 갑목 (x3)
+사조를 -> 사주를 (x3)
+
+[working-tree - 2026-03-12 01:03:28]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 26
+term_hits_after_correction: 50
+script_lines_after_cleanup: 163
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x4)
+제극인* -> 재극인* (x1)
+편제* -> 편재* (x2)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+제탈* -> 재탈* (x1)
+제관* -> 재관* (x1)
+정제* -> 정재* (x1)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x1)
+겁제* -> 겁재* (x3)
+감묵 -> 갑목 (x3)
+사조를 -> 사주를 (x3)

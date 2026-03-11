@@ -208,3 +208,53 @@ context_skipped_hits: 0
 한난조섭 -> 한난조습 (x2)
 사조를 -> 사주를 (x1)
 귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 00:56:29]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 8
+changed_chars: 18
+term_hits_after_correction: 37
+script_lines_after_cleanup: 59
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+제관* -> 재관* (x6)
+생제* -> 생재* (x3)
+제를 -> 재를 (x1)
+명을 볼 때 명 전체 기준에서 한난조석 기세의 부분. -> 명을 볼 때 명 전체 기준에서 한난조습 기세의 부분. (x1)
+식신 재살 -> 식신 제살 (x1)
+한난조섭 -> 한난조습 (x2)
+사조를 -> 사주를 (x1)
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 01:03:17]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 32 - 운추론2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 8
+changed_chars: 18
+term_hits_after_correction: 37
+script_lines_after_cleanup: 59
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+제관* -> 재관* (x6)
+생제* -> 생재* (x3)
+제를 -> 재를 (x1)
+명을 볼 때 명 전체 기준에서 한난조석 기세의 부분. -> 명을 볼 때 명 전체 기준에서 한난조습 기세의 부분. (x1)
+식신 재살 -> 식신 제살 (x1)
+한난조섭 -> 한난조습 (x2)
+사조를 -> 사주를 (x1)
+귀신 -> 기신 (x3)

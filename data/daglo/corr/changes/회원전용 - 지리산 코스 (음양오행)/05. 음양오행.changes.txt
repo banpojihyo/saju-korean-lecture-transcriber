@@ -402,3 +402,57 @@ context_skipped_hits: 1
 
 [skipped by context]
 사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-12 00:56:31]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 13285
+term_hits_after_correction: 32
+script_lines_after_cleanup: 160
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+생제* -> 생재* (x3)
+묵생* -> 목생* (x2)
+그게 수생무기라고요. -> 그게 수생목이라고요. (x1)
+활을 봐야 -> 화를 봐야 (x1)
+왕세강약은 -> 왕쇠강약은 (x1)
+생극 재화 -> 생극제화 (x1)
+한난조섭 -> 한난조습 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+
+[working-tree - 2026-03-12 01:03:19]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 13285
+term_hits_after_correction: 32
+script_lines_after_cleanup: 160
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+생제* -> 생재* (x3)
+묵생* -> 목생* (x2)
+그게 수생무기라고요. -> 그게 수생목이라고요. (x1)
+활을 봐야 -> 화를 봐야 (x1)
+왕세강약은 -> 왕쇠강약은 (x1)
+생극 재화 -> 생극제화 (x1)
+한난조섭 -> 한난조습 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)

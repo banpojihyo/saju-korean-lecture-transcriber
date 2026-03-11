@@ -253,3 +253,51 @@ context_skipped_hits: 0
 편제* -> 편재* (x56)
 정제* -> 정재* (x21)
 생제* -> 생재* (x1)
+
+[working-tree - 2026-03-12 00:56:47]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 4
+changed_chars: 83
+term_hits_after_correction: 31
+script_lines_after_cleanup: 77
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+심금일주한테 -> 신금일주한테 (x1)
+
+[applied replacements]
+편제* -> 편재* (x56)
+정제* -> 정재* (x21)
+생제* -> 생재* (x1)
+현재 -> 편재 (x4)
+
+[working-tree - 2026-03-12 01:03:35]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\16. 십성론 - ①편재.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 4
+changed_chars: 83
+term_hits_after_correction: 31
+script_lines_after_cleanup: 77
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+심금일주한테 -> 신금일주한테 (x1)
+
+[applied replacements]
+편제* -> 편재* (x56)
+정제* -> 정재* (x21)
+생제* -> 생재* (x1)
+현재 -> 편재 (x4)
