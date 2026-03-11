@@ -117,3 +117,24 @@ context_skipped_hits: 0
 생극 재화 -> 생극제화 (x1)
 토국수가 -> 토극수가 (x1)
 1조 -> 일주 (x1)
+
+[working-tree - 2026-03-11 18:26:38]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 28355
+term_hits_after_correction: 57
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+수국화 -> 수극화 (x3)
+생극 재화 -> 생극제화 (x1)
+1조 -> 일주 (x1)

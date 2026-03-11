@@ -744,10 +744,12 @@ GEUK_COMPOUND_RE = re.compile(r"([목화토금수])[국곡]([목화토금수])")
 SAJU_REGEX_REPLACEMENTS: tuple[
     tuple[re.Pattern[str], str, str, str], ...
 ] = (
-    (re.compile(r"한\s*[무모]기"), "한목이", "한 무기", "한목이"),
-    (re.compile(r"한\s*목이"), "한목이", "한 목이", "한목이"),
-    (re.compile(r"한\s*목에"), "한목에", "한 목에", "한목에"),
-    (re.compile(r"한묵"), "한목", "한묵", "한목"),
+    # Keep "한 무기" family fixes at token boundaries so adjective+noun phrases
+    # like "굉장한 무기" do not collapse into "굉장한목이".
+    (re.compile(r"(?<![가-힣A-Za-z0-9])한\s*[무모]기"), "한목이", "한 무기", "한목이"),
+    (re.compile(r"(?<![가-힣A-Za-z0-9])한\s*목이"), "한목이", "한 목이", "한목이"),
+    (re.compile(r"(?<![가-힣A-Za-z0-9])한\s*목에"), "한목에", "한 목에", "한목에"),
+    (re.compile(r"(?<![가-힣A-Za-z0-9])한묵"), "한목", "한묵", "한목"),
     (re.compile(r"감묵"), "갑목", "감묵", "갑목"),
     (re.compile(r"관묵"), "갑목", "관묵", "갑목"),
     (re.compile(r"([갑을])묵"), r"\1목", "갑묵/을묵", "갑목/을목"),
