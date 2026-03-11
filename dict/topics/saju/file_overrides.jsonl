@@ -30,3 +30,38 @@
 {"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"4조, 9조에서 궁의 관계들을","right":"사주 구조에서 궁의 관계들을","note":"User-confirmed line fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"국민의 생극제화을 하겠습니다.","right":"정인의 생극제화를 하겠습니다.","note":"User-confirmed opener fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"국민의 생급 재활을 하겠습니다.","right":"정인의 생극제화를 하겠습니다.","note":"User-confirmed opener fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"죄수는","right":"계수는","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"채용이 바뀌어서","right":"체용이 바뀌어서","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"수화는 채용이 다르다","right":"수화는 체용이 다르다","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"일간을 채로 놓고","right":"일간을 체로 놓고","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"이걸 채로 놓고 보면은","right":"이걸 체로 놓고 보면은","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"채용을 바꿔서 보시는 것이","right":"체용을 바꿔서 보시는 것이","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"채를 놓고","right":"체를 놓고","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"채용의 문제라고요","right":"체용의 문제라고요","note":"Context-bound 체용 fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"질신","right":"길신","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"제관 인식","right":"재관인식","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"귀신의 용법","right":"길신의 용법","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"식신 재살","right":"식신 제살","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/09. 십성론 - ②상관.txt","wrong":"채용하느냐의 문제예요","right":"체용하느냐의 문제예요","note":"Context-bound 체용 fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"채용의 문제니까","right":"체용의 문제니까","note":"Context-bound 체용 fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용변","right":"체용변","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용이라는 용어는","right":"체용이라는 용어는","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"운양","right":"음양","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"이 채용에 대한 부분은","right":"이 체용에 대한 부분은","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용은 제가 얘기하는 게 아니고","right":"체용은 제가 얘기하는 게 아니고","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"이 채용은","right":"이 체용은","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용적 부분은","right":"체용적 부분은","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/16. 십성론 - ①편재.txt","wrong":"심금일주한테","right":"신금일주한테","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/22. 십성론 - ③ 정관.txt","wrong":"이게 심금인 거죠","right":"이게 신금인 거죠","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/25. 십성론 - ① 편관의 생극제화.txt","wrong":"똑같은 심금인데","right":"똑같은 신금인데","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/27. 십성론 - ③ 편관의 십성대응.txt","wrong":"채용을 바꾸는 거고","right":"체용을 바꾸는 거고","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/27. 십성론 - ③ 편관의 십성대응.txt","wrong":"채용을 바꾸는 것을","right":"체용을 바꾸는 것을","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/27. 십성론 - ③ 편관의 십성대응.txt","wrong":"채용변","right":"체용변","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"다 귀신이 유정하면 안 돼요","right":"다 기신이 유정하면 안 돼요","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"남명은 관사리","right":"남명은 관살이","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"무투라고 하는 정인","right":"무토라고 하는 정인","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"저 Muto라고 하는","right":"저 무토라고 하는","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"그래서 심금일주한다","right":"그래서 신금일주한다","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/35. 십성론 - ② 편인의 궁대응.txt","wrong":"귀신이 밖에 있다는 건 긍정적이죠","right":"기신이 밖에 있다는 건 긍정적이죠","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/35. 십성론 - ② 편인의 궁대응.txt","wrong":"그 귀신에 대한","right":"그 기신에 대한","note":"User-confirmed Hallasan term fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/35. 십성론 - ② 편인의 궁대응.txt","wrong":"귀신을 멀리 밖에 두고","right":"기신을 멀리 밖에 두고","note":"User-confirmed Hallasan term fix"}

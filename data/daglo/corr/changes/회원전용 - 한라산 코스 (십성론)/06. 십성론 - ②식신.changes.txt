@@ -108,3 +108,27 @@ context_skipped_hits: 2
 
 [skipped by context]
 채용 -> 체용 (x2)
+
+[working-tree - 2026-03-11 19:34:34]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 61
+script_lines_after_cleanup: 115
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+채용의 문제라고요 -> 체용의 문제라고요 (x1)
+
+[applied replacements]
+배수로 연결되면은 -> 계수로 연결되면은 (x1)
+
+[skipped by context]
+채용 -> 체용 (x1)
