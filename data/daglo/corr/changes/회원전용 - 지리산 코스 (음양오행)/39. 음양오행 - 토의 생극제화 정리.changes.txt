@@ -340,3 +340,87 @@ context_skipped_hits: 3
 
 [skipped by context]
 귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 01:28:07]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 36949
+term_hits_after_correction: 54
+script_lines_after_cleanup: 161
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+제탈* -> 재탈* (x2)
+제 관 -> 재관 (x1)
+쟁제* -> 쟁재* (x1)
+생제* -> 생재* (x2)
+경관* -> 견관* (x1)
+제가 -> 재가 (x1)
+10성 -> 십성 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 01:35:18]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 7
+changed_chars: 36949
+term_hits_after_correction: 54
+script_lines_after_cleanup: 161
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[applied replacements]
+제탈* -> 재탈* (x2)
+제 관 -> 재관 (x1)
+쟁제* -> 쟁재* (x1)
+생제* -> 생재* (x2)
+경관* -> 견관* (x1)
+제가 -> 재가 (x1)
+10성 -> 십성 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x3)
+
+[working-tree - 2026-03-12 01:45:15]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 7
+changed_chars: 36949
+term_hits_after_correction: 54
+script_lines_after_cleanup: 161
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 3
+
+[file overrides applied]
+내 거라고 챙기려고 하면은 어떻게 되겠어요? 제가 일어나겠죠. -> 내 거라고 챙기려고 하면은 어떻게 되겠어요? 재가 일어나겠죠. (x1)
+
+[applied replacements]
+제탈* -> 재탈* (x2)
+제 관 -> 재관 (x1)
+쟁제* -> 쟁재* (x1)
+생제* -> 생재* (x2)
+경관* -> 견관* (x1)
+제가 -> 재가 (x1)
+10성 -> 십성 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x3)

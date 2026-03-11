@@ -650,3 +650,105 @@ context_skipped_hits: 2
 
 [skipped by context]
 고친 -> 고층 (x2)
+
+[working-tree - 2026-03-12 01:28:02]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 40
+term_hits_after_correction: 51
+script_lines_after_cleanup: 120
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x4)
+토국수 -> 토극수 (x2)
+토곡수 -> 토극수 (x4)
+수국화 -> 수극화 (x2)
+제 -> 재 (x1)
+다음 주에 수대한남조습을 하겠습니다. -> 다음 주에 수의 한난조습을 하겠습니다. (x1)
+모기 개입 -> 목이 개입 (x3)
+한난조섭을 -> 한난조습을 (x1)
+생극재화의 -> 생극제화의 (x1)
+생국제화를 -> 생극제화를 (x1)
+생극재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+고친 -> 고층 (x2)
+
+[working-tree - 2026-03-12 01:35:13]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 42
+term_hits_after_correction: 51
+script_lines_after_cleanup: 120
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x4)
+토국수 -> 토극수 (x2)
+토곡수 -> 토극수 (x4)
+수국화 -> 수극화 (x2)
+제가 -> 재가 (x2)
+제 -> 재 (x1)
+다음 주에 수대한남조습을 하겠습니다. -> 다음 주에 수의 한난조습을 하겠습니다. (x1)
+모기 개입 -> 목이 개입 (x3)
+한난조섭을 -> 한난조습을 (x1)
+생극재화의 -> 생극제화의 (x1)
+생국제화를 -> 생극제화를 (x1)
+생극재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+고친 -> 고층 (x2)
+
+[working-tree - 2026-03-12 01:45:09]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\16. 음양오행 - 금의 생극제화 ②.script.txt
+file_override_rules: 4
+file_override_hits: 4
+applied_rules: 11
+changed_chars: 44
+term_hits_after_correction: 51
+script_lines_after_cleanup: 120
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[file overrides applied]
+제가 있는데, 본인의 제로 확인이 안 되면은 -> 재가 있는데, 본인의 재로 확인이 안 되면은 (x1)
+그게 제를 바라보고 있는 거예요. -> 그게 재를 바라보고 있는 거예요. (x1)
+일지에 처의 자리에 제가 있고 -> 일지에 처의 자리에 재가 있고 (x1)
+그게 제의 역할들이에요. -> 그게 재의 역할들이에요. (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x4)
+토국수 -> 토극수 (x2)
+토곡수 -> 토극수 (x4)
+수국화 -> 수극화 (x2)
+다음 주에 수대한남조습을 하겠습니다. -> 다음 주에 수의 한난조습을 하겠습니다. (x1)
+모기 개입 -> 목이 개입 (x3)
+한난조섭을 -> 한난조습을 (x1)
+생극재화의 -> 생극제화의 (x1)
+생국제화를 -> 생극제화를 (x1)
+생극재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x1)
+
+[skipped by context]
+고친 -> 고층 (x2)
