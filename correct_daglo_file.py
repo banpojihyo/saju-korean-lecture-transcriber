@@ -966,6 +966,14 @@ SAJU_FAMILY_REPLACEMENT_RULES: tuple[
     ),
     (re.compile(r"감목[가-힣]*"), "감목", "갑목", (), False, ()),
     (
+        re.compile(r"경관[가-힣]*"),
+        "경관",
+        "견관",
+        (),
+        False,
+        (),
+    ),
+    (
         re.compile(r"현관[가-힣]*"),
         "현관",
         "편관",
@@ -1236,6 +1244,18 @@ def has_context_keyword(
     return any(keyword in snippet for keyword in keywords)
 
 
+def is_scenic_gyeonggwan_context(text: str, start: int, end: int) -> bool:
+    left = max(0, start - 24)
+    right = min(len(text), end + 24)
+    snippet = text[left:right]
+    return bool(
+        re.search(
+            r"(?:외부|자연)\s*경관|경관(?:을|이|은|는|으로|로)?\s*(?:끌어들|감상|조망|수려|좋)|조경|정원|원림|차경|풍경|경치",
+            snippet,
+        )
+    )
+
+
 def should_apply_replacement(
     text: str, start: int, end: int, wrong: str, right: str
 ) -> bool:
@@ -1382,6 +1402,11 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
 
                 if exclude_contexts and has_context_keyword(
                     source_text, start, end, exclude_contexts, window=120
+                ):
+                    return token
+
+                if wrong_stem == "경관" and is_scenic_gyeonggwan_context(
+                    source_text, start, end
                 ):
                     return token
 
