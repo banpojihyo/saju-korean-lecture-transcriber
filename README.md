@@ -68,6 +68,8 @@ dict/
 - `dict/common`은 전 주제 공통 오탈자/용어를 담는 용도입니다.
 - `dict/topics/<theme>`는 주제 특화 사전을 담는 용도입니다.
 - `replace.csv`는 반복적으로 재사용할 수 있는 전역 치환 규칙만 둡니다.
+- `replace.csv`는 기본형 pair 중심으로 두고, common 조사형(`은/는`, `이/가`, `을/를`, `이라고요` 등)은 런타임에 자동 확장 적용합니다.
+- 기존처럼 조사형을 직접 여러 줄로 적어둔 csv도 그대로 호환됩니다.
 - `file_overrides.jsonl`은 특정 파일에서만 써야 하는 문장형 exact replacement를 둡니다.
 - `term_stopwords.txt`는 common 또는 topic 단위로 자동 `terms.csv` 갱신 시 들어가면 안 되는 일반어 stopword를 둡니다.
 - `dict/topics/philosophy_east`, `dict/topics/philosophy_west`를 권장하며, `dict/topics/philosophy`는 통합형(호환)입니다.

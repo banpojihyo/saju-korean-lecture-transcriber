@@ -17,6 +17,7 @@
 - `dict/<theme>/replace.csv`
 - `dict/<theme>/file_overrides.jsonl`
 - `correct_daglo_file.py`의 `manual_pairs()`
+- `replace.csv`의 단일 용어 pair는 common 조사형(`은/는`, `이/가`, `을/를`, `이라고요` 등)을 런타임에 자동 확장 적용
 - 적용 순서:
 - 파일별 override exact replacement
 - `wrong` 문자열 길이가 긴 규칙부터 우선 적용(부분 중첩 오적용 방지)
@@ -64,6 +65,9 @@
 - `replace.csv`:
 - 이번 실행에서 실제 적용된 `(wrong, right)` 중 전역 재사용 가치가 높은 pair만 신규 추가
 - 중복 pair는 추가하지 않음
+- 기본형 pair를 우선 저장하고, common 조사형은 코드에서 런타임 확장한다.
+- 따라서 `관묵,갑목`처럼 기본형 1쌍만 넣어도 `관묵은/이/을/...` 계열을 함께 처리할 수 있다.
+- 기존에 조사형이 여러 줄로 들어 있는 csv도 그대로 호환되지만, 새로 추가할 때는 기본형 위주를 권장한다.
 - 긴 문장형/구두점 포함 pair/3어절 이상 pair는 자동으로 `replace.csv`에 넣지 않는다.
 - 즉, `replace.csv` 자동 추가는 짧고 안전한 pair 위주로 제한한다.
 - 파일별 1회성 문장형 교정은 `file_overrides.jsonl`에 수동으로 넣는다.

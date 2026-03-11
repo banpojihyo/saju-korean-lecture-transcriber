@@ -14,6 +14,7 @@ import fnmatch
 import json
 import re
 import subprocess
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -68,6 +69,8 @@ def parse_args() -> argparse.Namespace:
 FILE_OVERRIDES_FILENAME = "file_overrides.jsonl"
 TERM_STOPWORDS_FILENAME = "term_stopwords.txt"
 AUTO_REPLACE_PAIR_RE = re.compile(r"^[가-힣A-Za-z0-9]+(?: [가-힣A-Za-z0-9]+)?$")
+HANGUL_TOKEN_RE = re.compile(r"[가-힣]+$")
+EXPANDED_REPLACE_PAIR_TO_BASE: dict[tuple[str, str], tuple[str, str]] = {}
 
 
 @dataclass(frozen=True)
@@ -97,6 +100,111 @@ def load_replace_pairs(path: Path) -> list[tuple[str, str]]:
             if wrong and right and wrong != right:
                 pairs.append((wrong, right))
     return pairs
+
+
+def jongseong_index(text: str) -> int:
+    if not text:
+        return 0
+    char = text[-1]
+    if not ("가" <= char <= "힣"):
+        return 0
+    return (ord(char) - ord("가")) % 28
+
+
+def has_batchim(text: str) -> bool:
+    return jongseong_index(text) != 0
+
+
+def has_rieul_batchim(text: str) -> bool:
+    return jongseong_index(text) == 8
+
+
+def pick_particle_suffix(
+    stem: str,
+    with_batchim: str,
+    without_batchim: str,
+    rieul_suffix: str | None = None,
+) -> str:
+    if has_rieul_batchim(stem) and rieul_suffix is not None:
+        return rieul_suffix
+    if has_batchim(stem):
+        return with_batchim
+    return without_batchim
+
+
+PARTICLE_EXPANSION_SPECS: tuple[tuple[str, Callable[[str], str]], ...] = (
+    ("은/는", lambda stem: pick_particle_suffix(stem, "은", "는")),
+    ("이/가", lambda stem: pick_particle_suffix(stem, "이", "가")),
+    ("을/를", lambda stem: pick_particle_suffix(stem, "을", "를")),
+    ("과/와", lambda stem: pick_particle_suffix(stem, "과", "와")),
+    ("으로/로", lambda stem: pick_particle_suffix(stem, "으로", "로", rieul_suffix="로")),
+    ("의", lambda stem: "의"),
+    ("에", lambda stem: "에"),
+    ("도", lambda stem: "도"),
+    ("고", lambda stem: "고"),
+    ("만", lambda stem: "만"),
+    ("한테", lambda stem: "한테"),
+    ("이나/나", lambda stem: pick_particle_suffix(stem, "이나", "나")),
+    ("이에요/예요", lambda stem: pick_particle_suffix(stem, "이에요", "예요")),
+    ("이죠/죠", lambda stem: pick_particle_suffix(stem, "이죠", "죠")),
+    ("이니까/니까", lambda stem: pick_particle_suffix(stem, "이니까", "니까")),
+    ("이잖아요/잖아요", lambda stem: pick_particle_suffix(stem, "이잖아요", "잖아요")),
+    ("이면/면", lambda stem: pick_particle_suffix(stem, "이면", "면")),
+    ("이면은/면은", lambda stem: pick_particle_suffix(stem, "이면은", "면은")),
+    ("이라고요/라고요", lambda stem: pick_particle_suffix(stem, "이라고요", "라고요")),
+    ("이라든지/라든지", lambda stem: pick_particle_suffix(stem, "이라든지", "라든지")),
+    ("이든지/든지", lambda stem: pick_particle_suffix(stem, "이든지", "든지")),
+)
+
+
+def is_expandable_replace_stem(text: str) -> bool:
+    return bool(HANGUL_TOKEN_RE.fullmatch(text)) and len(text) >= 2
+
+
+def looks_like_particle_variant(wrong: str, right: str) -> bool:
+    for _, selector in PARTICLE_EXPANSION_SPECS:
+        for wrong_cut in range(2, len(wrong)):
+            wrong_stem = wrong[:wrong_cut]
+            wrong_suffix = wrong[wrong_cut:]
+            if wrong_suffix != selector(wrong_stem):
+                continue
+            for right_cut in range(2, len(right)):
+                right_stem = right[:right_cut]
+                right_suffix = right[right_cut:]
+                if right_suffix == selector(right_stem):
+                    return True
+    return False
+
+
+def expand_replace_pairs_with_particles(
+    base_pairs: list[tuple[str, str]]
+) -> list[tuple[str, str]]:
+    EXPANDED_REPLACE_PAIR_TO_BASE.clear()
+
+    expanded: list[tuple[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+
+    for wrong, right in base_pairs:
+        base_pair = (wrong, right)
+        if base_pair not in seen:
+            seen.add(base_pair)
+            expanded.append(base_pair)
+        EXPANDED_REPLACE_PAIR_TO_BASE[base_pair] = base_pair
+
+        if not is_expandable_replace_stem(wrong) or not is_expandable_replace_stem(right):
+            continue
+        if looks_like_particle_variant(wrong, right):
+            continue
+
+        for _, selector in PARTICLE_EXPANSION_SPECS:
+            expanded_pair = (wrong + selector(wrong), right + selector(right))
+            if expanded_pair in seen:
+                continue
+            seen.add(expanded_pair)
+            expanded.append(expanded_pair)
+            EXPANDED_REPLACE_PAIR_TO_BASE[expanded_pair] = base_pair
+
+    return expanded
 
 
 def load_file_overrides(path: Path) -> list[FileOverrideRule]:
@@ -241,6 +349,7 @@ def merge_replace_pairs(
     seen = set(existing)
     added: list[tuple[str, str]] = []
     for wrong, right, _ in applied:
+        wrong, right = EXPANDED_REPLACE_PAIR_TO_BASE.get((wrong, right), (wrong, right))
         if not is_auto_dict_replace_candidate(wrong, right):
             continue
         pair = (wrong, right)
@@ -1246,6 +1355,7 @@ def main() -> int:
     stopwords_path = dict_dir / TERM_STOPWORDS_FILENAME
 
     replace_pairs = load_replace_pairs(replace_path)
+    runtime_replace_pairs = expand_replace_pairs_with_particles(replace_pairs)
     domain_terms = load_terms(terms_path)
     file_overrides = [
         rule
@@ -1253,7 +1363,7 @@ def main() -> int:
         if rule.matches(CURRENT_SOURCE_RELATIVE_PATH)
     ]
     CURRENT_TERM_STOPWORDS = load_stopwords(stopwords_path)
-    all_pairs_raw = replace_pairs + manual_pairs()
+    all_pairs_raw = runtime_replace_pairs + manual_pairs()
     all_pairs: list[tuple[str, str]] = []
     seen_pairs: set[tuple[str, str]] = set()
     for pair in all_pairs_raw:
