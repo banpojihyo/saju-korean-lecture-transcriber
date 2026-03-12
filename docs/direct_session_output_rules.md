@@ -8,8 +8,8 @@
 ## 2) 적용 범위
 - 입력: `data/daglo/corr/script/**/*.script.txt`
 - 출력:
-  - `data/summaries/{topic}/{agent-name}/md/**`
-  - `data/summaries/{topic}/{agent-name}/txt/**`
+  - `data/summaries/{topic}/{agent-name}__{run-timestamp}/md/**`
+  - `data/summaries/{topic}/{agent-name}__{run-timestamp}/txt/**`
 - 출력 파일은 원본 폴더 구조를 유지한다.
 - 파일명은 원본을 따르되, 문서 내부 제목에는 `.script`를 포함하지 않는다.
 

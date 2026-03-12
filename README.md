@@ -213,8 +213,10 @@ py generate_study_pack_gemini.py `
 
 출력 경로:
 
-- `data/summaries/<topic>/<agent-name>/md/**/*.md`
-- `data/summaries/<topic>/<agent-name>/txt/**/*.txt`
+- `data/summaries/<topic>/<agent-name>__<run-timestamp>/md/**/*.md`
+- `data/summaries/<topic>/<agent-name>__<run-timestamp>/txt/**/*.txt`
+- `run-timestamp` 형식은 `YYYYMMDD-HHMMSS`이고, 기본값은 실행 시각입니다.
+- 필요하면 `--run-timestamp "20260312-202500"`처럼 명시해서 같은 출력 폴더를 재사용할 수 있습니다.
 
 OpenAI 예시:
 
@@ -227,6 +229,7 @@ py run_ai_pipeline.py `
   --input-root "data/daglo/corr/script" `
   --output-root "data/summaries" `
   --agent-name "GPT-5.3-Chat-Latest" `
+  --run-timestamp "20260312-202500" `
   --model "gpt-5.3-chat-latest" `
   --output-format both `
   --chunk-chars 6000 `
@@ -252,6 +255,7 @@ py run_ai_pipeline.py `
   --input-root "data/daglo/corr/script" `
   --output-root "data/summaries" `
   --agent-name "Unified-AI" `
+  --run-timestamp "20260312-202500" `
   --model "gemini-2.5-flash" `
   --output-format both `
   --max-files 3 `

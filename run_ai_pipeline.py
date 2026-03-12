@@ -14,6 +14,8 @@ import urllib.request
 from pathlib import Path
 from typing import Iterable
 
+from summary_output_paths import build_output_base
+
 
 DEFAULT_INPUT_ROOT = Path("data/daglo/corr/script")
 ALT_INPUT_ROOT = Path("data/daglo/script")
@@ -123,7 +125,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--agent-name",
         default="GPT-5.3-Chat-Latest",
-        help="Agent folder name under output root and topic.",
+        help=(
+            "Base agent folder name. Actual output folder becomes "
+            "<agent-name>__<run-timestamp> unless agent-name already ends with "
+            "__YYYYMMDD-HHMMSS."
+        ),
+    )
+    parser.add_argument(
+        "--run-timestamp",
+        default="",
+        help=(
+            "Optional explicit run timestamp in YYYYMMDD-HHMMSS format. "
+            "If omitted, the current local time is used."
+        ),
     )
     parser.add_argument(
         "--output-format",
@@ -1120,7 +1134,13 @@ def main() -> int:
     terms_paths = resolve_terms_paths(args)
     terms = load_terms(terms_paths)
 
-    output_base = Path(args.output_root) / args.topic / args.agent_name
+    try:
+        output_base = build_output_base(
+            args.output_root, args.topic, args.agent_name, args.run_timestamp
+        )
+    except ValueError as e:
+        print(f"[ERROR] {e}")
+        return 1
     md_root = output_base / "md"
     txt_root = output_base / "txt"
 

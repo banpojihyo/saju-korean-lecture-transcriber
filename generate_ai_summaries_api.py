@@ -8,8 +8,8 @@ Features:
 - Domain glossary injection from dict/common/terms.csv and dict/topics/<topic>/terms.csv
 - Preserves folder structure:
     data/daglo/corr/script/**/*.txt
-      -> data/summaries/{topic}/{agent}/md/**/*.md
-      -> data/summaries/{topic}/{agent}/txt/**/*.txt
+      -> data/summaries/{topic}/{agent}__{run-timestamp}/md/**/*.md
+      -> data/summaries/{topic}/{agent}__{run-timestamp}/txt/**/*.txt
 """
 
 from __future__ import annotations
@@ -23,6 +23,8 @@ import time
 import urllib.error
 import urllib.request
 from pathlib import Path
+
+from summary_output_paths import build_output_base
 
 
 SENT_SPLIT_RE = re.compile(r"(?<=[.!?。！？])\s+")
@@ -50,7 +52,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--agent-name",
         default="GPT-5.3-Chat-Latest",
-        help="Agent folder name under output root and topic.",
+        help=(
+            "Base agent folder name. Actual output folder becomes "
+            "<agent-name>__<run-timestamp> unless agent-name already ends with "
+            "__YYYYMMDD-HHMMSS."
+        ),
+    )
+    parser.add_argument(
+        "--run-timestamp",
+        default="",
+        help=(
+            "Optional explicit run timestamp in YYYYMMDD-HHMMSS format. "
+            "If omitted, the current local time is used."
+        ),
     )
     parser.add_argument(
         "--model",
@@ -508,7 +522,13 @@ def main() -> int:
         print("[ERROR] API key is missing. Set OPENAI_API_KEY or pass --api-key.")
         return 1
 
-    output_base = Path(args.output_root) / args.topic / args.agent_name
+    try:
+        output_base = build_output_base(
+            args.output_root, args.topic, args.agent_name, args.run_timestamp
+        )
+    except ValueError as e:
+        print(f"[ERROR] {e}")
+        return 1
     md_root = output_base / "md"
     txt_root = output_base / "txt"
 

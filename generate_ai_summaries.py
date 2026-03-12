@@ -5,8 +5,8 @@ Input:
   data/daglo/corr/script/**/*.txt
 
 Output:
-  data/summaries/<topic>/<agent_name>/md/**/*.md
-  data/summaries/<topic>/<agent_name>/txt/**/*.txt
+  data/summaries/<topic>/<agent_name>__<run-timestamp>/md/**/*.md
+  data/summaries/<topic>/<agent_name>__<run-timestamp>/txt/**/*.txt
 """
 
 from __future__ import annotations
@@ -16,6 +16,8 @@ import csv
 import re
 from collections import Counter
 from pathlib import Path
+
+from summary_output_paths import build_output_base
 
 
 KOR_WORD_RE = re.compile(r"[가-힣]{2,}")
@@ -120,7 +122,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--agent-name",
         default="Heuristic-Summary",
-        help="Agent folder name under output root and topic.",
+        help=(
+            "Base agent folder name. Actual output folder becomes "
+            "<agent-name>__<run-timestamp> unless agent-name already ends with "
+            "__YYYYMMDD-HHMMSS."
+        ),
+    )
+    parser.add_argument(
+        "--run-timestamp",
+        default="",
+        help=(
+            "Optional explicit run timestamp in YYYYMMDD-HHMMSS format. "
+            "If omitted, the current local time is used."
+        ),
     )
     parser.add_argument(
         "--max-theme-bullets",
@@ -366,7 +380,13 @@ def make_summary_text(
 def main() -> int:
     args = parse_args()
     input_root = Path(args.input_root)
-    output_base = Path(args.output_root) / args.topic / args.agent_name
+    try:
+        output_base = build_output_base(
+            args.output_root, args.topic, args.agent_name, args.run_timestamp
+        )
+    except ValueError as e:
+        print(f"[ERROR] {e}")
+        return 1
     md_root = output_base / "md"
     txt_root = output_base / "txt"
 
