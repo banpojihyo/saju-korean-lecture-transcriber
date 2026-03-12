@@ -36,11 +36,13 @@
 - `기본 다이제스트 29 - 일지 기준의 십성 1`
 - `기본 다이제스트 30 - 일지 기준의 십성 2`
 - `기본 다이제스트 31 - 운추론1`
+- `기본 다이제스트 32 - 운추론2`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
-- Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
-- These files remain usable as a direct baseline and can be refreshed file-by-file against the latest corrected scripts in later turns.
+- `회원전용 - 기본다이제스트 (계룡산 등반)` 범위는 이번 런에서 전 파일 direct 재작성 완료 상태입니다.
+- `GPT-5.4-Direct-Extra-High__20260309-223424`는 이제 비교용 고품질 기준본으로만 유지합니다.
 
 ## Notes
 - This run does not use `generate_direct_session_md.ps1` outputs as final content.
 - New direct rewrites should overwrite seeded files in place when refreshed.
+- Basic Digest scope is now fully refreshed against the latest corrected scripts.
