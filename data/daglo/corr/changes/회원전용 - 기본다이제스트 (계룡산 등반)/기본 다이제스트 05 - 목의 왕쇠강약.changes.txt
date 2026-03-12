@@ -1258,3 +1258,58 @@ context_skipped_hits: 16
 죽토의 -> 축토의 (x1)
 활을 -> 화를 (x10)
 죽토 -> 축토 (x1)
+
+[7204557 - 2026-03-12 16:43:02]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 05 - 목의 왕쇠강약.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 28
+changed_chars: 24163
+term_hits_after_correction: 63
+script_lines_after_cleanup: 105
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 15
+
+[file overrides applied]
+목에서 출발해서 활을 했다면 -> 목에서 출발해서 화를 했다면 (x1)
+목 생활을 -> 목생화를 (x1)
+
+[applied replacements]
+제관* -> 재관* (x3)
+제 관 -> 재관 (x1)
+쟁제* -> 쟁재* (x4)
+겁제* -> 겁재* (x3)
+감목* -> 갑목* (x9)
+제가 -> 재가 (x4)
+월제 -> 월지 (x1)
+감묵 -> 갑목 (x3)
+제 -> 재 (x1)
+사조의 목 기준 -> 사주의 목 기준 (x1)
+사조를 해석 -> 사주를 해석 (x1)
+수생모기지는 -> 수생목이지는 (x1)
+왕세강약이 -> 왕쇠강약이 (x3)
+왕세강약을 -> 왕쇠강약을 (x2)
+사조 해석 -> 사주 해석 (x1)
+생극 재화 -> 생극제화 (x1)
+생극 제화 -> 생극제화 (x1)
+수색 몫 -> 수생목 (x1)
+목생 화 -> 목생화 (x1)
+목생활을 -> 목생화를 (x2)
+근근목이 -> 금극목이 (x1)
+근근목을 -> 금극목을 (x1)
+강세왕략 -> 왕쇠강약 (x1)
+10성 -> 십성 (x2)
+사조를 -> 사주를 (x2)
+목생활 -> 목생화 (x4)
+걸록이 -> 건록이 (x1)
+목생화을 -> 목생화를 (x4)
+
+[skipped by context]
+목생활을 -> 목생화를 (x4)
+죽토의 -> 축토의 (x1)
+활을 -> 화를 (x9)
+죽토 -> 축토 (x1)

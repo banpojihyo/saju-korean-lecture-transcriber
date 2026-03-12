@@ -871,3 +871,45 @@ context_skipped_hits: 21
 승목 -> 습목 (x1)
 활을 -> 화를 (x9)
 죽토 -> 축토 (x5)
+
+[7204557 - 2026-03-12 16:43:02]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 11
+changed_chars: 17658
+term_hits_after_correction: 56
+script_lines_after_cleanup: 154
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 21
+
+[file overrides applied]
+그러니까 본래 벽씨의 상태로 있는 게 아니잖아요. -> 그러니까 본래 볍씨의 상태로 있는 게 아니잖아요. (x1)
+진투에 들어갔다는 게 -> 진토에 들어갔다는 게 (x1)
+
+[applied replacements]
+토곡수 -> 토극수 (x3)
+정제* -> 정재* (x1)
+오행생극재화에 -> 오행생극제화에 (x1)
+생극 재화를 -> 생극제화를 (x1)
+금화 교역 -> 금화교역 (x3)
+목생 화 -> 목생화 (x1)
+입목의 -> 인목의 (x1)
+환은 -> 화는 (x2)
+활을 -> 화를 (x1)
+슬톤 -> 술토 (x1)
+승목 -> 습목 (x1)
+
+[skipped by context]
+토복수가 -> 토극수가 (x1)
+토복수 -> 토극수 (x1)
+슬톤은 -> 술토는 (x1)
+죽토가 -> 축토가 (x2)
+죽토를 -> 축토를 (x1)
+승목 -> 습목 (x1)
+활을 -> 화를 (x9)
+죽토 -> 축토 (x5)

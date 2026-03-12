@@ -171,3 +171,16 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 15 - 병화와 다른 천간과의 관계.txt","wrong":"화생토화 할 때","right":"화생토할 때","note":"Conservative same-family cleanup for hwa-saeng-to term"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"한 목","right":"한목","note":"File-scoped user-approved normalization to avoid global overcorrection"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"한 몫","right":"한목","note":"File-scoped user-approved normalization to avoid global overcorrection"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/51. 음양오행 - 지지 생극제화 목생화.txt","wrong":"활을 향한다는 뜻","right":"화를 향한다는 뜻","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/55. 음양오행 - 지지 생극제화 토.txt","wrong":"그러니까 본래 벽씨의 상태로 있는 게 아니잖아요.","right":"그러니까 본래 볍씨의 상태로 있는 게 아니잖아요.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/55. 음양오행 - 지지 생극제화 토.txt","wrong":"진투에 들어갔다는 게","right":"진토에 들어갔다는 게","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"하나님 목의 특징들","right":"한한 목의 특징들","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"목에서 출발해서 활을 했다면","right":"목에서 출발해서 화를 했다면","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 16 - 정화와 다른 천간과의 관계.txt","wrong":"그게 안 맞으면은 그걸 정화의 기운이 설기린다, 누설기린다","right":"그게 안 맞으면은 그걸 정화의 기운이 설기된다, 누설된다","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 16 - 정화와 다른 천간과의 관계.txt","wrong":"돈디는데","right":"돈 되는 데","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"진투에 마당이 들어선 거예요.","right":"진토에 마당이 들어선 거예요.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/10. 십성론 - ③상관.txt","wrong":"곽토상관","right":"화토상관","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/10. 십성론 - ③상관.txt","wrong":"토검상관","right":"토금상관","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"화극금디는","right":"화극금되는","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"돈디는","right":"돈 되는","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/17. 십성론 - ② 편재.txt","wrong":"활을","right":"화를","note":"User-approved file-scoped hwal->hwa normalization"}
