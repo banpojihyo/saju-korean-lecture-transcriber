@@ -20,6 +20,8 @@
 - `기본 다이제스트 13 - 갑목과 다른 천간과의 관계`
 - `기본 다이제스트 14 - 을목과 다른 천간과의 관계`
 - `기본 다이제스트 15 - 병화와 다른 천간과의 관계`
+- `기본 다이제스트 16 - 정화와 다른 천간과의 관계`
+- `기본 다이제스트 17 - 무토와 다른 천간과의 관계`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
 - Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
