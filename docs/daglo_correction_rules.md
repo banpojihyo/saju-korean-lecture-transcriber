@@ -14,8 +14,8 @@
 
 ## 3) 교정 규칙(핵심)
 - 교정 규칙 소스:
-- `dict/<theme>/replace.csv`
-- `dict/<theme>/file_overrides.jsonl`
+- `dict/common/replace.csv`, `dict/common/file_overrides.jsonl`
+- `dict/topics/<theme>/replace.csv`, `dict/topics/<theme>/file_overrides.jsonl` (topic 병합 실행 시)
 - `correct_daglo_file.py`의 `manual_pairs()`
 - `replace.csv`의 단일 용어 pair는 common 조사형(`은/는`, `이/가`, `을/를`, `이라고요` 등)을 런타임에 자동 확장 적용
 - 적용 순서:
@@ -108,7 +108,7 @@
 - `file overrides applied`가 의도한 파일에서만 동작했는지 확인
 - 문맥상 부자연스러운 치환이 없는지 샘플 점검
 4. 사전 반영 확인
-- `dict/replace.csv`, `dict/file_overrides.jsonl`, `dict/terms.csv` 신규 항목 점검
+- `dict/common/{replace.csv,file_overrides.jsonl,terms.csv}`와 사용한 `dict/topics/<theme>/*` 신규 항목 점검
 5. script 검토 기반 재교정
 - `corr/script`를 검토하면서 `@@ override: <wrong> => <right>` marker를 넣는다.
 - `script_review_to_overrides.py --topic <topic> --script-file <...> --clean-markers`로 marker를 `file_overrides.jsonl`로 변환한다.

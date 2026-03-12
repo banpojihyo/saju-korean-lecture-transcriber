@@ -5,8 +5,8 @@ Input:
   data/daglo/corr/script/**/*.txt
 
 Output:
-  data/summaries/<agent_name>/md/**/*.md
-  data/summaries/<agent_name>/txt/**/*.txt
+  data/summaries/<topic>/<agent_name>/md/**/*.md
+  data/summaries/<topic>/<agent_name>/txt/**/*.txt
 """
 
 from __future__ import annotations
@@ -113,9 +113,14 @@ def parse_args() -> argparse.Namespace:
         help="Output root directory for AI results.",
     )
     parser.add_argument(
+        "--topic",
+        default="saju",
+        help="Topic folder name under output root (default: saju).",
+    )
+    parser.add_argument(
         "--agent-name",
-        default="GPT-5.3-Codex",
-        help="AI agent folder name under output root.",
+        default="Heuristic-Summary",
+        help="Agent folder name under output root and topic.",
     )
     parser.add_argument(
         "--max-theme-bullets",
@@ -125,8 +130,11 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--terms-path",
-        default="dict/common/terms.csv",
-        help="Domain term dictionary path used to prioritize keywords.",
+        default="",
+        help=(
+            "Optional terms CSV path. If omitted, uses dict/common/terms.csv "
+            "and tries dict/topics/<topic>/terms.csv."
+        ),
     )
     return parser.parse_args()
 
@@ -143,16 +151,34 @@ def split_sentences(text: str) -> list[str]:
     return sents
 
 
-def load_domain_terms(path: Path) -> set[str]:
-    if not path.exists():
-        return set()
+def resolve_terms_paths(args: argparse.Namespace) -> list[Path]:
+    paths: list[Path] = [Path("dict/common/terms.csv")]
+    if args.topic:
+        paths.append(Path("dict") / "topics" / args.topic / "terms.csv")
+    if args.terms_path:
+        paths.append(Path(args.terms_path))
+
+    uniq: list[Path] = []
+    seen: set[Path] = set()
+    for path in paths:
+        if path in seen:
+            continue
+        seen.add(path)
+        uniq.append(path)
+    return uniq
+
+
+def load_domain_terms(paths: list[Path]) -> set[str]:
     terms: set[str] = set()
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            term = (row.get("term") or "").strip()
-            if len(term) >= 2:
-                terms.add(term)
+    for path in paths:
+        if not path.exists():
+            continue
+        with path.open("r", encoding="utf-8-sig", newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                term = (row.get("term") or "").strip()
+                if len(term) >= 2:
+                    terms.add(term)
     return terms
 
 
@@ -340,7 +366,7 @@ def make_summary_text(
 def main() -> int:
     args = parse_args()
     input_root = Path(args.input_root)
-    output_base = Path(args.output_root) / args.agent_name
+    output_base = Path(args.output_root) / args.topic / args.agent_name
     md_root = output_base / "md"
     txt_root = output_base / "txt"
 
@@ -353,7 +379,7 @@ def main() -> int:
         print(f"[ERROR] no txt files found under: {input_root}")
         return 1
 
-    domain_terms = load_domain_terms(Path(args.terms_path))
+    domain_terms = load_domain_terms(resolve_terms_paths(args))
 
     generated = 0
     for src in files:

@@ -1,4 +1,4 @@
-# AI 요약 생성 규칙 (corr/script -> data/summaries)
+# AI 요약 생성 규칙 (corr/script -> data/summaries/<topic>/<agent-name>)
 
 ## 1) 목적
 - `data/daglo/corr/script`의 스크립트를 기반으로 학습용 요약본을 자동 생성한다.
@@ -6,10 +6,10 @@
 - 생성 형식은 [study_package_output_template.md](./study_package_output_template.md)의 공통 템플릿을 기본으로 따른다.
 
 ## 2) 출력 경로 규칙
-- 루트: `data/summaries/{AI Agent}/`
+- 루트: `data/summaries/{topic}/{agent-name}/`
 - 하위 폴더:
-- `data/summaries/{AI Agent}/md/`
-- `data/summaries/{AI Agent}/txt/`
+- `data/summaries/{topic}/{agent-name}/md/`
+- `data/summaries/{topic}/{agent-name}/txt/`
 - 원본 `data/daglo/corr/script`의 하위 폴더/파일명을 그대로 복제한다.
 - 확장자:
 - `md` 폴더: `*.md`
@@ -22,15 +22,17 @@
 - 가능하면 형식 자체를 3개 블록으로 축소하지 말고, 같은 상위 섹션을 유지한 채 밀도를 줄인다.
 
 ## 4) 실행 스크립트
-- 휴리스틱(로컬) 버전: `generate_ai_summaries.py`
-- API 고품질 버전: `generate_ai_summaries_api.py`
+- 현재 표준 배치 엔트리포인트: `run_ai_pipeline.py`
+- 휴리스틱(로컬, 호환용) 버전: `generate_ai_summaries.py`
+- API 고품질(호환용) 버전: `generate_ai_summaries_api.py`
 
 ### 4-1) 휴리스틱 버전(빠른 생성)
 ```powershell
 py generate_ai_summaries.py `
   --input-root "data/daglo/corr/script" `
   --output-root "data/summaries" `
-  --agent-name "GPT-5.3-Codex"
+  --topic "saju" `
+  --agent-name "Heuristic-Summary"
 ```
 
 ### 4-2) API 고품질 버전(권장)
@@ -41,11 +43,13 @@ $env:OPENAI_API_KEY="YOUR_API_KEY"
 py generate_ai_summaries_api.py `
   --input-root "data/daglo/corr/script" `
   --output-root "data/summaries" `
-  --agent-name "GPT-5.3-Codex" `
-  --model "gpt-5" `
-  --temperature 0.2 `
+  --topic "saju" `
+  --agent-name "GPT-5.3-Chat-Latest" `
+  --model "gpt-5.3-chat-latest" `
   --overwrite
 ```
+
+- 공식 OpenAI 기본 경로(`https://api.openai.com/v1`)에서는 `temperature`를 기본적으로 보내지 않는다.
 
 고품질 버전은 긴 원문을 다음 흐름으로 처리한다.
 - 1단계: 원문 chunk 단위 요약
@@ -58,6 +62,7 @@ py generate_ai_summaries_api.py `
 - 사용자 요구가 없으면 기존 `corr/script`와 `dict` 파일은 수정하지 않는다.
 - API 키를 대화/로그/커밋에 평문으로 남기지 않는다.
 - 형식 차이보다 품질 차이를 관리하기 위해, 자동 생성 결과도 Direct Session 산출물과 같은 상위 템플릿을 공유한다.
+- 과거 `conversation_logs`에 남아 있는 `data/ai`, `data/summary`, `data/ai_outputs` 경로 표기는 이전 단계 기록이며, 현재 표준 경로는 `data/summaries/{topic}/{agent-name}`다.
 
 ## 6) 생성 전 품질 게이트
 - 배치 생성 전 대상 폴더의 대표 파일 2~3개를 먼저 읽고, `회원전용 - 기본다이제스트 (계룡산 등반)`의 읽기 수준과 비교한다.

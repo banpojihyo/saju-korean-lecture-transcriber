@@ -5,11 +5,11 @@ Features:
 - API key via env var (`OPENAI_API_KEY`) or CLI
 - OpenAI Responses API with retry/backoff
 - Long-text context management (chunk -> merge -> final synthesis)
-- Domain glossary injection from dict/common/terms.csv
+- Domain glossary injection from dict/common/terms.csv and dict/topics/<topic>/terms.csv
 - Preserves folder structure:
     data/daglo/corr/script/**/*.txt
-      -> data/summaries/{agent}/md/**/*.md
-      -> data/summaries/{agent}/txt/**/*.txt
+      -> data/summaries/{topic}/{agent}/md/**/*.md
+      -> data/summaries/{topic}/{agent}/txt/**/*.txt
 """
 
 from __future__ import annotations
@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import re
 import time
 import urllib.error
@@ -42,20 +43,28 @@ def parse_args() -> argparse.Namespace:
         help="Output root for AI summaries.",
     )
     parser.add_argument(
+        "--topic",
+        default="saju",
+        help="Topic folder name under output root (default: saju).",
+    )
+    parser.add_argument(
         "--agent-name",
-        default="GPT-5.3-Codex",
-        help="Agent folder name under output root.",
+        default="GPT-5.3-Chat-Latest",
+        help="Agent folder name under output root and topic.",
     )
     parser.add_argument(
         "--model",
-        default="gpt-5",
+        default="gpt-5.3-chat-latest",
         help="API model name. Override with your exact deployed model/version.",
     )
     parser.add_argument(
         "--temperature",
         type=float,
         default=0.2,
-        help="Sampling temperature for summary generation.",
+        help=(
+            "Sampling temperature. Official OpenAI base URL omits it by default; "
+            "custom-compatible endpoints may still use it."
+        ),
     )
     parser.add_argument(
         "--max-output-tokens",
@@ -92,8 +101,11 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--terms-path",
-        default="dict/common/terms.csv",
-        help="Domain terms CSV for glossary injection.",
+        default="",
+        help=(
+            "Optional terms CSV path. If omitted, uses dict/common/terms.csv "
+            "and tries dict/topics/<topic>/terms.csv."
+        ),
     )
     parser.add_argument(
         "--max-files",
@@ -124,6 +136,35 @@ def load_terms(path: Path) -> list[str]:
             seen.add(term)
             terms.append(term)
     return terms
+
+
+def resolve_terms_paths(args: argparse.Namespace) -> list[Path]:
+    paths: list[Path] = [Path("dict/common/terms.csv")]
+    if args.topic:
+        paths.append(Path("dict") / "topics" / args.topic / "terms.csv")
+    if args.terms_path:
+        paths.append(Path(args.terms_path))
+
+    uniq: list[Path] = []
+    seen: set[Path] = set()
+    for path in paths:
+        if path in seen:
+            continue
+        seen.add(path)
+        uniq.append(path)
+    return uniq
+
+
+def load_terms_from_paths(paths: list[Path]) -> list[str]:
+    merged: list[str] = []
+    seen: set[str] = set()
+    for path in paths:
+        for term in load_terms(path):
+            if term in seen:
+                continue
+            seen.add(term)
+            merged.append(term)
+    return merged
 
 
 def terms_in_text(text: str, terms: list[str], limit: int = 60) -> list[str]:
@@ -230,12 +271,11 @@ class APIClient:
         self.model = model
         self.temperature = temperature
         self.max_output_tokens = max_output_tokens
+        self._omit_temperature = self.base_url == "https://api.openai.com/v1"
 
-    def call(self, system_prompt: str, user_prompt: str, retries: int = 5) -> str:
-        url = f"{self.base_url}/responses"
+    def _build_body(self, system_prompt: str, user_prompt: str) -> dict:
         body = {
             "model": self.model,
-            "temperature": self.temperature,
             "max_output_tokens": self.max_output_tokens,
             "input": [
                 {
@@ -248,7 +288,12 @@ class APIClient:
                 },
             ],
         }
-        data = json.dumps(body).encode("utf-8")
+        if not self._omit_temperature:
+            body["temperature"] = self.temperature
+        return body
+
+    def call(self, system_prompt: str, user_prompt: str, retries: int = 5) -> str:
+        url = f"{self.base_url}/responses"
 
         headers = {
             "Content-Type": "application/json",
@@ -257,6 +302,7 @@ class APIClient:
 
         last_err: Exception | None = None
         for attempt in range(1, retries + 1):
+            data = json.dumps(self._build_body(system_prompt, user_prompt)).encode("utf-8")
             req = urllib.request.Request(url=url, data=data, headers=headers, method="POST")
             try:
                 with urllib.request.urlopen(req, timeout=180) as resp:
@@ -457,12 +503,12 @@ def main() -> int:
         print(f"[ERROR] input root not found: {input_root}")
         return 1
 
-    api_key = args.api_key or __import__("os").environ.get("OPENAI_API_KEY", "")
+    api_key = args.api_key or os.environ.get("OPENAI_API_KEY", "")
     if not api_key:
         print("[ERROR] API key is missing. Set OPENAI_API_KEY or pass --api-key.")
         return 1
 
-    output_base = Path(args.output_root) / args.agent_name
+    output_base = Path(args.output_root) / args.topic / args.agent_name
     md_root = output_base / "md"
     txt_root = output_base / "txt"
 
@@ -473,7 +519,7 @@ def main() -> int:
         print(f"[ERROR] no input txt files under: {input_root}")
         return 1
 
-    terms = load_terms(Path(args.terms_path))
+    terms = load_terms_from_paths(resolve_terms_paths(args))
 
     client = APIClient(
         api_key=api_key,
