@@ -34,6 +34,8 @@
 - `기본 다이제스트 27 - 궁에 대한 이해1`
 - `기본 다이제스트 28 - 궁에 대한 이해2`
 - `기본 다이제스트 29 - 일지 기준의 십성 1`
+- `기본 다이제스트 30 - 일지 기준의 십성 2`
+- `기본 다이제스트 31 - 운추론1`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
 - Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
