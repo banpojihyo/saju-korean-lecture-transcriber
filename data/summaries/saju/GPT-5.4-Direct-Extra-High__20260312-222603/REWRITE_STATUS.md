@@ -28,6 +28,8 @@
 - `기본 다이제스트 21 - 천간 정리 2`
 - `기본 다이제스트 22 - 천간 정리 3`
 - `기본 다이제스트 23 - 지지 총론 1 (생왕고 관점)`
+- `기본 다이제스트 24 - 지지 총론 2 (오행관점)`
+- `기본 다이제스트 25 - 지지 총론 4, 형충파해`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
 - Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
