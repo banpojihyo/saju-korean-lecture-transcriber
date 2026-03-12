@@ -22,6 +22,8 @@ $resolvedInputRoot = Join-Path $repoRoot $InputRoot
 $courseName = Split-Path $resolvedInputRoot -Leaf
 $outputBase = Join-Path $repoRoot ("{0}/{1}/{2}__{3}" -f $OutputRoot, $Topic, $AgentName, $RunTimestamp)
 $mdRoot = Join-Path $outputBase ("md/{0}" -f $courseName)
+$manifestRoot = Join-Path $outputBase "rewrite_manifest"
+$manifestPath = Join-Path $manifestRoot ("{0}.jsonl" -f $courseName)
 
 if ($ClearOutputBase -and (Test-Path $outputBase)) {
     Remove-Item $outputBase -Recurse -Force
@@ -31,7 +33,12 @@ if (Test-Path $mdRoot) {
     Remove-Item $mdRoot -Recurse -Force
 }
 
+if (Test-Path $manifestPath) {
+    Remove-Item $manifestPath -Force
+}
+
 New-Item -ItemType Directory -Force -Path $mdRoot | Out-Null
+New-Item -ItemType Directory -Force -Path $manifestRoot | Out-Null
 
 $stopwords = @(
     "그러니까", "그런데", "그래서", "이렇게", "저렇게", "그렇게",
@@ -42,7 +49,8 @@ $stopwords = @(
     "통해", "대한", "그냥", "본인", "자기", "하나", "둘", "셋", "이런",
     "저런", "우리", "여러분", "때문에", "가지고", "있다", "같다", "된다",
     "한다", "해서", "하면", "하면은", "또한", "그렇죠", "한다고", "하였다",
-    "하는거", "하는것", "이것", "저것", "거죠", "수생", "목생", "생극", "제화"
+    "하는거", "하는것", "이것", "저것", "거죠", "수생", "목생", "생극", "제화",
+    "강의", "파일", "정리", "총론", "회원전용", "코스", "기본", "다이제스트"
 )
 
 $domainTerms = [System.Collections.Generic.HashSet[string]]::new()
@@ -118,11 +126,28 @@ function Split-Sentences {
     return $list
 }
 
+function Get-TitleHints {
+    param([string]$Title)
+
+    $tokens = [System.Collections.Generic.List[string]]::new()
+    foreach ($match in [regex]::Matches($Title, "[가-힣A-Za-z]{2,}")) {
+        $word = $match.Value.Trim()
+        if ($word.Length -lt 2) {
+            continue
+        }
+        if ($stopwords -contains $word) {
+            continue
+        }
+        $tokens.Add($word)
+    }
+    return $tokens
+}
+
 function Get-TopKeywords {
     param(
         [string]$Text,
         $DomainTerms,
-        [int]$Limit = 12
+        [int]$Limit = 16
     )
 
     $counter = @{}
@@ -159,11 +184,52 @@ function Get-TopKeywords {
     )
 }
 
+function Normalize-Keywords {
+    param(
+        $TitleHints,
+        $Keywords,
+        [int]$Limit = 10
+    )
+
+    $ordered = [System.Collections.Generic.List[string]]::new()
+    foreach ($word in @($TitleHints + $Keywords)) {
+        if ([string]::IsNullOrWhiteSpace($word)) {
+            continue
+        }
+        $ordered.Add($word.Trim())
+    }
+
+    $deduped = [System.Collections.Generic.List[string]]::new()
+    foreach ($candidate in $ordered) {
+        if ($deduped -contains $candidate) {
+            continue
+        }
+
+        $isShortSubword = $false
+        foreach ($existing in $deduped) {
+            if ($existing.Contains($candidate) -and $existing.Length -ge ($candidate.Length + 1) -and $candidate.Length -le 2) {
+                $isShortSubword = $true
+                break
+            }
+        }
+        if ($isShortSubword) {
+            continue
+        }
+
+        $deduped.Add($candidate)
+        if ($deduped.Count -ge $Limit) {
+            break
+        }
+    }
+
+    return $deduped
+}
+
 function Get-PickSentences {
     param(
         $Sentences,
         $Keywords,
-        [int]$Limit = 3
+        [int]$Limit = 2
     )
 
     $picked = [System.Collections.Generic.List[string]]::new()
@@ -209,7 +275,93 @@ function Get-ConceptSentence {
     return "$Concept은 이 파일에서 반복적으로 연결되는 핵심 개념이다."
 }
 
-function Build-Markdown {
+function Get-ThemeLead {
+    param(
+        $Group,
+        [string]$Title
+    )
+
+    $first = $Group[0]
+    $second = if ($Group.Count -ge 2) { $Group[1] } else { "" }
+    if ([string]::IsNullOrWhiteSpace($second)) {
+        return "이 파일은 '$first'를 중심으로 개념의 작동 방식과 적용 장면을 반복해서 설명한다."
+    }
+    return "이 파일은 '$first'를 출발점으로 '$second'와 연결되는 구조와 판단 흐름을 중심으로 전개된다."
+}
+
+function Get-QuestionBlocks {
+    param(
+        [string]$Title,
+        $Concepts,
+        $Sentences
+    )
+
+    $c1 = $Concepts[0]
+    $c2 = $Concepts[1]
+    $c3 = $Concepts[2]
+    $c4 = $Concepts[3]
+
+    return @(
+        [pscustomobject]@{
+            Question = "이 강의에서 가장 먼저 확인해야 할 판단축은 무엇인가?"
+            Answer = "$c1를 먼저 잡아야 한다. 대표 문장: $(Get-ConceptSentence $c1 $Sentences)"
+        },
+        [pscustomobject]@{
+            Question = "$c1와 $c2가 어떤 순서로 연결되는지 설명하라."
+            Answer = "$c1와 $c2는 분리해서 외우기보다 연결 구조로 읽어야 한다. 대표 문장: $(Get-ConceptSentence $c1 $Sentences)"
+        },
+        [pscustomobject]@{
+            Question = "제목에 드러난 주제가 본문에서 어떤 방식으로 전개되는지 설명하라."
+            Answer = "'$Title'은 $c1, $c2, $c3를 통해 실제 판단 구조로 풀린다. 대표 문장: $(Get-ConceptSentence $c2 $Sentences)"
+        },
+        [pscustomobject]@{
+            Question = "실전 해석에서 헷갈리기 쉬운 개념 한 쌍을 고르고 차이를 설명하라."
+            Answer = "$c2와 $c3는 함께 등장해도 같은 기능으로 보면 안 된다. 대표 문장: $(Get-ConceptSentence $c3 $Sentences)"
+        },
+        [pscustomobject]@{
+            Question = "이 파일을 인접 강의와 구분할 때 반드시 기억해야 할 포인트는 무엇인가?"
+            Answer = "이 파일의 구분점은 $c1와 $c4를 묶어 읽는 방식에 있다. 대표 문장: $(Get-ConceptSentence $c4 $Sentences)"
+        }
+    )
+}
+
+function Get-ExamPoints {
+    param(
+        [string]$Title,
+        $Concepts
+    )
+
+    $c1 = $Concepts[0]
+    $c2 = $Concepts[1]
+    $c3 = $Concepts[2]
+    $c4 = $Concepts[3]
+
+    return @(
+        "$c1를 출발점으로 놓고 $c2, $c3 순서로 연결해 볼 것.",
+        "'$Title' 문맥에서는 $c1를 단독 개념이 아니라 $c2와의 관계로 읽을 것.",
+        "$c3가 등장할 때 $c4와 섞어 외우지 말고 구분 포인트를 같이 정리할 것.",
+        "인접 파일과 제목이 비슷해 보여도 이 파일의 중심축은 $c1와 $c2라는 점을 기억할 것."
+    )
+}
+
+function Get-CautionLines {
+    param(
+        [string]$Title,
+        $Concepts
+    )
+
+    $c1 = $Concepts[0]
+    $c2 = $Concepts[1]
+    $c3 = $Concepts[2]
+
+    return @(
+        "$c1를 단순 정의로만 외우면 실제 적용에서 틀리기 쉽다.",
+        "$c2와 $c3는 함께 나오더라도 같은 기능으로 뭉뚱그리지 말 것.",
+        "원문 문장을 그대로 암기하기보다 '$Title'에서 $c1 -> $c2 흐름이 어떻게 반복되는지 다시 정리할 것."
+    )
+}
+
+function Build-StudyPack {
     param(
         [string]$FileName,
         [string]$Text
@@ -218,24 +370,10 @@ function Build-Markdown {
     $title = Get-CleanTitle $FileName
     $agentLabel = Get-AgentLabel $AgentName
     $sentences = Split-Sentences $Text
-    $keywords = @(Get-TopKeywords $Text $domainTerms 12 | Select-Object -Unique)
-    if ($keywords.Count -eq 0) {
-        $keywords = @("사주", "오행", "구조", "작용", "해석", "판단")
-    }
+    $titleHints = @(Get-TitleHints $title)
+    $keywords = @(Get-TopKeywords $Text $domainTerms 16)
+    $concepts = @(Normalize-Keywords $titleHints $keywords 10)
 
-    $themeGroups = @()
-    for ($i = 0; $i -lt [Math]::Min($keywords.Count, 8); $i += 2) {
-        $group = @($keywords[$i])
-        if ($i + 1 -lt $keywords.Count) {
-            $group += $keywords[$i + 1]
-        }
-        $themeGroups += ,$group
-    }
-    if ($themeGroups.Count -eq 0) {
-        $themeGroups = @(@("사주", "구조"))
-    }
-
-    $concepts = @($keywords | Select-Object -First 6)
     if ($concepts.Count -lt 6) {
         foreach ($fallback in @("사주", "오행", "생극제화", "구조", "작용", "해석")) {
             if ($concepts.Count -ge 6) {
@@ -247,17 +385,30 @@ function Build-Markdown {
         }
     }
 
+    $themeGroups = @()
+    for ($i = 0; $i -lt [Math]::Min($concepts.Count, 8); $i += 2) {
+        $group = @($concepts[$i])
+        if ($i + 1 -lt $concepts.Count) {
+            $group += $concepts[$i + 1]
+        }
+        $themeGroups += ,$group
+    }
+    if ($themeGroups.Count -eq 0) {
+        $themeGroups = @(@("사주", "구조"))
+    }
+
     $lines = [System.Collections.Generic.List[string]]::new()
     $lines.Add("# $title 통합 학습 패키지 ($agentLabel)")
     $lines.Add("")
-    $lines.Add("## 핵심 주제별 정리")
+    $lines.Add("## 핵심 주제별로 나눠서 정리")
     $lines.Add("")
 
     $themeIndex = 1
     foreach ($group in $themeGroups) {
         $focus = if ($group.Count -ge 2) { Join-ConceptPair $group[0] $group[1] } else { $group[0] }
         $lines.Add("### 주제 ${themeIndex}: ${focus} 중심으로 정리한다")
-        foreach ($sent in (Get-PickSentences $sentences $group 3)) {
+        $lines.Add("- $(Get-ThemeLead $group $title)")
+        foreach ($sent in (Get-PickSentences $sentences $group 2)) {
             $lines.Add("- $sent")
         }
         $lines.Add("")
@@ -265,33 +416,34 @@ function Build-Markdown {
     }
 
     $lines.Add("## 핵심 개념 맵")
-    foreach ($concept in $concepts) {
-        $lines.Add("- ${concept}: $(Get-ConceptSentence $concept $sentences)")
+    foreach ($concept in ($concepts | Select-Object -First 6)) {
+        $peer = if ($concept -eq $concepts[0]) { $concepts[1] } else { $concepts[0] }
+        $lines.Add("- ${concept}: $concept는 이 파일에서 $peer와 연결되며, $(Get-ConceptSentence $concept $sentences)")
     }
     $lines.Add("")
 
     $lines.Add("## 예상 시험문제")
     $lines.Add("")
-    for ($i = 0; $i -lt [Math]::Min(4, $concepts.Count); $i++) {
-        $concept = $concepts[$i]
-        $answer = Get-ConceptSentence $concept $sentences
-        $lines.Add("### 문제 $($i + 1)")
-        $lines.Add("1. 예상 문제: 이 파일에서 '$concept'이 중요한 이유는 무엇인가?")
-        $lines.Add("2. 정답 및 해설: $answer")
+    $questionIndex = 1
+    foreach ($block in (Get-QuestionBlocks $title $concepts $sentences)) {
+        $lines.Add("### 문제 $questionIndex")
+        $lines.Add("1. 예상 문제: $($block.Question)")
+        $lines.Add("2. 정답 및 해설: $($block.Answer)")
         $lines.Add("")
+        $questionIndex += 1
     }
 
     $lines.Add("## 시험 포인트와 실전 주의사항")
     $lines.Add("")
     $lines.Add("### 시험 포인트")
-    foreach ($concept in ($concepts | Select-Object -First 4)) {
-        $lines.Add("- '$concept'이 연결되는 구조를 원문 문장과 함께 기억할 것.")
+    foreach ($point in (Get-ExamPoints $title $concepts)) {
+        $lines.Add("- $point")
     }
     $lines.Add("")
     $lines.Add("### 실전 주의사항")
-    $lines.Add("- 비슷한 용어를 한 묶음으로 외우지 말고, 이 파일에서 실제로 같이 등장한 문장 관계를 기준으로 구분할 것.")
-    $lines.Add("- 제목이 비슷한 다른 강의와 섞어 읽기보다, 이 파일에서 반복된 판단 순서와 강조점을 먼저 고정할 것.")
-    $lines.Add("- 요약만 외우기보다 원문에서 반복된 핵심 표현을 다시 확인해야 실제 적용 시 혼동이 줄어든다.")
+    foreach ($caution in (Get-CautionLines $title $concepts)) {
+        $lines.Add("- $caution")
+    }
     $lines.Add("")
 
     $lines.Add("## 꼭 공부해야 할 내용")
@@ -302,22 +454,46 @@ function Build-Markdown {
     }
     $lines.Add("")
     $lines.Add("### 단계별 이해")
-    $lines.Add("1. 먼저 핵심어 '$($concepts[0])' 중심으로 이 파일의 출발점을 한 줄로 정리한다.")
-    $lines.Add("2. 그다음 '$($concepts[1])', '$($concepts[2])' 연결 방식을 원문 문장으로 확인한다.")
-    $lines.Add("3. 반복된 설명이 실제 구조 설명인지 예시 설명인지 구분해 메모한다.")
-    $lines.Add("4. 마지막으로 이 파일에서만 강조된 표현을 따로 표시해 복습한다.")
+    $lines.Add("1. 먼저 '$($concepts[0])'을 기준으로 이 파일의 출발 판단을 한 줄로 정리한다.")
+    $lines.Add("2. 다음으로 '$($concepts[1])', '$($concepts[2])'가 어떻게 연결되는지 원문 문장으로 확인한다.")
+    $lines.Add("3. 반복된 설명이 구조 설명인지 예시 설명인지 나눠 메모한다.")
+    $lines.Add("4. 마지막으로 이 파일을 인접 강의와 구분하는 표현을 별도 표시해 복습한다.")
 
-    return ($lines -join "`r`n") + "`r`n"
+    return [pscustomobject]@{
+        Title = $title
+        Markdown = ($lines -join "`r`n") + "`r`n"
+        Concepts = @($concepts | Select-Object -First 6)
+        TitleHints = @($titleHints | Select-Object -First 6)
+        ThemeFocuses = @(
+            foreach ($group in $themeGroups) {
+                if ($group.Count -ge 2) { Join-ConceptPair $group[0] $group[1] } else { $group[0] }
+            }
+        )
+    }
 }
 
 $files = Get-ChildItem $resolvedInputRoot -Filter "*.script.txt" | Sort-Object Name
 foreach ($file in $files) {
-    $markdown = Build-Markdown $file.Name (Get-Content $file.FullName -Raw -Encoding utf8)
+    $result = Build-StudyPack $file.Name (Get-Content $file.FullName -Raw -Encoding utf8)
     $destPath = Join-Path $mdRoot (([System.IO.Path]::GetFileNameWithoutExtension($file.Name)) + ".md")
-    Set-Content -Path $destPath -Value $markdown -Encoding utf8
+    Set-Content -Path $destPath -Value $result.Markdown -Encoding utf8
+
+    $manifestRow = [ordered]@{
+        source_script = $file.FullName.Substring($repoRoot.Path.Length + 1).Replace("\", "/")
+        draft_md = $destPath.Substring($repoRoot.Path.Length + 1).Replace("\", "/")
+        course = $courseName
+        title = $result.Title
+        title_hints = $result.TitleHints
+        concepts = $result.Concepts
+        theme_focuses = $result.ThemeFocuses
+        workflow = "draft-then-direct-rewrite"
+        note = "자동 생성 md는 초안이다. 최종본은 GPT-5.4 direct session에서 파일별 재작성 후 확정한다."
+    }
+    Add-Content -Path $manifestPath -Value (($manifestRow | ConvertTo-Json -Compress)) -Encoding utf8
 }
 
 Write-Output ("RUN_TIMESTAMP={0}" -f $RunTimestamp)
 Write-Output ("OUTPUT_BASE={0}" -f $outputBase)
 Write-Output ("GENERATED_MD={0}" -f $files.Count)
+Write-Output ("REWRITE_MANIFEST={0}" -f $manifestPath)
 

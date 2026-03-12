@@ -269,3 +269,32 @@ Gemini 메모:
 참고:
 
 - 기존 `generate_ai_summaries*.py`, `generate_study_pack_gemini.py`는 호환을 위해 그대로 유지됩니다.
+
+## 12) GPT-5.4 Direct 초안 생성과 최종본 워크플로우
+
+`generate_direct_session_md.ps1`는 교정된 `corr/script`를 읽어 GPT-5.4 Direct 형식의 `md` 초안을 빠르게 만드는 보조 스크립트입니다.
+
+- 출력:
+  - `data/summaries/<topic>/<agent-name>__<run-timestamp>/md/**/*.md`
+  - `data/summaries/<topic>/<agent-name>__<run-timestamp>/rewrite_manifest/*.jsonl`
+- `rewrite_manifest`에는 원문 경로, 초안 경로, 핵심 개념 후보, theme focus가 들어가며 direct session 재작성 입력으로 사용합니다.
+- 이 스크립트의 결과는 `최종본`이 아니라 `초안`으로 취급합니다.
+- 최종본 품질이 필요하면 GPT-5.4 direct session에서 원문 `script`, 자동 초안 `md`, `rewrite_manifest`를 함께 읽고 파일별로 다시 작성하는 것을 권장합니다.
+
+예시:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\generate_direct_session_md.ps1 `
+  -InputRoot "data/daglo/corr/script/회원전용 - 기본다이제스트 (계룡산 등반)" `
+  -OutputRoot "data/summaries" `
+  -Topic "saju" `
+  -AgentName "GPT-5.4-Direct-Extra-High" `
+  -RunTimestamp "20260312-223000"
+```
+
+운영 규칙과 재작성 프롬프트는 아래 문서를 따릅니다.
+
+- [docs/direct_session_output_rules.md](docs/direct_session_output_rules.md)
+- [docs/direct_session_rewrite_prompt.md](docs/direct_session_rewrite_prompt.md)
+- [docs/study_package_output_template.md](docs/study_package_output_template.md)
+
