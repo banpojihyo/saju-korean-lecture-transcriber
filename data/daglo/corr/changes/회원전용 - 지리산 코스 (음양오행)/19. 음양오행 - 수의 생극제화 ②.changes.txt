@@ -1239,3 +1239,44 @@ context_skipped_hits: 9
 [skipped by context]
 수색목은 -> 수생목은 (x1)
 활을 -> 화를 (x8)
+
+[4418e89 - 2026-03-12 19:47:20]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\19. 음양오행 - 수의 생극제화 ②.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 20
+changed_chars: 32931
+term_hits_after_correction: 52
+script_lines_after_cleanup: 116
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 9
+
+[applied replacements]
+토국수 -> 토극수 (x21)
+토곡수 -> 토극수 (x5)
+정제* -> 정재* (x2)
+수국화 -> 수극화 (x11)
+금곡목 -> 금극목 (x3)
+배수의 가치가 제대로 발현되는 거죠. -> 계수의 가치가 제대로 발현되는 거죠. (x1)
+그런 사조는 -> 그런 사주는 (x1)
+생극 재화를 -> 생극제화를 (x1)
+생극 재활을 -> 생극제화를 (x1)
+모기 개입 -> 목이 개입 (x3)
+수색목을 -> 수생목을 (x2)
+수색목 -> 수생목 (x2)
+수색묵 -> 수생목 (x2)
+금극묵 -> 금극목 (x2)
+활을 -> 화를 (x5)
+화급금 -> 화극금 (x3)
+화극금딘 상태 -> 화극금된 상태 (x1)
+일조들은 -> 일주들은 (x1)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x8)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x1)
+활을 -> 화를 (x8)
