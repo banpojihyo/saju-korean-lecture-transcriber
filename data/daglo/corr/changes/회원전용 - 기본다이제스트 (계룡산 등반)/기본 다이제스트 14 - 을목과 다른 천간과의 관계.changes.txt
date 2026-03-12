@@ -414,3 +414,25 @@ context_skipped_hits: 43
 
 [skipped by context]
 금 -> 금 목 (x43)
+
+[fa3ece5 - 2026-03-12 14:06:06]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 14 - 을목과 다른 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 19
+term_hits_after_correction: 37
+script_lines_after_cleanup: 52
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+제관* -> 재관* (x1)
+정제* -> 정재* (x2)
+감목* -> 갑목* (x14)
+과목 하나 따로 건드려야 돼. -> 갑목 하나 따로 건드려야 돼. (x1)
+수색목을 -> 수생목을 (x1)

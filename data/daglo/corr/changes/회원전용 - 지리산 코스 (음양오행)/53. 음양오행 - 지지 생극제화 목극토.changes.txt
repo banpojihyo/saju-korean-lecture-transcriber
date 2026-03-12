@@ -362,3 +362,53 @@ context_skipped_hits: 48
 
 [skipped by context]
 금 -> 금 목 (x48)
+
+[fa3ece5 - 2026-03-12 13:59:30]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 31910
+term_hits_after_correction: 50
+script_lines_after_cleanup: 121
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 58
+
+[applied replacements]
+금 -> 금 목 (x1)
+
+[skipped by context]
+죽토는 -> 축토는 (x2)
+죽토가 -> 축토가 (x1)
+죽토를 -> 축토를 (x1)
+죽토도 -> 축토도 (x1)
+죽토 -> 축토 (x5)
+금 -> 금 목 (x48)
+
+[fa3ece5 - 2026-03-12 14:06:28]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 50
+script_lines_after_cleanup: 121
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 10
+
+[applied replacements]
+
+[skipped by context]
+죽토는 -> 축토는 (x2)
+죽토가 -> 축토가 (x1)
+죽토를 -> 축토를 (x1)
+죽토도 -> 축토도 (x1)
+죽토 -> 축토 (x5)

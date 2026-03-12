@@ -553,3 +553,61 @@ context_skipped_hits: 82
 [skipped by context]
 귀신 -> 기신 (x5)
 금 -> 금 목 (x77)
+
+[fa3ece5 - 2026-03-12 13:59:36]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 27 - 궁에 대한 이해1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 27 - 궁에 대한 이해1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 27 - 궁에 대한 이해1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 23574
+term_hits_after_correction: 49
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 82
+
+[applied replacements]
+편제* -> 편재* (x1)
+정제* -> 정재* (x1)
+사조를 해석 -> 사주를 해석 (x1)
+사조해석을 -> 사주해석을 (x1)
+생극재화가 -> 생극제화가 (x1)
+생극재화를 -> 생극제화를 (x1)
+사조를 -> 사주를 (x1)
+죽토의 -> 축토의 (x1)
+금 -> 금 목 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x5)
+금 -> 금 목 (x77)
+
+[fa3ece5 - 2026-03-12 14:06:09]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 27 - 궁에 대한 이해1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 27 - 궁에 대한 이해1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 27 - 궁에 대한 이해1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 8
+changed_chars: 8
+term_hits_after_correction: 49
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 5
+
+[applied replacements]
+편제* -> 편재* (x1)
+정제* -> 정재* (x1)
+사조를 해석 -> 사주를 해석 (x1)
+사조해석을 -> 사주해석을 (x1)
+생극재화가 -> 생극제화가 (x1)
+생극재화를 -> 생극제화를 (x1)
+사조를 -> 사주를 (x1)
+죽토의 -> 축토의 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x5)

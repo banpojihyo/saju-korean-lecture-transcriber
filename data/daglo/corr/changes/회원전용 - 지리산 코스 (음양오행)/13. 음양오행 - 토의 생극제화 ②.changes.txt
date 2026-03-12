@@ -877,3 +877,73 @@ context_skipped_hits: 185
 [skipped by context]
 금긍목이 -> 금극목이 (x1)
 금 -> 금 목 (x184)
+
+[fa3ece5 - 2026-03-12 13:59:18]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 15
+changed_chars: 29714
+term_hits_after_correction: 48
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 185
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+묵생* -> 목생* (x1)
+묵극* -> 목극* (x1)
+목국토 -> 목극토 (x1)
+경관* -> 견관* (x7)
+감목* -> 갑목* (x3)
+생극 재화를 -> 생극제화를 (x1)
+모기 개입 -> 목이 개입 (x4)
+모토한테 -> 무토한테 (x1)
+10성 -> 십성 (x3)
+사조를 -> 사주를 (x2)
+금긍목 -> 금극목 (x1)
+생모기 -> 생목이 (x1)
+금 -> 금 목 (x2)
+
+[skipped by context]
+금긍목이 -> 금극목이 (x1)
+금 -> 금 목 (x184)
+
+[fa3ece5 - 2026-03-12 14:06:15]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\13. 음양오행 - 토의 생극제화 ②.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 14
+changed_chars: 29112
+term_hits_after_correction: 48
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+묵생* -> 목생* (x1)
+묵극* -> 목극* (x1)
+목국토 -> 목극토 (x1)
+경관* -> 견관* (x7)
+감목* -> 갑목* (x3)
+생극 재화를 -> 생극제화를 (x1)
+모기 개입 -> 목이 개입 (x4)
+모토한테 -> 무토한테 (x1)
+10성 -> 십성 (x3)
+사조를 -> 사주를 (x2)
+금긍목 -> 금극목 (x1)
+생모기 -> 생목이 (x1)
+
+[skipped by context]
+금긍목이 -> 금극목이 (x1)

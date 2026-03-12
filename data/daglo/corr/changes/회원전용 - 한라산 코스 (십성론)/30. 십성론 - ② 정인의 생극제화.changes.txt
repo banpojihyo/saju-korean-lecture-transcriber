@@ -760,3 +760,65 @@ context_skipped_hits: 113
 
 [skipped by context]
 금 -> 금 목 (x113)
+
+[fa3ece5 - 2026-03-12 13:59:23]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.script.txt
+file_override_rules: 5
+file_override_hits: 4
+applied_rules: 7
+changed_chars: 18250
+term_hits_after_correction: 44
+script_lines_after_cleanup: 78
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 113
+
+[file overrides applied]
+국민의 생급 재활을 하겠습니다. -> 정인의 생극제화를 하겠습니다. (x1)
+저 Muto라고 하는 -> 저 무토라고 하는 (x1)
+무투라고 하는 정인 -> 무토라고 하는 정인 (x1)
+그래서 심금일주한다 -> 그래서 신금일주한다 (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x14)
+감목* -> 갑목* (x25)
+관묵 -> 갑목 (x1)
+금궁목 -> 금극목 (x2)
+금금목 -> 금극목 (x1)
+모토의 -> 무토의 (x1)
+금 -> 금 목 (x1)
+
+[skipped by context]
+금 -> 금 목 (x113)
+
+[fa3ece5 - 2026-03-12 14:06:33]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.script.txt
+file_override_rules: 5
+file_override_hits: 4
+applied_rules: 6
+changed_chars: 18130
+term_hits_after_correction: 44
+script_lines_after_cleanup: 78
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+국민의 생급 재활을 하겠습니다. -> 정인의 생극제화를 하겠습니다. (x1)
+저 Muto라고 하는 -> 저 무토라고 하는 (x1)
+무투라고 하는 정인 -> 무토라고 하는 정인 (x1)
+그래서 심금일주한다 -> 그래서 신금일주한다 (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x14)
+감목* -> 갑목* (x25)
+관묵 -> 갑목 (x1)
+금궁목 -> 금극목 (x2)
+금금목 -> 금극목 (x1)
+모토의 -> 무토의 (x1)

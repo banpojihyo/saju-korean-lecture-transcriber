@@ -928,3 +928,42 @@ context_skipped_hits: 77
 수색목은 -> 수생목은 (x2)
 수색목이 -> 수생목이 (x8)
 금 -> 금 목 (x67)
+
+[fa3ece5 - 2026-03-12 14:06:19]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\25. 음양오행 - 천간 생극제화 목(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 18
+changed_chars: 25927
+term_hits_after_correction: 47
+script_lines_after_cleanup: 133
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 10
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x14)
+묵생* -> 목생* (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x17)
+수색목이라고요 -> 수생목이라고요 (x1)
+수색목이에요 -> 수생목이에요 (x1)
+생극 재화를 -> 생극제화를 (x1)
+수색목으로 -> 수생목으로 (x1)
+생극 재화 -> 생극제화 (x2)
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x7)
+수색목을 -> 수생목을 (x7)
+수색목의 -> 수생목의 (x2)
+수색목에 -> 수생목에 (x1)
+수색 몫 -> 수생목 (x1)
+금궁목의 -> 금극목의 (x1)
+수색목 -> 수생목 (x18)
+관무기 -> 갑목이 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x2)
+수색목이 -> 수생목이 (x8)

@@ -531,3 +531,36 @@ context_skipped_hits: 72
 
 [skipped by context]
 금 -> 금 목 (x72)
+
+[fa3ece5 - 2026-03-12 13:59:38]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 19 - 수와 천간과의 관계.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 40
+term_hits_after_correction: 47
+script_lines_after_cleanup: 91
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 72
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x6)
+갑묵/을묵 -> 갑목/을목 (x4)
+토국수 -> 토극수 (x3)
+토곡수 -> 토극수 (x3)
+정제* -> 정재* (x1)
+감목* -> 갑목* (x9)
+감묵 -> 갑목 (x1)
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x4)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x1)
+수색목 -> 수생목 (x3)
+모토로 -> 무토로 (x1)
+
+[skipped by context]
+금 -> 금 목 (x72)

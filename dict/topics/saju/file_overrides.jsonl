@@ -131,3 +131,10 @@
 {"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"그렇게 해서 사조에 있는 것 가지고","right":"그렇게 해서 사주에 있는 것 가지고","note":"Context-bound 사주 tool phrasing fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/18. 음양오행 - 수의 생극제화 ①.txt","wrong":"이 사조 부를 이룰 만하다","right":"이 사주, 부를 이룰 만하다","note":"Context-bound 사주/부 fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/29. 음양오행 - 천간 생극제화 화(3).txt","wrong":"예, 사조는 그 툴이라고요.","right":"예, 사주는 그 툴이라고요.","note":"Context-bound 사주 tool fix"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 17 - 무토와 다른 천간과의 관계.txt","wrong":"기토가 사조의 원이나 일, 연 간이나 지혜 또 어디에 있든","right":"기토가 사주의 월이나 일, 연간이나 지에 또 어디에 있든","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"지역에 채용한다. 용해도 돼요.","right":"건록격에 체용한다. 용해도 돼요.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"지금 금 비견이니까.","right":"지금 자 이게 금 비견이니까.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"무술일조, 애인이 무술일조다.","right":"무술일주, 애인이 무술일주다.","note":"High-confidence 일주 normalization"}
+{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"죽토는 기본이 동해요.","right":"축토는 기본이 동해요.","note":"High-confidence 축토 normalization"}
+{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"그런데 주토는 이 안에 에너지가 있어요.","right":"그런데 축토는 이 안에 에너지가 있어요.","note":"High-confidence 축토 normalization"}
+{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"죽토는 저 안에 있는 그런 근육을","right":"축토는 저 안에 있는 그런 근육을","note":"High-confidence 축토 normalization"}

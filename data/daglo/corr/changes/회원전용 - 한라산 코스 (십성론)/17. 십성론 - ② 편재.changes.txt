@@ -943,3 +943,54 @@ context_skipped_hits: 184
 수색목과 -> 수생목과 (x1)
 금금목이 -> 금극목이 (x1)
 금 -> 금 목 (x177)
+
+[fa3ece5 - 2026-03-12 14:06:31]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\17. 십성론 - ② 편재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\17. 십성론 - ② 편재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\17. 십성론 - ② 편재.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 28
+changed_chars: 20640
+term_hits_after_correction: 45
+script_lines_after_cleanup: 96
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 7
+
+[applied replacements]
+현재의 생극제화 -> 편재의 생극제화 (x1)
+제 극인 -> 재극인 (x9)
+편제* -> 편재* (x40)
+정제* -> 정재* (x1)
+쟁제* -> 쟁재* (x5)
+수국화 -> 수극화 (x7)
+생제* -> 생재* (x8)
+생묵* -> 생목* (x8)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x1)
+경관* -> 견관* (x2)
+감목* -> 갑목* (x1)
+제를 -> 재를 (x2)
+제 -> 재 (x1)
+생극 재화를 -> 생극제화를 (x1)
+생극, 재화 -> 생극제화 (x1)
+생극 재활을 -> 생극제화를 (x1)
+수색목으로 -> 수생목으로 (x1)
+수색목이면 -> 수생목이면 (x1)
+생극 재화 -> 생극제화 (x1)
+수색목은 -> 수생목은 (x2)
+수색목이 -> 수생목이 (x2)
+수색목을 -> 수생목을 (x1)
+10성 -> 십성 (x1)
+수색목 -> 수생목 (x8)
+금긍목 -> 금극목 (x1)
+금금목 -> 금극목 (x2)
+사조적 -> 사주적 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x3)
+수색목이 -> 수생목이 (x2)
+수색목과 -> 수생목과 (x1)
+금금목이 -> 금극목이 (x1)
