@@ -706,3 +706,39 @@ context_skipped_hits: 12
 죽토도 -> 축토도 (x1)
 활을 -> 화를 (x1)
 죽토 -> 축토 (x5)
+
+[707ebd7 - 2026-03-12 18:59:18]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\53. 음양오행 - 지지 생극제화 목극토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 10
+changed_chars: 22
+term_hits_after_correction: 51
+script_lines_after_cleanup: 121
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 7
+context_skipped_hits: 12
+
+[applied replacements]
+금근목이 -> 금극목이 (x1)
+목생활 -> 목생화 (x1)
+입목은 -> 인목은 (x2)
+입목이 -> 인목이 (x3)
+입목의 -> 인목의 (x1)
+입목에 -> 인목에 (x1)
+활을 -> 화를 (x3)
+화급금 -> 화극금 (x4)
+목생화을 -> 목생화를 (x1)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x1)
+
+[skipped by context]
+목생활을 -> 목생화를 (x1)
+죽토는 -> 축토는 (x2)
+죽토가 -> 축토가 (x1)
+죽토를 -> 축토를 (x1)
+죽토도 -> 축토도 (x1)
+활을 -> 화를 (x1)
+죽토 -> 축토 (x5)

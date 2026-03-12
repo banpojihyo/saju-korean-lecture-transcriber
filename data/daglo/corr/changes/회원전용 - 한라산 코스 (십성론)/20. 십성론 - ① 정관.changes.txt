@@ -762,3 +762,29 @@ context_skipped_hits: 0
 생극 재활을 -> 생극제화를 (x1)
 생극 재화 -> 생극제화 (x1)
 10성 -> 십성 (x6)
+
+[707ebd7 - 2026-03-12 18:59:27]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\20. 십성론 - ① 정관.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 15498
+term_hits_after_correction: 33
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x1)
+정제* -> 정재* (x7)
+경관* -> 견관* (x4)
+겁제* -> 겁재* (x2)
+한난 조수부 -> 한난 조습 (x1)
+생극 재화를 -> 생극제화를 (x1)
+생극 재활을 -> 생극제화를 (x1)
+생극 재화 -> 생극제화 (x1)
+10성 -> 십성 (x6)

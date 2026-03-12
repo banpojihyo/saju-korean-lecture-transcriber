@@ -1048,3 +1048,43 @@ Millering -> 미러링 (x1)
 [skipped by context]
 수색목이 -> 수생목이 (x1)
 목생활을 -> 목생화를 (x2)
+
+[707ebd7 - 2026-03-12 18:59:21]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\05. 십성론 - ①식신.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 19
+changed_chars: 18281
+term_hits_after_correction: 56
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[applied replacements]
+식신 상관은 다 같이 일관을 빅업의 출력이죠. -> 식신 상관은 다 같이 일간을 비겁의 출력이죠. (x1)
+Millering -> 미러링 (x1)
+수생 목생화 -> 수생목생화 (x1)
+금화 교역 -> 금화교역 (x4)
+수색목이 -> 수생목이 (x1)
+수색목을 -> 수생목을 (x1)
+수색목에 -> 수생목에 (x1)
+목생활을 -> 목생화를 (x1)
+10성 -> 십성 (x4)
+수색목 -> 수생목 (x1)
+금긍목 -> 금극목 (x1)
+무투는 -> 무토는 (x1)
+목생활 -> 목생화 (x2)
+모토가 -> 무토가 (x1)
+슬톤은 -> 술토는 (x1)
+상광은 -> 상관은 (x1)
+1주 -> 일주 (x2)
+죽토 -> 축토 (x2)
+목생화을 -> 목생화를 (x2)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+목생활을 -> 목생화를 (x2)

@@ -494,3 +494,31 @@ context_skipped_hits: 0
 겁제* -> 겁재* (x8)
 일제 -> 일지 (x7)
 제 -> 재 (x3)
+
+[707ebd7 - 2026-03-12 18:58:48]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 30 - 일지 기준의 십성 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 11
+changed_chars: 64
+term_hits_after_correction: 44
+script_lines_after_cleanup: 61
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+편제* -> 편재* (x1)
+정제* -> 정재* (x13)
+쟁제* -> 쟁재* (x2)
+겁제* -> 겁재* (x8)
+일제 -> 일지 (x7)
+제 -> 재 (x3)
+내 몫을 건디는 -> 내 몫을 건드리는 (x1)
+병호일조 -> 병오일주 (x1)
+개해일조 -> 계해일주 (x1)
+일지가 근기이긴 한데 -> 일지가 근이긴 한데 (x1)
+([갑을병정무기경신임계][자축인묘진사오미신유술해])일조 -> \1일주 (x3)

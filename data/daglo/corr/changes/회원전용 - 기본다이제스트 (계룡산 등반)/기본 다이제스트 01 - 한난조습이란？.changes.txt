@@ -653,3 +653,34 @@ context_skipped_hits: 0
 사조라는 -> 사주라는 (x1)
 환은 -> 화는 (x1)
 활을 -> 화를 (x1)
+
+[707ebd7 - 2026-03-12 18:58:28]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 11
+changed_chars: 8394
+term_hits_after_correction: 54
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+4주 후에 -> 사주에 (x1)
+
+[applied replacements]
+일제 -> 일지 (x1)
+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)
+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데 (x1)
+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데 (x1)
+조한사조를 -> 조한사주를 (x2)
+조안사조를 -> 조한사주를 (x1)
+이 사조는 -> 이 사주는 (x1)
+수색 못 -> 수생목 (x1)
+사조라는 -> 사주라는 (x1)
+환은 -> 화는 (x1)
+활을 -> 화를 (x1)

@@ -1161,3 +1161,38 @@ context_skipped_hits: 0
 금궁목 -> 금극목 (x1)
 환은 -> 화는 (x2)
 화급금 -> 화극금 (x5)
+
+[707ebd7 - 2026-03-12 18:58:53]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\05. 음양오행.script.txt
+file_override_rules: 1
+file_override_hits: 17
+applied_rules: 15
+changed_chars: 30461
+term_hits_after_correction: 32
+script_lines_after_cleanup: 160
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+활을 -> 화를 (x17)
+
+[applied replacements]
+생제* -> 생재* (x3)
+묵생* -> 목생* (x2)
+그게 수생무기라고요. -> 그게 수생목이라고요. (x1)
+왕세강약은 -> 왕쇠강약은 (x1)
+금궁목으로 -> 금극목으로 (x1)
+금긍목으로 -> 금극목으로 (x1)
+금화 교역 -> 금화교역 (x2)
+생극 재화 -> 생극제화 (x1)
+금금 목 -> 금극목 (x2)
+명사조를 -> 명사주를 (x1)
+한난조섭 -> 한난조습 (x1)
+금궁목 -> 금극목 (x1)
+환은 -> 화는 (x2)
+화급금 -> 화극금 (x5)
+금생수 디는 -> 금생수되는 (x1)

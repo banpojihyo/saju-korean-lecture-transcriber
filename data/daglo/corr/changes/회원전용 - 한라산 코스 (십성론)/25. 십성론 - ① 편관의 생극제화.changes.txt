@@ -883,3 +883,36 @@ context_skipped_hits: 8
 [skipped by context]
 금생술을 -> 금생수를 (x1)
 활을 -> 화를 (x7)
+
+[707ebd7 - 2026-03-12 18:59:29]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\25. 십성론 - ① 편관의 생극제화.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 9
+changed_chars: 13906
+term_hits_after_correction: 48
+script_lines_after_cleanup: 92
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 8
+
+[file overrides applied]
+똑같은 심금인데 -> 똑같은 신금인데 (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x7)
+제자 약살 -> 재가 약살 (x5)
+심금 -> 신금 (x3)
+생극재화를 -> 생극제화를 (x1)
+금궁목 -> 금극목 (x2)
+모토의 -> 무토의 (x1)
+활을 -> 화를 (x14)
+금생술을 -> 금생수를 (x1)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x7)
+
+[skipped by context]
+금생술을 -> 금생수를 (x1)
+활을 -> 화를 (x7)

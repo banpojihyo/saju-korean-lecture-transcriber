@@ -955,3 +955,52 @@ context_skipped_hits: 1
 
 [skipped by context]
 활을 -> 화를 (x1)
+
+[707ebd7 - 2026-03-12 18:59:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\15. 십성론 - ③정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\15. 십성론 - ③정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\15. 십성론 - ③정재.script.txt
+file_override_rules: 13
+file_override_hits: 12
+applied_rules: 15
+changed_chars: 7727
+term_hits_after_correction: 41
+script_lines_after_cleanup: 101
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+그냥 명에 제운이 와서 제가 어떻다 이렇게 얘기하는 게 아니고 제운이 왔는데 그 제가 어디에 근거했느냐 -> 그냥 명에 재운이 와서 재가 어떻다 이렇게 얘기하는 게 아니고 재운이 왔는데 그 재가 어디에 근거했느냐 (x1)
+이 제가 긍정적으로 작용하고 잘 다루어지는 형태로 구성이 되어 있다면 -> 이 재가 긍정적으로 작용하고 잘 다루어지는 형태로 구성이 되어 있다면 (x1)
+그 제가 부담스러워도 다룰 수만 있다면 충분히 제를 자기 걸로 -> 그 재가 부담스러워도 다룰 수만 있다면 충분히 재를 자기 걸로 (x1)
+이 제는 제를 감당할 수 있어야 제라고요. -> 이 재는 재를 감당할 수 있어야 재라고요. (x1)
+이렇게 순차적으로 제가 진행된 거잖아요. -> 이렇게 순차적으로 재가 진행된 거잖아요. (x1)
+정제는 아침에 제가 완성된 게 아니고 -> 정재는 아침에 재가 완성된 게 아니고 (x1)
+제가 간에 나왔다는 것은 -> 재가 간에 나왔다는 것은 (x1)
+그게 연제에 있다는 것은 -> 그게 연지에 있다는 것은 (x1)
+시가 이렇게 제가 있고 -> 시가 이렇게 재가 있고 (x1)
+공제 같이 쓰겠다. -> 공재 같이 쓰겠다. (x1)
+시에 제가 있으면은 -> 시에 재가 있으면은 (x1)
+제의 건강은 -> 재의 건강은 (x1)
+
+[applied replacements]
+재생 사회 구성으로 제자 약살이 돼서 -> 재생살의 구성으로 재가 약살이 돼서 (x1)
+신약제왕* -> 신약재왕* (x2)
+공용제* -> 공용재* (x1)
+편제* -> 편재* (x8)
+정제* -> 정재* (x95)
+쟁제* -> 쟁재* (x12)
+월제* -> 월지* (x1)
+겁제* -> 겁재* (x3)
+현재 -> 편재 (x1)
+제왕 -> 재왕 (x1)
+제를 -> 재를 (x1)
+제가 -> 재가 (x3)
+일제 -> 일지 (x6)
+생극 재화 -> 생극제화 (x1)
+돈디는 -> 돈 되는 (x1)
+
+[skipped by context]
+활을 -> 화를 (x1)

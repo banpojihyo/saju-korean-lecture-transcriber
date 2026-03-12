@@ -1416,3 +1416,56 @@ context_skipped_hits: 1
 
 [skipped by context]
 채용 -> 체용 (x1)
+
+[707ebd7 - 2026-03-12 18:59:24]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\14. 십성론 - ③정재.script.txt
+file_override_rules: 12
+file_override_hits: 13
+applied_rules: 19
+changed_chars: 21770
+term_hits_after_correction: 42
+script_lines_after_cleanup: 89
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+관에 의해서 제가 잘 보호되어 있다든지 -> 관에 의해서 재가 잘 보호되어 있다든지 (x1)
+채용은 제가 얘기하는 게 아니고 -> 체용은 제가 얘기하는 게 아니고 (x1)
+살은 제자 약살인 경우가 아니면 -> 살은 재가 약살인 경우가 아니면 (x1)
+그 명이 이렇게 제가 있는데, -> 그 명이 이렇게 재가 있는데, (x1)
+일제 정제가 발달돼 있어요. -> 일지 정재가 발달돼 있어요. (x1)
+이 채용에 대한 부분은 -> 이 체용에 대한 부분은 (x1)
+채용이라는 용어는 -> 체용이라는 용어는 (x1)
+채용적 부분은 -> 체용적 부분은 (x1)
+이 채용은 -> 이 체용은 (x1)
+식신호로 -> 식신으로 (x1)
+채용변 -> 체용변 (x1)
+운양 -> 음양 (x2)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x2)
+제 기준 -> 재 기준 (x4)
+제 극인 -> 재극인 (x15)
+현관* -> 편관* (x4)
+편제* -> 편재* (x9)
+정제* -> 정재* (x82)
+쟁제* -> 쟁재* (x2)
+생제* -> 생재* (x12)
+경관* -> 견관* (x1)
+겁제* -> 겁재* (x12)
+감목* -> 갑목* (x4)
+6친* -> 육친* (x2)
+현재 -> 편재 (x1)
+제가 -> 재가 (x3)
+제 -> 재 (x6)
+10성 -> 십성 (x7)
+관무기 -> 갑목이 (x2)
+4조 -> 사주 (x1)
+채용 -> 체용 (x1)
+
+[skipped by context]
+채용 -> 체용 (x1)

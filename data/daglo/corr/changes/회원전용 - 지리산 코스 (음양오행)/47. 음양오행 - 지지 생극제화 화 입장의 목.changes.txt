@@ -763,3 +763,39 @@ context_skipped_hits: 6
 승목을 -> 습목을 (x1)
 승목 -> 습목 (x1)
 활을 -> 화를 (x1)
+
+[707ebd7 - 2026-03-12 18:59:15]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\47. 음양오행 - 지지 생극제화 화 입장의 목.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 10
+changed_chars: 33
+term_hits_after_correction: 40
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 6
+
+[file overrides applied]
+묵생활을 서두르고 있는데 -> 목생화를 서두르고 있는데 (x1)
+
+[applied replacements]
+감묵 -> 갑목 (x2)
+수색목이 -> 수생목이 (x1)
+수색목 -> 수생목 (x1)
+목생활 -> 목생화 (x3)
+환은 -> 화는 (x4)
+활을 -> 화를 (x3)
+승목 -> 습목 (x1)
+사활을 -> 사화를 (x1)
+목생화을 -> 목생화를 (x3)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x1)
+
+[skipped by context]
+목생활을 -> 목생화를 (x3)
+승목을 -> 습목을 (x1)
+승목 -> 습목 (x1)
+활을 -> 화를 (x1)
