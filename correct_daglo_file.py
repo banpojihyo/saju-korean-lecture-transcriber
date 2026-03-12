@@ -1744,6 +1744,8 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
 
 
 SAJU_STABLE_NORMALIZATIONS: tuple[tuple[str, str], ...] = (
+    ("금악 교역", "금화교역"),
+    ("화급금", "화극금"),
     ("묵과", "목과"),
     ("하당", "하강"),
     ("승목", "습목"),
@@ -1765,6 +1767,10 @@ SAJU_STABLE_NORMALIZATIONS: tuple[tuple[str, str], ...] = (
 )
 
 SAJU_STABLE_REGEX_NORMALIZATIONS: tuple[tuple[re.Pattern[str], str], ...] = (
+    (
+        re.compile(r"금생 수(?=(?:가|는|를|로|의|도|만|하|\s|$|[.,?!]))"),
+        "금생수",
+    ),
     (
         re.compile(
             r"(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게))"

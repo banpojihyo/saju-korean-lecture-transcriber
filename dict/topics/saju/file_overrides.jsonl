@@ -144,3 +144,8 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"목 생활을","right":"목생화를","note":"Conservative spacing fix for moksaenghwa term"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/09. 음양오행.txt","wrong":"4주 4주가 어떻게 돼 있어요?","right":"사주가 어떻게 돼 있어요?","note":"User-requested 4ju->saju cleanup for duplicated opener"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/14. 음양오행 - 금의 한난조습.txt","wrong":"활을","right":"화를","note":"User-requested file-specific hwal->hwa normalization"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 01 - 한난조습이란？.txt","wrong":"4주 후에","right":"사주에","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"제4주예요.","right":"제 사주예요.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"금생 수호 하는 게","right":"금생수로 하는 게","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"활을 살리네요.","right":"화를 살리네요.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/32. 십성론 - ④ 정인의 궁대응.txt","wrong":"생극, 재활을 할 때","right":"생극제화를 할 때","note":"User-confirmed phrase reconstruction"}

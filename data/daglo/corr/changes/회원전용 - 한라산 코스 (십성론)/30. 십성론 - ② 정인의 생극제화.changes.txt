@@ -1067,3 +1067,42 @@ context_skipped_hits: 5
 [skipped by context]
 목생활을 -> 목생화를 (x1)
 활을 -> 화를 (x4)
+
+[c4e3044 - 2026-03-12 15:38:33]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\30. 십성론 - ② 정인의 생극제화.script.txt
+file_override_rules: 6
+file_override_hits: 5
+applied_rules: 11
+changed_chars: 18131
+term_hits_after_correction: 44
+script_lines_after_cleanup: 78
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 4
+
+[file overrides applied]
+국민의 생급 재활을 하겠습니다. -> 정인의 생극제화를 하겠습니다. (x1)
+저 Muto라고 하는 -> 저 무토라고 하는 (x1)
+무투라고 하는 정인 -> 무토라고 하는 정인 (x1)
+그래서 심금일주한다 -> 그래서 신금일주한다 (x1)
+활을 살리네요. -> 화를 살리네요. (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x14)
+감목* -> 갑목* (x25)
+관묵 -> 갑목 (x1)
+금궁목 -> 금극목 (x2)
+금금목 -> 금극목 (x1)
+목생활 -> 목생화 (x1)
+금금묵 -> 금극목 (x1)
+근긍목 -> 금극목 (x3)
+모토의 -> 무토의 (x1)
+활을 -> 화를 (x5)
+목생화을 -> 목생화를 (x1)
+
+[skipped by context]
+목생활을 -> 목생화를 (x1)
+활을 -> 화를 (x3)

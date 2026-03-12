@@ -1057,3 +1057,52 @@ context_skipped_hits: 12
 죽토를 -> 축토를 (x1)
 활을 -> 화를 (x3)
 죽토 -> 축토 (x2)
+
+[c4e3044 - 2026-03-12 15:38:22]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\46. 음양오행 - 지지 생극제화 수 입장의 금생수.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\46. 음양오행 - 지지 생극제화 수 입장의 금생수.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 22
+changed_chars: 34823
+term_hits_after_correction: 66
+script_lines_after_cleanup: 146
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 12
+
+[file overrides applied]
+금, 금 목 되는 상태 금극목 뛰는 상태니까 -> 금극목 되는 상태, 금극목 띤 상태니까 (x1)
+
+[applied replacements]
+토곡수 -> 토극수 (x4)
+제관* -> 재관* (x1)
+묵생* -> 목생* (x1)
+겁제* -> 겁재* (x4)
+감묵 -> 갑목 (x2)
+사조의 개별적인 -> 사주의 개별적인 (x1)
+생극 재화 -> 생극제화 (x7)
+수색목을 -> 수생목을 (x5)
+수색 목 -> 수생목 (x3)
+금생술을 -> 금생수를 (x2)
+10성 -> 십성 (x2)
+관사를 -> 관살을 (x2)
+사조를 -> 사주를 (x1)
+수색목 -> 수생목 (x12)
+관사리 -> 관살이 (x1)
+근근묵 -> 금극목 (x1)
+입목이 -> 인목이 (x1)
+심근이 -> 신금이 (x1)
+환은 -> 화는 (x1)
+활을 -> 화를 (x2)
+모토 -> 무토 (x1)
+금생 수(?=(?:가|는|를|로|의|도|만|하|\s|$|[.,?!])) -> 금생수 (x4)
+
+[skipped by context]
+수색목을 -> 수생목을 (x5)
+모토예요 -> 무토예요 (x1)
+죽토를 -> 축토를 (x1)
+활을 -> 화를 (x3)
+죽토 -> 축토 (x2)

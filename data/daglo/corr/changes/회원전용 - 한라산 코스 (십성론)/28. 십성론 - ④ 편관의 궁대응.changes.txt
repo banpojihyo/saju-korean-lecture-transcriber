@@ -721,3 +721,43 @@ context_skipped_hits: 20
 [skipped by context]
 고친 -> 고층 (x1)
 금 -> 금 목 (x19)
+
+[c4e3044 - 2026-03-12 15:38:33]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\28. 십성론 - ④ 편관의 궁대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\28. 십성론 - ④ 편관의 궁대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\28. 십성론 - ④ 편관의 궁대응.script.txt
+file_override_rules: 12
+file_override_hits: 12
+applied_rules: 6
+changed_chars: 8845
+term_hits_after_correction: 48
+script_lines_after_cleanup: 78
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+그러니까 제가 커져서 살을 막 키우는 거예요. -> 그러니까 재가 커져서 살을 막 키우는 거예요. (x1)
+그럼 재훈이 와서 제자 약살을 할 때 -> 그럼 재운이 와서 재가 약살을 할 때 (x1)
+그러면 이렇게 제자 약살하다가 -> 그러면 이렇게 재가 약살하다가 (x1)
+그전에 제로 열심히 돈 벌어서 -> 그전에 재로 열심히 돈 벌어서 (x1)
+다 귀신이 유정하면 안 돼요 -> 다 기신이 유정하면 안 돼요 (x1)
+제자 약사를 잘 쓰던 명도 -> 재가 약살을 잘 쓰던 명도 (x1)
+제자 약사루를 쓴다는 건 -> 재가 약살을 쓴다는 건 (x1)
+재생살이 제가 약할 때는 -> 재생살이 재가 약할 때는 (x1)
+제자 약살일 때는 -> 재가 약살일 때는 (x1)
+남명은 관사리 -> 남명은 관살이 (x1)
+제자 약살도. -> 재가 약살도. (x1)
+제자약살. -> 재가 약살. (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x1)
+제자 약살 -> 재가 약살 (x2)
+현관* -> 편관* (x2)
+제탈* -> 재탈* (x2)
+겁제* -> 겁재* (x1)
+10성 -> 십성 (x1)
+
+[skipped by context]
+고친 -> 고층 (x1)

@@ -436,3 +436,24 @@ context_skipped_hits: 79
 [skipped by context]
 귀신 -> 기신 (x12)
 금 -> 금 목 (x67)
+
+[c4e3044 - 2026-03-12 15:38:06]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\01. 음양오행 - 태극도설.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 2
+term_hits_after_correction: 26
+script_lines_after_cleanup: 131
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 12
+
+[applied replacements]
+사조쟁이라고 -> 사주쟁이라고 (x2)
+
+[skipped by context]
+귀신 -> 기신 (x12)

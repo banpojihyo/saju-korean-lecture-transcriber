@@ -1231,3 +1231,52 @@ context_skipped_hits: 3
 [skipped by context]
 금금목이 -> 금극목이 (x1)
 목생활을 -> 목생화를 (x2)
+
+[c4e3044 - 2026-03-12 15:38:15]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\26. 음양오행 - 천간 생극제화 목(3).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 28
+changed_chars: 27670
+term_hits_after_correction: 56
+script_lines_after_cleanup: 131
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x4)
+편제* -> 편재* (x5)
+제관* -> 재관* (x8)
+제 관 -> 재관 (x1)
+생묵* -> 생목* (x2)
+묵생* -> 목생* (x1)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x6)
+금극묵이죠 -> 금극목이죠 (x1)
+금 금 목 -> 금극목 (x3)
+수색목은 -> 수생목은 (x3)
+금긍목이 -> 금극목이 (x1)
+금긍목을 -> 금극목을 (x1)
+목생 화 -> 목생화 (x1)
+금근목에 -> 금극목에 (x1)
+10성 -> 십성 (x1)
+수색목 -> 수생목 (x3)
+금극묵 -> 금극목 (x1)
+금금목 -> 금극목 (x1)
+목생활 -> 목생화 (x2)
+긍긍목 -> 금극목 (x1)
+한 금 -> 한금 (x1)
+관무기 -> 갑목이 (x1)
+모토를 -> 무토를 (x2)
+환은 -> 화는 (x1)
+활을 -> 화를 (x2)
+모토 -> 무토 (x1)
+목생화을 -> 목생화를 (x2)
+
+[skipped by context]
+금금목이 -> 금극목이 (x1)
+목생활을 -> 목생화를 (x2)

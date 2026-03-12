@@ -557,3 +557,34 @@ context_skipped_hits: 20
 
 [skipped by context]
 금 -> 금 목 (x20)
+
+[c4e3044 - 2026-03-12 15:38:03]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 28 - 궁에 대한 이해2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 28 - 궁에 대한 이해2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 28 - 궁에 대한 이해2.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 11
+changed_chars: 146
+term_hits_after_correction: 41
+script_lines_after_cleanup: 59
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+월에 제가 있으면 그 제가 업이에요. -> 월에 재가 있으면 그 재가 업이에요. (x1)
+
+[applied replacements]
+편제* -> 편재* (x7)
+제관* -> 재관* (x3)
+정제* -> 정재* (x5)
+생제* -> 생재* (x2)
+사조를 볼 때 -> 사주를 볼 때 (x1)
+나쁜 사조 -> 나쁜 사주 (x1)
+사조첩경 -> 사주첩경 (x2)
+10성 -> 십성 (x3)
+첩사조 -> 첩사주 (x1)
+걸록이 -> 건록이 (x1)
+걸록 -> 건록 (x1)
