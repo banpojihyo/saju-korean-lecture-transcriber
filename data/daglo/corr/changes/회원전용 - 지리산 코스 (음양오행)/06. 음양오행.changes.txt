@@ -1724,3 +1724,62 @@ context_skipped_hits: 22
 승목 -> 습목 (x1)
 고친 -> 고층 (x1)
 귀신 -> 기신 (x2)
+
+[6a6a68d - 2026-03-12 16:18:28]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\06. 음양오행.script.txt
+file_override_rules: 5
+file_override_hits: 41
+applied_rules: 24
+changed_chars: 28830
+term_hits_after_correction: 53
+script_lines_after_cleanup: 148
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 9
+context_skipped_hits: 22
+
+[file overrides applied]
+여기는 활을 쓰는 것은 신발에 대한 조건을 개선하는 거죠. -> 여기는 화를 쓰는 것은 신발에 대한 조건을 개선하는 거죠. (x1)
+그렇게 해서 사조에 있는 것 가지고 -> 그렇게 해서 사주에 있는 것 가지고 (x1)
+사모기에 한 모기 개입 -> 사목에 한목이 개입 (x1)
+한 목 -> 한목 (x23)
+한 몫 -> 한목 (x15)
+
+[applied replacements]
+한 무기 -> 한목이 (x1)
+한 목이 -> 한목이 (x37)
+한 목에 -> 한목에 (x5)
+생묵* -> 생목* (x3)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x6)
+감목* -> 갑목* (x14)
+한묵 -> 한목 (x6)
+관묵 -> 갑목 (x1)
+사조를 풀로 -> 사주를 툴로 (x1)
+수색목으로 -> 수생목으로 (x2)
+수색목이 -> 수생목이 (x1)
+근긍목의 -> 금극목의 (x1)
+생극재화 -> 생극제화 (x1)
+사조를 -> 사주를 (x2)
+수색목 -> 수생목 (x17)
+금궁목 -> 금극목 (x2)
+목생활 -> 목생화 (x1)
+4조 -> 사주 (x2)
+승목 -> 습목 (x1)
+활을 -> 화를 (x1)
+승목 -> 습목 (x1)
+목생화을 -> 목생화를 (x1)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x3)
+
+[skipped by context]
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x5)
+수색목을 -> 수생목을 (x7)
+수색목에 -> 수생목에 (x2)
+금궁목을 -> 금극목을 (x2)
+목생활을 -> 목생화를 (x1)
+승목 -> 습목 (x1)
+고친 -> 고층 (x1)
+귀신 -> 기신 (x2)

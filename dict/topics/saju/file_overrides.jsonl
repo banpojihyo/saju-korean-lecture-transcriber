@@ -167,3 +167,7 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"담유형이야.","right":"갑류.","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"외관 내유형들","right":"외강내유형들","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"금형은 이렇게 감류잖아요. 감류.","right":"금형은 이렇게 갑류잖아요. 갑류.","note":"Same-file 갑류 normalization"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"화생토화면은","right":"화생토하면은","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 15 - 병화와 다른 천간과의 관계.txt","wrong":"화생토화 할 때","right":"화생토할 때","note":"Conservative same-family cleanup for hwa-saeng-to term"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"한 목","right":"한목","note":"File-scoped user-approved normalization to avoid global overcorrection"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"한 몫","right":"한목","note":"File-scoped user-approved normalization to avoid global overcorrection"}
