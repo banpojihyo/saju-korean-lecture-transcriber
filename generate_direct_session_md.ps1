@@ -3,7 +3,8 @@
     [string]$OutputRoot = "data/summaries",
     [string]$Topic = "saju",
     [string]$AgentName = "GPT-5.4-Direct-Extra-High",
-    [string]$RunTimestamp = ""
+    [string]$RunTimestamp = "",
+    [switch]$ClearOutputBase
 )
 
 $ErrorActionPreference = "Stop"
@@ -22,8 +23,12 @@ $courseName = Split-Path $resolvedInputRoot -Leaf
 $outputBase = Join-Path $repoRoot ("{0}/{1}/{2}__{3}" -f $OutputRoot, $Topic, $AgentName, $RunTimestamp)
 $mdRoot = Join-Path $outputBase ("md/{0}" -f $courseName)
 
-if (Test-Path $outputBase) {
+if ($ClearOutputBase -and (Test-Path $outputBase)) {
     Remove-Item $outputBase -Recurse -Force
+}
+
+if (Test-Path $mdRoot) {
+    Remove-Item $mdRoot -Recurse -Force
 }
 
 New-Item -ItemType Directory -Force -Path $mdRoot | Out-Null
@@ -315,8 +320,4 @@ foreach ($file in $files) {
 Write-Output ("RUN_TIMESTAMP={0}" -f $RunTimestamp)
 Write-Output ("OUTPUT_BASE={0}" -f $outputBase)
 Write-Output ("GENERATED_MD={0}" -f $files.Count)
-
-
-
-
 
