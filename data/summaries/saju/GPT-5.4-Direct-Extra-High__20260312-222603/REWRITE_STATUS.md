@@ -10,6 +10,8 @@
 - `기본 다이제스트 03 - 오행의 한난조습`
 - `기본 다이제스트 04 - 오행의 한난조습 2`
 - `기본 다이제스트 05 - 목의 왕쇠강약`
+- `기본 다이제스트 06 - 화의 왕쇠강약`
+- `기본 다이제스트 07 - 이제마 사주분석, 토의 강왕`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
 - Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
