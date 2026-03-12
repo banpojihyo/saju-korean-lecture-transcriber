@@ -1645,3 +1645,101 @@ CG -> 시지 (x5)
 
 [skipped by context]
 걸록이 -> 건록이 (x1)
+
+[477f566 - 2026-03-12 15:05:41]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.script.txt
+file_override_rules: 7
+file_override_hits: 7
+applied_rules: 19
+changed_chars: 22371
+term_hits_after_correction: 59
+script_lines_after_cleanup: 136
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[file overrides applied]
+천관은 천관으로써 운영되는 거예요 -> 천간은 천간으로써 운영되는 거예요 (x1)
+4조, 9조에서 궁의 관계들을 -> 사주 구조에서 궁의 관계들을 (x1)
+지지 안에 있는 장관은 -> 지지 안에 있는 장간은 (x1)
+운영자는 천관이라고요 -> 운영자는 천간이라고요 (x1)
+지지입목도 운영자예요 -> 지지 인목도 운영자예요 (x1)
+월감으로 나왔다 -> 월간으로 나왔다 (x1)
+감목도 아니에요 -> 갑목도 아니에요 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+토곡수 -> 토극수 (x1)
+제관* -> 재관* (x1)
+제 관 -> 재관 (x1)
+생제* -> 생재* (x1)
+겁제* -> 겁재* (x1)
+감목* -> 갑목* (x4)
+관묵 -> 갑목 (x1)
+기포면은 이게 정관여예요. -> 기토면은 이게 정관이에요. (x1)
+사조의 유돌 글자는 -> 사주 여덟 글자는 (x1)
+걸록이라고요 -> 건록이라고요 (x1)
+생극 재활을 -> 생극제화를 (x1)
+걸록이면은 -> 건록이면은 (x1)
+사조를 -> 사주를 (x1)
+모토도 -> 무토도 (x1)
+1주 -> 일주 (x1)
+걸록 -> 건록 (x2)
+cg -> 시지 (x3)
+CG -> 시지 (x5)
+
+[skipped by context]
+걸록이 -> 건록이 (x1)
+활을 -> 화를 (x2)
+
+[477f566 - 2026-03-12 15:11:03]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\23. 음양오행 - 사주구조 분석 2.script.txt
+file_override_rules: 7
+file_override_hits: 7
+applied_rules: 19
+changed_chars: 22371
+term_hits_after_correction: 59
+script_lines_after_cleanup: 136
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[file overrides applied]
+천관은 천관으로써 운영되는 거예요 -> 천간은 천간으로써 운영되는 거예요 (x1)
+4조, 9조에서 궁의 관계들을 -> 사주 구조에서 궁의 관계들을 (x1)
+지지 안에 있는 장관은 -> 지지 안에 있는 장간은 (x1)
+운영자는 천관이라고요 -> 운영자는 천간이라고요 (x1)
+지지입목도 운영자예요 -> 지지 인목도 운영자예요 (x1)
+월감으로 나왔다 -> 월간으로 나왔다 (x1)
+감목도 아니에요 -> 갑목도 아니에요 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+토곡수 -> 토극수 (x1)
+제관* -> 재관* (x1)
+제 관 -> 재관 (x1)
+생제* -> 생재* (x1)
+겁제* -> 겁재* (x1)
+감목* -> 갑목* (x4)
+관묵 -> 갑목 (x1)
+기포면은 이게 정관여예요. -> 기토면은 이게 정관이에요. (x1)
+사조의 유돌 글자는 -> 사주 여덟 글자는 (x1)
+걸록이라고요 -> 건록이라고요 (x1)
+생극 재활을 -> 생극제화를 (x1)
+걸록이면은 -> 건록이면은 (x1)
+사조를 -> 사주를 (x1)
+모토도 -> 무토도 (x1)
+1주 -> 일주 (x1)
+걸록 -> 건록 (x2)
+cg -> 시지 (x3)
+CG -> 시지 (x5)
+
+[skipped by context]
+걸록이 -> 건록이 (x1)
+활을 -> 화를 (x2)

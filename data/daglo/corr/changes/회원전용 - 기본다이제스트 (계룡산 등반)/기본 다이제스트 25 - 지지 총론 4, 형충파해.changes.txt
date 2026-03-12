@@ -939,3 +939,91 @@ context_skipped_hits: 12
 금궁목이 -> 금극목이 (x2)
 목생활을 -> 목생화를 (x2)
 사두에 -> 사주에 (x1)
+
+[477f566 - 2026-03-12 15:05:45]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 18
+changed_chars: 18593
+term_hits_after_correction: 56
+script_lines_after_cleanup: 95
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 7
+context_skipped_hits: 13
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x9)
+갑묵/을묵 -> 갑목/을목 (x2)
+편제* -> 편재* (x6)
+감목* -> 갑목* (x10)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x6)
+생극 재화를 -> 생극제화를 (x1)
+생극 재화 -> 생극제화 (x1)
+목생 화 -> 목생화 (x1)
+근근목을 -> 금극목을 (x1)
+10성 -> 십성 (x3)
+수색목 -> 수생목 (x8)
+금궁목 -> 금극목 (x2)
+목생활 -> 목생화 (x2)
+입목이 -> 인목이 (x1)
+입목을 -> 인목을 (x3)
+목생화을 -> 목생화를 (x2)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x1)
+
+[skipped by context]
+수색목이 -> 수생목이 (x4)
+수색목을 -> 수생목을 (x2)
+수색목에 -> 수생목에 (x1)
+금궁목이 -> 금극목이 (x2)
+목생활을 -> 목생화를 (x2)
+사두에 -> 사주에 (x1)
+활을 -> 화를 (x1)
+
+[477f566 - 2026-03-12 15:11:00]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 18
+changed_chars: 18593
+term_hits_after_correction: 56
+script_lines_after_cleanup: 95
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 7
+context_skipped_hits: 13
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x9)
+갑묵/을묵 -> 갑목/을목 (x2)
+편제* -> 편재* (x6)
+감목* -> 갑목* (x10)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x6)
+생극 재화를 -> 생극제화를 (x1)
+생극 재화 -> 생극제화 (x1)
+목생 화 -> 목생화 (x1)
+근근목을 -> 금극목을 (x1)
+10성 -> 십성 (x3)
+수색목 -> 수생목 (x8)
+금궁목 -> 금극목 (x2)
+목생활 -> 목생화 (x2)
+입목이 -> 인목이 (x1)
+입목을 -> 인목을 (x3)
+목생화을 -> 목생화를 (x2)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x1)
+
+[skipped by context]
+수색목이 -> 수생목이 (x4)
+수색목을 -> 수생목을 (x2)
+수색목에 -> 수생목에 (x1)
+금궁목이 -> 금극목이 (x2)
+목생활을 -> 목생화를 (x2)
+사두에 -> 사주에 (x1)
+활을 -> 화를 (x1)

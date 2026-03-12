@@ -142,3 +142,5 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"슬톤은 뭐예요? 옷을로 연결되잖아요.","right":"술토는 뭐예요? 무술로 연결되잖아요.","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"목 생활을","right":"목생화를","note":"Conservative spacing fix for moksaenghwa term"}
 {"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"목 생활을","right":"목생화를","note":"Conservative spacing fix for moksaenghwa term"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/09. 음양오행.txt","wrong":"4주 4주가 어떻게 돼 있어요?","right":"사주가 어떻게 돼 있어요?","note":"User-requested 4ju->saju cleanup for duplicated opener"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/14. 음양오행 - 금의 한난조습.txt","wrong":"활을","right":"화를","note":"User-requested file-specific hwal->hwa normalization"}

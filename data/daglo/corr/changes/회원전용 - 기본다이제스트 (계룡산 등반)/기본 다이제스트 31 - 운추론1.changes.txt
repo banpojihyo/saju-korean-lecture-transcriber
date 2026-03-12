@@ -517,3 +517,55 @@ context_skipped_hits: 0
 사조에 대입해서 -> 사주에 대입해서 (x1)
 사조를 -> 사주를 (x2)
 환은 -> 화는 (x1)
+
+[477f566 - 2026-03-12 15:05:49]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 11283
+term_hits_after_correction: 37
+script_lines_after_cleanup: 81
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+감목* -> 갑목* (x5)
+관묵 -> 갑목 (x1)
+채용의 문제들을 -> 체용의 문제들을 (x1)
+사조에 대입해서 -> 사주에 대입해서 (x1)
+사조를 -> 사주를 (x2)
+난 금 -> 난금 (x1)
+환은 -> 화는 (x1)
+활을 -> 화를 (x3)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x2)
+
+[477f566 - 2026-03-12 15:11:05]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 31 - 운추론1.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 11283
+term_hits_after_correction: 37
+script_lines_after_cleanup: 81
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+감목* -> 갑목* (x5)
+관묵 -> 갑목 (x1)
+채용의 문제들을 -> 체용의 문제들을 (x1)
+사조에 대입해서 -> 사주에 대입해서 (x1)
+사조를 -> 사주를 (x2)
+난 금 -> 난금 (x1)
+환은 -> 화는 (x1)
+활을 -> 화를 (x3)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x2)

@@ -994,3 +994,83 @@ context_skipped_hits: 1
 
 [skipped by context]
 모토에 -> 무토에 (x1)
+
+[477f566 - 2026-03-12 15:05:51]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 20
+changed_chars: 22498
+term_hits_after_correction: 52
+script_lines_after_cleanup: 114
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+편제* -> 편재* (x1)
+토국수 -> 토극수 (x8)
+토곡수 -> 토극수 (x1)
+정제* -> 정재* (x2)
+목국토 -> 목극토 (x4)
+감목* -> 갑목* (x16)
+감묵 -> 갑목 (x1)
+수생무기라고 할 때 -> 수생목이라고 할 때 (x1)
+금화 교역 -> 금화교역 (x1)
+사조 구성 -> 사주 구성 (x1)
+모기 개입 -> 목이 개입 (x1)
+기포라고요 -> 기토라고요 (x1)
+수색목만 -> 수생목만 (x1)
+수색 목 -> 수생목 (x1)
+기포가 -> 기토가 (x1)
+모토에 -> 무토에 (x2)
+1주 -> 일주 (x1)
+활을 -> 화를 (x2)
+모토 -> 무토 (x1)
+
+[skipped by context]
+모토에 -> 무토에 (x1)
+
+[477f566 - 2026-03-12 15:11:06]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\31. 음양오행 - 천간 생극제화 토(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 20
+changed_chars: 22498
+term_hits_after_correction: 52
+script_lines_after_cleanup: 114
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+편제* -> 편재* (x1)
+토국수 -> 토극수 (x8)
+토곡수 -> 토극수 (x1)
+정제* -> 정재* (x2)
+목국토 -> 목극토 (x4)
+감목* -> 갑목* (x16)
+감묵 -> 갑목 (x1)
+수생무기라고 할 때 -> 수생목이라고 할 때 (x1)
+금화 교역 -> 금화교역 (x1)
+사조 구성 -> 사주 구성 (x1)
+모기 개입 -> 목이 개입 (x1)
+기포라고요 -> 기토라고요 (x1)
+수색목만 -> 수생목만 (x1)
+수색 목 -> 수생목 (x1)
+기포가 -> 기토가 (x1)
+모토에 -> 무토에 (x2)
+1주 -> 일주 (x1)
+활을 -> 화를 (x2)
+모토 -> 무토 (x1)
+
+[skipped by context]
+모토에 -> 무토에 (x1)

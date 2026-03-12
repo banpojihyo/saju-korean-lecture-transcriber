@@ -886,3 +886,75 @@ context_skipped_hits: 0
 금궁목 -> 금극목 (x2)
 금금목 -> 금극목 (x2)
 환은 -> 화는 (x2)
+
+[477f566 - 2026-03-12 15:05:46]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 16
+changed_chars: 23350
+term_hits_after_correction: 40
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 9
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+묵생* -> 목생* (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x3)
+사조를 공부하고 -> 사주를 공부하고 (x1)
+금금목이죠 -> 금극목이죠 (x1)
+생국제화의 -> 생극제화의 (x1)
+금긍목의 -> 금극목의 (x1)
+금금목이 -> 금극목이 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+금궁목 -> 금극목 (x2)
+금금목 -> 금극목 (x2)
+한 금 -> 한금 (x1)
+환은 -> 화는 (x2)
+활을 -> 화를 (x3)
+
+[skipped by context]
+활을 -> 화를 (x9)
+
+[477f566 - 2026-03-12 15:11:06]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 16
+changed_chars: 23350
+term_hits_after_correction: 40
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 9
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+묵생* -> 목생* (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x3)
+사조를 공부하고 -> 사주를 공부하고 (x1)
+금금목이죠 -> 금극목이죠 (x1)
+생국제화의 -> 생극제화의 (x1)
+금긍목의 -> 금극목의 (x1)
+금금목이 -> 금극목이 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+금궁목 -> 금극목 (x2)
+금금목 -> 금극목 (x2)
+한 금 -> 한금 (x1)
+환은 -> 화는 (x2)
+활을 -> 화를 (x3)
+
+[skipped by context]
+활을 -> 화를 (x9)

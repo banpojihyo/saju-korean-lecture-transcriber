@@ -1031,3 +1031,83 @@ context_skipped_hits: 15
 죽토와 -> 축토와 (x1)
 죽토의 -> 축토의 (x1)
 죽토 -> 축토 (x8)
+
+[477f566 - 2026-03-12 15:05:35]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 25191
+term_hits_after_correction: 52
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 24
+
+[applied replacements]
+토곡수 -> 토극수 (x6)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x3)
+왕세강약은 -> 왕쇠강약은 (x1)
+금화 교역 -> 금화교역 (x4)
+한란조습의 -> 한난조습의 (x1)
+한란조습에 -> 한난조습에 (x1)
+생극 재화 -> 생극제화 (x2)
+목생활을 -> 목생화를 (x1)
+입목의 -> 인목의 (x1)
+죽토를 -> 축토를 (x1)
+환은 -> 화는 (x1)
+입목 -> 인목 (x1)
+
+[skipped by context]
+나나니까 -> 난하니까 (x1)
+토복수 -> 토극수 (x1)
+죽토는 -> 축토는 (x2)
+죽토가 -> 축토가 (x1)
+죽토와 -> 축토와 (x1)
+죽토의 -> 축토의 (x1)
+활을 -> 화를 (x9)
+죽토 -> 축토 (x8)
+
+[477f566 - 2026-03-12 15:10:55]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\10. 음양오행 - 토의 한난.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 25191
+term_hits_after_correction: 52
+script_lines_after_cleanup: 128
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 24
+
+[applied replacements]
+토곡수 -> 토극수 (x6)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x3)
+왕세강약은 -> 왕쇠강약은 (x1)
+금화 교역 -> 금화교역 (x4)
+한란조습의 -> 한난조습의 (x1)
+한란조습에 -> 한난조습에 (x1)
+생극 재화 -> 생극제화 (x2)
+목생활을 -> 목생화를 (x1)
+입목의 -> 인목의 (x1)
+죽토를 -> 축토를 (x1)
+환은 -> 화는 (x1)
+입목 -> 인목 (x1)
+
+[skipped by context]
+나나니까 -> 난하니까 (x1)
+토복수 -> 토극수 (x1)
+죽토는 -> 축토는 (x2)
+죽토가 -> 축토가 (x1)
+죽토와 -> 축토와 (x1)
+죽토의 -> 축토의 (x1)
+활을 -> 화를 (x9)
+죽토 -> 축토 (x8)

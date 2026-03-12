@@ -1036,3 +1036,87 @@ context_skipped_hits: 3
 수색목은 -> 수생목은 (x1)
 수색목을 -> 수생목을 (x1)
 수색목의 -> 수생목의 (x1)
+
+[477f566 - 2026-03-12 15:05:41]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 20
+changed_chars: 19298
+term_hits_after_correction: 50
+script_lines_after_cleanup: 129
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 3
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x2)
+생묵* -> 생목* (x4)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x4)
+감목* -> 갑목* (x70)
+관묵 -> 갑목 (x5)
+감묵 -> 갑목 (x17)
+수색목이잖아요 -> 수생목이잖아요 (x1)
+생극 재화를 -> 생극제화를 (x1)
+수색목이죠 -> 수생목이죠 (x1)
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x12)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x6)
+수색목에 -> 수생목에 (x2)
+수색목만 -> 수생목만 (x1)
+수색 못 -> 수생목 (x1)
+수색목 -> 수생목 (x9)
+환은 -> 화는 (x1)
+활을 -> 화를 (x2)
+
+[skipped by context]
+수색목은 -> 수생목은 (x1)
+수색목을 -> 수생목을 (x1)
+수색목의 -> 수생목의 (x1)
+
+[477f566 - 2026-03-12 15:11:03]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\24. 음양오행 - 천간 생극제화 목(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 20
+changed_chars: 19298
+term_hits_after_correction: 50
+script_lines_after_cleanup: 129
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 3
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x2)
+생묵* -> 생목* (x4)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x4)
+감목* -> 갑목* (x70)
+관묵 -> 갑목 (x5)
+감묵 -> 갑목 (x17)
+수색목이잖아요 -> 수생목이잖아요 (x1)
+생극 재화를 -> 생극제화를 (x1)
+수색목이죠 -> 수생목이죠 (x1)
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x12)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x6)
+수색목에 -> 수생목에 (x2)
+수색목만 -> 수생목만 (x1)
+수색 못 -> 수생목 (x1)
+수색목 -> 수생목 (x9)
+환은 -> 화는 (x1)
+활을 -> 화를 (x2)
+
+[skipped by context]
+수색목은 -> 수생목은 (x1)
+수색목을 -> 수생목을 (x1)
+수색목의 -> 수생목의 (x1)

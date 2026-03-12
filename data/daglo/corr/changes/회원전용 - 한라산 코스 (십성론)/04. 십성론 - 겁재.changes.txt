@@ -1046,3 +1046,99 @@ CG -> 시지 (x1)
 [skipped by context]
 고친 -> 고층 (x1)
 금 -> 금 목 (x24)
+
+[477f566 - 2026-03-12 15:05:26]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.script.txt
+file_override_rules: 4
+file_override_hits: 5
+applied_rules: 22
+changed_chars: 19536
+term_hits_after_correction: 57
+script_lines_after_cleanup: 90
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+채용을 바꿔서 보시는 것이 -> 체용을 바꿔서 보시는 것이 (x1)
+이걸 채로 놓고 보면은 -> 이걸 체로 놓고 보면은 (x1)
+일간을 채로 놓고 -> 일간을 체로 놓고 (x2)
+채를 놓고 -> 체를 놓고 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x5)
+편제* -> 편재* (x3)
+탈제* -> 탈재* (x5)
+제관* -> 재관* (x4)
+제 관 -> 재관 (x3)
+정제* -> 정재* (x6)
+쟁제* -> 쟁재* (x2)
+손제* -> 손재* (x2)
+생제* -> 생재* (x2)
+목국토 -> 목극토 (x2)
+겁제* -> 겁재* (x73)
+감목* -> 갑목* (x23)
+제를 -> 재를 (x4)
+제가 -> 재가 (x1)
+일제 -> 일지 (x1)
+심금 -> 신금 (x1)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x7)
+채로 놓고 -> 체로 놓고 (x1)
+10성 -> 십성 (x3)
+활을 -> 화를 (x1)
+CG -> 시지 (x1)
+
+[skipped by context]
+고친 -> 고층 (x1)
+
+[477f566 - 2026-03-12 15:10:41]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\04. 십성론 - 겁재.script.txt
+file_override_rules: 4
+file_override_hits: 5
+applied_rules: 22
+changed_chars: 19536
+term_hits_after_correction: 57
+script_lines_after_cleanup: 90
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+채용을 바꿔서 보시는 것이 -> 체용을 바꿔서 보시는 것이 (x1)
+이걸 채로 놓고 보면은 -> 이걸 체로 놓고 보면은 (x1)
+일간을 채로 놓고 -> 일간을 체로 놓고 (x2)
+채를 놓고 -> 체를 놓고 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x5)
+편제* -> 편재* (x3)
+탈제* -> 탈재* (x5)
+제관* -> 재관* (x4)
+제 관 -> 재관 (x3)
+정제* -> 정재* (x6)
+쟁제* -> 쟁재* (x2)
+손제* -> 손재* (x2)
+생제* -> 생재* (x2)
+목국토 -> 목극토 (x2)
+겁제* -> 겁재* (x73)
+감목* -> 갑목* (x23)
+제를 -> 재를 (x4)
+제가 -> 재가 (x1)
+일제 -> 일지 (x1)
+심금 -> 신금 (x1)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x7)
+채로 놓고 -> 체로 놓고 (x1)
+10성 -> 십성 (x3)
+활을 -> 화를 (x1)
+CG -> 시지 (x1)
+
+[skipped by context]
+고친 -> 고층 (x1)

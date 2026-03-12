@@ -510,3 +510,67 @@ context_skipped_hits: 31
 
 [skipped by context]
 금 -> 금 목 (x31)
+
+[477f566 - 2026-03-12 15:05:48]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\32. 십성론 - ④ 정인의 궁대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\32. 십성론 - ④ 정인의 궁대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\32. 십성론 - ④ 정인의 궁대응.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 8
+changed_chars: 20985
+term_hits_after_correction: 54
+script_lines_after_cleanup: 76
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+전 사조 요들 글자가 그 사람이 되겠죠. -> 전 사주 여덟 글자가 그 사람이 되겠죠. (x1)
+월간에 제가 있고 월지에 관이 있다. -> 월간에 재가 있고 월지에 관이 있다. (x1)
+
+[applied replacements]
+제 극인 -> 재극인 (x6)
+정제* -> 정재* (x1)
+일제* -> 일지* (x1)
+생제* -> 생재* (x1)
+감목* -> 갑목* (x2)
+제가 -> 재가 (x1)
+일제 -> 일지 (x6)
+10성 -> 십성 (x2)
+
+[skipped by context]
+활을 -> 화를 (x1)
+
+[477f566 - 2026-03-12 15:10:47]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\32. 십성론 - ④ 정인의 궁대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\32. 십성론 - ④ 정인의 궁대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\32. 십성론 - ④ 정인의 궁대응.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 8
+changed_chars: 20985
+term_hits_after_correction: 54
+script_lines_after_cleanup: 76
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+전 사조 요들 글자가 그 사람이 되겠죠. -> 전 사주 여덟 글자가 그 사람이 되겠죠. (x1)
+월간에 제가 있고 월지에 관이 있다. -> 월간에 재가 있고 월지에 관이 있다. (x1)
+
+[applied replacements]
+제 극인 -> 재극인 (x6)
+정제* -> 정재* (x1)
+일제* -> 일지* (x1)
+생제* -> 생재* (x1)
+감목* -> 갑목* (x2)
+제가 -> 재가 (x1)
+일제 -> 일지 (x6)
+10성 -> 십성 (x2)
+
+[skipped by context]
+활을 -> 화를 (x1)

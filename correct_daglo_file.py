@@ -1744,9 +1744,33 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
 
 
 SAJU_STABLE_NORMALIZATIONS: tuple[tuple[str, str], ...] = (
+    ("묵과", "목과"),
+    ("하당", "하강"),
+    ("승목", "습목"),
+    ("금생술을", "금생수를"),
+    ("군생술을", "금생수를"),
+    ("한 금", "한금"),
+    ("한한금", "한한 금"),
+    ("남금", "난금"),
+    ("난 금", "난금"),
+    ("하난금극목", "한한 금극목"),
+    ("근궁묵", "금극목"),
+    ("긍긍묵", "금극목"),
+    ("조환금", "조한 금"),
+    ("수생 목생화", "수생목생화"),
+    ("목생 화", "목생화"),
     ("목생활을", "목생화를"),
     ("목생활", "목생화"),
     ("목생화을", "목생화를"),
+)
+
+SAJU_STABLE_REGEX_NORMALIZATIONS: tuple[tuple[re.Pattern[str], str], ...] = (
+    (
+        re.compile(
+            r"(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게))"
+        ),
+        "사주",
+    ),
 )
 
 
@@ -1763,6 +1787,12 @@ def apply_saju_stable_normalizations(
             continue
         text = text.replace(wrong, right)
         applied.append((wrong, right, count))
+
+    for pattern, right in SAJU_STABLE_REGEX_NORMALIZATIONS:
+        text, count = pattern.subn(right, text)
+        if count == 0:
+            continue
+        applied.append((pattern.pattern, right, count))
 
     return text, applied
 

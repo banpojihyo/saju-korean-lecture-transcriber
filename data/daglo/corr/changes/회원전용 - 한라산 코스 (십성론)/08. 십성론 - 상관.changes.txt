@@ -651,3 +651,61 @@ context_skipped_hits: 0
 일제 -> 일지 (x1)
 나나니까 -> 난하니까 (x1)
 관무기 -> 갑목이 (x1)
+
+[477f566 - 2026-03-12 15:05:28]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.script.txt
+file_override_rules: 5
+file_override_hits: 6
+applied_rules: 5
+changed_chars: 9336
+term_hits_after_correction: 45
+script_lines_after_cleanup: 100
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+귀신의 용법 -> 길신의 용법 (x1)
+제관 인식 -> 재관인식 (x2)
+식신 재살 -> 식신 제살 (x1)
+목 생활을 -> 목생화를 (x1)
+질신 -> 길신 (x1)
+
+[applied replacements]
+생제* -> 생재* (x2)
+일제 -> 일지 (x1)
+수생 목생화 -> 수생목생화 (x1)
+나나니까 -> 난하니까 (x1)
+관무기 -> 갑목이 (x1)
+
+[477f566 - 2026-03-12 15:10:43]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.script.txt
+file_override_rules: 5
+file_override_hits: 6
+applied_rules: 5
+changed_chars: 9336
+term_hits_after_correction: 45
+script_lines_after_cleanup: 100
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+귀신의 용법 -> 길신의 용법 (x1)
+제관 인식 -> 재관인식 (x2)
+식신 재살 -> 식신 제살 (x1)
+목 생활을 -> 목생화를 (x1)
+질신 -> 길신 (x1)
+
+[applied replacements]
+생제* -> 생재* (x2)
+일제 -> 일지 (x1)
+수생 목생화 -> 수생목생화 (x1)
+나나니까 -> 난하니까 (x1)
+관무기 -> 갑목이 (x1)
