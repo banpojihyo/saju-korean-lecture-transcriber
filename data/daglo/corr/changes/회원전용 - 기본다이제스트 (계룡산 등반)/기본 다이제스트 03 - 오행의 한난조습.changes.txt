@@ -1273,3 +1273,115 @@ OEM으로는 -> 오행으로는 (x1)
 [skipped by context]
 사조를 -> 사주를 (x1)
 금 -> 금 목 (x96)
+
+[da2c2fd - 2026-03-12 10:50:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 33
+changed_chars: 29296
+term_hits_after_correction: 60
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 96
+
+[file overrides applied]
+조한토가사조를 지배하고 있어요. -> 조한토가 사주를 지배하고 있어요. (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x5)
+토곡수 -> 토극수 (x1)
+제관* -> 재관* (x7)
+감목* -> 갑목* (x3)
+심금 -> 신금 (x1)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x2)
+이런 한난조석과 다 연결돼 있다고 -> 이런 한난조습과 다 연결돼 있다고 (x1)
+귀신을 어떻게 다룰 수 있을까를 -> 기신을 어떻게 다룰 수 있을까를 (x1)
+요즘에 한남조석으로 궁합을 -> 요즘에 한난조습으로 궁합을 (x1)
+그 내면에 있는 한남조습을 -> 그 내면에 있는 한난조습을 (x1)
+관무기, 사무기라는 것은 -> 갑목이 사목이라는 것은 (x1)
+오늘은 오행의 향랑조습을 -> 오늘은 오행의 한난조습을 (x1)
+그대로 한남조습의 관계로 -> 그대로 한난조습의 관계로 (x1)
+계수 배수가 붙는 순간 -> 계수가 붙는 순간 (x1)
+한남조습으로 보자고요. -> 한난조습으로 보자고요. (x1)
+시간에는 왕세강력을 -> 시간에는 왕쇠강약을 (x1)
+음양의 한란교습을 -> 음양의 한난조습을 (x1)
+귀신을 버린다고 -> 기신을 버린다고 (x1)
+항만조습이에요 -> 한난조습이에요 (x1)
+이 한란교습은 -> 이 한난조습은 (x1)
+음향적으로는 -> 음양적으로는 (x1)
+OEM으로는 -> 오행으로는 (x1)
+왕세강약을 -> 왕쇠강약을 (x1)
+모기 개입 -> 목이 개입 (x1)
+음향 오행 -> 음양 오행 (x1)
+왕세강약 -> 왕쇠강약 (x1)
+한난조석 -> 한난조습 (x1)
+한남조습 -> 한난조습 (x1)
+한남조사 -> 한난조습 (x1)
+한란교습 -> 한난조습 (x1)
+사조를 -> 사주를 (x1)
+4조 -> 사주 (x1)
+
+[skipped by context]
+금 -> 금 목 (x96)
+
+[da2c2fd - 2026-03-12 10:52:40]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 03 - 오행의 한난조습.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 33
+changed_chars: 29296
+term_hits_after_correction: 60
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 96
+
+[file overrides applied]
+조한토가사조를 지배하고 있어요. -> 조한토가 사주를 지배하고 있어요. (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x5)
+토곡수 -> 토극수 (x1)
+제관* -> 재관* (x7)
+감목* -> 갑목* (x3)
+심금 -> 신금 (x1)
+관묵 -> 갑목 (x1)
+감묵 -> 갑목 (x2)
+이런 한난조석과 다 연결돼 있다고 -> 이런 한난조습과 다 연결돼 있다고 (x1)
+귀신을 어떻게 다룰 수 있을까를 -> 기신을 어떻게 다룰 수 있을까를 (x1)
+요즘에 한남조석으로 궁합을 -> 요즘에 한난조습으로 궁합을 (x1)
+그 내면에 있는 한남조습을 -> 그 내면에 있는 한난조습을 (x1)
+관무기, 사무기라는 것은 -> 갑목이 사목이라는 것은 (x1)
+오늘은 오행의 향랑조습을 -> 오늘은 오행의 한난조습을 (x1)
+그대로 한남조습의 관계로 -> 그대로 한난조습의 관계로 (x1)
+계수 배수가 붙는 순간 -> 계수가 붙는 순간 (x1)
+한남조습으로 보자고요. -> 한난조습으로 보자고요. (x1)
+시간에는 왕세강력을 -> 시간에는 왕쇠강약을 (x1)
+음양의 한란교습을 -> 음양의 한난조습을 (x1)
+귀신을 버린다고 -> 기신을 버린다고 (x1)
+항만조습이에요 -> 한난조습이에요 (x1)
+이 한란교습은 -> 이 한난조습은 (x1)
+음향적으로는 -> 음양적으로는 (x1)
+OEM으로는 -> 오행으로는 (x1)
+왕세강약을 -> 왕쇠강약을 (x1)
+모기 개입 -> 목이 개입 (x1)
+음향 오행 -> 음양 오행 (x1)
+왕세강약 -> 왕쇠강약 (x1)
+한난조석 -> 한난조습 (x1)
+한남조습 -> 한난조습 (x1)
+한남조사 -> 한난조습 (x1)
+한란교습 -> 한난조습 (x1)
+사조를 -> 사주를 (x1)
+4조 -> 사주 (x1)
+
+[skipped by context]
+금 -> 금 목 (x96)

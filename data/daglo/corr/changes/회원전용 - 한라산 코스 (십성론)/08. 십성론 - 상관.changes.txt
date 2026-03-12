@@ -563,3 +563,63 @@ context_skipped_hits: 20
 
 [skipped by context]
 금 -> 금 목 (x20)
+
+[da2c2fd - 2026-03-12 10:50:45]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.script.txt
+file_override_rules: 4
+file_override_hits: 5
+applied_rules: 4
+changed_chars: 9340
+term_hits_after_correction: 45
+script_lines_after_cleanup: 100
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 20
+
+[file overrides applied]
+귀신의 용법 -> 길신의 용법 (x1)
+제관 인식 -> 재관인식 (x2)
+식신 재살 -> 식신 제살 (x1)
+질신 -> 길신 (x1)
+
+[applied replacements]
+생제* -> 생재* (x2)
+일제 -> 일지 (x1)
+나나니까 -> 난하니까 (x1)
+관무기 -> 갑목이 (x1)
+
+[skipped by context]
+금 -> 금 목 (x20)
+
+[da2c2fd - 2026-03-12 10:52:58]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\08. 십성론 - 상관.script.txt
+file_override_rules: 4
+file_override_hits: 5
+applied_rules: 4
+changed_chars: 9340
+term_hits_after_correction: 45
+script_lines_after_cleanup: 100
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 20
+
+[file overrides applied]
+귀신의 용법 -> 길신의 용법 (x1)
+제관 인식 -> 재관인식 (x2)
+식신 재살 -> 식신 제살 (x1)
+질신 -> 길신 (x1)
+
+[applied replacements]
+생제* -> 생재* (x2)
+일제 -> 일지 (x1)
+나나니까 -> 난하니까 (x1)
+관무기 -> 갑목이 (x1)
+
+[skipped by context]
+금 -> 금 목 (x20)

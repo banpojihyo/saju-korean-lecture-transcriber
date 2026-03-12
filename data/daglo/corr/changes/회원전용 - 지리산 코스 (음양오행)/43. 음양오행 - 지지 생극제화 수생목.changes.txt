@@ -533,3 +533,83 @@ context_skipped_hits: 56
 수색목을 -> 수생목을 (x2)
 수색목의 -> 수생목의 (x4)
 금 -> 금 목 (x38)
+
+[da2c2fd - 2026-03-12 10:50:19]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 16
+changed_chars: 20866
+term_hits_after_correction: 58
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 55
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+제 관 -> 재관 (x1)
+정제* -> 정재* (x2)
+수국화 -> 수극화 (x3)
+수색목이에요 -> 수생목이에요 (x2)
+수색목으로 -> 수생목으로 (x1)
+사조 안에 -> 사주 안에 (x1)
+생극 재화 -> 생극제화 (x1)
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x6)
+수색목을 -> 수생목을 (x1)
+수색목에 -> 수생목에 (x1)
+수색목도 -> 수생목도 (x1)
+수색목 -> 수생목 (x23)
+1조 -> 일주 (x1)
+금 -> 금 목 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x10)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x4)
+금 -> 금 목 (x38)
+
+[da2c2fd - 2026-03-12 10:52:33]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\43. 음양오행 - 지지 생극제화 수생목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 16
+changed_chars: 20866
+term_hits_after_correction: 58
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 55
+
+[applied replacements]
+토국수 -> 토극수 (x1)
+제 관 -> 재관 (x1)
+정제* -> 정재* (x2)
+수국화 -> 수극화 (x3)
+수색목이에요 -> 수생목이에요 (x2)
+수색목으로 -> 수생목으로 (x1)
+사조 안에 -> 사주 안에 (x1)
+생극 재화 -> 생극제화 (x1)
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x6)
+수색목을 -> 수생목을 (x1)
+수색목에 -> 수생목에 (x1)
+수색목도 -> 수생목도 (x1)
+수색목 -> 수생목 (x23)
+1조 -> 일주 (x1)
+금 -> 금 목 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x10)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x4)
+금 -> 금 목 (x38)

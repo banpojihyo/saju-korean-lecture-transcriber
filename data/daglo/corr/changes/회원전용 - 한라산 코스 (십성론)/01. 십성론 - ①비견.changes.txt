@@ -576,3 +576,65 @@ context_skipped_hits: 42
 
 [skipped by context]
 금 -> 금 목 (x42)
+
+[da2c2fd - 2026-03-12 10:50:42]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 7
+changed_chars: 15812
+term_hits_after_correction: 68
+script_lines_after_cleanup: 98
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 42
+
+[file overrides applied]
+사조를 해석하는 거에 맨 처음이고 -> 사주를 해석하는 것의 맨 처음이고 (x1)
+사조를 해석의 맨 마지막까지 -> 사주 해석의 맨 마지막까지 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x3)
+쟁제* -> 쟁재* (x1)
+생극 재화를 -> 생극제화를 (x1)
+한란조습의 -> 한난조습의 (x1)
+한난조섭을 -> 한난조습을 (x1)
+수색목을 -> 수생목을 (x1)
+귀신 -> 기신 (x1)
+
+[skipped by context]
+금 -> 금 목 (x42)
+
+[da2c2fd - 2026-03-12 10:52:55]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\01. 십성론 - ①비견.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 7
+changed_chars: 15812
+term_hits_after_correction: 68
+script_lines_after_cleanup: 98
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 42
+
+[file overrides applied]
+사조를 해석하는 거에 맨 처음이고 -> 사주를 해석하는 것의 맨 처음이고 (x1)
+사조를 해석의 맨 마지막까지 -> 사주 해석의 맨 마지막까지 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x3)
+쟁제* -> 쟁재* (x1)
+생극 재화를 -> 생극제화를 (x1)
+한란조습의 -> 한난조습의 (x1)
+한난조섭을 -> 한난조습을 (x1)
+수색목을 -> 수생목을 (x1)
+귀신 -> 기신 (x1)
+
+[skipped by context]
+금 -> 금 목 (x42)

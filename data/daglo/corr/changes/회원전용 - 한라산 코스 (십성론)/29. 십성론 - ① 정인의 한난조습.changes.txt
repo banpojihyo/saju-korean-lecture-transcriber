@@ -478,3 +478,51 @@ context_skipped_hits: 53
 
 [skipped by context]
 금 -> 금 목 (x53)
+
+[da2c2fd - 2026-03-12 10:50:54]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\29. 십성론 - ① 정인의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\29. 십성론 - ① 정인의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\29. 십성론 - ① 정인의 한난조습.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 26035
+term_hits_after_correction: 38
+script_lines_after_cleanup: 109
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 53
+
+[applied replacements]
+정제* -> 정재* (x1)
+생급 재화 -> 생극제화 (x2)
+한남조습 -> 한난조습 (x1)
+10성 -> 십성 (x4)
+
+[skipped by context]
+금 -> 금 목 (x53)
+
+[da2c2fd - 2026-03-12 10:53:06]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\29. 십성론 - ① 정인의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\29. 십성론 - ① 정인의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\29. 십성론 - ① 정인의 한난조습.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 26035
+term_hits_after_correction: 38
+script_lines_after_cleanup: 109
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 53
+
+[applied replacements]
+정제* -> 정재* (x1)
+생급 재화 -> 생극제화 (x2)
+한남조습 -> 한난조습 (x1)
+10성 -> 십성 (x4)
+
+[skipped by context]
+금 -> 금 목 (x53)

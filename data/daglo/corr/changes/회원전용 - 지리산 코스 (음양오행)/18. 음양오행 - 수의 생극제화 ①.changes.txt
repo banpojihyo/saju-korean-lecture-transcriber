@@ -545,3 +545,138 @@ context_skipped_hits: 188
 금궁목이 -> 금극목이 (x2)
 금긍목이 -> 금극목이 (x1)
 금 -> 금 목 (x169)
+
+[da2c2fd - 2026-03-12 10:50:08]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 15
+changed_chars: 16984
+term_hits_after_correction: 44
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 10
+context_skipped_hits: 188
+
+[applied replacements]
+수생모기 기준이니까. -> 수생목이 기준이니까. (x1)
+수색목이라고요 -> 수생목이라고요 (x1)
+활을 봐야 -> 화를 봐야 (x1)
+수색목으로 -> 수생목으로 (x2)
+수색목이죠 -> 수생목이죠 (x3)
+수색목이면 -> 수생목이면 (x1)
+수색목은 -> 수생목은 (x1)
+수색목을 -> 수생목을 (x1)
+수색 못 -> 수생목 (x1)
+수색 몫 -> 수생목 (x3)
+수색목 -> 수생목 (x30)
+수색묵 -> 수생목 (x2)
+금궁목 -> 금극목 (x2)
+금긍목 -> 금극목 (x1)
+금금목 -> 금극목 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x5)
+수색목이 -> 수생목이 (x3)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x2)
+수색목에 -> 수생목에 (x1)
+수색목만 -> 수생목만 (x1)
+수색묵은 -> 수생목은 (x2)
+금궁목이 -> 금극목이 (x2)
+금긍목이 -> 금극목이 (x1)
+금 -> 금 목 (x169)
+
+[da2c2fd - 2026-03-12 10:52:21]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 15
+changed_chars: 16984
+term_hits_after_correction: 44
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 10
+context_skipped_hits: 188
+
+[applied replacements]
+수생모기 기준이니까. -> 수생목이 기준이니까. (x1)
+수색목이라고요 -> 수생목이라고요 (x1)
+활을 봐야 -> 화를 봐야 (x1)
+수색목으로 -> 수생목으로 (x2)
+수색목이죠 -> 수생목이죠 (x3)
+수색목이면 -> 수생목이면 (x1)
+수색목은 -> 수생목은 (x1)
+수색목을 -> 수생목을 (x1)
+수색 못 -> 수생목 (x1)
+수색 몫 -> 수생목 (x3)
+수색목 -> 수생목 (x30)
+수색묵 -> 수생목 (x2)
+금궁목 -> 금극목 (x2)
+금긍목 -> 금극목 (x1)
+금금목 -> 금극목 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x5)
+수색목이 -> 수생목이 (x3)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x2)
+수색목에 -> 수생목에 (x1)
+수색목만 -> 수생목만 (x1)
+수색묵은 -> 수생목은 (x2)
+금궁목이 -> 금극목이 (x2)
+금긍목이 -> 금극목이 (x1)
+금 -> 금 목 (x169)
+
+[da2c2fd - 2026-03-12 10:54:31]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\18. 음양오행 - 수의 생극제화 ①.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 15
+changed_chars: 17245
+term_hits_after_correction: 44
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 10
+context_skipped_hits: 188
+
+[file overrides applied]
+이 사조 부를 이룰 만하다 -> 이 사주, 부를 이룰 만하다 (x1)
+
+[applied replacements]
+수생모기 기준이니까. -> 수생목이 기준이니까. (x1)
+수색목이라고요 -> 수생목이라고요 (x1)
+활을 봐야 -> 화를 봐야 (x1)
+수색목으로 -> 수생목으로 (x2)
+수색목이죠 -> 수생목이죠 (x3)
+수색목이면 -> 수생목이면 (x1)
+수색목은 -> 수생목은 (x1)
+수색목을 -> 수생목을 (x1)
+수색 못 -> 수생목 (x1)
+수색 몫 -> 수생목 (x3)
+수색목 -> 수생목 (x30)
+수색묵 -> 수생목 (x2)
+금궁목 -> 금극목 (x2)
+금긍목 -> 금극목 (x1)
+금금목 -> 금극목 (x1)
+
+[skipped by context]
+수색목은 -> 수생목은 (x5)
+수색목이 -> 수생목이 (x3)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x2)
+수색목에 -> 수생목에 (x1)
+수색목만 -> 수생목만 (x1)
+수색묵은 -> 수생목은 (x2)
+금궁목이 -> 금극목이 (x2)
+금긍목이 -> 금극목이 (x1)
+금 -> 금 목 (x169)

@@ -547,3 +547,63 @@ context_skipped_hits: 170
 
 [skipped by context]
 금 -> 금 목 (x170)
+
+[da2c2fd - 2026-03-12 10:50:44]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 6
+changed_chars: 17024
+term_hits_after_correction: 63
+script_lines_after_cleanup: 115
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 170
+
+[file overrides applied]
+채용의 문제라고 얘기를 합니다. -> 체용의 문제라고 얘기를 합니다. (x1)
+채용의 문제라고요 -> 체용의 문제라고요 (x1)
+
+[applied replacements]
+배수로 연결되면은 -> 계수로 연결되면은 (x1)
+금궁목이잖아요 -> 금극목이잖아요 (x1)
+수색 못 -> 수생목 (x1)
+금궁목이 -> 금극목이 (x1)
+금궁목 -> 금극목 (x1)
+금 -> 금 목 (x3)
+
+[skipped by context]
+금 -> 금 목 (x170)
+
+[da2c2fd - 2026-03-12 10:52:57]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\06. 십성론 - ②식신.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 6
+changed_chars: 17024
+term_hits_after_correction: 63
+script_lines_after_cleanup: 115
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 170
+
+[file overrides applied]
+채용의 문제라고 얘기를 합니다. -> 체용의 문제라고 얘기를 합니다. (x1)
+채용의 문제라고요 -> 체용의 문제라고요 (x1)
+
+[applied replacements]
+배수로 연결되면은 -> 계수로 연결되면은 (x1)
+금궁목이잖아요 -> 금극목이잖아요 (x1)
+수색 못 -> 수생목 (x1)
+금궁목이 -> 금극목이 (x1)
+금궁목 -> 금극목 (x1)
+금 -> 금 목 (x3)
+
+[skipped by context]
+금 -> 금 목 (x170)

@@ -490,3 +490,65 @@ context_skipped_hits: 30
 
 [skipped by context]
 금 -> 금 목 (x30)
+
+[da2c2fd - 2026-03-12 10:50:56]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 11
+changed_chars: 293
+term_hits_after_correction: 52
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 30
+
+[applied replacements]
+현재도 넓이죠 -> 편재도 넓이죠 (x1)
+갑묵/을묵 -> 갑목/을목 (x2)
+제 극인 -> 재극인 (x10)
+편제* -> 편재* (x15)
+정제* -> 정재* (x13)
+생제* -> 생재* (x1)
+겁제* -> 겁재* (x13)
+감목* -> 갑목* (x3)
+제가 -> 재가 (x1)
+수색목이 -> 수생목이 (x1)
+10성 -> 십성 (x2)
+
+[skipped by context]
+금 -> 금 목 (x30)
+
+[da2c2fd - 2026-03-12 10:53:08]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\33. 십성론 - ⑤ 정인의 생극제화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 11
+changed_chars: 293
+term_hits_after_correction: 52
+script_lines_after_cleanup: 84
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 30
+
+[applied replacements]
+현재도 넓이죠 -> 편재도 넓이죠 (x1)
+갑묵/을묵 -> 갑목/을목 (x2)
+제 극인 -> 재극인 (x10)
+편제* -> 편재* (x15)
+정제* -> 정재* (x13)
+생제* -> 생재* (x1)
+겁제* -> 겁재* (x13)
+감목* -> 갑목* (x3)
+제가 -> 재가 (x1)
+수색목이 -> 수생목이 (x1)
+10성 -> 십성 (x2)
+
+[skipped by context]
+금 -> 금 목 (x30)

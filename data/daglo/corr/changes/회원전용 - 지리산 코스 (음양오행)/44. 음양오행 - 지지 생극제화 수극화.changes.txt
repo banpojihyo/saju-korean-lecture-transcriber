@@ -504,3 +504,67 @@ context_skipped_hits: 58
 수색목이 -> 수생목이 (x1)
 수색목을 -> 수생목을 (x1)
 금 -> 금 목 (x56)
+
+[da2c2fd - 2026-03-12 10:50:19]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\44. 음양오행 - 지지 생극제화 수극화.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\44. 음양오행 - 지지 생극제화 수극화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\44. 음양오행 - 지지 생극제화 수극화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 10
+changed_chars: 17079
+term_hits_after_correction: 51
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 58
+
+[applied replacements]
+제관* -> 재관* (x2)
+제 관 -> 재관 (x1)
+수색목이에요 -> 수생목이에요 (x1)
+수생모기 저 -> 수생목이 저 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 제화 -> 생극제화 (x1)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x2)
+수색목에 -> 수생목에 (x1)
+수색목 -> 수생목 (x2)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+수색목을 -> 수생목을 (x1)
+금 -> 금 목 (x56)
+
+[da2c2fd - 2026-03-12 10:52:34]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\44. 음양오행 - 지지 생극제화 수극화.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\44. 음양오행 - 지지 생극제화 수극화.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\44. 음양오행 - 지지 생극제화 수극화.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 10
+changed_chars: 17079
+term_hits_after_correction: 51
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 58
+
+[applied replacements]
+제관* -> 재관* (x2)
+제 관 -> 재관 (x1)
+수색목이에요 -> 수생목이에요 (x1)
+수생모기 저 -> 수생목이 저 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 제화 -> 생극제화 (x1)
+수색목을 -> 수생목을 (x2)
+수색목의 -> 수생목의 (x2)
+수색목에 -> 수생목에 (x1)
+수색목 -> 수생목 (x2)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+수색목을 -> 수생목을 (x1)
+금 -> 금 목 (x56)

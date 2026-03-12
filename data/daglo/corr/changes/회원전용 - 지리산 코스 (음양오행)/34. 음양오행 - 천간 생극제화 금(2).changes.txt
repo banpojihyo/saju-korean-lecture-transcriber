@@ -757,3 +757,71 @@ context_skipped_hits: 287
 [skipped by context]
 사조를 -> 사주를 (x1)
 금 -> 금 목 (x286)
+
+[da2c2fd - 2026-03-12 10:50:15]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 20010
+term_hits_after_correction: 40
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 287
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+묵생* -> 목생* (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x3)
+금금목이죠 -> 금극목이죠 (x1)
+생국제화의 -> 생극제화의 (x1)
+금긍목의 -> 금극목의 (x1)
+금금목이 -> 금극목이 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+금궁목 -> 금극목 (x2)
+금금목 -> 금극목 (x2)
+금 -> 금 목 (x3)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+금 -> 금 목 (x286)
+
+[da2c2fd - 2026-03-12 10:52:29]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\34. 음양오행 - 천간 생극제화 금(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 14
+changed_chars: 20010
+term_hits_after_correction: 40
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 286
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x1)
+묵생* -> 목생* (x2)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x3)
+사조를 공부하고 -> 사주를 공부하고 (x1)
+금금목이죠 -> 금극목이죠 (x1)
+생국제화의 -> 생극제화의 (x1)
+금긍목의 -> 금극목의 (x1)
+금금목이 -> 금극목이 (x1)
+10성 -> 십성 (x1)
+사조를 -> 사주를 (x1)
+금궁목 -> 금극목 (x2)
+금금목 -> 금극목 (x2)
+금 -> 금 목 (x3)
+
+[skipped by context]
+금 -> 금 목 (x286)

@@ -708,3 +708,71 @@ context_skipped_hits: 98
 토복수가 -> 토극수가 (x1)
 토복수 -> 토극수 (x1)
 금 -> 금 목 (x96)
+
+[da2c2fd - 2026-03-12 10:50:19]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\45. 음양오행 - 지지 생극제화 수 입장의 토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\45. 음양오행 - 지지 생극제화 수 입장의 토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\45. 음양오행 - 지지 생극제화 수 입장의 토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 27131
+term_hits_after_correction: 61
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 98
+
+[applied replacements]
+토곡수 -> 토극수 (x7)
+정제* -> 정재* (x1)
+겁제* -> 겁재* (x1)
+감묵 -> 갑목 (x1)
+생극 재화를 -> 생극제화를 (x2)
+생극 재활을 -> 생극제화를 (x1)
+사조 공부 -> 사주 공부 (x1)
+사조 추론 -> 사주 추론 (x1)
+생극 재화 -> 생극제화 (x2)
+관사를 -> 관살을 (x1)
+수색목 -> 수생목 (x3)
+사조적 -> 사주적 (x1)
+
+[skipped by context]
+토복수가 -> 토극수가 (x1)
+토복수 -> 토극수 (x1)
+금 -> 금 목 (x96)
+
+[da2c2fd - 2026-03-12 10:52:34]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\45. 음양오행 - 지지 생극제화 수 입장의 토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\45. 음양오행 - 지지 생극제화 수 입장의 토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\45. 음양오행 - 지지 생극제화 수 입장의 토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 27131
+term_hits_after_correction: 61
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 98
+
+[applied replacements]
+토곡수 -> 토극수 (x7)
+정제* -> 정재* (x1)
+겁제* -> 겁재* (x1)
+감묵 -> 갑목 (x1)
+생극 재화를 -> 생극제화를 (x2)
+생극 재활을 -> 생극제화를 (x1)
+사조 공부 -> 사주 공부 (x1)
+사조 추론 -> 사주 추론 (x1)
+생극 재화 -> 생극제화 (x2)
+관사를 -> 관살을 (x1)
+수색목 -> 수생목 (x3)
+사조적 -> 사주적 (x1)
+
+[skipped by context]
+토복수가 -> 토극수가 (x1)
+토복수 -> 토극수 (x1)
+금 -> 금 목 (x96)

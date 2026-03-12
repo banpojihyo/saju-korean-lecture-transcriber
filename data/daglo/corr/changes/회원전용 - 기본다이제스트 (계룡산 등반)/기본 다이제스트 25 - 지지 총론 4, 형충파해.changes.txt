@@ -672,3 +672,77 @@ context_skipped_hits: 85
 금궁목이 -> 금극목이 (x2)
 사두에 -> 사주에 (x1)
 금 -> 금 목 (x75)
+
+[da2c2fd - 2026-03-12 10:50:36]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 25073
+term_hits_after_correction: 56
+script_lines_after_cleanup: 95
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 85
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x9)
+갑묵/을묵 -> 갑목/을목 (x2)
+편제* -> 편재* (x6)
+감목* -> 갑목* (x10)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x6)
+생극 재화를 -> 생극제화를 (x1)
+생극 재화 -> 생극제화 (x1)
+10성 -> 십성 (x3)
+수색목 -> 수생목 (x8)
+금궁목 -> 금극목 (x2)
+금 -> 금 목 (x1)
+
+[skipped by context]
+수색목이 -> 수생목이 (x4)
+수색목을 -> 수생목을 (x2)
+수색목에 -> 수생목에 (x1)
+금궁목이 -> 금극목이 (x2)
+사두에 -> 사주에 (x1)
+금 -> 금 목 (x75)
+
+[da2c2fd - 2026-03-12 10:52:50]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 25 - 지지 총론 4, 형충파해.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 25073
+term_hits_after_correction: 56
+script_lines_after_cleanup: 95
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 85
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x9)
+갑묵/을묵 -> 갑목/을목 (x2)
+편제* -> 편재* (x6)
+감목* -> 갑목* (x10)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x6)
+생극 재화를 -> 생극제화를 (x1)
+생극 재화 -> 생극제화 (x1)
+10성 -> 십성 (x3)
+수색목 -> 수생목 (x8)
+금궁목 -> 금극목 (x2)
+금 -> 금 목 (x1)
+
+[skipped by context]
+수색목이 -> 수생목이 (x4)
+수색목을 -> 수생목을 (x2)
+수색목에 -> 수생목에 (x1)
+금궁목이 -> 금극목이 (x2)
+사두에 -> 사주에 (x1)
+금 -> 금 목 (x75)
