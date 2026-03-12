@@ -925,3 +925,47 @@ context_skipped_hits: 15
 금금목이 -> 금극목이 (x2)
 목생활을 -> 목생화를 (x3)
 활을 -> 화를 (x3)
+
+[d87e173 - 2026-03-12 18:15:49]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\50. 음양오행 - 지지 생극제화 목제금.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 17
+changed_chars: 32154
+term_hits_after_correction: 46
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 15
+
+[applied replacements]
+제 극인 -> 재극인 (x2)
+제관* -> 재관* (x4)
+묵생* -> 목생* (x1)
+생극 재화 -> 생극제화 (x1)
+목생 화 -> 목생화 (x2)
+목생활을 -> 목생화를 (x1)
+수색목 -> 수생목 (x1)
+금궁목 -> 금극목 (x3)
+금긍목 -> 금극목 (x4)
+금공목 -> 금극목 (x1)
+금금목 -> 금극목 (x3)
+목생활 -> 목생화 (x3)
+입목도 -> 인목도 (x1)
+활을 -> 화를 (x1)
+목생화을 -> 목생화를 (x3)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x3)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x1)
+
+[skipped by context]
+수색목을 -> 수생목을 (x1)
+금궁목이 -> 금극목이 (x2)
+금긍목이 -> 금극목이 (x1)
+금긍목을 -> 금극목을 (x2)
+금공목이 -> 금극목이 (x1)
+금금목이 -> 금극목이 (x2)
+목생활을 -> 목생화를 (x3)
+활을 -> 화를 (x3)

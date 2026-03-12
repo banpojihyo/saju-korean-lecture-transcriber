@@ -1220,3 +1220,48 @@ context_skipped_hits: 1
 
 [skipped by context]
 활을 -> 화를 (x1)
+
+[d87e173 - 2026-03-12 18:15:56]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\13. 십성론 - ②정재.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 21
+changed_chars: 19753
+term_hits_after_correction: 48
+script_lines_after_cleanup: 82
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+이 제가 심금이 다루는 것이 부담스럽잖아요. -> 이 재가 신금이 다루는 것이 부담스럽잖아요. (x1)
+채용의 문제니까 -> 체용의 문제니까 (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x22)
+갑묵/을묵 -> 갑목/을목 (x1)
+제관* -> 재관* (x4)
+정제* -> 정재* (x13)
+수국화 -> 수극화 (x3)
+생제* -> 생재* (x3)
+감목* -> 갑목* (x23)
+심금 -> 신금 (x3)
+관묵 -> 갑목 (x2)
+감묵 -> 갑목 (x9)
+금금목이죠 -> 금극목이죠 (x1)
+금금목을 -> 금극목을 (x1)
+10성 -> 십성 (x3)
+수색목 -> 수생목 (x1)
+심근이 -> 신금이 (x1)
+죄수는 -> 계수는 (x1)
+죄수가 -> 계수가 (x1)
+모토로 -> 무토로 (x1)
+모토의 -> 무토의 (x1)
+무투 -> 무토 (x1)
+활을 -> 화를 (x5)
+
+[skipped by context]
+활을 -> 화를 (x1)

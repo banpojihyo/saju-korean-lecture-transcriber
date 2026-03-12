@@ -992,3 +992,40 @@ context_skipped_hits: 30
 활을 -> 화를 (x16)
 죽토 -> 축토 (x7)
 귀신 -> 기신 (x3)
+
+[d87e173 - 2026-03-12 18:15:48]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\48. 음양오행 - 지지 생극제화 화생토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 26365
+term_hits_after_correction: 51
+script_lines_after_cleanup: 141
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 30
+
+[applied replacements]
+토곡수 -> 토극수 (x2)
+생제* -> 생재* (x2)
+감묵 -> 갑목 (x1)
+사조를 파악 -> 사주를 파악 (x1)
+생극 재화를 -> 생극제화를 (x2)
+생극, 재화 -> 생극제화 (x1)
+모기 개입 -> 목이 개입 (x1)
+생극 재화 -> 생극제화 (x1)
+죽토는 -> 축토는 (x2)
+죽토를 -> 축토를 (x3)
+활을 -> 화를 (x1)
+사활을 -> 사화를 (x2)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x13)
+
+[skipped by context]
+죽토는 -> 축토는 (x1)
+죽토를 -> 축토를 (x3)
+활을 -> 화를 (x16)
+죽토 -> 축토 (x7)
+귀신 -> 기신 (x3)

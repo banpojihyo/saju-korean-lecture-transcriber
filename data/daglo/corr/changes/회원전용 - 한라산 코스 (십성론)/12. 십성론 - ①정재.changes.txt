@@ -719,3 +719,37 @@ context_skipped_hits: 0
 한남 조숙 -> 한난조습 (x1)
 10성 -> 십성 (x11)
 (?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x3)
+
+[d87e173 - 2026-03-12 18:15:55]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\12. 십성론 - ①정재.script.txt
+file_override_rules: 4
+file_override_hits: 4
+applied_rules: 11
+changed_chars: 12244
+term_hits_after_correction: 38
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+그런데 제가 와서 내가 쓰고 싶은 거에 맞춰서 -> 그런데 재가 와서 내가 쓰고 싶은 거에 맞춰서 (x1)
+무제에 제가 왔다고 하는 걸 얘기할 때에 -> 무제에 재가 왔다고 하는 걸 얘기할 때에 (x1)
+그 제가 와서 관을 관으로 제를 감당하고 -> 그 재가 와서 관을 관으로 재를 감당하고 (x1)
+무제에 제가 와서 -> 무제에 재가 와서 (x1)
+
+[applied replacements]
+편제* -> 편재* (x11)
+제 관 -> 재관 (x1)
+정제* -> 정재* (x15)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+현재 -> 편재 (x2)
+사조 전체 -> 사주 전체 (x1)
+쟤를 양생 -> 재를 양생 (x1)
+한남 조숙 -> 한난조습 (x1)
+10성 -> 십성 (x11)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x3)

@@ -757,3 +757,40 @@ Muto -> 무토 (x1)
 [skipped by context]
 무투에 -> 무토에 (x1)
 활을 -> 화를 (x3)
+
+[d87e173 - 2026-03-12 18:15:40]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\30. 음양오행 - 천간 생극제화 토(1).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 16
+changed_chars: 28729
+term_hits_after_correction: 60
+script_lines_after_cleanup: 132
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 4
+
+[applied replacements]
+제관* -> 재관* (x2)
+생제* -> 생재* (x6)
+금화 교역 -> 금화교역 (x4)
+Muto -> 무토 (x1)
+식신호로 -> 식신으로 (x1)
+금생술을 -> 금생수를 (x1)
+무투는 -> 무토는 (x1)
+모토는 -> 무토는 (x1)
+모토가 -> 무토가 (x2)
+모토의 -> 무토의 (x2)
+무투 -> 무토 (x1)
+환은 -> 화는 (x1)
+활을 -> 화를 (x3)
+모토 -> 무토 (x1)
+화급금 -> 화극금 (x1)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x3)
+
+[skipped by context]
+무투에 -> 무토에 (x1)
+활을 -> 화를 (x3)

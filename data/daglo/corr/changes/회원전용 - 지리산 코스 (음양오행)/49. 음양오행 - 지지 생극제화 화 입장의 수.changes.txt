@@ -711,3 +711,36 @@ context_skipped_hits: 15
 수색목을 -> 수생목을 (x1)
 활을 -> 화를 (x12)
 죽토 -> 축토 (x1)
+
+[d87e173 - 2026-03-12 18:15:48]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\49. 음양오행 - 지지 생극제화 화 입장의 수.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\49. 음양오행 - 지지 생극제화 화 입장의 수.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\49. 음양오행 - 지지 생극제화 화 입장의 수.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 10
+changed_chars: 33282
+term_hits_after_correction: 57
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 15
+
+[applied replacements]
+토곡수 -> 토극수 (x2)
+감묵 -> 갑목 (x1)
+수생 목생화 -> 수생목생화 (x1)
+금화 교역 -> 금화교역 (x2)
+모기 개입 -> 목이 개입 (x2)
+수색목 -> 수생목 (x2)
+활을 -> 화를 (x1)
+화급금 -> 화극금 (x8)
+사활을 -> 사화를 (x1)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x10)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+수색목을 -> 수생목을 (x1)
+활을 -> 화를 (x12)
+죽토 -> 축토 (x1)

@@ -1101,3 +1101,50 @@ context_skipped_hits: 27
 승목 -> 습목 (x1)
 활을 -> 화를 (x5)
 귀신 -> 기신 (x1)
+
+[d87e173 - 2026-03-12 18:15:49]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\52. 음양오행 - 지지 생극제화 목 입장의 수생목.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\52. 음양오행 - 지지 생극제화 목 입장의 수생목.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 20
+changed_chars: 15940
+term_hits_after_correction: 49
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 8
+context_skipped_hits: 27
+
+[applied replacements]
+묵생* -> 목생* (x5)
+감묵 -> 갑목 (x1)
+활을 봐야 -> 화를 봐야 (x1)
+수색목으로 -> 수생목으로 (x1)
+수색목이죠 -> 수생목이죠 (x3)
+금화 교역 -> 금화교역 (x1)
+생극 재화 -> 생극제화 (x1)
+수색목을 -> 수생목을 (x3)
+수색목의 -> 수생목의 (x2)
+수색 몫 -> 수생목 (x1)
+목생 화 -> 목생화 (x1)
+목생활을 -> 목생화를 (x1)
+수색목 -> 수생목 (x19)
+목생활 -> 목생화 (x6)
+입목은 -> 인목은 (x1)
+환은 -> 화는 (x1)
+입목 -> 인목 (x1)
+승목 -> 습목 (x1)
+목생화을 -> 목생화를 (x6)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x5)
+
+[skipped by context]
+수색목은 -> 수생목은 (x2)
+수색목이 -> 수생목이 (x9)
+수색목의 -> 수생목의 (x2)
+목생활을 -> 목생화를 (x6)
+승목이 -> 습목이 (x1)
+승목 -> 습목 (x1)
+활을 -> 화를 (x5)
+귀신 -> 기신 (x1)
