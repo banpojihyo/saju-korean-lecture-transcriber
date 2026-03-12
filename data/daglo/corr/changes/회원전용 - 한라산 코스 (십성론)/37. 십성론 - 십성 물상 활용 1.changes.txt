@@ -717,3 +717,34 @@ context_skipped_hits: 1
 
 [skipped by context]
 귀신 -> 기신 (x1)
+
+[f93d408 - 2026-03-12 19:31:15]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\37. 십성론 - 십성 물상 활용 1.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 8
+changed_chars: 17510
+term_hits_after_correction: 35
+script_lines_after_cleanup: 118
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+대별디는 -> 대별되는 (x1)
+
+[applied replacements]
+편제* -> 편재* (x10)
+정제* -> 정재* (x11)
+경관* -> 견관* (x1)
+현재 -> 편재 (x1)
+현관 -> 편관 (x1)
+제가 -> 재가 (x1)
+10성 -> 십성 (x3)
+돈디기 어렵다 -> 돈 되기 어렵다 (x1)
+
+[skipped by context]
+귀신 -> 기신 (x1)

@@ -1298,3 +1298,47 @@ context_skipped_hits: 1
 
 [skipped by context]
 활을 -> 화를 (x1)
+
+[f93d408 - 2026-03-12 19:32:16]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\38. 음양오행 - 화의 생극제화 정리.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 24
+changed_chars: 33409
+term_hits_after_correction: 56
+script_lines_after_cleanup: 158
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x34)
+제 기준 -> 재 기준 (x3)
+제 극인 -> 재극인 (x11)
+편제* -> 편재* (x3)
+제관* -> 재관* (x7)
+제 관 -> 재관 (x2)
+정제* -> 정재* (x3)
+생제* -> 생재* (x5)
+겁제* -> 겁재* (x3)
+감목* -> 갑목* (x33)
+제를 -> 재를 (x1)
+제는 -> 재는 (x1)
+심금 -> 신금 (x3)
+감묵 -> 갑목 (x3)
+제 -> 재 (x1)
+사조에 뭐 이렇게 -> 사주에 뭐 이렇게 (x1)
+이 사조 이렇게 -> 이 사주 이렇게 (x1)
+수색목을 -> 수생목을 (x1)
+목생활을 -> 목생화를 (x1)
+무투를 -> 무토를 (x1)
+모토 -> 무토 (x1)
+화급금 -> 화극금 (x2)
+금생수 디는 -> 금생수되는 (x1)
+손 대면 -> 손대면 (x1)
+
+[skipped by context]
+활을 -> 화를 (x1)
