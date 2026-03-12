@@ -9,6 +9,7 @@
 - `기본 다이제스트 02 - 음양적으로 사유하기`
 - `기본 다이제스트 03 - 오행의 한난조습`
 - `기본 다이제스트 04 - 오행의 한난조습 2`
+- `기본 다이제스트 05 - 목의 왕쇠강약`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
 - Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
