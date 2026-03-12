@@ -14,6 +14,8 @@
 - `기본 다이제스트 07 - 이제마 사주분석, 토의 강왕`
 - `기본 다이제스트 08 - 토의 쇠약`
 - `기본 다이제스트 09 - 금수의 왕쇠강약`
+- `기본 다이제스트 10 - 오행 총정리`
+- `기본 다이제스트 11 - 한동석 선생님 사주 예시`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
 - Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
