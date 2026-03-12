@@ -149,3 +149,21 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"금생 수호 하는 게","right":"금생수로 하는 게","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"활을 살리네요.","right":"화를 살리네요.","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 한라산 코스 (십성론)/32. 십성론 - ④ 정인의 궁대응.txt","wrong":"생극, 재활을 할 때","right":"생극제화를 할 때","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"여기는 활을 쓰는 것은 신발에 대한 조건을 개선하는 거죠.","right":"여기는 화를 쓰는 것은 신발에 대한 조건을 개선하는 거죠.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/05. 음양오행.txt","wrong":"활을","right":"화를","note":"User-confirmed file-scoped hwal->hwa normalization"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/51. 음양오행 - 지지 생극제화 목생화.txt","wrong":"목생환아의 인목인 월","right":"목생화가 인목인 월","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"신월의 화급검의 작용","right":"신월의 화극금의 작용","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"얘기한금","right":"얘기한 금","note":"User-confirmed spacing reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"예민해진 있다.","right":"예민해져 있다.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"화급근무하는 발달된 명","right":"화극금만 발달된 명","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"화급근이 많은 병","right":"화극금이 많은 명","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"금생 수리 해줘야 됩니다.","right":"금생수를 해줘야 됩니다.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 27 - 궁에 대한 이해1.txt","wrong":"얘기한금화교역","right":"얘기한 금화교역","note":"User-confirmed spacing reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"활을 살리잖아요.","right":"화를 살리잖아요.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/17. 십성론 - ② 편재.txt","wrong":"금생수화는 내용인 거죠","right":"금생수하는 내용인 거죠","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"화극흥 금은 화극금은","right":"화극금은","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"활을 구분하고 있는 것, 활을 포장하고 있는 것","right":"화를 구분하고 있는 것, 화를 포장하고 있는 것","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"그러면 금은 뭐예요? 감류. 갑갑류.","right":"그러면 금은 뭐예요? 갑류. 갑각류.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"담유형이야.","right":"갑류.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"외관 내유형들","right":"외강내유형들","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"금형은 이렇게 감류잖아요. 감류.","right":"금형은 이렇게 갑류잖아요. 갑류.","note":"Same-file 갑류 normalization"}

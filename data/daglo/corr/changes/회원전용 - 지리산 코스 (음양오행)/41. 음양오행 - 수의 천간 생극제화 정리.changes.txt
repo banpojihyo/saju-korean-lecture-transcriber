@@ -1079,3 +1079,45 @@ context_skipped_hits: 2
 [skipped by context]
 활을 -> 화를 (x1)
 귀신 -> 기신 (x1)
+
+[527b104 - 2026-03-12 16:10:35]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\41. 음양오행 - 수의 천간 생극제화 정리.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 21
+changed_chars: 24603
+term_hits_after_correction: 59
+script_lines_after_cleanup: 171
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x27)
+편제* -> 편재* (x1)
+토곡수 -> 토극수 (x2)
+수곡화 -> 수극화 (x1)
+생제* -> 생재* (x1)
+경관* -> 견관* (x4)
+감목* -> 갑목* (x27)
+심금 -> 신금 (x3)
+생극, 재화 -> 생극제화 (x1)
+수색목은 -> 수생목은 (x1)
+수색목이 -> 수생목이 (x3)
+수색 목 -> 수생목 (x1)
+목생 화 -> 목생화 (x1)
+금생술을 -> 금생수를 (x1)
+수색목 -> 수생목 (x2)
+기포가 -> 기토가 (x1)
+모토가 -> 무토가 (x1)
+모토를 -> 무토를 (x1)
+활을 -> 화를 (x1)
+모토 -> 무토 (x1)
+금생 수(?=(?:가|는|를|로|의|도|만|하|\s|$|[.,?!])) -> 금생수 (x2)
+
+[skipped by context]
+활을 -> 화를 (x1)
+귀신 -> 기신 (x1)

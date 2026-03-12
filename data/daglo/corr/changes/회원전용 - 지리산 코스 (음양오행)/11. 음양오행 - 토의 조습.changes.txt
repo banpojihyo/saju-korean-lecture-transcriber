@@ -836,3 +836,35 @@ cg -> 시지 (x3)
 죽토나 -> 축토나 (x1)
 활을 -> 화를 (x12)
 죽토 -> 축토 (x3)
+
+[527b104 - 2026-03-12 16:10:25]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\11. 음양오행 - 토의 조습.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 9
+changed_chars: 27609
+term_hits_after_correction: 67
+script_lines_after_cleanup: 125
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 18
+
+[applied replacements]
+감묵 -> 갑목 (x2)
+모기 개입 -> 목이 개입 (x1)
+진술층미의 -> 진술축미의 (x2)
+죽토라고요 -> 축토라고요 (x1)
+생극 재화 -> 생극제화 (x1)
+한란조습 -> 한난조습 (x3)
+10성 -> 십성 (x1)
+활을 -> 화를 (x3)
+cg -> 시지 (x3)
+
+[skipped by context]
+죽토는 -> 축토는 (x2)
+죽토나 -> 축토나 (x1)
+활을 -> 화를 (x12)
+죽토 -> 축토 (x3)

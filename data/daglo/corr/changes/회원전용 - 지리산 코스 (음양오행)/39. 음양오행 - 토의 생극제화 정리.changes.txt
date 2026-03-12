@@ -827,3 +827,44 @@ context_skipped_hits: 5
 [skipped by context]
 활을 -> 화를 (x2)
 귀신 -> 기신 (x3)
+
+[527b104 - 2026-03-12 16:10:35]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\39. 음양오행 - 토의 생극제화 정리.script.txt
+file_override_rules: 3
+file_override_hits: 3
+applied_rules: 15
+changed_chars: 36667
+term_hits_after_correction: 54
+script_lines_after_cleanup: 161
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 5
+
+[file overrides applied]
+내 거라고 챙기려고 하면은 어떻게 되겠어요? 제가 일어나겠죠. -> 내 거라고 챙기려고 하면은 어떻게 되겠어요? 재가 일어나겠죠. (x1)
+그러니까 우리가 사주를 공부하는데 법제운이 돼서 망했다. -> 그러니까 우리가 사주를 공부하는데 겁재운이 돼서 망했다. (x1)
+법제, 법제운이 왔는데 -> 겁재, 겁재운이 왔는데 (x1)
+
+[applied replacements]
+제탈* -> 재탈* (x2)
+제 관 -> 재관 (x1)
+쟁제* -> 쟁재* (x1)
+생제* -> 생재* (x2)
+경관* -> 견관* (x1)
+제가 -> 재가 (x1)
+금생술을 -> 금생수를 (x1)
+모토한테 -> 무토한테 (x1)
+10성 -> 십성 (x1)
+사조적 -> 사주적 (x1)
+모토는 -> 무토는 (x1)
+모토의 -> 무토의 (x1)
+모토에 -> 무토에 (x1)
+모토 -> 무토 (x1)
+금생 수(?=(?:가|는|를|로|의|도|만|하|\s|$|[.,?!])) -> 금생수 (x1)
+
+[skipped by context]
+활을 -> 화를 (x2)
+귀신 -> 기신 (x3)

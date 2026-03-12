@@ -1020,3 +1020,48 @@ context_skipped_hits: 2
 
 [skipped by context]
 활을 -> 화를 (x2)
+
+[527b104 - 2026-03-12 16:10:35]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\40. 음양오행 - 금의 천간 생극제화 정리.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 25
+changed_chars: 9483
+term_hits_after_correction: 50
+script_lines_after_cleanup: 163
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x4)
+제 극인 -> 재극인 (x1)
+편제* -> 편재* (x2)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x1)
+제탈* -> 재탈* (x1)
+제관* -> 재관* (x1)
+정제* -> 정재* (x1)
+묵생* -> 목생* (x1)
+목국토 -> 목극토 (x1)
+경관* -> 견관* (x2)
+겁제* -> 겁재* (x3)
+감묵 -> 갑목 (x3)
+사조를 본다는 -> 사주를 본다는 (x1)
+사조를 보고 -> 사주를 보고 (x1)
+수색목으로 -> 수생목으로 (x1)
+수색 목 -> 수생목 (x1)
+수색 몫 -> 수생목 (x1)
+금금목이 -> 금극목이 (x2)
+금생술을 -> 금생수를 (x2)
+사조를 -> 사주를 (x1)
+수색목 -> 수생목 (x1)
+금긍목 -> 금극목 (x1)
+근근목 -> 금극목 (x1)
+활을 -> 화를 (x2)
+
+[skipped by context]
+활을 -> 화를 (x2)

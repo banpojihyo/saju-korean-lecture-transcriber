@@ -580,3 +580,35 @@ context_skipped_hits: 0
 감목* -> 갑목* (x1)
 사조를 잘 보려면 -> 사주를 잘 보려면 (x1)
 10성 -> 십성 (x2)
+
+[527b104 - 2026-03-12 16:10:49]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\23. 십성론 - ② 정관의 십성대응.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\23. 십성론 - ② 정관의 십성대응.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\23. 십성론 - ② 정관의 십성대응.script.txt
+file_override_rules: 4
+file_override_hits: 4
+applied_rules: 9
+changed_chars: 27073
+term_hits_after_correction: 35
+script_lines_after_cleanup: 117
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+그러면 정제는 안에 있는 저 편제는 -> 그러면 정재는 안에 있는 저 편재는 (x1)
+사조의 제를 처로 분류하잖아요. -> 사주의 재를 처로 분류하잖아요. (x1)
+일간이 정제를 일지에 두고 있고 -> 일간이 정재를 일지에 두고 있고 (x1)
+그 정제 중심으로 돼 있다면은 -> 그 정재 중심으로 돼 있다면은 (x1)
+
+[applied replacements]
+제 극인 -> 재극인 (x2)
+현관* -> 편관* (x1)
+편제* -> 편재* (x9)
+제 관 -> 재관 (x1)
+정제* -> 정재* (x22)
+경관* -> 견관* (x2)
+감목* -> 갑목* (x1)
+사조를 잘 보려면 -> 사주를 잘 보려면 (x1)
+10성 -> 십성 (x2)

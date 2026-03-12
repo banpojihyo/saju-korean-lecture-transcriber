@@ -720,3 +720,36 @@ context_skipped_hits: 3
 [skipped by context]
 수색목이 -> 수생목이 (x1)
 활을 -> 화를 (x2)
+
+[527b104 - 2026-03-12 16:10:15]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 08 - 토의 쇠약.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 08 - 토의 쇠약.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 08 - 토의 쇠약.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 12
+changed_chars: 11983
+term_hits_after_correction: 32
+script_lines_after_cleanup: 49
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 3
+
+[applied replacements]
+목국토 -> 목극토 (x1)
+인간에 목매는 순간 사조는 -> 인간에 목매는 순간 사주는 (x1)
+목이 많은 사조 -> 목이 많은 사주 (x2)
+금화 교역 -> 금화교역 (x3)
+모기 개입 -> 목이 개입 (x1)
+음향 오행 -> 음양 오행 (x1)
+10성 -> 십성 (x1)
+수색목 -> 수생목 (x1)
+모토는 -> 무토는 (x1)
+4조 -> 사주 (x4)
+활을 -> 화를 (x2)
+화급금 -> 화극금 (x3)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+활을 -> 화를 (x2)
