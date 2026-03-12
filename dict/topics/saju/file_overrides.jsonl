@@ -184,3 +184,14 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"화극금디는","right":"화극금되는","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"돈디는","right":"돈 되는","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 한라산 코스 (십성론)/17. 십성론 - ② 편재.txt","wrong":"활을","right":"화를","note":"User-approved file-scoped hwal->hwa normalization"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"생육체화가 안 돼 있는데","right":"생극제화가 안 돼 있는데","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"생육 재활을 하는 거예요","right":"생극제화를 하는 거예요","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/47. 음양오행 - 지지 생극제화 화 입장의 목.txt","wrong":"묵생활을 서두르고 있는데","right":"목생화를 서두르고 있는데","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/48. 음양오행 - 지지 생극제화 화생토.txt","wrong":"생각 재활을 바라보는 관점","right":"생극제화를 바라보는 관점","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"긍근목","right":"금극목","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"인성부","right":"인성 부","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/01. 십성론 - ①비견.txt","wrong":"죄를 나누는 걸","right":"재를 나누는 걸","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/01. 십성론 - ①비견.txt","wrong":"분관디는","right":"분관되는","note":"Standardized from spoken dialectal ending to document form"}
+{"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"대대디는","right":"대대되는","note":"Standardized from spoken dialectal ending to document form"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"대대디는","right":"대대되는","note":"Standardized from spoken dialectal ending to document form"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"대별디는","right":"대별되는","note":"Standardized from spoken dialectal ending to document form"}
