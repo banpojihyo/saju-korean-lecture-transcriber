@@ -2,7 +2,7 @@
 
 - Run folder: `GPT-5.4-Direct-Extra-High__20260312-222603`
 - Mode: direct-session rewrite baseline
-- Scope prepared in this turn: `회원전용 - 기본다이제스트 (계룡산 등반)`
+- Scope prepared in this run: `회원전용 - 기본다이제스트 (계룡산 등반)`
 
 ## Rewritten in this session
 - `기본 다이제스트 01 - 한난조습이란？`
@@ -16,10 +16,12 @@
 - `기본 다이제스트 09 - 금수의 왕쇠강약`
 - `기본 다이제스트 10 - 오행 총정리`
 - `기본 다이제스트 11 - 한동석 선생님 사주 예시`
+- `기본 다이제스트 12 - 천간 총론`
+- `기본 다이제스트 13 - 갑목과 다른 천간과의 관계`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
 - Remaining files in `회원전용 - 기본다이제스트 (계룡산 등반)` were copied from `GPT-5.4-Direct-Extra-High__20260309-223424`.
-- These files are usable as a high-quality baseline and can be refreshed file-by-file against the latest corrected scripts in later turns.
+- These files remain usable as a direct baseline and can be refreshed file-by-file against the latest corrected scripts in later turns.
 
 ## Notes
 - This run does not use `generate_direct_session_md.ps1` outputs as final content.
