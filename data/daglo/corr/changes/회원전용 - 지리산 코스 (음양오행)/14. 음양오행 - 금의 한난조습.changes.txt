@@ -983,3 +983,107 @@ context_skipped_hits: 15
 금금목이 -> 금극목이 (x1)
 금금목을 -> 금극목을 (x2)
 금극무 -> 금극목 (x2)
+
+[0b19670 - 2026-03-12 14:37:01]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 19
+changed_chars: 26786
+term_hits_after_correction: 51
+script_lines_after_cleanup: 147
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 11
+context_skipped_hits: 17
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x24)
+편제* -> 편재* (x1)
+금곡목 -> 금극목 (x2)
+감목* -> 갑목* (x4)
+한묵 -> 한목 (x1)
+심금 -> 신금 (x3)
+생극 재화를 -> 생극제화를 (x4)
+금금보고를 -> 금극목을 (x1)
+생극 재화 -> 생극제화 (x1)
+생극재화를 -> 생극제화를 (x2)
+금궁목을 -> 금극목을 (x1)
+금공목이 -> 금극목이 (x2)
+금금 목 -> 금극목 (x1)
+금극 목 -> 금극목 (x2)
+금극묵 -> 금극목 (x3)
+금궁목 -> 금극목 (x10)
+금긍목 -> 금극목 (x2)
+금공목 -> 금극목 (x1)
+금금목 -> 금극목 (x9)
+
+[skipped by context]
+금극묵은 -> 금극목은 (x1)
+금극묵에 -> 금극목에 (x1)
+금궁목이 -> 금극목이 (x4)
+금궁목을 -> 금극목을 (x1)
+금궁목의 -> 금극목의 (x1)
+금궁목도 -> 금극목도 (x1)
+금공목에 -> 금극목에 (x1)
+금금목이 -> 금극목이 (x1)
+금금목을 -> 금극목을 (x2)
+금극무 -> 금극목 (x2)
+금금묵 -> 금극목 (x2)
+
+[0b19670 - 2026-03-12 14:44:39]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\14. 음양오행 - 금의 한난조습.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 27
+changed_chars: 26786
+term_hits_after_correction: 51
+script_lines_after_cleanup: 147
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 9
+context_skipped_hits: 13
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x24)
+편제* -> 편재* (x1)
+금곡목 -> 금극목 (x2)
+감목* -> 갑목* (x4)
+한묵 -> 한목 (x1)
+심금 -> 신금 (x3)
+생극 재화를 -> 생극제화를 (x4)
+금금보고를 -> 금극목을 (x1)
+생극 재화 -> 생극제화 (x1)
+생극재화를 -> 생극제화를 (x2)
+금궁목을 -> 금극목을 (x1)
+금공목이 -> 금극목이 (x2)
+금금 목 -> 금극목 (x1)
+금극 목 -> 금극목 (x2)
+근근묵을 -> 금극목을 (x1)
+근근목이 -> 금극목이 (x1)
+금극무기 -> 금극목이 (x2)
+금극묵 -> 금극목 (x3)
+금궁목 -> 금극목 (x10)
+금긍목 -> 금극목 (x2)
+금공목 -> 금극목 (x1)
+금금목 -> 금극목 (x9)
+금금묵 -> 금극목 (x2)
+근근묵 -> 금극목 (x5)
+입목을 -> 인목을 (x1)
+심근이 -> 신금이 (x1)
+환은 -> 화는 (x1)
+
+[skipped by context]
+금극묵은 -> 금극목은 (x1)
+금극묵에 -> 금극목에 (x1)
+금궁목이 -> 금극목이 (x4)
+금궁목을 -> 금극목을 (x1)
+금궁목의 -> 금극목의 (x1)
+금궁목도 -> 금극목도 (x1)
+금공목에 -> 금극목에 (x1)
+금금목이 -> 금극목이 (x1)
+금금목을 -> 금극목을 (x2)

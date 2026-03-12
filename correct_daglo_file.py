@@ -189,7 +189,7 @@ def expand_replace_pairs_with_particles(
         if base_pair not in seen:
             seen.add(base_pair)
             expanded.append(base_pair)
-        EXPANDED_REPLACE_PAIR_TO_BASE[base_pair] = base_pair
+        EXPANDED_REPLACE_PAIR_TO_BASE.setdefault(base_pair, base_pair)
 
         if not is_expandable_replace_stem(wrong) or not is_expandable_replace_stem(right):
             continue
@@ -202,7 +202,7 @@ def expand_replace_pairs_with_particles(
                 continue
             seen.add(expanded_pair)
             expanded.append(expanded_pair)
-            EXPANDED_REPLACE_PAIR_TO_BASE[expanded_pair] = base_pair
+            EXPANDED_REPLACE_PAIR_TO_BASE.setdefault(expanded_pair, base_pair)
 
     return expanded
 
@@ -553,6 +553,20 @@ SAJU_RAW_PRIORITY_PAIRS = frozenset(
         *GITO_AMBIGUOUS_PAIRS,
         *GYESU_AMBIGUOUS_PAIRS,
         *MOK_MISRECOGNITION_PAIRS,
+        ("목생활", "목생화"),
+        ("목생화을", "목생화를"),
+        ("환은", "화는"),
+        ("입목", "인목"),
+        ("심근이", "신금이"),
+        ("금극 목", "금극목"),
+        ("금금묵", "금극목"),
+        ("근근묵", "금극목"),
+        ("근근목", "금극목"),
+        ("근긍목", "금극목"),
+        ("근궁목", "금극목"),
+        ("금극무기", "금극목이"),
+        ("금근목", "금극목"),
+        ("긍긍목", "금극목"),
         ("배수 기포를 만나면은", "계수를 만나면은"),
         ("계수 배수가 붙는 순간", "계수가 붙는 순간"),
         ("배수가 가장 음해요.", "계수가 가장 음해요."),
@@ -1538,13 +1552,16 @@ def is_saju_ji_stem_context(suffix: str, text: str, end: int) -> bool:
 def should_apply_replacement(
     text: str, start: int, end: int, wrong: str, right: str
 ) -> bool:
-    if (wrong, right) in FORCE_DOMAIN_REPLACEMENTS:
+    pair = (wrong, right)
+    base_pair = EXPANDED_REPLACE_PAIR_TO_BASE.get(pair, pair)
+
+    if pair in FORCE_DOMAIN_REPLACEMENTS:
         return True
 
     if CURRENT_DICT_TOPIC == "saju":
-        if CURRENT_SOURCE_UNDER_SAJU_RAW and (wrong, right) in SAJU_RAW_PRIORITY_PAIRS:
+        if CURRENT_SOURCE_UNDER_SAJU_RAW and base_pair in SAJU_RAW_PRIORITY_PAIRS:
             return True
-        if (wrong, right) in SAJU_RAW_PRIORITY_PAIRS and not has_context_keyword(
+        if base_pair in SAJU_RAW_PRIORITY_PAIRS and not has_context_keyword(
             text, start, end, DOMAIN_CONTEXT_KEYWORDS, window=120
         ):
             return False
@@ -1723,6 +1740,30 @@ def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, 
         (wrong, right, count) for (wrong, right), count in applied_counts.items() if count > 0
     ]
     applied.sort(key=lambda item: (len(item[0]), item[0]), reverse=True)
+    return text, applied
+
+
+SAJU_STABLE_NORMALIZATIONS: tuple[tuple[str, str], ...] = (
+    ("목생활을", "목생화를"),
+    ("목생활", "목생화"),
+    ("목생화을", "목생화를"),
+)
+
+
+def apply_saju_stable_normalizations(
+    text: str,
+) -> tuple[str, list[tuple[str, str, int]]]:
+    if CURRENT_DICT_TOPIC != "saju":
+        return text, []
+
+    applied: list[tuple[str, str, int]] = []
+    for wrong, right in SAJU_STABLE_NORMALIZATIONS:
+        count = text.count(wrong)
+        if count == 0:
+            continue
+        text = text.replace(wrong, right)
+        applied.append((wrong, right, count))
+
     return text, applied
 
 
@@ -2039,7 +2080,8 @@ def main() -> int:
     text, file_override_applied = apply_literal_replacements(text, file_override_pairs)
     text, regex_applied = apply_saju_regex_replacements(text)
     text, applied, skipped_by_context = apply_context_aware_replacements(text, all_pairs)
-    reported_applied = regex_applied + applied
+    text, stable_normalization_applied = apply_saju_stable_normalizations(text)
+    reported_applied = regex_applied + applied + stable_normalization_applied
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     script_path.parent.mkdir(parents=True, exist_ok=True)

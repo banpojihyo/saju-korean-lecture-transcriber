@@ -1002,3 +1002,47 @@ context_skipped_hits: 5
 금궁목이 -> 금극목이 (x1)
 금궁목과 -> 금극목과 (x1)
 금긍목이 -> 금극목이 (x1)
+
+[0b19670 - 2026-03-12 14:44:42]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\09. 음양오행.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 21
+changed_chars: 27842
+term_hits_after_correction: 55
+script_lines_after_cleanup: 145
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 5
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x2)
+편제* -> 편재* (x1)
+수국화 -> 수극화 (x1)
+생제* -> 생재* (x4)
+묵생* -> 목생* (x5)
+목국토 -> 목극토 (x4)
+감목* -> 갑목* (x10)
+수색목이라고요 -> 수생목이라고요 (x1)
+사조를 본다는 -> 사주를 본다는 (x1)
+생극 재화를 -> 생극제화를 (x1)
+모기 개입 -> 목이 개입 (x3)
+생극 재화 -> 생극제화 (x1)
+수색 못 -> 수생목 (x1)
+금금목에 -> 금극목에 (x2)
+금극 목 -> 금극목 (x1)
+10성 -> 십성 (x2)
+수색목 -> 수생목 (x2)
+금궁목 -> 금극목 (x2)
+금긍목 -> 금극목 (x1)
+1주 -> 일주 (x3)
+환은 -> 화는 (x3)
+
+[skipped by context]
+수색목이 -> 수생목이 (x2)
+금궁목이 -> 금극목이 (x1)
+금궁목과 -> 금극목과 (x1)
+금긍목이 -> 금극목이 (x1)
