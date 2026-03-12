@@ -282,3 +282,41 @@ context_skipped_rules: 0
 context_skipped_hits: 0
 
 [applied replacements]
+
+[c7e6173 - 2026-03-12 09:58:21]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\03. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\03. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\03. 음양오행.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 0
+changed_chars: 0
+term_hits_after_correction: 16
+script_lines_after_cleanup: 165
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+
+[c7e6173 - 2026-03-12 10:01:11]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\03. 음양오행.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\03. 음양오행.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\03. 음양오행.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 1
+changed_chars: 522
+term_hits_after_correction: 16
+script_lines_after_cleanup: 165
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 30
+
+[applied replacements]
+금 -> 금 목 (x1)
+
+[skipped by context]
+금 -> 금 목 (x30)

@@ -718,3 +718,70 @@ context_skipped_hits: 0
 생극, 재화 -> 생극제화 (x1)
 생극 재화 -> 생극제화 (x2)
 10성 -> 십성 (x2)
+
+[c7e6173 - 2026-03-12 09:58:37]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 15
+changed_chars: 26276
+term_hits_after_correction: 60
+script_lines_after_cleanup: 149
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x12)
+제 극인 -> 재극인 (x1)
+편제* -> 편재* (x2)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x2)
+제관* -> 재관* (x4)
+묵생* -> 목생* (x4)
+목국토 -> 목극토 (x2)
+감묵 -> 갑목 (x2)
+생극, 재화 -> 생극제화 (x1)
+생극 재화 -> 생극제화 (x2)
+수색목은 -> 수생목은 (x3)
+수색목이 -> 수생목이 (x3)
+수색목을 -> 수생목을 (x2)
+10성 -> 십성 (x2)
+
+[c7e6173 - 2026-03-12 10:01:26]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\37. 음양오행 - 천간 생극제화 수(3).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 15
+changed_chars: 26276
+term_hits_after_correction: 60
+script_lines_after_cleanup: 149
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 97
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x12)
+제 극인 -> 재극인 (x1)
+편제* -> 편재* (x2)
+토국수 -> 토극수 (x1)
+토곡수 -> 토극수 (x2)
+제관* -> 재관* (x4)
+묵생* -> 목생* (x4)
+목국토 -> 목극토 (x2)
+감묵 -> 갑목 (x2)
+생극, 재화 -> 생극제화 (x1)
+생극 재화 -> 생극제화 (x2)
+수색목은 -> 수생목은 (x3)
+수색목이 -> 수생목이 (x3)
+수색목을 -> 수생목을 (x2)
+10성 -> 십성 (x2)
+
+[skipped by context]
+금 -> 금 목 (x97)

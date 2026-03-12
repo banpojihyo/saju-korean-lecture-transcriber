@@ -489,3 +489,65 @@ context_skipped_hits: 0
 감목* -> 갑목* (x29)
 감묵 -> 갑목 (x6)
 4조 -> 사주 (x1)
+
+[c7e6173 - 2026-03-12 09:59:06]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 7
+changed_chars: 52
+term_hits_after_correction: 43
+script_lines_after_cleanup: 94
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+채용하느냐의 문제예요 -> 체용하느냐의 문제예요 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x3)
+생제* -> 생재* (x2)
+감목* -> 갑목* (x29)
+감묵 -> 갑목 (x6)
+수색목은 -> 수생목은 (x1)
+수색목 -> 수생목 (x2)
+4조 -> 사주 (x1)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+
+[c7e6173 - 2026-03-12 10:01:52]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\09. 십성론 - ②상관.script.txt
+file_override_rules: 1
+file_override_hits: 1
+applied_rules: 8
+changed_chars: 11865
+term_hits_after_correction: 43
+script_lines_after_cleanup: 94
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 47
+
+[file overrides applied]
+채용하느냐의 문제예요 -> 체용하느냐의 문제예요 (x1)
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x3)
+생제* -> 생재* (x2)
+감목* -> 갑목* (x29)
+감묵 -> 갑목 (x6)
+수색목은 -> 수생목은 (x1)
+수색 목 -> 수생목 (x1)
+수색목 -> 수생목 (x2)
+4조 -> 사주 (x1)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+금 -> 금 목 (x46)

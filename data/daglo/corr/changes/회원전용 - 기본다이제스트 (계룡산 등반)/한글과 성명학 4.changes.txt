@@ -416,3 +416,58 @@ context_skipped_hits: 2
 [skipped by context]
 사조를 -> 사주를 (x1)
 심금 -> 신금 (x1)
+
+[c7e6173 - 2026-03-12 09:59:03]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 7
+term_hits_after_correction: 48
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 2
+
+[applied replacements]
+제 극인 -> 재극인 (x1)
+토국수 -> 토극수 (x1)
+감목* -> 갑목* (x1)
+수색목이 -> 수생목이 (x1)
+사조를 -> 사주를 (x2)
+금금목 -> 금극목 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+심금 -> 신금 (x1)
+
+[c7e6173 - 2026-03-12 10:01:49]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\한글과 성명학 4.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 6
+changed_chars: 7
+term_hits_after_correction: 48
+script_lines_after_cleanup: 87
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 3
+context_skipped_hits: 74
+
+[applied replacements]
+제 극인 -> 재극인 (x1)
+토국수 -> 토극수 (x1)
+감목* -> 갑목* (x1)
+수색목이 -> 수생목이 (x1)
+사조를 -> 사주를 (x2)
+금금목 -> 금극목 (x1)
+
+[skipped by context]
+사조를 -> 사주를 (x1)
+심금 -> 신금 (x1)
+금 -> 금 목 (x72)

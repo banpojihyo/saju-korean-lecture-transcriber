@@ -537,3 +537,74 @@ context_skipped_hits: 0
 그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
 10성 -> 십성 (x1)
 1주 -> 일주 (x1)
+
+[c7e6173 - 2026-03-12 09:59:20]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 13
+changed_chars: 339
+term_hits_after_correction: 39
+script_lines_after_cleanup: 103
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+정제가 발달되어 있고 일제 정제가 이렇게 식물을 갖고 있는 명들은 -> 정재가 발달되어 있고 일지 정재가 이렇게 식물을 갖고 있는 명들은 (x1)
+그러면 일제 정제에 있는 사람한테 -> 그러면 일지 정재에 있는 사람한테 (x1)
+
+[applied replacements]
+현재는 여기 얘기 드린 것처럼 -> 편재는 여기 얘기 드린 것처럼 (x1)
+현재는 그 놀이적 부분 -> 편재는 그 놀이적 부분 (x1)
+편제* -> 편재* (x8)
+정제* -> 정재* (x12)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+현재 -> 편재 (x1)
+현관 -> 편관 (x1)
+빅업에 식상이 발현이 잘 되어 있어요. -> 비겁에 식상이 발현이 잘 되어 있어요. (x1)
+식상으로 빅업을 잘 끌어서 써요. -> 식상으로 비겁을 잘 끌어서 써요. (x1)
+그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
+10성 -> 십성 (x1)
+1주 -> 일주 (x1)
+
+[c7e6173 - 2026-03-12 10:02:04]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\38. 십성론 - 십성 물상 활용 2.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 13
+changed_chars: 339
+term_hits_after_correction: 39
+script_lines_after_cleanup: 103
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 30
+
+[file overrides applied]
+정제가 발달되어 있고 일제 정제가 이렇게 식물을 갖고 있는 명들은 -> 정재가 발달되어 있고 일지 정재가 이렇게 식물을 갖고 있는 명들은 (x1)
+그러면 일제 정제에 있는 사람한테 -> 그러면 일지 정재에 있는 사람한테 (x1)
+
+[applied replacements]
+현재는 여기 얘기 드린 것처럼 -> 편재는 여기 얘기 드린 것처럼 (x1)
+현재는 그 놀이적 부분 -> 편재는 그 놀이적 부분 (x1)
+편제* -> 편재* (x8)
+정제* -> 정재* (x12)
+생제* -> 생재* (x2)
+겁제* -> 겁재* (x2)
+현재 -> 편재 (x1)
+현관 -> 편관 (x1)
+빅업에 식상이 발현이 잘 되어 있어요. -> 비겁에 식상이 발현이 잘 되어 있어요. (x1)
+식상으로 빅업을 잘 끌어서 써요. -> 식상으로 비겁을 잘 끌어서 써요. (x1)
+그러니까 빅업을 운용을 잘한다면 -> 그러니까 비겁을 운용을 잘한다면 (x1)
+10성 -> 십성 (x1)
+1주 -> 일주 (x1)
+
+[skipped by context]
+금 -> 금 목 (x30)

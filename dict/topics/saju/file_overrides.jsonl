@@ -38,6 +38,7 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"채용을 바꿔서 보시는 것이","right":"체용을 바꿔서 보시는 것이","note":"User-confirmed Hallasan term fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"채를 놓고","right":"체를 놓고","note":"User-confirmed Hallasan term fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"채용의 문제라고요","right":"체용의 문제라고요","note":"Context-bound 체용 fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"채용의 문제라고 얘기를 합니다.","right":"체용의 문제라고 얘기를 합니다.","note":"Context-bound 체용 fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"질신","right":"길신","note":"User-confirmed Hallasan term fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"제관 인식","right":"재관인식","note":"User-confirmed Hallasan term fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"귀신의 용법","right":"길신의 용법","note":"User-confirmed Hallasan term fix"}
@@ -89,6 +90,9 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"제의 건강은","right":"재의 건강은","note":"Context-bound 재의 fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"제가 앞에 있는 제가 있고 뒤에 있는 제가 있다고요.","right":"재가 앞에 있는 재가 있고 뒤에 있는 재가 있다고요.","note":"Context-bound 재가 fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"그러면 뒤에 있는 제라는 건 뭐예요? 제를 취하면은","right":"그러면 뒤에 있는 재라는 건 뭐예요? 재를 취하면은","note":"Context-bound 재라는/재를 fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"내가 사조로 상담을 해서","right":"내가 사주로 상담을 해서","note":"Context-bound 사주/툴 fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"사조를 풀로 쓰실 수 있어야 돼요.","right":"사주를 툴로 쓰실 수 있어야 돼요.","note":"Context-bound 사주/툴 fix"}
+{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"상담풀로.","right":"상담 툴로.","note":"Context-bound 사주/툴 fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"제자약살.","right":"재가 약살.","note":"Context-bound 재가 약살 fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"그러면 이렇게 제자 약살하다가","right":"그러면 이렇게 재가 약살하다가","note":"Context-bound 재가 약살 fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"제자 약살도.","right":"재가 약살도.","note":"Context-bound 재가 약살 fix"}
@@ -109,4 +113,6 @@
 {"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"일지에 처의 자리에 제가 있고","right":"일지에 처의 자리에 재가 있고","note":"Context-bound 재가 fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"그게 제를 바라보고 있는 거예요.","right":"그게 재를 바라보고 있는 거예요.","note":"Context-bound 재를 fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/39. 음양오행 - 토의 생극제화 정리.txt","wrong":"내 거라고 챙기려고 하면은 어떻게 되겠어요? 제가 일어나겠죠.","right":"내 거라고 챙기려고 하면은 어떻게 되겠어요? 재가 일어나겠죠.","note":"Context-bound 재가 fix"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/39. 음양오행 - 토의 생극제화 정리.txt","wrong":"법제, 법제운이 왔는데","right":"겁재, 겁재운이 왔는데","note":"Context-bound 겁재운 fix"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/39. 음양오행 - 토의 생극제화 정리.txt","wrong":"그러니까 우리가 사주를 공부하는데 법제운이 돼서 망했다.","right":"그러니까 우리가 사주를 공부하는데 겁재운이 돼서 망했다.","note":"Context-bound 겁재운 fix"}
 {"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"식신호로","right":"식신으로","note":"User-confirmed Hallasan term fix"}
