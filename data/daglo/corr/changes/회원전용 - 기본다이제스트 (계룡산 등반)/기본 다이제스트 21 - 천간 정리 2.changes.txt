@@ -586,3 +586,33 @@ context_skipped_hits: 1
 
 [skipped by context]
 모토 -> 무토 (x1)
+
+[f14a0a9 - 2026-03-12 14:20:48]
+source: data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 21 - 천간 정리 2.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 21 - 천간 정리 2.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 21 - 천간 정리 2.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 13
+changed_chars: 44
+term_hits_after_correction: 58
+script_lines_after_cleanup: 112
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[applied replacements]
+갑묵/을묵 -> 갑목/을목 (x9)
+편제* -> 편재* (x3)
+겁제* -> 겁재* (x3)
+관묵 -> 갑목 (x3)
+감묵 -> 갑목 (x2)
+모토라고요 -> 무토라고요 (x1)
+모토한테 -> 무토한테 (x1)
+모토가 -> 무토가 (x8)
+모토를 -> 무토를 (x3)
+모토와 -> 무토와 (x1)
+모토의 -> 무토의 (x2)
+모토에 -> 무토에 (x2)
+모토 -> 무토 (x1)

@@ -630,3 +630,61 @@ context_skipped_hits: 144
 죽토를 -> 축토를 (x1)
 죽토 -> 축토 (x5)
 금 -> 금 목 (x134)
+
+[f14a0a9 - 2026-03-12 14:22:53]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 4
+changed_chars: 1216
+term_hits_after_correction: 56
+script_lines_after_cleanup: 154
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 5
+context_skipped_hits: 10
+
+[applied replacements]
+토곡수 -> 토극수 (x3)
+정제* -> 정재* (x1)
+오행생극재화에 -> 오행생극제화에 (x1)
+생극 재화를 -> 생극제화를 (x1)
+
+[skipped by context]
+토복수가 -> 토극수가 (x1)
+토복수 -> 토극수 (x1)
+죽토가 -> 축토가 (x2)
+죽토를 -> 축토를 (x1)
+죽토 -> 축토 (x5)
+
+[f14a0a9 - 2026-03-12 14:23:28]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\55. 음양오행 - 지지 생극제화 토.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 5
+changed_chars: 1218
+term_hits_after_correction: 56
+script_lines_after_cleanup: 154
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 11
+
+[applied replacements]
+토곡수 -> 토극수 (x3)
+정제* -> 정재* (x1)
+오행생극재화에 -> 오행생극제화에 (x1)
+생극 재화를 -> 생극제화를 (x1)
+슬톤 -> 술토 (x1)
+
+[skipped by context]
+토복수가 -> 토극수가 (x1)
+토복수 -> 토극수 (x1)
+슬톤은 -> 술토는 (x1)
+죽토가 -> 축토가 (x2)
+죽토를 -> 축토를 (x1)
+죽토 -> 축토 (x5)

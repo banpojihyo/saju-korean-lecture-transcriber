@@ -138,3 +138,5 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"죽토는 기본이 동해요.","right":"축토는 기본이 동해요.","note":"High-confidence 축토 normalization"}
 {"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"그런데 주토는 이 안에 에너지가 있어요.","right":"그런데 축토는 이 안에 에너지가 있어요.","note":"High-confidence 축토 normalization"}
 {"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"죽토는 저 안에 있는 그런 근육을","right":"축토는 저 안에 있는 그런 근육을","note":"High-confidence 축토 normalization"}
+{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"중미를 보시면","right":"축미를 보시면","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"슬톤은 뭐예요? 옷을로 연결되잖아요.","right":"술토는 뭐예요? 무술로 연결되잖아요.","note":"User-confirmed phrase reconstruction"}

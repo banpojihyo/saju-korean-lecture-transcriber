@@ -721,3 +721,34 @@ context_skipped_hits: 152
 [skipped by context]
 고친 -> 고층 (x2)
 금 -> 금 목 (x150)
+
+[f14a0a9 - 2026-03-12 14:20:41]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\28. 음양오행 - 천간 생극제화 화(2).txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\28. 음양오행 - 천간 생극제화 화(2).corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\28. 음양오행 - 천간 생극제화 화(2).script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 11
+changed_chars: 15598
+term_hits_after_correction: 53
+script_lines_after_cleanup: 126
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 2
+
+[applied replacements]
+제관* -> 재관* (x2)
+정제* -> 정재* (x2)
+수국화 -> 수극화 (x1)
+생제* -> 생재* (x2)
+감묵 -> 갑목 (x1)
+생극 재화 -> 생극제화 (x2)
+사조를 -> 사주를 (x2)
+모토가 -> 무토가 (x5)
+모토를 -> 무토를 (x1)
+모토의 -> 무토의 (x1)
+모토 -> 무토 (x1)
+
+[skipped by context]
+고친 -> 고층 (x2)

@@ -856,3 +856,42 @@ context_skipped_hits: 1
 
 [skipped by context]
 고친 -> 고층 (x1)
+
+[f14a0a9 - 2026-03-12 14:20:38]
+source: data\daglo\raw\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.txt
+output: data\daglo\corr\corrected\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 한라산 코스 (십성론)\02. 십성론 - ②비견.script.txt
+file_override_rules: 6
+file_override_hits: 6
+applied_rules: 11
+changed_chars: 19722
+term_hits_after_correction: 50
+script_lines_after_cleanup: 79
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 1
+context_skipped_hits: 1
+
+[file overrides applied]
+그런데 주토는 이 안에 에너지가 있어요. -> 그런데 축토는 이 안에 에너지가 있어요. (x1)
+죽토는 저 안에 있는 그런 근육을 -> 축토는 저 안에 있는 그런 근육을 (x1)
+무술일조, 애인이 무술일조다. -> 무술일주, 애인이 무술일주다. (x1)
+죽토는 기본이 동해요. -> 축토는 기본이 동해요. (x1)
+지금 금 비견이니까. -> 지금 자 이게 금 비견이니까. (x1)
+중미를 보시면 -> 축미를 보시면 (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x10)
+제 극인 -> 재극인 (x1)
+감목* -> 갑목* (x3)
+감묵 -> 갑목 (x1)
+금궁목이라고요 -> 금극목이라고요 (x1)
+채로 놓고 -> 체로 놓고 (x1)
+10성 -> 십성 (x2)
+관사리 -> 관살이 (x1)
+주토는 -> 축토는 (x1)
+1주 -> 일주 (x1)
+죽토 -> 축토 (x1)
+
+[skipped by context]
+고친 -> 고층 (x1)
