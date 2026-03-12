@@ -25,8 +25,10 @@ $mdRoot = Join-Path $outputBase ("md/{0}" -f $courseName)
 $manifestRoot = Join-Path $outputBase "rewrite_manifest"
 $manifestPath = Join-Path $manifestRoot ("{0}.jsonl" -f $courseName)
 
-if ($ClearOutputBase -and (Test-Path $outputBase)) {
-    Remove-Item $outputBase -Recurse -Force
+if ($ClearOutputBase) {
+    if (Test-Path $outputBase) {
+        Remove-Item $outputBase -Recurse -Force
+    }
 }
 
 if (Test-Path $mdRoot) {
@@ -272,7 +274,33 @@ function Get-ConceptSentence {
         }
     }
 
-    return "$Concept은 이 파일에서 반복적으로 연결되는 핵심 개념이다."
+    return "${Concept}은 이 파일에서 반복적으로 연결되는 핵심 개념이다."
+}
+
+function Add-Particle {
+    param(
+        [string]$Text,
+        [string]$Pair
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Text)) {
+        return $Text
+    }
+
+    $parts = $Pair -split "/"
+    if ($parts.Count -ne 2) {
+        throw "Particle pair must use 'first/second' format."
+    }
+
+    $trimmed = $Text.Trim()
+    $lastChar = [int][char]$trimmed[$trimmed.Length - 1]
+    $hasBatchim = $false
+    if ($lastChar -ge 0xAC00 -and $lastChar -le 0xD7A3) {
+        $hasBatchim = ((($lastChar - 0xAC00) % 28) -ne 0)
+    }
+
+    $suffix = if ($hasBatchim) { $parts[0] } else { $parts[1] }
+    return "${Text}${suffix}"
 }
 
 function Get-ThemeLead {
@@ -284,9 +312,9 @@ function Get-ThemeLead {
     $first = $Group[0]
     $second = if ($Group.Count -ge 2) { $Group[1] } else { "" }
     if ([string]::IsNullOrWhiteSpace($second)) {
-        return "이 파일은 '$first'를 중심으로 개념의 작동 방식과 적용 장면을 반복해서 설명한다."
+        return "이 파일은 $(Add-Particle $first '을/를') 중심으로 개념의 작동 방식과 적용 장면을 반복해서 설명한다."
     }
-    return "이 파일은 '$first'를 출발점으로 '$second'와 연결되는 구조와 판단 흐름을 중심으로 전개된다."
+    return "이 파일은 $(Add-Particle $first '을/를') 출발점으로 $(Add-Particle $second '과/와') 연결되는 구조와 판단 흐름을 중심으로 전개된다."
 }
 
 function Get-QuestionBlocks {
@@ -304,23 +332,23 @@ function Get-QuestionBlocks {
     return @(
         [pscustomobject]@{
             Question = "이 강의에서 가장 먼저 확인해야 할 판단축은 무엇인가?"
-            Answer = "$c1를 먼저 잡아야 한다. 대표 문장: $(Get-ConceptSentence $c1 $Sentences)"
+            Answer = "$(Add-Particle $c1 '을/를') 먼저 잡아야 한다. 대표 문장: $(Get-ConceptSentence $c1 $Sentences)"
         },
         [pscustomobject]@{
-            Question = "$c1와 $c2가 어떤 순서로 연결되는지 설명하라."
-            Answer = "$c1와 $c2는 분리해서 외우기보다 연결 구조로 읽어야 한다. 대표 문장: $(Get-ConceptSentence $c1 $Sentences)"
+            Question = "$(Add-Particle $c1 '과/와') $(Add-Particle $c2 '이/가') 어떤 순서로 연결되는지 설명하라."
+            Answer = "$(Add-Particle $c1 '과/와') $(Add-Particle $c2 '은/는') 분리해서 외우기보다 연결 구조로 읽어야 한다. 대표 문장: $(Get-ConceptSentence $c1 $Sentences)"
         },
         [pscustomobject]@{
             Question = "제목에 드러난 주제가 본문에서 어떤 방식으로 전개되는지 설명하라."
-            Answer = "'$Title'은 $c1, $c2, $c3를 통해 실제 판단 구조로 풀린다. 대표 문장: $(Get-ConceptSentence $c2 $Sentences)"
+            Answer = "'$Title'은 ${c1}, ${c2}, $(Add-Particle $c3 '을/를') 통해 실제 판단 구조로 풀린다. 대표 문장: $(Get-ConceptSentence $c2 $Sentences)"
         },
         [pscustomobject]@{
             Question = "실전 해석에서 헷갈리기 쉬운 개념 한 쌍을 고르고 차이를 설명하라."
-            Answer = "$c2와 $c3는 함께 등장해도 같은 기능으로 보면 안 된다. 대표 문장: $(Get-ConceptSentence $c3 $Sentences)"
+            Answer = "$(Add-Particle $c2 '과/와') $(Add-Particle $c3 '은/는') 함께 등장해도 같은 기능으로 보면 안 된다. 대표 문장: $(Get-ConceptSentence $c3 $Sentences)"
         },
         [pscustomobject]@{
             Question = "이 파일을 인접 강의와 구분할 때 반드시 기억해야 할 포인트는 무엇인가?"
-            Answer = "이 파일의 구분점은 $c1와 $c4를 묶어 읽는 방식에 있다. 대표 문장: $(Get-ConceptSentence $c4 $Sentences)"
+            Answer = "이 파일의 구분점은 $(Add-Particle $c1 '과/와') $(Add-Particle $c4 '을/를') 묶어 읽는 방식에 있다. 대표 문장: $(Get-ConceptSentence $c4 $Sentences)"
         }
     )
 }
@@ -337,10 +365,10 @@ function Get-ExamPoints {
     $c4 = $Concepts[3]
 
     return @(
-        "$c1를 출발점으로 놓고 $c2, $c3 순서로 연결해 볼 것.",
-        "'$Title' 문맥에서는 $c1를 단독 개념이 아니라 $c2와의 관계로 읽을 것.",
-        "$c3가 등장할 때 $c4와 섞어 외우지 말고 구분 포인트를 같이 정리할 것.",
-        "인접 파일과 제목이 비슷해 보여도 이 파일의 중심축은 $c1와 $c2라는 점을 기억할 것."
+        "$(Add-Particle $c1 '을/를') 출발점으로 놓고 ${c2}, ${c3} 순서로 연결해 볼 것.",
+        "'$Title' 문맥에서는 $(Add-Particle $c1 '을/를') 단독 개념이 아니라 $(Add-Particle $c2 '과/와')의 관계로 읽을 것.",
+        "$(Add-Particle $c3 '이/가') 등장할 때 $(Add-Particle $c4 '과/와') 섞어 외우지 말고 구분 포인트를 같이 정리할 것.",
+        "인접 파일과 제목이 비슷해 보여도 이 파일의 중심축은 $(Add-Particle $c1 '과/와') $(Add-Particle $c2 '이라는/라는') 점을 기억할 것."
     )
 }
 
@@ -355,9 +383,9 @@ function Get-CautionLines {
     $c3 = $Concepts[2]
 
     return @(
-        "$c1를 단순 정의로만 외우면 실제 적용에서 틀리기 쉽다.",
-        "$c2와 $c3는 함께 나오더라도 같은 기능으로 뭉뚱그리지 말 것.",
-        "원문 문장을 그대로 암기하기보다 '$Title'에서 $c1 -> $c2 흐름이 어떻게 반복되는지 다시 정리할 것."
+        "$(Add-Particle $c1 '을/를') 단순 정의로만 외우면 실제 적용에서 틀리기 쉽다.",
+        "$(Add-Particle $c2 '과/와') $(Add-Particle $c3 '은/는') 함께 나오더라도 같은 기능으로 뭉뚱그리지 말 것.",
+        "원문 문장을 그대로 암기하기보다 '$Title'에서 ${c1} -> ${c2} 흐름이 어떻게 반복되는지 다시 정리할 것."
     )
 }
 
@@ -418,7 +446,7 @@ function Build-StudyPack {
     $lines.Add("## 핵심 개념 맵")
     foreach ($concept in ($concepts | Select-Object -First 6)) {
         $peer = if ($concept -eq $concepts[0]) { $concepts[1] } else { $concepts[0] }
-        $lines.Add("- ${concept}: $concept는 이 파일에서 $peer와 연결되며, $(Get-ConceptSentence $concept $sentences)")
+        $lines.Add("- ${concept}: $(Add-Particle $concept '은/는') 이 파일에서 $(Add-Particle $peer '과/와') 연결되며, $(Get-ConceptSentence $concept $sentences)")
     }
     $lines.Add("")
 
@@ -455,7 +483,7 @@ function Build-StudyPack {
     $lines.Add("")
     $lines.Add("### 단계별 이해")
     $lines.Add("1. 먼저 '$($concepts[0])'을 기준으로 이 파일의 출발 판단을 한 줄로 정리한다.")
-    $lines.Add("2. 다음으로 '$($concepts[1])', '$($concepts[2])'가 어떻게 연결되는지 원문 문장으로 확인한다.")
+    $lines.Add("2. 다음으로 $(Add-Particle $($concepts[1]) '과/와') $(Add-Particle $($concepts[2]) '이/가') 어떻게 연결되는지 원문 문장으로 확인한다.")
     $lines.Add("3. 반복된 설명이 구조 설명인지 예시 설명인지 나눠 메모한다.")
     $lines.Add("4. 마지막으로 이 파일을 인접 강의와 구분하는 표현을 별도 표시해 복습한다.")
 
