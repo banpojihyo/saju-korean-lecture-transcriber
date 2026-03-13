@@ -1490,3 +1490,55 @@ context_skipped_hits: 7
 목생활을 -> 목생화를 (x2)
 관사를 -> 관살을 (x1)
 활을 -> 화를 (x3)
+
+[bb51526 - 2026-03-13 09:53:58]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\21. 음양오행 - 오행정리.script.txt
+file_override_rules: 3
+file_override_hits: 3
+applied_rules: 24
+changed_chars: 24701
+term_hits_after_correction: 51
+script_lines_after_cleanup: 135
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 4
+context_skipped_hits: 7
+
+[file overrides applied]
+자월의 관목. 민으로 돼 있다고 해도 -> 자월의 갑목. 갑인으로 돼 있다고 해도 (x1)
+원리적 접근으로 형성된 게 하두예요. -> 원리적 접근으로 형성된 게 하도예요. (x1)
+접종을 만드셔서 통변 -> 접점을 만드셔서 통변 (x1)
+
+[applied replacements]
+심금+조사/용어 -> 신금+조사/용어 (x2)
+토국수 -> 토극수 (x1)
+제 관 -> 재관 (x1)
+쟁제* -> 쟁재* (x1)
+사조의 구성 -> 사주의 구성 (x1)
+생극 재화를 -> 생극제화를 (x1)
+사조 해석 -> 사주 해석 (x1)
+사조 구성 -> 사주 구성 (x2)
+음향 오행 -> 음양 오행 (x1)
+수색목이 -> 수생목이 (x1)
+금긍목이 -> 금극목이 (x1)
+금극 목 -> 금극목 (x1)
+금긍목 -> 금극목 (x1)
+목생활 -> 목생화 (x2)
+4조 -> 사주 (x2)
+환은 -> 화는 (x7)
+활을 -> 화를 (x2)
+화급금 -> 화극금 (x6)
+목 붐디지 않으려면 -> 목분되지 않으려면 (x1)
+오야죠 -> 와야죠 (x2)
+플랭크 -> 블랭크 (x1)
+목생화을 -> 목생화를 (x2)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x3)
+(?<!제)4주(?=(?:가|는|를|로|에|에서|의|하고)|\s+(?:공부|하고|전체|구성|보\S*|볼\S*|딱|펼쳐\S*|뽑\S*|갖고|그러니까|이렇게)) -> 사주 (x1)
+
+[skipped by context]
+금긍목이 -> 금극목이 (x1)
+목생활을 -> 목생화를 (x2)
+관사를 -> 관살을 (x1)
+활을 -> 화를 (x3)
