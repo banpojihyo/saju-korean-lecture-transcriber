@@ -1089,3 +1089,48 @@ context_skipped_hits: 10
 [skipped by context]
 토복수 -> 토극수 (x1)
 활을 -> 화를 (x9)
+
+[7943338 - 2026-03-13 09:47:37]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\12. 음양오행 - 토의 생극제화 ①.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\12. 음양오행 - 토의 생극제화 ①.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\12. 음양오행 - 토의 생극제화 ①.script.txt
+file_override_rules: 0
+file_override_hits: 0
+applied_rules: 24
+changed_chars: 29341
+term_hits_after_correction: 43
+script_lines_after_cleanup: 134
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 2
+context_skipped_hits: 10
+
+[applied replacements]
+토국수 -> 토극수 (x19)
+토곡수 -> 토극수 (x6)
+제탈* -> 재탈* (x1)
+수국화 -> 수극화 (x3)
+목국토 -> 목극토 (x4)
+제 -> 재 (x1)
+수색목으로 -> 수생목으로 (x1)
+금화 교역 -> 금화교역 (x5)
+모기 개입 -> 목이 개입 (x1)
+수색 못 -> 수생목 (x1)
+10성 -> 십성 (x2)
+수색목 -> 수생목 (x1)
+환은 -> 화는 (x1)
+활을 -> 화를 (x2)
+토생금디는 것 -> 토생금되는 것 (x1)
+금생수호디는 -> 금생수되는 (x1)
+화생 토디는 -> 화생토되는 (x1)
+화생토디는 -> 화생토되는 (x4)
+화생토 디는 -> 화생토되는 (x3)
+화생토딘 상태 -> 화생토된 상태 (x2)
+토극수딘 -> 토극수된 (x4)
+토국소딘 상태 -> 토극수된 상태 (x1)
+화생토딘 사회문화 -> 화생토된 사회문화 (x1)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x8)
+
+[skipped by context]
+토복수 -> 토극수 (x1)
+활을 -> 화를 (x9)

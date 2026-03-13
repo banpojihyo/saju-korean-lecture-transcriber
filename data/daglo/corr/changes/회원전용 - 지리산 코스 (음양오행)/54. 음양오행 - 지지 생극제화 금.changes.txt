@@ -1091,3 +1091,51 @@ context_skipped_hits: 16
 금긍목의 -> 금극목의 (x1)
 금금목을 -> 금극목을 (x1)
 활을 -> 화를 (x10)
+
+[7943338 - 2026-03-13 09:47:38]
+source: data\daglo\raw\회원전용 - 지리산 코스 (음양오행)\54. 음양오행 - 지지 생극제화 금.txt
+output: data\daglo\corr\corrected\회원전용 - 지리산 코스 (음양오행)\54. 음양오행 - 지지 생극제화 금.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 지리산 코스 (음양오행)\54. 음양오행 - 지지 생극제화 금.script.txt
+file_override_rules: 2
+file_override_hits: 1
+applied_rules: 20
+changed_chars: 27117
+term_hits_after_correction: 54
+script_lines_after_cleanup: 149
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 6
+context_skipped_hits: 16
+
+[file overrides applied]
+신월의 화급검의 작용 -> 신월의 화극금의 작용 (x1)
+
+[applied replacements]
+생극 재화를 -> 생극제화를 (x2)
+금화 교역 -> 금화교역 (x5)
+모기 개입 -> 목이 개입 (x1)
+생극 재화 -> 생극제화 (x2)
+생극 제화 -> 생극제화 (x1)
+수색목을 -> 수생목을 (x1)
+금궁목에 -> 금극목에 (x1)
+금긍목이 -> 금극목이 (x1)
+금극 목 -> 금극목 (x1)
+수색목 -> 수생목 (x1)
+금궁목 -> 금극목 (x1)
+금긍목 -> 금극목 (x5)
+금금목 -> 금극목 (x1)
+입목은 -> 인목은 (x2)
+입목의 -> 인목의 (x1)
+활을 -> 화를 (x5)
+화급금 -> 화극금 (x4)
+화생토딘 상태 -> 화생토된 상태 (x1)
+고무딘다 -> 고무된다 (x1)
+(?<![가-힣])활을(?=[^가-힣]|$) -> 화를 (x10)
+
+[skipped by context]
+수색목이 -> 수생목이 (x1)
+금긍목은 -> 금극목은 (x1)
+금긍목이 -> 금극목이 (x2)
+금긍목의 -> 금극목의 (x1)
+금금목을 -> 금극목을 (x1)
+활을 -> 화를 (x10)

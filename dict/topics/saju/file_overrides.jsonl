@@ -196,3 +196,8 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"수색 못 하는데 쟤를","right":"수생목하는데 재를","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"대대디는","right":"대대되는","note":"Standardized from spoken dialectal ending to document form"}
 {"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"대별디는","right":"대별되는","note":"Standardized from spoken dialectal ending to document form"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"그러니까 그거에 우토가 신금이 생지가 돼요. 인수와 심금의 생지잖아요. 무슨 심금이 생지가 될 수 있으니까.","right":"그러니까 뭐에요? 무토가 신금이 생지가 돼요. 임수가 신금의 생지잖아요. 무토가 신금이 생지가 될 수 있으니까.","note":"User-confirmed phrase reconstruction for mu-to/sin-geum context"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"유김","right":"육임","note":"User-confirmed terminology reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"지나가 지나온 온 대로 다시 가는 것은 안딘다가 장군살이에요.","right":"지나가 지나온 온 대로 다시 가는 것은 안 된다는 게 장군살이에요.","note":"User-confirmed phrase reconstruction for janggunsal explanation"}
+{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"중첩디즈 아니에요","right":"중첩되지 않아요","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/11. 십성론 - ④상관.txt","wrong":"일가는 항상 이 편제의 고무딘 상관생제라는","right":"일간은 항상 이 편재의 고무된 상관생재라는","note":"User-confirmed phrase reconstruction"}
