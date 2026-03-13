@@ -37,12 +37,17 @@
 - `기본 다이제스트 30 - 일지 기준의 십성 2`
 - `기본 다이제스트 31 - 운추론1`
 - `기본 다이제스트 32 - 운추론2`
+- `한글과 성명학 1`
+- `한글과 성명학 2`
+- `한글과 성명학 3`
+- `한글과 성명학 4`
 
 ## Seeded from previous high-quality GPT-5.4 direct outputs
-- `회원전용 - 기본다이제스트 (계룡산 등반)` 범위는 이번 런에서 전 파일 direct 재작성 완료 상태입니다.
-- `GPT-5.4-Direct-Extra-High__20260309-223424`는 이제 비교용 고품질 기준본으로만 유지합니다.
+- This run started by copying the older direct-session package as a quality baseline.
+- Files were then overwritten in place as each script was directly rewritten against the latest corrected `data/daglo/corr/script` source.
+- `GPT-5.4-Direct-Extra-High__20260309-223424` remains a comparison baseline only.
 
 ## Notes
 - This run does not use `generate_direct_session_md.ps1` outputs as final content.
 - New direct rewrites should overwrite seeded files in place when refreshed.
-- Basic Digest scope is now fully refreshed against the latest corrected scripts.
+- `회원전용 - 기본다이제스트 (계룡산 등반)` is now fully refreshed, including `한글과 성명학 1~4`.
