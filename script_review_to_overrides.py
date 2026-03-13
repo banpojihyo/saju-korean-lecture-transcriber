@@ -8,7 +8,7 @@ import re
 from dataclasses import replace
 from pathlib import Path
 
-from correct_daglo_file import (
+from daglo_corrector import (
     FILE_OVERRIDES_FILENAME,
     FileOverrideRule,
     load_file_overrides,

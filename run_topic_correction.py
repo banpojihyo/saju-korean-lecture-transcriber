@@ -10,7 +10,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from correct_daglo_file import (
+from daglo_corrector import (
     FILE_OVERRIDES_FILENAME,
     TERM_STOPWORDS_FILENAME,
     load_file_overrides,

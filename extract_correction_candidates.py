@@ -23,12 +23,12 @@ from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
-from correct_daglo_file import (
+from daglo_corrector import (
     FILE_OVERRIDES_FILENAME,
     load_file_overrides,
     load_replace_pairs,
-    manual_pairs,
 )
+from correct_daglo_file import manual_pairs
 
 
 TIMESTAMP_LINE_RE = re.compile(r"^\s*((?:\d{1,2}:)?\d{1,2}:\d{2})(?:\s*화자\s*\d+)?\s*$")

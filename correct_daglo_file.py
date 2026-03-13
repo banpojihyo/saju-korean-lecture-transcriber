@@ -9,15 +9,28 @@ This applies:
 from __future__ import annotations
 
 import argparse
-import csv
-import fnmatch
-import json
 import re
-import subprocess
-from collections.abc import Callable
-from dataclasses import dataclass
-from datetime import datetime
 from pathlib import Path
+
+from daglo_corrector import (
+    FILE_OVERRIDES_FILENAME,
+    TERM_STOPWORDS_FILENAME,
+    CorrectionContext,
+    FileOverrideRule,
+    append_change_report,
+    build_script_only_text,
+    expand_replace_pairs_with_particles,
+    load_file_overrides,
+    load_replace_pairs,
+    load_stopwords,
+    load_terms,
+    merge_file_overrides,
+    merge_stopwords,
+    write_file_overrides,
+    write_replace_pairs,
+    write_stopwords,
+    write_terms,
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -66,290 +79,21 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-FILE_OVERRIDES_FILENAME = "file_overrides.jsonl"
-TERM_STOPWORDS_FILENAME = "term_stopwords.txt"
 AUTO_REPLACE_PAIR_RE = re.compile(r"^[가-힣A-Za-z0-9]+(?: [가-힣A-Za-z0-9]+)?$")
-HANGUL_TOKEN_RE = re.compile(r"[가-힣]+$")
-EXPANDED_REPLACE_PAIR_TO_BASE: dict[tuple[str, str], tuple[str, str]] = {}
-
-
-@dataclass(frozen=True)
-class FileOverrideRule:
-    path: str
-    wrong: str
-    right: str
-    note: str = ""
-
-    def matches(self, relative_path: str) -> bool:
-        return fnmatch.fnmatch(relative_path, self.path)
 
 
 def normalize_relative_path(path: Path) -> str:
     return path.as_posix()
-
-
-def load_replace_pairs(path: Path) -> list[tuple[str, str]]:
-    pairs: list[tuple[str, str]] = []
-    if not path.exists():
-        return pairs
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            wrong = (row.get("wrong") or "").strip()
-            right = (row.get("right") or "").strip()
-            if wrong and right and wrong != right:
-                pairs.append((wrong, right))
-    return pairs
-
-
-def jongseong_index(text: str) -> int:
-    if not text:
-        return 0
-    char = text[-1]
-    if not ("가" <= char <= "힣"):
-        return 0
-    return (ord(char) - ord("가")) % 28
-
-
-def has_batchim(text: str) -> bool:
-    return jongseong_index(text) != 0
-
-
-def has_rieul_batchim(text: str) -> bool:
-    return jongseong_index(text) == 8
-
-
-def pick_particle_suffix(
-    stem: str,
-    with_batchim: str,
-    without_batchim: str,
-    rieul_suffix: str | None = None,
-) -> str:
-    if has_rieul_batchim(stem) and rieul_suffix is not None:
-        return rieul_suffix
-    if has_batchim(stem):
-        return with_batchim
-    return without_batchim
-
-
-PARTICLE_EXPANSION_SPECS: tuple[tuple[str, Callable[[str], str]], ...] = (
-    ("은/는", lambda stem: pick_particle_suffix(stem, "은", "는")),
-    ("이/가", lambda stem: pick_particle_suffix(stem, "이", "가")),
-    ("을/를", lambda stem: pick_particle_suffix(stem, "을", "를")),
-    ("과/와", lambda stem: pick_particle_suffix(stem, "과", "와")),
-    ("으로/로", lambda stem: pick_particle_suffix(stem, "으로", "로", rieul_suffix="로")),
-    ("의", lambda stem: "의"),
-    ("에", lambda stem: "에"),
-    ("도", lambda stem: "도"),
-    ("고", lambda stem: "고"),
-    ("만", lambda stem: "만"),
-    ("한테", lambda stem: "한테"),
-    ("이나/나", lambda stem: pick_particle_suffix(stem, "이나", "나")),
-    ("이에요/예요", lambda stem: pick_particle_suffix(stem, "이에요", "예요")),
-    ("이죠/죠", lambda stem: pick_particle_suffix(stem, "이죠", "죠")),
-    ("이니까/니까", lambda stem: pick_particle_suffix(stem, "이니까", "니까")),
-    ("이잖아요/잖아요", lambda stem: pick_particle_suffix(stem, "이잖아요", "잖아요")),
-    ("이면/면", lambda stem: pick_particle_suffix(stem, "이면", "면")),
-    ("이면은/면은", lambda stem: pick_particle_suffix(stem, "이면은", "면은")),
-    ("이라고요/라고요", lambda stem: pick_particle_suffix(stem, "이라고요", "라고요")),
-    ("이라든지/라든지", lambda stem: pick_particle_suffix(stem, "이라든지", "라든지")),
-    ("이든지/든지", lambda stem: pick_particle_suffix(stem, "이든지", "든지")),
-)
-
-
-def is_expandable_replace_stem(text: str) -> bool:
-    return bool(HANGUL_TOKEN_RE.fullmatch(text)) and len(text) >= 2
-
-
-def looks_like_particle_variant(wrong: str, right: str) -> bool:
-    for _, selector in PARTICLE_EXPANSION_SPECS:
-        for wrong_cut in range(2, len(wrong)):
-            wrong_stem = wrong[:wrong_cut]
-            wrong_suffix = wrong[wrong_cut:]
-            if wrong_suffix != selector(wrong_stem):
-                continue
-            for right_cut in range(2, len(right)):
-                right_stem = right[:right_cut]
-                right_suffix = right[right_cut:]
-                if right_suffix == selector(right_stem):
-                    return True
-    return False
-
-
-def expand_replace_pairs_with_particles(
-    base_pairs: list[tuple[str, str]]
-) -> list[tuple[str, str]]:
-    EXPANDED_REPLACE_PAIR_TO_BASE.clear()
-
-    expanded: list[tuple[str, str]] = []
-    seen: set[tuple[str, str]] = set()
-
-    for wrong, right in base_pairs:
-        base_pair = (wrong, right)
-        if base_pair not in seen:
-            seen.add(base_pair)
-            expanded.append(base_pair)
-        EXPANDED_REPLACE_PAIR_TO_BASE.setdefault(base_pair, base_pair)
-
-        if not is_expandable_replace_stem(wrong) or not is_expandable_replace_stem(right):
-            continue
-        if looks_like_particle_variant(wrong, right):
-            continue
-
-        for _, selector in PARTICLE_EXPANSION_SPECS:
-            expanded_pair = (wrong + selector(wrong), right + selector(right))
-            if expanded_pair in seen:
-                continue
-            seen.add(expanded_pair)
-            expanded.append(expanded_pair)
-            EXPANDED_REPLACE_PAIR_TO_BASE.setdefault(expanded_pair, base_pair)
-
-    return expanded
-
-
-def load_file_overrides(path: Path) -> list[FileOverrideRule]:
-    overrides: list[FileOverrideRule] = []
-    if not path.exists():
-        return overrides
-
-    with path.open("r", encoding="utf-8-sig") as f:
-        for line_no, raw_line in enumerate(f, start=1):
-            line = raw_line.strip()
-            if not line or line.startswith("#"):
-                continue
-
-            try:
-                payload = json.loads(line)
-            except json.JSONDecodeError as exc:
-                raise ValueError(
-                    f"invalid JSONL in {path} at line {line_no}: {exc}"
-                ) from exc
-
-            path_pattern = str(payload.get("path") or "").strip().replace("\\", "/")
-            wrong = str(payload.get("wrong") or "").strip()
-            right = str(payload.get("right") or "").strip()
-            note = str(payload.get("note") or "").strip()
-            if not path_pattern or not wrong or not right or wrong == right:
-                continue
-
-            overrides.append(
-                FileOverrideRule(
-                    path=path_pattern,
-                    wrong=wrong,
-                    right=right,
-                    note=note,
-                )
-            )
-
-    return overrides
-
-
-def load_terms(path: Path) -> list[str]:
-    terms: list[str] = []
-    seen: set[str] = set()
-    if not path.exists():
-        return terms
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            term = (row.get("term") or "").strip()
-            if not term or term in seen:
-                continue
-            seen.add(term)
-            terms.append(term)
-    return terms
-
-
-def load_stopwords(path: Path) -> set[str]:
-    stopwords: set[str] = set()
-    if not path.exists():
-        return stopwords
-
-    with path.open("r", encoding="utf-8-sig") as f:
-        for raw_line in f:
-            line = raw_line.split("#", 1)[0].strip()
-            if not line:
-                continue
-            stopwords.add(line)
-
-    return stopwords
-
-
-def write_replace_pairs(path: Path, pairs: list[tuple[str, str]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["wrong", "right"])
-        for wrong, right in pairs:
-            writer.writerow([wrong, right])
-
-
-def write_file_overrides(path: Path, overrides: list[FileOverrideRule]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        for override in overrides:
-            payload = {
-                "path": override.path,
-                "wrong": override.wrong,
-                "right": override.right,
-            }
-            if override.note:
-                payload["note"] = override.note
-            f.write(json.dumps(payload, ensure_ascii=False) + "\n")
-
-
-def write_terms(path: Path, terms: list[str]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["term"])
-        for term in terms:
-            writer.writerow([term])
-
-
-def write_stopwords(path: Path, stopwords: set[str]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    lines = sorted(stopwords)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        if lines:
-            f.write("\n".join(lines) + "\n")
-
-
-def current_git_short_hash() -> str:
-    try:
-        result = subprocess.run(
-            ["git", "rev-parse", "--short", "HEAD"],
-            check=True,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-        )
-        commit = result.stdout.strip()
-        return commit or "working-tree"
-    except Exception:
-        return "working-tree"
-
-
-def append_change_report(path: Path, lines: list[str]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    header = f"[{current_git_short_hash()} - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}]"
-    block = "\n".join([header, *lines]).rstrip() + "\n"
-    if path.exists():
-        existing = path.read_text(encoding="utf-8").rstrip()
-        if existing:
-            path.write_text(existing + "\n\n" + block, encoding="utf-8")
-            return
-    path.write_text(block, encoding="utf-8")
-
-
 def merge_replace_pairs(
-    existing: list[tuple[str, str]], applied: list[tuple[str, str, int]]
+    existing: list[tuple[str, str]],
+    applied: list[tuple[str, str, int]],
+    expanded_pair_to_base: dict[tuple[str, str], tuple[str, str]],
 ) -> tuple[list[tuple[str, str]], list[tuple[str, str]]]:
     merged = existing.copy()
     seen = set(existing)
     added: list[tuple[str, str]] = []
     for wrong, right, _ in applied:
-        wrong, right = EXPANDED_REPLACE_PAIR_TO_BASE.get((wrong, right), (wrong, right))
+        wrong, right = expanded_pair_to_base.get((wrong, right), (wrong, right))
         if not is_auto_dict_replace_candidate(wrong, right):
             continue
         pair = (wrong, right)
@@ -359,24 +103,6 @@ def merge_replace_pairs(
         merged.append(pair)
         added.append(pair)
     return merged, added
-
-
-def merge_file_overrides(
-    existing: list[FileOverrideRule], incoming: list[FileOverrideRule]
-) -> list[FileOverrideRule]:
-    merged: list[FileOverrideRule] = []
-    seen: set[tuple[str, str, str]] = set()
-    for rule in existing + incoming:
-        key = (rule.path, rule.wrong, rule.right)
-        if key in seen:
-            continue
-        seen.add(key)
-        merged.append(rule)
-    return merged
-
-
-def merge_stopwords(first: set[str], second: set[str]) -> set[str]:
-    return set(first) | set(second)
 
 
 KOREAN_RE = re.compile(r"[가-힣]")
@@ -1409,11 +1135,6 @@ SAJU_TERM_ALLOWED_COMPOUND_PREFIXES = (
     "관성",
 )
 
-CURRENT_DICT_TOPIC = ""
-CURRENT_SOURCE_UNDER_SAJU_RAW = False
-CURRENT_SOURCE_RELATIVE_PATH = ""
-CURRENT_TERM_STOPWORDS: set[str] = set()
-
 FORCE_DOMAIN_REPLACEMENTS = {
     ("항만조습", "한난조습"),
     ("항만조습이에요", "한난조습이에요"),
@@ -1550,16 +1271,22 @@ def is_saju_ji_stem_context(suffix: str, text: str, end: int) -> bool:
 
 
 def should_apply_replacement(
-    text: str, start: int, end: int, wrong: str, right: str
+    text: str,
+    start: int,
+    end: int,
+    wrong: str,
+    right: str,
+    context: CorrectionContext,
+    expanded_pair_to_base: dict[tuple[str, str], tuple[str, str]],
 ) -> bool:
     pair = (wrong, right)
-    base_pair = EXPANDED_REPLACE_PAIR_TO_BASE.get(pair, pair)
+    base_pair = expanded_pair_to_base.get(pair, pair)
 
     if pair in FORCE_DOMAIN_REPLACEMENTS:
         return True
 
-    if CURRENT_DICT_TOPIC == "saju":
-        if CURRENT_SOURCE_UNDER_SAJU_RAW and base_pair in SAJU_RAW_PRIORITY_PAIRS:
+    if context.dict_topic == "saju":
+        if context.source_under_saju_raw and base_pair in SAJU_RAW_PRIORITY_PAIRS:
             return True
         if base_pair in SAJU_RAW_PRIORITY_PAIRS and not has_context_keyword(
             text, start, end, DOMAIN_CONTEXT_KEYWORDS, window=120
@@ -1587,7 +1314,10 @@ def should_apply_replacement(
 
 
 def apply_context_aware_replacements(
-    text: str, rules: list[tuple[str, str]]
+    text: str,
+    rules: list[tuple[str, str]],
+    context: CorrectionContext,
+    expanded_pair_to_base: dict[tuple[str, str], tuple[str, str]],
 ) -> tuple[str, list[tuple[str, str, int]], list[tuple[str, str, int]]]:
     applied: list[tuple[str, str, int]] = []
     skipped: list[tuple[str, str, int]] = []
@@ -1603,7 +1333,15 @@ def apply_context_aware_replacements(
 
         for match in re.finditer(re.escape(wrong), text):
             start, end = match.span()
-            if should_apply_replacement(text, start, end, wrong, right):
+            if should_apply_replacement(
+                text,
+                start,
+                end,
+                wrong,
+                right,
+                context,
+                expanded_pair_to_base,
+            ):
                 segments.append(text[last:start])
                 segments.append(right)
                 last = end
@@ -1638,8 +1376,10 @@ def apply_literal_replacements(
     return text, applied
 
 
-def apply_saju_regex_replacements(text: str) -> tuple[str, list[tuple[str, str, int]]]:
-    if CURRENT_DICT_TOPIC != "saju":
+def apply_saju_regex_replacements(
+    text: str, context: CorrectionContext
+) -> tuple[str, list[tuple[str, str, int]]]:
+    if context.dict_topic != "saju":
         return text, []
 
     applied_counts: dict[tuple[str, str], int] = {}
@@ -1910,8 +1650,9 @@ SAJU_STABLE_REGEX_NORMALIZATIONS: tuple[tuple[re.Pattern[str], str], ...] = (
 
 def apply_saju_stable_normalizations(
     text: str,
+    context: CorrectionContext,
 ) -> tuple[str, list[tuple[str, str, int]]]:
-    if CURRENT_DICT_TOPIC != "saju":
+    if context.dict_topic != "saju":
         return text, []
 
     applied: list[tuple[str, str, int]] = []
@@ -1943,9 +1684,9 @@ def is_auto_dict_replace_candidate(wrong: str, right: str) -> bool:
     return True
 
 
-def normalize_term_candidate(text: str) -> str:
+def normalize_term_candidate(text: str, term_stopwords: frozenset[str]) -> str:
     candidate = text.strip()
-    if candidate in CURRENT_TERM_STOPWORDS:
+    if candidate in term_stopwords:
         return ""
     if " " in candidate:
         return ""
@@ -1964,7 +1705,7 @@ def normalize_term_candidate(text: str) -> str:
         if candidate.endswith(ending):
             return ""
 
-    if candidate in CURRENT_TERM_STOPWORDS:
+    if candidate in term_stopwords:
         return ""
     if len(candidate) < 2 or len(candidate) > 20:
         return ""
@@ -1974,17 +1715,19 @@ def normalize_term_candidate(text: str) -> str:
 
 
 def is_term_candidate(text: str) -> bool:
-    return bool(normalize_term_candidate(text))
+    return bool(normalize_term_candidate(text, frozenset()))
 
 
 def merge_terms_from_applied(
-    existing_terms: list[str], applied: list[tuple[str, str, int]]
+    existing_terms: list[str],
+    applied: list[tuple[str, str, int]],
+    context: CorrectionContext,
 ) -> tuple[list[str], list[str]]:
     merged = existing_terms.copy()
     seen = set(existing_terms)
     added: list[str] = []
     for _, right, _ in applied:
-        normalized = normalize_term_candidate(right)
+        normalized = normalize_term_candidate(right, context.term_stopwords)
         if not normalized:
             continue
         if normalized in seen:
@@ -2145,36 +1888,7 @@ def manual_pairs() -> list[tuple[str, str]]:
     ]
 
 
-# Remove timestamp-only lines (mm:ss / hh:mm:ss) and timestamp+speaker lines.
-TIMESTAMP_LINE_RE = re.compile(
-    r"^\s*(?:\d{1,2}:)?\d{1,2}:\d{2}(?:\s*화자\s*\d+)?\s*$"
-)
-
-
-def build_script_only_text(text: str) -> str:
-    lines = text.splitlines()
-    kept: list[str] = []
-    for line in lines:
-        stripped = line.strip()
-        if TIMESTAMP_LINE_RE.match(stripped):
-            continue
-        if not stripped:
-            if kept and kept[-1] != "":
-                kept.append("")
-            continue
-        kept.append(stripped)
-
-    while kept and kept[0] == "":
-        kept.pop(0)
-    while kept and kept[-1] == "":
-        kept.pop()
-
-    return "\n".join(kept) + ("\n" if kept else "")
-
-
 def main() -> int:
-    global CURRENT_DICT_TOPIC, CURRENT_SOURCE_RELATIVE_PATH, CURRENT_SOURCE_UNDER_SAJU_RAW, CURRENT_TERM_STOPWORDS
-
     args = parse_args()
     source = Path(args.source_file)
     if not source.exists():
@@ -2193,14 +1907,18 @@ def main() -> int:
 
     try:
         relative = source_abs.relative_to(input_root_abs)
-        CURRENT_SOURCE_UNDER_SAJU_RAW = is_daglo_raw_root
+        source_under_saju_raw = is_daglo_raw_root
     except ValueError:
         # Fallback: preserve source filename under output root.
         relative = Path(source.name)
-        CURRENT_SOURCE_UNDER_SAJU_RAW = False
+        source_under_saju_raw = False
 
-    CURRENT_DICT_TOPIC = (args.topic_name or dict_dir.name).lower()
-    CURRENT_SOURCE_RELATIVE_PATH = normalize_relative_path(relative)
+    context = CorrectionContext(
+        dict_topic=(args.topic_name or dict_dir.name).lower(),
+        source_relative_path=normalize_relative_path(relative),
+        source_under_saju_raw=source_under_saju_raw,
+        term_stopwords=frozenset(load_stopwords(dict_dir / TERM_STOPWORDS_FILENAME)),
+    )
 
     output_path = (
         output_root / "corrected" / relative.parent / f"{source.stem}.corrected{source.suffix}"
@@ -2216,17 +1934,17 @@ def main() -> int:
     replace_path = dict_dir / "replace.csv"
     terms_path = dict_dir / "terms.csv"
     file_overrides_path = dict_dir / FILE_OVERRIDES_FILENAME
-    stopwords_path = dict_dir / TERM_STOPWORDS_FILENAME
 
     replace_pairs = load_replace_pairs(replace_path)
-    runtime_replace_pairs = expand_replace_pairs_with_particles(replace_pairs)
+    runtime_replace_pairs, expanded_pair_to_base = expand_replace_pairs_with_particles(
+        replace_pairs
+    )
     domain_terms = load_terms(terms_path)
     file_overrides = [
         rule
         for rule in load_file_overrides(file_overrides_path)
-        if rule.matches(CURRENT_SOURCE_RELATIVE_PATH)
+        if rule.matches(context.source_relative_path)
     ]
-    CURRENT_TERM_STOPWORDS = load_stopwords(stopwords_path)
     all_pairs_raw = runtime_replace_pairs + manual_pairs()
     all_pairs: list[tuple[str, str]] = []
     seen_pairs: set[tuple[str, str]] = set()
@@ -2242,9 +1960,14 @@ def main() -> int:
     file_override_pairs = [(rule.wrong, rule.right) for rule in file_overrides]
     file_override_pairs.sort(key=lambda p: len(p[0]), reverse=True)
     text, file_override_applied = apply_literal_replacements(text, file_override_pairs)
-    text, regex_applied = apply_saju_regex_replacements(text)
-    text, applied, skipped_by_context = apply_context_aware_replacements(text, all_pairs)
-    text, stable_normalization_applied = apply_saju_stable_normalizations(text)
+    text, regex_applied = apply_saju_regex_replacements(text, context)
+    text, applied, skipped_by_context = apply_context_aware_replacements(
+        text,
+        all_pairs,
+        context,
+        expanded_pair_to_base,
+    )
+    text, stable_normalization_applied = apply_saju_stable_normalizations(text, context)
     reported_applied = regex_applied + applied + stable_normalization_applied
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -2258,9 +1981,11 @@ def main() -> int:
     added_terms: list[str] = []
     if not args.no_update_dict:
         merged_replace_pairs, added_replace_pairs = merge_replace_pairs(
-            replace_pairs, applied
+            replace_pairs,
+            applied,
+            expanded_pair_to_base,
         )
-        merged_terms, added_terms = merge_terms_from_applied(domain_terms, applied)
+        merged_terms, added_terms = merge_terms_from_applied(domain_terms, applied, context)
         if added_replace_pairs:
             write_replace_pairs(replace_path, merged_replace_pairs)
         if added_terms:
