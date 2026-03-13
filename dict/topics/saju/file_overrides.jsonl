@@ -201,3 +201,4 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"지나가 지나온 온 대로 다시 가는 것은 안딘다가 장군살이에요.","right":"지나가 지나온 온 대로 다시 가는 것은 안 된다는 게 장군살이에요.","note":"User-confirmed phrase reconstruction for janggunsal explanation"}
 {"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"중첩디즈 아니에요","right":"중첩되지 않아요","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 한라산 코스 (십성론)/11. 십성론 - ④상관.txt","wrong":"일가는 항상 이 편제의 고무딘 상관생제라는","right":"일간은 항상 이 편재의 고무된 상관생재라는","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 01 - 한난조습이란？.txt","wrong":"형악 큰형 약전과 양궁이 귀양 가는 거지. 정약전 선생은 흑산주에서 죽습니다. 귀양은 해대 안디고 우리가 알고 있는 자산어보. 이게 자자를 읽잖아요. 건물 현자를 읽으셔야 된다고.","right":"형하고, 큰 형 약전과 약용이 귀양 가는 거지. 정약전 선생은 흑산도에서 죽습니다. 귀양은 해도 안되고 우리가 알고 있는 자산어보. 이게 자자로 읽잖아요. 검을 현자를 읽으셔야 된다고.","note":"User-confirmed phrase reconstruction for Jeong Yak-yong exile context"}

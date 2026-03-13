@@ -684,3 +684,35 @@ context_skipped_hits: 0
 사조라는 -> 사주라는 (x1)
 환은 -> 화는 (x1)
 활을 -> 화를 (x1)
+
+[8b4bd06 - 2026-03-13 10:26:29]
+source: C:\Users\Administrator\daglo-script-corrector\data\daglo\raw\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.txt
+output: data\daglo\corr\corrected\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.corrected.txt
+script_only_output: data\daglo\corr\script\회원전용 - 기본다이제스트 (계룡산 등반)\기본 다이제스트 01 - 한난조습이란？.script.txt
+file_override_rules: 2
+file_override_hits: 2
+applied_rules: 11
+changed_chars: 19778
+term_hits_after_correction: 54
+script_lines_after_cleanup: 111
+dict_replace_added: 0
+dict_terms_added: 0
+context_skipped_rules: 0
+context_skipped_hits: 0
+
+[file overrides applied]
+형악 큰형 약전과 양궁이 귀양 가는 거지. 정약전 선생은 흑산주에서 죽습니다. 귀양은 해대 안디고 우리가 알고 있는 자산어보. 이게 자자를 읽잖아요. 건물 현자를 읽으셔야 된다고. -> 형하고, 큰 형 약전과 약용이 귀양 가는 거지. 정약전 선생은 흑산도에서 죽습니다. 귀양은 해도 안되고 우리가 알고 있는 자산어보. 이게 자자로 읽잖아요. 검을 현자를 읽으셔야 된다고. (x1)
+4주 후에 -> 사주에 (x1)
+
+[applied replacements]
+일제 -> 일지 (x1)
+이 과목이 이미 사목적 성향의 상징성을 띕니다. -> 이 갑목이 이미 사목적 성향의 상징성을 띕니다. (x1)
+만약에 속이 차갑 겉이 여래 있는데 -> 만약에 속이 차갑고 겉에 열이 있는데 (x1)
+이 과목이 자수를 끌어내서 쓰는데 -> 이 갑목이 자수를 끌어내서 쓰는데 (x1)
+조한사조를 -> 조한사주를 (x2)
+조안사조를 -> 조한사주를 (x1)
+이 사조는 -> 이 사주는 (x1)
+수색 못 -> 수생목 (x1)
+사조라는 -> 사주라는 (x1)
+환은 -> 화는 (x1)
+활을 -> 화를 (x1)
