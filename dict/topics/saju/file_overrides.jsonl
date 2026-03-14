@@ -1,4 +1,4 @@
-{"path":"회원전용 - 지리산 코스 (음양오행)/07. 음양오행.txt","wrong":"십관 십이지를 전부 다 한난 조수부로 다 나누셔야 돼요.","right":"십간 십이지를 전부 다 한난 조습으로 다 나누셔야 돼요.","note":"One-off lecture sentence fix"}
+﻿{"path":"회원전용 - 지리산 코스 (음양오행)/07. 음양오행.txt","wrong":"십관 십이지를 전부 다 한난 조수부로 다 나누셔야 돼요.","right":"십간 십이지를 전부 다 한난 조습으로 다 나누셔야 돼요.","note":"One-off lecture sentence fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"사모기에 한 모기 개입","right":"사목에 한목이 개입","note":"Batch-reviewed file-scoped fix after candidate extraction"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"자월의 관목. 민으로 돼 있다고 해도","right":"자월의 갑목. 갑인으로 돼 있다고 해도","note":"User-confirmed line fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"원리적 접근으로 형성된 게 하두예요.","right":"원리적 접근으로 형성된 게 하도예요.","note":"User-confirmed line fix"}
@@ -220,3 +220,11 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"다 배웠잖아요. 누구한테 그냥 돌아다니는 얘기 다 그렇게 돼 있어요.","right":"다 배웠잖아요. 누구한테? 그냥 돌아다니는 얘기 다 그렇게 돼 있어요.","note":"User-confirmed punctuation fix"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"수를 보죠. 수호.","right":"수를 보죠. 수.","note":"User-confirmed Basic Digest phrase fix"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 11 - 한동석 선생님 사주 예시.txt","wrong":"청간의 관점을 삶의 입장에서 보겠다. 자 그러면은 갑목이 양해요. 을목이 양해 을목 무슨 입장에서?","right":"천간의 관점을 삶의 입장에서 보겠다. 자 그러면은 갑목이 양해요. 을목이 양해? 을목 무슨 입장에서?","note":"User-confirmed Basic Digest sentence fix"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/02. 음양오행.txt","wrong":"장간으로부터 출발해서","right":"장강으로부터 출발해서","note":"User-confirmed file-scoped override for reviewed Jirisan anatomy metaphor"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"청간은 성패 중심으로 통변지는 중요한 부분","right":"천간은 성패 중심으로 통변되는 중요한 부분","note":"User-confirmed sentence reconstruction from Jirisan review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"형충파의 생극체와","right":"형충파의 생극제화","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"그 천가는 생극제화만 있지","right":"그 천간은 생극제화만 있지","note":"User-confirmed sentence reconstruction from Jirisan review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"생선로 연결고리","right":"생설로 연결고리","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"금생수딘 영역","right":"금생수된 영역","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"유공","right":"유금","note":"User-confirmed file-scoped normalization for Jirisan metal branch context"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"묵이 수를 끌고 가는 것을","right":"목이 수를 끌고 가는 것을","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
