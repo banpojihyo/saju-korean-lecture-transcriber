@@ -228,3 +228,11 @@
 {"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"금생수딘 영역","right":"금생수된 영역","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"유공","right":"유금","note":"User-confirmed file-scoped normalization for Jirisan metal branch context"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"묵이 수를 끌고 가는 것을","right":"목이 수를 끌고 가는 것을","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"인간과 연간이 같아졌잖아요","right":"일간과 연간이 같아졌잖아요","note":"User-confirmed Hallasan sentence reconstruction from review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"건녹이고요","right":"건록이고요","note":"User-confirmed Hallasan terminology fix from review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/09. 십성론 - ②상관.txt","wrong":"그러한 상 상관 그러한 상관은","right":"그러한 상관은","note":"User-confirmed Hallasan phrase cleanup from review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/09. 십성론 - ②상관.txt","wrong":"조혈함","right":"조열함","note":"User-confirmed Hallasan term normalization from review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/20. 십성론 - ① 정관.txt","wrong":"내 한목숨","right":"내 한 목숨","note":"User-confirmed Hallasan spacing fix from review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"그린벨에","right":"그린베레","note":"User-confirmed Hallasan phrase reconstruction from review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"견장차죠","right":"견장 차죠","note":"User-confirmed Hallasan spacing fix from review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/38. 십성론 - 십성 물상 활용 2.txt","wrong":"정 관성 관성의 공간 관성의 공간은 어디에 그냥 생각해 보세요.","right":"관성, 관성의 공간은 어디에요? 그냥. 생각해 보세요.","note":"User-confirmed Hallasan sentence reconstruction from review todo"}
