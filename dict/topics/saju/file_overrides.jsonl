@@ -108,6 +108,11 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/38. 십성론 - 십성 물상 활용 2.txt","wrong":"그러면 일제 정제에 있는 사람한테","right":"그러면 일지 정재에 있는 사람한테","note":"Context-bound 일지 정재 fix"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 28 - 궁에 대한 이해2.txt","wrong":"월에 제가 있으면 그 제가 업이에요.","right":"월에 재가 있으면 그 재가 업이에요.","note":"Context-bound 재가 fix"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"그런데 제가 왔다는 것은 자기가 현장에서 제를 다루고 싶다는 뜻이에요.","right":"그런데 재가 왔다는 것은 자기가 현장에서 재를 다루고 싶다는 뜻이에요.","note":"Context-bound 재가/재를 fix"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"연원에서 파격되니까","right":"연월에서 파격되니까","note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"성격 딩걸로","right":"성격된걸로","note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"연운해서 결정하게 하죠","right":"연운에서 결정하게 하죠","note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"운노 길이","right":"운로, 길이","note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"그 연원에서 타이밍을 안 맞춰주면은","right":"그 연운에서 타이밍을 안 맞춰주면은","note":"User-confirmed phrase reconstruction from direct review"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"그게 제의 역할들이에요.","right":"그게 재의 역할들이에요.","note":"Context-bound 재의 fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"제가 있는데, 본인의 제로 확인이 안 되면은","right":"재가 있는데, 본인의 재로 확인이 안 되면은","note":"Context-bound 재가/재로 fix"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"일지에 처의 자리에 제가 있고","right":"일지에 처의 자리에 재가 있고","note":"Context-bound 재가 fix"}
