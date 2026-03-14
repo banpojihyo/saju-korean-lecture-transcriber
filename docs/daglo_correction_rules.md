@@ -16,7 +16,7 @@
 - 교정 규칙 소스:
 - `dict/common/replace.csv`, `dict/common/file_overrides.jsonl`
 - `dict/topics/<theme>/replace.csv`, `dict/topics/<theme>/file_overrides.jsonl` (topic 병합 실행 시)
-- `correct_daglo_file.py`의 `manual_pairs()`
+- `daglo_corrector/rules_saju.py`의 `manual_pairs()`
 - `replace.csv`의 단일 용어 pair는 common 조사형(`은/는`, `이/가`, `을/를`, `이라고요` 등)을 런타임에 자동 확장 적용
 - 적용 순서:
 - 파일별 override exact replacement
