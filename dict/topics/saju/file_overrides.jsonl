@@ -212,3 +212,6 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"연원에서 일어납니다.","right":"연월에서 일어납니다.","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 11 - 한동석 선생님 사주 예시.txt","wrong":"걸리하죠","right":"걸려야죠","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"기용 문제라고요","right":"길흉 문제라고요","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 12 - 천간 총론.txt","wrong":"묘회는 다른 만약에 1회 있다든지 연회 있다든지 시에 있으면 묘회는 갑목이 없다고요.","right":"묘에는 다른 만약에 일에 있다든지 연에 있다든지 시에 있으면 묘에는 갑목이 없다고요.","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"얼마짜리다 문서로 또는 제라고 하는 거에 실질적 제의 입장에서는","right":"얼마짜리다 문서로 또는 재라고 하는 거에 실질적 재의 입장에서는","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"MBTI 같은 경오화고","right":"MBTI 같은 경우하고","note":"User-confirmed phrase reconstruction"}
