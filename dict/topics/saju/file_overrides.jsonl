@@ -215,3 +215,7 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 12 - 천간 총론.txt","wrong":"묘회는 다른 만약에 1회 있다든지 연회 있다든지 시에 있으면 묘회는 갑목이 없다고요.","right":"묘에는 다른 만약에 일에 있다든지 연에 있다든지 시에 있으면 묘에는 갑목이 없다고요.","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"얼마짜리다 문서로 또는 제라고 하는 거에 실질적 제의 입장에서는","right":"얼마짜리다 문서로 또는 재라고 하는 거에 실질적 재의 입장에서는","note":"User-confirmed phrase reconstruction"}
 {"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"MBTI 같은 경오화고","right":"MBTI 같은 경우하고","note":"User-confirmed phrase reconstruction"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"그럼 그때 한마디 하면 끊으면 납니다.","right":"그럼 그때 한마디 하면 끓으면 납니다.","note":"User-confirmed Basic Digest sentence fix"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"정화가 열로 작용하고 수두로 작용하면","right":"정화가 열로 작용하고 습으로 작용하면","note":"User-confirmed Basic Digest sentence fix"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"다 배웠잖아요. 누구한테 그냥 돌아다니는 얘기 다 그렇게 돼 있어요.","right":"다 배웠잖아요. 누구한테? 그냥 돌아다니는 얘기 다 그렇게 돼 있어요.","note":"User-confirmed punctuation fix"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 11 - 한동석 선생님 사주 예시.txt","wrong":"청간의 관점을 삶의 입장에서 보겠다. 자 그러면은 갑목이 양해요. 을목이 양해 을목 무슨 입장에서?","right":"천간의 관점을 삶의 입장에서 보겠다. 자 그러면은 갑목이 양해요. 을목이 양해? 을목 무슨 입장에서?","note":"User-confirmed Basic Digest sentence fix"}
