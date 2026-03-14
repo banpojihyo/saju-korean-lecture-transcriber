@@ -86,6 +86,14 @@ def parse_args() -> argparse.Namespace:
             "the topic dictionary."
         ),
     )
+    parser.add_argument(
+        "--allow-finalized-source",
+        action="store_true",
+        help=(
+            "Pass --allow-finalized-source to correct_daglo_file.py. "
+            "Use only when you intentionally want to regenerate a finalized folder."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -98,6 +106,7 @@ def run_one_file(
     output_root: str,
     no_update_dict: bool,
     persist_topic_update: bool,
+    allow_finalized_source: bool,
 ) -> int:
     ensure_dict_files(common_dir)
     ensure_dict_files(topic_dir)
@@ -139,6 +148,8 @@ def run_one_file(
         ]
         if no_update_dict:
             cmd.append("--no-update-dict")
+        if allow_finalized_source:
+            cmd.append("--allow-finalized-source")
 
         result = subprocess.run(cmd)
         if result.returncode != 0:
@@ -198,6 +209,7 @@ def main() -> int:
             output_root=args.output_root,
             no_update_dict=args.no_update_dict,
             persist_topic_update=not args.no_persist_topic_update,
+            allow_finalized_source=args.allow_finalized_source,
         )
         if code != 0:
             return code

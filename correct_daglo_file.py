@@ -33,6 +33,14 @@ from daglo_corrector import (
     write_terms,
 )
 
+FINALIZED_SOURCE_FOLDERS = frozenset(
+    {
+        "회원전용 - 기본다이제스트 (계룡산 등반)",
+        "회원전용 - 지리산 코스 (음양오행)",
+        "회원전용 - 한라산 코스 (십성론)",
+    }
+)
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -77,11 +85,26 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Do not update <dict-dir>/replace.csv and <dict-dir>/terms.csv from applied corrections.",
     )
+    parser.add_argument(
+        "--allow-finalized-source",
+        action="store_true",
+        help=(
+            "Allow correction even when the source file is under a finalized raw "
+            "folder. Use with care because existing manual corr outputs may be overwritten."
+        ),
+    )
     return parser.parse_args()
 
 
 def normalize_relative_path(path: Path) -> str:
     return path.as_posix()
+
+
+def matched_finalized_source_folder(source_path: Path) -> str:
+    for part in source_path.parts:
+        if part in FINALIZED_SOURCE_FOLDERS:
+            return part
+    return ""
 
 
 def main() -> int:
@@ -108,6 +131,19 @@ def main() -> int:
         # Fallback: preserve source filename under output root.
         relative = Path(source.name)
         source_under_saju_raw = False
+
+    finalized_folder = matched_finalized_source_folder(source_abs)
+    if finalized_folder and not args.allow_finalized_source:
+        print(f"[ERROR] source is under finalized folder: {finalized_folder}")
+        print(
+            "[ERROR] This guard prevents accidental overwrites of manually finished "
+            "corr outputs."
+        )
+        print(
+            "[ERROR] If you intentionally want to regenerate it, rerun with "
+            "--allow-finalized-source."
+        )
+        return 2
 
     context = CorrectionContext(
         dict_topic=(args.topic_name or dict_dir.name).lower(),

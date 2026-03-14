@@ -94,6 +94,10 @@ py correct_daglo_file.py `
   --dict-dir ".\dict\topics\network"
 ```
 
+주의:
+- `회원전용 - 기본다이제스트 (계룡산 등반)`, `회원전용 - 지리산 코스 (음양오행)`, `회원전용 - 한라산 코스 (십성론)` raw 폴더는 기본적으로 재교정을 막습니다.
+- 실수로 기존 수동 마감본을 덮어쓰지 않게 하는 가드이며, 정말 다시 생성해야 하면 `--allow-finalized-source`를 명시적으로 줘야 합니다.
+
 ## 6) 기존 output(TXT/SRT) 후처리 + dict 갱신
 
 `refine_output_dict.py`는 `output` 폴더의 TXT/SRT를 사전 기반으로 보정하고,

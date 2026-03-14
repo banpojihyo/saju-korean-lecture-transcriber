@@ -103,6 +103,7 @@
 - 신규(raw만 있고 corrected 없음) 또는 재교정 대상 파일 목록을 확정
 2. 교정 실행
 - 파일별 `correct_daglo_file.py` 실행
+- 마감된 raw 폴더는 기본적으로 차단되며, 정말 재생성이 필요할 때만 `--allow-finalized-source`를 사용
 3. 결과 검토
 - `changes`의 `applied/skipped` 확인
 - `file overrides applied`가 의도한 파일에서만 동작했는지 확인
