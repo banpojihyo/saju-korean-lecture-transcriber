@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import subprocess
 import sys
 import tempfile
@@ -13,12 +12,21 @@ from pathlib import Path
 from daglo_corrector import (
     FILE_OVERRIDES_FILENAME,
     TERM_STOPWORDS_FILENAME,
+    added_replace_pairs,
+    added_terms,
+    ensure_dict_files,
     load_file_overrides,
+    load_replace_pairs,
     load_stopwords,
+    load_terms,
     merge_file_overrides,
+    merge_replace_pair_lists,
     merge_stopwords,
+    merge_terms,
     write_file_overrides,
+    write_replace_pairs,
     write_stopwords,
+    write_terms,
 )
 
 
@@ -81,106 +89,6 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def ensure_dict_files(dict_dir: Path) -> None:
-    dict_dir.mkdir(parents=True, exist_ok=True)
-    replace_path = dict_dir / "replace.csv"
-    terms_path = dict_dir / "terms.csv"
-    file_overrides_path = dict_dir / FILE_OVERRIDES_FILENAME
-    stopwords_path = dict_dir / TERM_STOPWORDS_FILENAME
-    if not replace_path.exists():
-        write_replace_pairs(replace_path, [])
-    if not terms_path.exists():
-        write_terms(terms_path, [])
-    if not file_overrides_path.exists():
-        write_file_overrides(file_overrides_path, [])
-    if not stopwords_path.exists():
-        write_stopwords(stopwords_path, set())
-
-
-def load_replace_pairs(path: Path) -> list[tuple[str, str]]:
-    if not path.exists():
-        return []
-    pairs: list[tuple[str, str]] = []
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            wrong = (row.get("wrong") or "").strip()
-            right = (row.get("right") or "").strip()
-            if wrong and right and wrong != right:
-                pairs.append((wrong, right))
-    return pairs
-
-
-def write_replace_pairs(path: Path, pairs: list[tuple[str, str]]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["wrong", "right"])
-        for wrong, right in pairs:
-            writer.writerow([wrong, right])
-
-
-def load_terms(path: Path) -> list[str]:
-    if not path.exists():
-        return []
-    terms: list[str] = []
-    seen: set[str] = set()
-    with path.open("r", encoding="utf-8-sig", newline="") as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            term = (row.get("term") or "").strip()
-            if not term or term in seen:
-                continue
-            seen.add(term)
-            terms.append(term)
-    return terms
-
-
-def write_terms(path: Path, terms: list[str]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["term"])
-        for term in terms:
-            writer.writerow([term])
-
-
-def merge_replace_pairs(
-    first: list[tuple[str, str]], second: list[tuple[str, str]]
-) -> list[tuple[str, str]]:
-    merged: list[tuple[str, str]] = []
-    seen: set[tuple[str, str]] = set()
-    for pair in first + second:
-        if pair in seen:
-            continue
-        seen.add(pair)
-        merged.append(pair)
-    return merged
-
-
-def merge_terms(first: list[str], second: list[str]) -> list[str]:
-    merged: list[str] = []
-    seen: set[str] = set()
-    for term in first + second:
-        if term in seen:
-            continue
-        seen.add(term)
-        merged.append(term)
-    return merged
-
-
-def added_replace_pairs(
-    baseline: list[tuple[str, str]], updated: list[tuple[str, str]]
-) -> list[tuple[str, str]]:
-    base = set(baseline)
-    return [pair for pair in updated if pair not in base]
-
-
-def added_terms(baseline: list[str], updated: list[str]) -> list[str]:
-    base = set(baseline)
-    return [term for term in updated if term not in base]
-
-
 def run_one_file(
     source_file: Path,
     correct_script: Path,
@@ -203,7 +111,7 @@ def run_one_file(
     topic_file_overrides = load_file_overrides(topic_dir / FILE_OVERRIDES_FILENAME)
     topic_stopwords = load_stopwords(topic_dir / TERM_STOPWORDS_FILENAME)
 
-    merged_replace = merge_replace_pairs(common_replace, topic_replace)
+    merged_replace = merge_replace_pair_lists(common_replace, topic_replace)
     merged_terms = merge_terms(common_terms, topic_terms)
     merged_file_overrides = merge_file_overrides(common_file_overrides, topic_file_overrides)
     merged_stopwords = merge_stopwords(common_stopwords, topic_stopwords)
@@ -247,7 +155,7 @@ def run_one_file(
         if new_replace:
             write_replace_pairs(
                 topic_dir / "replace.csv",
-                merge_replace_pairs(topic_replace, new_replace),
+                merge_replace_pair_lists(topic_replace, new_replace),
             )
         if new_terms:
             write_terms(topic_dir / "terms.csv", merge_terms(topic_terms, new_terms))

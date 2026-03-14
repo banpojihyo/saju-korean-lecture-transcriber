@@ -90,6 +90,22 @@ def load_stopwords(path: Path) -> set[str]:
     return stopwords
 
 
+def ensure_dict_files(dict_dir: Path) -> None:
+    dict_dir.mkdir(parents=True, exist_ok=True)
+    replace_path = dict_dir / "replace.csv"
+    terms_path = dict_dir / "terms.csv"
+    file_overrides_path = dict_dir / FILE_OVERRIDES_FILENAME
+    stopwords_path = dict_dir / TERM_STOPWORDS_FILENAME
+    if not replace_path.exists():
+        write_replace_pairs(replace_path, [])
+    if not terms_path.exists():
+        write_terms(terms_path, [])
+    if not file_overrides_path.exists():
+        write_file_overrides(file_overrides_path, [])
+    if not stopwords_path.exists():
+        write_stopwords(stopwords_path, set())
+
+
 def write_replace_pairs(path: Path, pairs: list[tuple[str, str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8-sig", newline="") as f:
@@ -133,6 +149,42 @@ def write_stopwords(path: Path, stopwords: set[str]) -> None:
     with path.open("w", encoding="utf-8-sig", newline="") as f:
         if lines:
             f.write("\n".join(lines) + "\n")
+
+
+def merge_replace_pair_lists(
+    first: list[tuple[str, str]], second: list[tuple[str, str]]
+) -> list[tuple[str, str]]:
+    merged: list[tuple[str, str]] = []
+    seen: set[tuple[str, str]] = set()
+    for pair in first + second:
+        if pair in seen:
+            continue
+        seen.add(pair)
+        merged.append(pair)
+    return merged
+
+
+def merge_terms(first: list[str], second: list[str]) -> list[str]:
+    merged: list[str] = []
+    seen: set[str] = set()
+    for term in first + second:
+        if term in seen:
+            continue
+        seen.add(term)
+        merged.append(term)
+    return merged
+
+
+def added_replace_pairs(
+    baseline: list[tuple[str, str]], updated: list[tuple[str, str]]
+) -> list[tuple[str, str]]:
+    base = set(baseline)
+    return [pair for pair in updated if pair not in base]
+
+
+def added_terms(baseline: list[str], updated: list[str]) -> list[str]:
+    base = set(baseline)
+    return [term for term in updated if term not in base]
 
 
 def merge_file_overrides(
