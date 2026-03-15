@@ -327,3 +327,6 @@
 {"path":"회원전용 - 지리산 코스 (음양오행)/52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt","wrong":"이렇게 많은 다양 다양성을 끌어내겠죠. 모기 인목이 인목이 이걸 끌어내겠죠.","right":"이렇게 많은 다양성을 끌어내겠죠. 인목이 이걸 끌어내겠죠.","note":"User-confirmed Jirisan sentence reconstruction from 2026-03-15 review todo"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt","wrong":"방복과 삼합","right":"방국과 삼합","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt","wrong":"그 예 쓴다고요. 방북 왼손에 방북 오른손에 삼합","right":"예 쓴다고요. 왼손에 방국 오른손에 삼합","note":"User-confirmed Jirisan sentence cleanup from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 21 - 천간 정리 2.txt","wrong":"이건 이미 선도 빈 거예요. 선매 빈 거.","right":"이건 이미 선매된 거예요.","note":"User-confirmed basic digest sentence cleanup from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 27 - 궁에 대한 이해1.txt","wrong":"천원으로 작용하는 건데 천원은 전가는 밖으로 드러난 작용이고","right":"천원으로 작용하는 건데, 천간은 밖으로 드러난 작용이고","note":"User-confirmed basic digest sentence reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"재간이 간으로 격은 격은 간을 중심으로 여겨요","right":"재관이 간으로, 격은 간을 중심으로 얘기해요","note":"User-confirmed basic digest sentence reconstruction from 2026-03-15 review todo"}
