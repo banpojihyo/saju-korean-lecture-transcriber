@@ -277,3 +277,4 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 19 - 수와 천간과의 관계.txt","wrong":"병화의 종","right":"평화의 종","note":"Keep proper noun after global 평화->병화 normalization"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/한글과 성명학 1.txt","wrong":"병화, 평등","right":"평화, 평등","note":"Keep general Korean word pair after global 평화->병화 normalization"}
 {"path":"회원전용 - 한라산 코스 (십성론)/07. 십성론 - ③식신.txt","wrong":"병화로운 마을","right":"평화로운 마을","note":"Keep ordinary adjective phrase after global 평화->병화 normalization"}
+{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"정임합대 있다면은","right":"정임합돼 있다면은","note":"User-confirmed Hallasan phrase fix from 2026-03-15 session"}
