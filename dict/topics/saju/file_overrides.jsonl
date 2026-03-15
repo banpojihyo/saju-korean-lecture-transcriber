@@ -346,3 +346,5 @@
 {"path":"회원전용 - 한라산 코스 (십성론)/31. 십성론 - ③ 정인의 생극제화.txt","wrong":"묵생어가 호로록 가면 남들 한마디도 못 하겠죠.","right":"목생화가 호로록 가면 남들 한마디도 못 하겠죠.","note":"User-confirmed Hallasan sentence cleanup from 2026-03-16 review todo"}
 {"path":"회원전용 - 한라산 코스 (십성론)/31. 십성론 - ③ 정인의 생극제화.txt","wrong":"인수의 을목 계수의 강묵 이렇게 천간으로는 연결되겠죠.","right":"임수의 을목, 계수의 갑목 이렇게 천간으로는 연결되겠죠.","note":"User-confirmed Hallasan terminology cleanup from 2026-03-16 review todo"}
 {"path":"회원전용 - 한라산 코스 (십성론)/33. 십성론 - ⑤ 정인의 생극제화.txt","wrong":"노부물을 바라보는 것이 기본적으로 중요한 부분이다.","right":"그 부분을 바라보는 것이 기본적으로 중요한 부분이다.","note":"User-confirmed Hallasan sentence cleanup from 2026-03-16 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/12. 십성론 - ①정재.txt","wrong":"습성","right":"십성","note":"User-confirmed Hallasan standalone ten-gods term fix from 2026-03-16 request"}
+{"path":"회원전용 - 한라산 코스 (십성론)/12. 십성론 - ①정재.txt","wrong":"에너지 작용이 네 후에 에너지 작용이 외부에 있다.","right":"에너지 작용이 내부에 있다. 에너지 작용이 외부에 있다.","note":"User-confirmed Hallasan sentence cleanup from 2026-03-16 request"}
