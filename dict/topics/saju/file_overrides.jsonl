@@ -1,240 +1,246 @@
-﻿{"path":"회원전용 - 지리산 코스 (음양오행)/07. 음양오행.txt","wrong":"십관 십이지를 전부 다 한난 조수부로 다 나누셔야 돼요.","right":"십간 십이지를 전부 다 한난 조습으로 다 나누셔야 돼요.","note":"One-off lecture sentence fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"사모기에 한 모기 개입","right":"사목에 한목이 개입","note":"Batch-reviewed file-scoped fix after candidate extraction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"자월의 관목. 민으로 돼 있다고 해도","right":"자월의 갑목. 갑인으로 돼 있다고 해도","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"원리적 접근으로 형성된 게 하두예요.","right":"원리적 접근으로 형성된 게 하도예요.","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/21. 음양오행 - 오행정리.txt","wrong":"접종을 만드셔서 통변","right":"접점을 만드셔서 통변","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"오늘은 청년 들어가기 전에 사조의 공 공 군에 대한 해석을 할 거예요.","right":"오늘은 천간 들어가기 전에 사주의 궁에 대한 해석을 할 거예요.","note":"User-confirmed opener fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"공의 조건에 의해서 공의 선별된 에너지들에 의해서","right":"궁의 조건에 의해서 궁의 선별된 에너지들에 의해서","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"가평 영리에서는 일간이 주가 돼요.","right":"자평명리에서는 일간이 주가 돼요.","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"우리 고전 익단을 보면은","right":"우리 고전 읽다보면은","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"아보테산","right":"아부태산","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"이건 영양받는다.","right":"이건 그 양반이","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"4주가 추워 보이고","right":"사주가 추워 보이고","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"4주가 온도가 올라가 보이고","right":"사주가 온도가 올라가 보이고","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"4주가 우울해 보일 수도","right":"사주가 우울해 보일 수도","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"금색 수 하는데","right":"금생수 하는데","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"자기 기준하고 다르게 텅벼놨다고 틀렸다고 얘기하는 거.","right":"자기 기준하고 다르게 통변한다고 틀렸다고 얘기하는 거.","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"이 관서는 얘기하는","right":"이 관성은 얘기하는","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"대원으로 왔다면은","right":"대운으로 왔다면은","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"각 감목에 개입돼 있으니까","right":"각 갑목에 개입돼 있으니까","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"대우문에서 감목이 왔을 때 그런 대우는","right":"대운에서 갑목이 왔을 때 그런, 대운은","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"항정상","right":"항상","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"이민년에","right":"임인년에","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/22. 음양오행 - 사주구조 분석.txt","wrong":"전화가 생길 때","right":"변화가 생길 때","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"월감으로 나왔다","right":"월간으로 나왔다","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"운영자는 천관이라고요","right":"운영자는 천간이라고요","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"감목도 아니에요","right":"갑목도 아니에요","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"지지입목도 운영자예요","right":"지지 인목도 운영자예요","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"천관은 천관으로써 운영되는 거예요","right":"천간은 천간으로써 운영되는 거예요","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"지지 안에 있는 장관은","right":"지지 안에 있는 장간은","note":"User-confirmed line fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/23. 음양오행 - 사주구조 분석 2.txt","wrong":"4조, 9조에서 궁의 관계들을","right":"사주 구조에서 궁의 관계들을","note":"User-confirmed line fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"국민의 생극제화을 하겠습니다.","right":"정인의 생극제화를 하겠습니다.","note":"User-confirmed opener fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"국민의 생급 재활을 하겠습니다.","right":"정인의 생극제화를 하겠습니다.","note":"User-confirmed opener fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"죄수는","right":"계수는","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"채용이 바뀌어서","right":"체용이 바뀌어서","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"수화는 채용이 다르다","right":"수화는 체용이 다르다","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"일간을 채로 놓고","right":"일간을 체로 놓고","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"이걸 채로 놓고 보면은","right":"이걸 체로 놓고 보면은","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"채용을 바꿔서 보시는 것이","right":"체용을 바꿔서 보시는 것이","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"채를 놓고","right":"체를 놓고","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"채용의 문제라고요","right":"체용의 문제라고요","note":"Context-bound 체용 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"채용의 문제라고 얘기를 합니다.","right":"체용의 문제라고 얘기를 합니다.","note":"Context-bound 체용 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"질신","right":"길신","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"제관 인식","right":"재관인식","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"귀신의 용법","right":"길신의 용법","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"식신 재살","right":"식신 제살","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/09. 십성론 - ②상관.txt","wrong":"채용하느냐의 문제예요","right":"체용하느냐의 문제예요","note":"Context-bound 체용 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"채용의 문제니까","right":"체용의 문제니까","note":"Context-bound 체용 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용변","right":"체용변","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용이라는 용어는","right":"체용이라는 용어는","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"운양","right":"음양","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"이 채용에 대한 부분은","right":"이 체용에 대한 부분은","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용은 제가 얘기하는 게 아니고","right":"체용은 제가 얘기하는 게 아니고","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"이 채용은","right":"이 체용은","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"채용적 부분은","right":"체용적 부분은","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/16. 십성론 - ①편재.txt","wrong":"심금일주한테","right":"신금일주한테","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/22. 십성론 - ③ 정관.txt","wrong":"이게 심금인 거죠","right":"이게 신금인 거죠","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/25. 십성론 - ① 편관의 생극제화.txt","wrong":"똑같은 심금인데","right":"똑같은 신금인데","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/27. 십성론 - ③ 편관의 십성대응.txt","wrong":"채용을 바꾸는 거고","right":"체용을 바꾸는 거고","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/27. 십성론 - ③ 편관의 십성대응.txt","wrong":"채용을 바꾸는 것을","right":"체용을 바꾸는 것을","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/27. 십성론 - ③ 편관의 십성대응.txt","wrong":"채용변","right":"체용변","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"다 귀신이 유정하면 안 돼요","right":"다 기신이 유정하면 안 돼요","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"남명은 관사리","right":"남명은 관살이","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"무투라고 하는 정인","right":"무토라고 하는 정인","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"저 Muto라고 하는","right":"저 무토라고 하는","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"그래서 심금일주한다","right":"그래서 신금일주한다","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/35. 십성론 - ② 편인의 궁대응.txt","wrong":"귀신이 밖에 있다는 건 긍정적이죠","right":"기신이 밖에 있다는 건 긍정적이죠","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/35. 십성론 - ② 편인의 궁대응.txt","wrong":"그 귀신에 대한","right":"그 기신에 대한","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/35. 십성론 - ② 편인의 궁대응.txt","wrong":"귀신을 멀리 밖에 두고","right":"기신을 멀리 밖에 두고","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/12. 십성론 - ①정재.txt","wrong":"무제에 제가 왔다고 하는 걸 얘기할 때에","right":"무제에 재가 왔다고 하는 걸 얘기할 때에","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/12. 십성론 - ①정재.txt","wrong":"무제에 제가 와서","right":"무제에 재가 와서","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/12. 십성론 - ①정재.txt","wrong":"그 제가 와서 관을 관으로 제를 감당하고","right":"그 재가 와서 관을 관으로 재를 감당하고","note":"Context-bound 재가/재를 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/12. 십성론 - ①정재.txt","wrong":"그런데 제가 와서 내가 쓰고 싶은 거에 맞춰서","right":"그런데 재가 와서 내가 쓰고 싶은 거에 맞춰서","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"이 제가 심금이 다루는 것이 부담스럽잖아요.","right":"이 재가 신금이 다루는 것이 부담스럽잖아요.","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"살은 제자 약살인 경우가 아니면","right":"살은 재가 약살인 경우가 아니면","note":"Context-bound 재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"일제 정제가 발달돼 있어요.","right":"일지 정재가 발달돼 있어요.","note":"Context-bound 일지 정재 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"그 명이 이렇게 제가 있는데,","right":"그 명이 이렇게 재가 있는데,","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"관에 의해서 제가 잘 보호되어 있다든지","right":"관에 의해서 재가 잘 보호되어 있다든지","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"제가 간에 나왔다는 것은","right":"재가 간에 나왔다는 것은","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"공제 같이 쓰겠다.","right":"공재 같이 쓰겠다.","note":"Context-bound 공재 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"그냥 명에 제운이 와서 제가 어떻다 이렇게 얘기하는 게 아니고 제운이 왔는데 그 제가 어디에 근거했느냐","right":"그냥 명에 재운이 와서 재가 어떻다 이렇게 얘기하는 게 아니고 재운이 왔는데 그 재가 어디에 근거했느냐","note":"Context-bound 재운/재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"그게 연제에 있다는 것은","right":"그게 연지에 있다는 것은","note":"Context-bound 연지 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"저 월제 정재로","right":"저 월지 정재로","note":"Context-bound 월지 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"그 제가 부담스러워도 다룰 수만 있다면 충분히 제를 자기 걸로","right":"그 재가 부담스러워도 다룰 수만 있다면 충분히 재를 자기 걸로","note":"Context-bound 재가/재를 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"이 제가 긍정적으로 작용하고 잘 다루어지는 형태로 구성이 되어 있다면","right":"이 재가 긍정적으로 작용하고 잘 다루어지는 형태로 구성이 되어 있다면","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"정제는 아침에 제가 완성된 게 아니고","right":"정재는 아침에 재가 완성된 게 아니고","note":"Context-bound 정재/재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"이렇게 순차적으로 제가 진행된 거잖아요.","right":"이렇게 순차적으로 재가 진행된 거잖아요.","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"시에 제가 있으면은","right":"시에 재가 있으면은","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"이 제는 제를 감당할 수 있어야 제라고요.","right":"이 재는 재를 감당할 수 있어야 재라고요.","note":"Context-bound 재 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"시가 이렇게 제가 있고","right":"시가 이렇게 재가 있고","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/15. 십성론 - ③정재.txt","wrong":"제의 건강은","right":"재의 건강은","note":"Context-bound 재의 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"제가 앞에 있는 제가 있고 뒤에 있는 제가 있다고요.","right":"재가 앞에 있는 재가 있고 뒤에 있는 재가 있다고요.","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"그러면 뒤에 있는 제라는 건 뭐예요? 제를 취하면은","right":"그러면 뒤에 있는 재라는 건 뭐예요? 재를 취하면은","note":"Context-bound 재라는/재를 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"내가 사조로 상담을 해서","right":"내가 사주로 상담을 해서","note":"Context-bound 사주/툴 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"사조를 풀로 쓰실 수 있어야 돼요.","right":"사주를 툴로 쓰실 수 있어야 돼요.","note":"Context-bound 사주/툴 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"상담풀로.","right":"상담 툴로.","note":"Context-bound 사주/툴 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"제자약살.","right":"재가 약살.","note":"Context-bound 재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"그러면 이렇게 제자 약살하다가","right":"그러면 이렇게 재가 약살하다가","note":"Context-bound 재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"제자 약살도.","right":"재가 약살도.","note":"Context-bound 재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"제자 약사루를 쓴다는 건","right":"재가 약살을 쓴다는 건","note":"Context-bound 재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"제자 약사를 잘 쓰던 명도","right":"재가 약살을 잘 쓰던 명도","note":"Context-bound 재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"제자 약살일 때는","right":"재가 약살일 때는","note":"Context-bound 재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"그럼 재훈이 와서 제자 약살을 할 때","right":"그럼 재운이 와서 재가 약살을 할 때","note":"Context-bound 재운/재가 약살 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"그전에 제로 열심히 돈 벌어서","right":"그전에 재로 열심히 돈 벌어서","note":"Context-bound 재로 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"그러니까 제가 커져서 살을 막 키우는 거예요.","right":"그러니까 재가 커져서 살을 막 키우는 거예요.","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/28. 십성론 - ④ 편관의 궁대응.txt","wrong":"재생살이 제가 약할 때는","right":"재생살이 재가 약할 때는","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/32. 십성론 - ④ 정인의 궁대응.txt","wrong":"월간에 제가 있고 월지에 관이 있다.","right":"월간에 재가 있고 월지에 관이 있다.","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/38. 십성론 - 십성 물상 활용 2.txt","wrong":"정제가 발달되어 있고 일제 정제가 이렇게 식물을 갖고 있는 명들은","right":"정재가 발달되어 있고 일지 정재가 이렇게 식물을 갖고 있는 명들은","note":"Context-bound 정재/일지 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/38. 십성론 - 십성 물상 활용 2.txt","wrong":"그러면 일제 정제에 있는 사람한테","right":"그러면 일지 정재에 있는 사람한테","note":"Context-bound 일지 정재 fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 28 - 궁에 대한 이해2.txt","wrong":"월에 제가 있으면 그 제가 업이에요.","right":"월에 재가 있으면 그 재가 업이에요.","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"그런데 제가 왔다는 것은 자기가 현장에서 제를 다루고 싶다는 뜻이에요.","right":"그런데 재가 왔다는 것은 자기가 현장에서 재를 다루고 싶다는 뜻이에요.","note":"Context-bound 재가/재를 fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"연원에서 파격되니까","right":"연월에서 파격되니까","note":"User-confirmed phrase reconstruction from direct review"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"성격 딩걸로","right":"성격된걸로","note":"User-confirmed phrase reconstruction from direct review"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"연운해서 결정하게 하죠","right":"연운에서 결정하게 하죠","note":"User-confirmed phrase reconstruction from direct review"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"운노 길이","right":"운로, 길이","note":"User-confirmed phrase reconstruction from direct review"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"그 연원에서 타이밍을 안 맞춰주면은","right":"그 연운에서 타이밍을 안 맞춰주면은","note":"User-confirmed phrase reconstruction from direct review"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"그게 제의 역할들이에요.","right":"그게 재의 역할들이에요.","note":"Context-bound 재의 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"제가 있는데, 본인의 제로 확인이 안 되면은","right":"재가 있는데, 본인의 재로 확인이 안 되면은","note":"Context-bound 재가/재로 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"일지에 처의 자리에 제가 있고","right":"일지에 처의 자리에 재가 있고","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/16. 음양오행 - 금의 생극제화 ②.txt","wrong":"그게 제를 바라보고 있는 거예요.","right":"그게 재를 바라보고 있는 거예요.","note":"Context-bound 재를 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/39. 음양오행 - 토의 생극제화 정리.txt","wrong":"내 거라고 챙기려고 하면은 어떻게 되겠어요? 제가 일어나겠죠.","right":"내 거라고 챙기려고 하면은 어떻게 되겠어요? 재가 일어나겠죠.","note":"Context-bound 재가 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/39. 음양오행 - 토의 생극제화 정리.txt","wrong":"법제, 법제운이 왔는데","right":"겁재, 겁재운이 왔는데","note":"Context-bound 겁재운 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/39. 음양오행 - 토의 생극제화 정리.txt","wrong":"그러니까 우리가 사주를 공부하는데 법제운이 돼서 망했다.","right":"그러니까 우리가 사주를 공부하는데 겁재운이 돼서 망했다.","note":"Context-bound 겁재운 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"식신호로","right":"식신으로","note":"User-confirmed Hallasan term fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/01. 십성론 - ①비견.txt","wrong":"사조를 해석하는 거에 맨 처음이고","right":"사주를 해석하는 것의 맨 처음이고","note":"Context-bound 사주 해석 phrasing fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/01. 십성론 - ①비견.txt","wrong":"사조를 해석의 맨 마지막까지","right":"사주 해석의 맨 마지막까지","note":"Context-bound 사주 해석 phrasing fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"조한토가사조를 지배하고 있어요.","right":"조한토가 사주를 지배하고 있어요.","note":"Context-bound 조한 사주 fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 23 - 지지 총론 1 (생왕고 관점).txt","wrong":"그 사조의 천관에 4개밖에 없는데 그중에 2개가 그런 놈들이 있으면은 사조를 자기가 주도해서 못 쓰겠죠.","right":"그 사주의 천간에 4개밖에 없는데 그중에 2개가 그런 놈들이 있으면은 사주를 자기가 주도해서 못 쓰겠죠.","note":"Context-bound 사주/천간 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/23. 십성론 - ② 정관의 십성대응.txt","wrong":"사조의 제를 처로 분류하잖아요.","right":"사주의 재를 처로 분류하잖아요.","note":"Context-bound 사주/재 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/23. 십성론 - ② 정관의 십성대응.txt","wrong":"그러면 정제는 안에 있는 저 편제는","right":"그러면 정재는 안에 있는 저 편재는","note":"Context-bound 정재/편재 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/23. 십성론 - ② 정관의 십성대응.txt","wrong":"일간이 정제를 일지에 두고 있고","right":"일간이 정재를 일지에 두고 있고","note":"Context-bound 정재 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/23. 십성론 - ② 정관의 십성대응.txt","wrong":"그 정제 중심으로 돼 있다면은","right":"그 정재 중심으로 돼 있다면은","note":"Context-bound 정재 fix"}
-{"path":"회원전용 - 한라산 코스 (십성론)/32. 십성론 - ④ 정인의 궁대응.txt","wrong":"전 사조 요들 글자가 그 사람이 되겠죠.","right":"전 사주 여덟 글자가 그 사람이 되겠죠.","note":"Context-bound 사주 여덟 글자 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"금, 금 목 되는 상태 금극목 뛰는 상태니까","right":"금극목 되는 상태, 금극목 띤 상태니까","note":"Context-bound 금극목 phrasing fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 16 - 정화와 다른 천간과의 관계.txt","wrong":"그걸 자기 걸로 채용화하죠.","right":"그걸 자기 걸로 체용화하죠.","note":"Context-bound 체용화 fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 18 - 己, 庚, 辛과 다른 천간과의 관계.txt","wrong":"자꾸 채용채용하는데","right":"자꾸 체용체용하는데","note":"Context-bound 체용 반복 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"그렇게 해서 사조에 있는 것 가지고","right":"그렇게 해서 사주에 있는 것 가지고","note":"Context-bound 사주 tool phrasing fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/18. 음양오행 - 수의 생극제화 ①.txt","wrong":"이 사조 부를 이룰 만하다","right":"이 사주, 부를 이룰 만하다","note":"Context-bound 사주/부 fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/29. 음양오행 - 천간 생극제화 화(3).txt","wrong":"예, 사조는 그 툴이라고요.","right":"예, 사주는 그 툴이라고요.","note":"Context-bound 사주 tool fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 17 - 무토와 다른 천간과의 관계.txt","wrong":"기토가 사조의 원이나 일, 연 간이나 지혜 또 어디에 있든","right":"기토가 사주의 월이나 일, 연간이나 지에 또 어디에 있든","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"지역에 채용한다. 용해도 돼요.","right":"건록격에 체용한다. 용해도 돼요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"지금 금 비견이니까.","right":"지금 자 이게 금 비견이니까.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"무술일조, 애인이 무술일조다.","right":"무술일주, 애인이 무술일주다.","note":"High-confidence 일주 normalization"}
-{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"죽토는 기본이 동해요.","right":"축토는 기본이 동해요.","note":"High-confidence 축토 normalization"}
-{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"그런데 주토는 이 안에 에너지가 있어요.","right":"그런데 축토는 이 안에 에너지가 있어요.","note":"High-confidence 축토 normalization"}
-{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"죽토는 저 안에 있는 그런 근육을","right":"축토는 저 안에 있는 그런 근육을","note":"High-confidence 축토 normalization"}
-{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"중미를 보시면","right":"축미를 보시면","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"슬톤은 뭐예요? 옷을로 연결되잖아요.","right":"술토는 뭐예요? 무술로 연결되잖아요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"목 생활을","right":"목생화를","note":"Conservative spacing fix for moksaenghwa term"}
-{"path":"회원전용 - 한라산 코스 (십성론)/08. 십성론 - 상관.txt","wrong":"목 생활을","right":"목생화를","note":"Conservative spacing fix for moksaenghwa term"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/09. 음양오행.txt","wrong":"4주 4주가 어떻게 돼 있어요?","right":"사주가 어떻게 돼 있어요?","note":"User-requested 4ju->saju cleanup for duplicated opener"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/14. 음양오행 - 금의 한난조습.txt","wrong":"활을","right":"화를","note":"User-requested file-specific hwal->hwa normalization"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 01 - 한난조습이란？.txt","wrong":"4주 후에","right":"사주에","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"제4주예요.","right":"제 사주예요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"금생 수호 하는 게","right":"금생수로 하는 게","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"활을 살리네요.","right":"화를 살리네요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/32. 십성론 - ④ 정인의 궁대응.txt","wrong":"생극, 재활을 할 때","right":"생극제화를 할 때","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"여기는 활을 쓰는 것은 신발에 대한 조건을 개선하는 거죠.","right":"여기는 화를 쓰는 것은 신발에 대한 조건을 개선하는 거죠.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/05. 음양오행.txt","wrong":"활을","right":"화를","note":"User-confirmed file-scoped hwal->hwa normalization"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/51. 음양오행 - 지지 생극제화 목생화.txt","wrong":"목생환아의 인목인 월","right":"목생화가 인목인 월","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"신월의 화급검의 작용","right":"신월의 화극금의 작용","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"얘기한금","right":"얘기한 금","note":"User-confirmed spacing reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"예민해진 있다.","right":"예민해져 있다.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"화급근무하는 발달된 명","right":"화극금만 발달된 명","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"화급근이 많은 병","right":"화극금이 많은 명","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 09 - 금수의 왕쇠강약.txt","wrong":"금생 수리 해줘야 됩니다.","right":"금생수를 해줘야 됩니다.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 27 - 궁에 대한 이해1.txt","wrong":"얘기한금화교역","right":"얘기한 금화교역","note":"User-confirmed spacing reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/30. 십성론 - ② 정인의 생극제화.txt","wrong":"활을 살리잖아요.","right":"화를 살리잖아요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/17. 십성론 - ② 편재.txt","wrong":"금생수화는 내용인 거죠","right":"금생수하는 내용인 거죠","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"화극흥 금은 화극금은","right":"화극금은","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"활을 구분하고 있는 것, 활을 포장하고 있는 것","right":"화를 구분하고 있는 것, 화를 포장하고 있는 것","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"그러면 금은 뭐예요? 감류. 갑갑류.","right":"그러면 금은 뭐예요? 갑류. 갑각류.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"담유형이야.","right":"갑류.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"외관 내유형들","right":"외강내유형들","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 10 - 오행 총정리.txt","wrong":"금형은 이렇게 감류잖아요. 감류.","right":"금형은 이렇게 갑류잖아요. 갑류.","note":"Same-file 갑류 normalization"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"화생토화면은","right":"화생토하면은","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 15 - 병화와 다른 천간과의 관계.txt","wrong":"화생토화 할 때","right":"화생토할 때","note":"Conservative same-family cleanup for hwa-saeng-to term"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"한 목","right":"한목","note":"File-scoped user-approved normalization to avoid global overcorrection"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"한 몫","right":"한목","note":"File-scoped user-approved normalization to avoid global overcorrection"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/51. 음양오행 - 지지 생극제화 목생화.txt","wrong":"활을 향한다는 뜻","right":"화를 향한다는 뜻","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/55. 음양오행 - 지지 생극제화 토.txt","wrong":"그러니까 본래 벽씨의 상태로 있는 게 아니잖아요.","right":"그러니까 본래 볍씨의 상태로 있는 게 아니잖아요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/55. 음양오행 - 지지 생극제화 토.txt","wrong":"진투에 들어갔다는 게","right":"진토에 들어갔다는 게","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/06. 음양오행.txt","wrong":"하나님 목의 특징들","right":"한한 목의 특징들","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"목에서 출발해서 활을 했다면","right":"목에서 출발해서 화를 했다면","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 16 - 정화와 다른 천간과의 관계.txt","wrong":"그게 안 맞으면은 그걸 정화의 기운이 설기린다, 누설기린다","right":"그게 안 맞으면은 그걸 정화의 기운이 설기된다, 누설된다","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 16 - 정화와 다른 천간과의 관계.txt","wrong":"돈디는데","right":"돈 되는 데","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"진투에 마당이 들어선 거예요.","right":"진토에 마당이 들어선 거예요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/10. 십성론 - ③상관.txt","wrong":"곽토상관","right":"화토상관","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/10. 십성론 - ③상관.txt","wrong":"토검상관","right":"토금상관","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"화극금디는","right":"화극금되는","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"돈디는","right":"돈 되는","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/17. 십성론 - ② 편재.txt","wrong":"활을","right":"화를","note":"User-approved file-scoped hwal->hwa normalization"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"생육체화가 안 돼 있는데","right":"생극제화가 안 돼 있는데","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"생육 재활을 하는 거예요","right":"생극제화를 하는 거예요","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/47. 음양오행 - 지지 생극제화 화 입장의 목.txt","wrong":"묵생활을 서두르고 있는데","right":"목생화를 서두르고 있는데","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/48. 음양오행 - 지지 생극제화 화생토.txt","wrong":"생각 재활을 바라보는 관점","right":"생극제화를 바라보는 관점","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"긍근목","right":"금극목","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/18. 십성론 - ③ 편재.txt","wrong":"인성부","right":"인성 부","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/01. 십성론 - ①비견.txt","wrong":"죄를 나누는 걸","right":"재를 나누는 걸","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/01. 십성론 - ①비견.txt","wrong":"분관디는","right":"분관되는","note":"Standardized from spoken dialectal ending to document form"}
-{"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"대대디는","right":"대대되는","note":"Standardized from spoken dialectal ending to document form"}
-{"path":"회원전용 - 한라산 코스 (십성론)/06. 십성론 - ②식신.txt","wrong":"수색 못 하는데 쟤를","right":"수생목하는데 재를","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"대대디는","right":"대대되는","note":"Standardized from spoken dialectal ending to document form"}
-{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"대별디는","right":"대별되는","note":"Standardized from spoken dialectal ending to document form"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"그러니까 그거에 우토가 신금이 생지가 돼요. 인수와 심금의 생지잖아요. 무슨 심금이 생지가 될 수 있으니까.","right":"그러니까 뭐에요? 무토가 신금이 생지가 돼요. 임수가 신금의 생지잖아요. 무토가 신금이 생지가 될 수 있으니까.","note":"User-confirmed phrase reconstruction for mu-to/sin-geum context"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"유김","right":"육임","note":"User-confirmed terminology reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"지나가 지나온 온 대로 다시 가는 것은 안딘다가 장군살이에요.","right":"지나가 지나온 온 대로 다시 가는 것은 안 된다는 게 장군살이에요.","note":"User-confirmed phrase reconstruction for janggunsal explanation"}
-{"path":"회원전용 - 한라산 코스 (십성론)/02. 십성론 - ②비견.txt","wrong":"중첩디즈 아니에요","right":"중첩되지 않아요","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/11. 십성론 - ④상관.txt","wrong":"일가는 항상 이 편제의 고무딘 상관생제라는","right":"일간은 항상 이 편재의 고무된 상관생재라는","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 01 - 한난조습이란？.txt","wrong":"형악 큰형 약전과 양궁이 귀양 가는 거지. 정약전 선생은 흑산주에서 죽습니다. 귀양은 해대 안디고 우리가 알고 있는 자산어보. 이게 자자를 읽잖아요. 건물 현자를 읽으셔야 된다고.","right":"형하고, 큰 형 약전과 약용이 귀양 가는 거지. 정약전 선생은 흑산도에서 죽습니다. 귀양은 해도 안되고 우리가 알고 있는 자산어보. 이게 자자로 읽잖아요. 검을 현자를 읽으셔야 된다고.","note":"User-confirmed phrase reconstruction for Jeong Yak-yong exile context"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"연원에서 일어난다고 그랬잖아요.","right":"연월에서 일어난다고 그랬잖아요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"OR을 컨트롤할 수 있으면","right":"오화를 컨트롤할 수 있으면","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 07 - 이제마 사주분석, 토의 강왕.txt","wrong":"연원에서 일어납니다.","right":"연월에서 일어납니다.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 11 - 한동석 선생님 사주 예시.txt","wrong":"걸리하죠","right":"걸려야죠","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 32 - 운추론2.txt","wrong":"기용 문제라고요","right":"길흉 문제라고요","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 12 - 천간 총론.txt","wrong":"묘회는 다른 만약에 1회 있다든지 연회 있다든지 시에 있으면 묘회는 갑목이 없다고요.","right":"묘에는 다른 만약에 일에 있다든지 연에 있다든지 시에 있으면 묘에는 갑목이 없다고요.","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/14. 십성론 - ③정재.txt","wrong":"얼마짜리다 문서로 또는 제라고 하는 거에 실질적 제의 입장에서는","right":"얼마짜리다 문서로 또는 재라고 하는 거에 실질적 재의 입장에서는","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"MBTI 같은 경오화고","right":"MBTI 같은 경우하고","note":"User-confirmed phrase reconstruction"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"그럼 그때 한마디 하면 끊으면 납니다.","right":"그럼 그때 한마디 하면 끓으면 납니다.","note":"User-confirmed Basic Digest sentence fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"정화가 열로 작용하고 수두로 작용하면","right":"정화가 열로 작용하고 습으로 작용하면","note":"User-confirmed Basic Digest sentence fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"다 배웠잖아요. 누구한테 그냥 돌아다니는 얘기 다 그렇게 돼 있어요.","right":"다 배웠잖아요. 누구한테? 그냥 돌아다니는 얘기 다 그렇게 돼 있어요.","note":"User-confirmed punctuation fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"수를 보죠. 수호.","right":"수를 보죠. 수.","note":"User-confirmed Basic Digest phrase fix"}
-{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 11 - 한동석 선생님 사주 예시.txt","wrong":"청간의 관점을 삶의 입장에서 보겠다. 자 그러면은 갑목이 양해요. 을목이 양해 을목 무슨 입장에서?","right":"천간의 관점을 삶의 입장에서 보겠다. 자 그러면은 갑목이 양해요. 을목이 양해? 을목 무슨 입장에서?","note":"User-confirmed Basic Digest sentence fix"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/02. 음양오행.txt","wrong":"장간으로부터 출발해서","right":"장강으로부터 출발해서","note":"User-confirmed file-scoped override for reviewed Jirisan anatomy metaphor"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"청간은 성패 중심으로 통변지는 중요한 부분","right":"천간은 성패 중심으로 통변되는 중요한 부분","note":"User-confirmed sentence reconstruction from Jirisan review todo"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"형충파의 생극체와","right":"형충파의 생극제화","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"그 천가는 생극제화만 있지","right":"그 천간은 생극제화만 있지","note":"User-confirmed sentence reconstruction from Jirisan review todo"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"생선로 연결고리","right":"생설로 연결고리","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"금생수딘 영역","right":"금생수된 영역","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"유공","right":"유금","note":"User-confirmed file-scoped normalization for Jirisan metal branch context"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/29. 음양오행 - 천간 생극제화 화(3).txt","wrong":"천간의 청간에 형 없잖아요.","right":"천간에 형 없잖아요.","note":"User-confirmed sentence cleanup after cheonggan normalization"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/29. 음양오행 - 천간 생극제화 화(3).txt","wrong":"천간의 천간에 형 없잖아요.","right":"천간에 형 없잖아요.","note":"User-confirmed post-normalization cleanup for duplicated cheongan phrase"}
-{"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"묵이 수를 끌고 가는 것을","right":"목이 수를 끌고 가는 것을","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"인간과 연간이 같아졌잖아요","right":"일간과 연간이 같아졌잖아요","note":"User-confirmed Hallasan sentence reconstruction from review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"건녹이고요","right":"건록이고요","note":"User-confirmed Hallasan terminology fix from review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/09. 십성론 - ②상관.txt","wrong":"그러한 상 상관 그러한 상관은","right":"그러한 상관은","note":"User-confirmed Hallasan phrase cleanup from review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/09. 십성론 - ②상관.txt","wrong":"조혈함","right":"조열함","note":"User-confirmed Hallasan term normalization from review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/20. 십성론 - ① 정관.txt","wrong":"내 한목숨","right":"내 한 목숨","note":"User-confirmed Hallasan spacing fix from review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"그린벨에","right":"그린베레","note":"User-confirmed Hallasan phrase reconstruction from review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"견장차죠","right":"견장 차죠","note":"User-confirmed Hallasan spacing fix from review todo"}
-{"path":"회원전용 - 한라산 코스 (십성론)/38. 십성론 - 십성 물상 활용 2.txt","wrong":"정 관성 관성의 공간 관성의 공간은 어디에 그냥 생각해 보세요.","right":"관성, 관성의 공간은 어디에요? 그냥. 생각해 보세요.","note":"User-confirmed Hallasan sentence reconstruction from review todo"}
+﻿{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/07. ?뚯뼇?ㅽ뻾.txt","wrong":"??? ??씠吏瑜??꾨? ???쒕궃 議곗닔遺濡????섎늻?붿빞 ?쇱슂.","right":"??컙 ??씠吏瑜??꾨? ???쒕궃 議곗뒿?쇰줈 ???섎늻?붿빞 ?쇱슂.","note":"One-off lecture sentence fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/06. ?뚯뼇?ㅽ뻾.txt","wrong":"?щえ湲곗뿉 ??紐④린 媛쒖엯","right":"?щぉ???쒕ぉ??媛쒖엯","note":"Batch-reviewed file-scoped fix after candidate extraction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/21. ?뚯뼇?ㅽ뻾 - ?ㅽ뻾?뺣━.txt","wrong":"?먯썡??愿紐? 誘쇱쑝濡????덈떎怨??대룄","right":"?먯썡??媛묐ぉ. 媛묒씤?쇰줈 ???덈떎怨??대룄","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/21. ?뚯뼇?ㅽ뻾 - ?ㅽ뻾?뺣━.txt","wrong":"?먮━???묎렐?쇰줈 ?뺤꽦??寃??섎몢?덉슂.","right":"?먮━???묎렐?쇰줈 ?뺤꽦??寃??섎룄?덉슂.","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/21. ?뚯뼇?ㅽ뻾 - ?ㅽ뻾?뺣━.txt","wrong":"?묒쥌??留뚮뱶?붿꽌 ?듬?","right":"?묒젏??留뚮뱶?붿꽌 ?듬?","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"?ㅻ뒛? 泥?뀈 ?ㅼ뼱媛湲??꾩뿉 ?ъ“??怨?怨?援곗뿉 ????댁꽍????嫄곗삁??","right":"?ㅻ뒛? 泥쒓컙 ?ㅼ뼱媛湲??꾩뿉 ?ъ＜??沅곸뿉 ????댁꽍????嫄곗삁??","note":"User-confirmed opener fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"怨듭쓽 議곌굔???섑빐??怨듭쓽 ?좊퀎???먮꼫吏?ㅼ뿉 ?섑빐??,"right":"沅곸쓽 議곌굔???섑빐??沅곸쓽 ?좊퀎???먮꼫吏?ㅼ뿉 ?섑빐??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"媛???곷━?먯꽌???쇨컙??二쇨? ?쇱슂.","right":"?먰룊紐낅━?먯꽌???쇨컙??二쇨? ?쇱슂.","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"?곕━ 怨좎쟾 ?듬떒??蹂대㈃?","right":"?곕━ 怨좎쟾 ?쎈떎蹂대㈃?","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"?꾨낫?뚯궛","right":"?꾨??쒖궛","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"?닿굔 ?곸뼇諛쏅뒗??","right":"?닿굔 洹??묐컲??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"4二쇨? 異붿썙 蹂댁씠怨?,"right":"?ъ＜媛 異붿썙 蹂댁씠怨?,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"4二쇨? ?⑤룄媛 ?щ씪媛 蹂댁씠怨?,"right":"?ъ＜媛 ?⑤룄媛 ?щ씪媛 蹂댁씠怨?,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"4二쇨? ?곗슱??蹂댁씪 ?섎룄","right":"?ъ＜媛 ?곗슱??蹂댁씪 ?섎룄","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"湲덉깋 ???섎뒗??,"right":"湲덉깮???섎뒗??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"?먭린 湲곗??섍퀬 ?ㅻⅤ寃??낅꼈?⑤떎怨???몃떎怨??섍린?섎뒗 嫄?","right":"?먭린 湲곗??섍퀬 ?ㅻⅤ寃??듬??쒕떎怨???몃떎怨??섍린?섎뒗 嫄?","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"??愿?쒕뒗 ?섍린?섎뒗","right":"??愿?깆? ?섍린?섎뒗","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"??먯쑝濡??붾떎硫댁?","right":"??댁쑝濡??붾떎硫댁?","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"媛?媛먮ぉ??媛쒖엯???덉쑝?덇퉴","right":"媛?媛묐ぉ??媛쒖엯???덉쑝?덇퉴","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"??곕Ц?먯꽌 媛먮ぉ???붿쓣 ??洹몃윴 ??곕뒗","right":"??댁뿉??媛묐ぉ???붿쓣 ??洹몃윴, ??댁?","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"??젙??,"right":"??긽","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"?대??꾩뿉","right":"?꾩씤?꾩뿉","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/22. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍.txt","wrong":"?꾪솕媛 ?앷만 ??,"right":"蹂?붽? ?앷만 ??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/23. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍 2.txt","wrong":"?붽컧?쇰줈 ?섏솕??,"right":"?붽컙?쇰줈 ?섏솕??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/23. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍 2.txt","wrong":"?댁쁺?먮뒗 泥쒓??대씪怨좎슂","right":"?댁쁺?먮뒗 泥쒓컙?대씪怨좎슂","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/23. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍 2.txt","wrong":"媛먮ぉ???꾨땲?먯슂","right":"媛묐ぉ???꾨땲?먯슂","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/23. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍 2.txt","wrong":"吏吏?낅ぉ???댁쁺?먯삁??,"right":"吏吏 ?몃ぉ???댁쁺?먯삁??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/23. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍 2.txt","wrong":"泥쒓?? 泥쒓??쇰줈???댁쁺?섎뒗 嫄곗삁??,"right":"泥쒓컙? 泥쒓컙?쇰줈???댁쁺?섎뒗 嫄곗삁??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/23. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍 2.txt","wrong":"吏吏 ?덉뿉 ?덈뒗 ?κ??","right":"吏吏 ?덉뿉 ?덈뒗 ?κ컙?","note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/23. ?뚯뼇?ㅽ뻾 - ?ъ＜援ъ“ 遺꾩꽍 2.txt","wrong":"4議? 9議곗뿉??沅곸쓽 愿怨꾨뱾??,"right":"?ъ＜ 援ъ“?먯꽌 沅곸쓽 愿怨꾨뱾??,"note":"User-confirmed line fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/30. ??꽦濡?- ???뺤씤???앷레?쒗솕.txt","wrong":"援?????앷레?쒗솕???섍쿋?듬땲??","right":"?뺤씤???앷레?쒗솕瑜??섍쿋?듬땲??","note":"User-confirmed opener fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/30. ??꽦濡?- ???뺤씤???앷레?쒗솕.txt","wrong":"援?????앷툒 ?ы솢???섍쿋?듬땲??","right":"?뺤씤???앷레?쒗솕瑜??섍쿋?듬땲??","note":"User-confirmed opener fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/03. ??꽦濡?- ??퉬寃?txt","wrong":"二꾩닔??,"right":"怨꾩닔??,"note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/03. ??꽦濡?- ??퉬寃?txt","wrong":"梨꾩슜??諛붾뚯뼱??,"right":"泥댁슜??諛붾뚯뼱??,"note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/03. ??꽦濡?- ??퉬寃?txt","wrong":"?섑솕??梨꾩슜???ㅻⅤ??,"right":"?섑솕??泥댁슜???ㅻⅤ??,"note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/04. ??꽦濡?- 寃곸옱.txt","wrong":"?쇨컙??梨꾨줈 ?볤퀬","right":"?쇨컙??泥대줈 ?볤퀬","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/04. ??꽦濡?- 寃곸옱.txt","wrong":"?닿구 梨꾨줈 ?볤퀬 蹂대㈃?","right":"?닿구 泥대줈 ?볤퀬 蹂대㈃?","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/04. ??꽦濡?- 寃곸옱.txt","wrong":"梨꾩슜??諛붽퓭??蹂댁떆??寃껋씠","right":"泥댁슜??諛붽퓭??蹂댁떆??寃껋씠","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/04. ??꽦濡?- 寃곸옱.txt","wrong":"梨꾨? ?볤퀬","right":"泥대? ?볤퀬","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/06. ??꽦濡?- ?≪떇??txt","wrong":"梨꾩슜??臾몄젣?쇨퀬??,"right":"泥댁슜??臾몄젣?쇨퀬??,"note":"Context-bound 泥댁슜 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/06. ??꽦濡?- ?≪떇??txt","wrong":"梨꾩슜??臾몄젣?쇨퀬 ?섍린瑜??⑸땲??","right":"泥댁슜??臾몄젣?쇨퀬 ?섍린瑜??⑸땲??","note":"Context-bound 泥댁슜 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/08. ??꽦濡?- ?곴?.txt","wrong":"吏덉떊","right":"湲몄떊","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/08. ??꽦濡?- ?곴?.txt","wrong":"?쒓? ?몄떇","right":"?ш??몄떇","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/08. ??꽦濡?- ?곴?.txt","wrong":"洹?좎쓽 ?⑸쾿","right":"湲몄떊???⑸쾿","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/08. ??꽦濡?- ?곴?.txt","wrong":"?앹떊 ?ъ궡","right":"?앹떊 ?쒖궡","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/09. ??꽦濡?- ?≪긽愿.txt","wrong":"梨꾩슜?섎뒓?먯쓽 臾몄젣?덉슂","right":"泥댁슜?섎뒓?먯쓽 臾몄젣?덉슂","note":"Context-bound 泥댁슜 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/13. ??꽦濡?- ?≪젙??txt","wrong":"梨꾩슜??臾몄젣?덇퉴","right":"泥댁슜??臾몄젣?덇퉴","note":"Context-bound 泥댁슜 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"梨꾩슜蹂","right":"泥댁슜蹂","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"梨꾩슜?대씪???⑹뼱??,"right":"泥댁슜?대씪???⑹뼱??,"note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"?댁뼇","right":"?뚯뼇","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"??梨꾩슜?????遺遺꾩?","right":"??泥댁슜?????遺遺꾩?","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"梨꾩슜? ?쒓? ?섍린?섎뒗 寃??꾨땲怨?,"right":"泥댁슜? ?쒓? ?섍린?섎뒗 寃??꾨땲怨?,"note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"??梨꾩슜?","right":"??泥댁슜?","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"梨꾩슜??遺遺꾩?","right":"泥댁슜??遺遺꾩?","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/16. ??꽦濡?- ?좏렪??txt","wrong":"?ш툑?쇱＜?쒗뀒","right":"?좉툑?쇱＜?쒗뀒","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/22. ??꽦濡?- ???뺢?.txt","wrong":"?닿쾶 ?ш툑??嫄곗짛","right":"?닿쾶 ?좉툑??嫄곗짛","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/25. ??꽦濡?- ???멸????앷레?쒗솕.txt","wrong":"?묎컳? ?ш툑?몃뜲","right":"?묎컳? ?좉툑?몃뜲","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/27. ??꽦濡?- ???멸?????꽦???txt","wrong":"梨꾩슜??諛붽씀??嫄곌퀬","right":"泥댁슜??諛붽씀??嫄곌퀬","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/27. ??꽦濡?- ???멸?????꽦???txt","wrong":"梨꾩슜??諛붽씀??寃껋쓣","right":"泥댁슜??諛붽씀??寃껋쓣","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/27. ??꽦濡?- ???멸?????꽦???txt","wrong":"梨꾩슜蹂","right":"泥댁슜蹂","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"??洹?좎씠 ?좎젙?섎㈃ ???쇱슂","right":"??湲곗떊???좎젙?섎㈃ ???쇱슂","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"?⑤챸? 愿?щ━","right":"?⑤챸? 愿?댁씠","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/30. ??꽦濡?- ???뺤씤???앷레?쒗솕.txt","wrong":"臾댄닾?쇨퀬 ?섎뒗 ?뺤씤","right":"臾댄넗?쇨퀬 ?섎뒗 ?뺤씤","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/30. ??꽦濡?- ???뺤씤???앷레?쒗솕.txt","wrong":"? Muto?쇨퀬 ?섎뒗","right":"? 臾댄넗?쇨퀬 ?섎뒗","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/30. ??꽦濡?- ???뺤씤???앷레?쒗솕.txt","wrong":"洹몃옒???ш툑?쇱＜?쒕떎","right":"洹몃옒???좉툑?쇱＜?쒕떎","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/35. ??꽦濡?- ???몄씤??沅곷???txt","wrong":"洹?좎씠 諛뽰뿉 ?덈떎??嫄?湲띿젙?곸씠二?,"right":"湲곗떊??諛뽰뿉 ?덈떎??嫄?湲띿젙?곸씠二?,"note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/35. ??꽦濡?- ???몄씤??沅곷???txt","wrong":"洹?洹?좎뿉 ???,"right":"洹?湲곗떊?????,"note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/35. ??꽦濡?- ???몄씤??沅곷???txt","wrong":"洹?좎쓣 硫由?諛뽰뿉 ?먭퀬","right":"湲곗떊??硫由?諛뽰뿉 ?먭퀬","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/12. ??꽦濡?- ?좎젙??txt","wrong":"臾댁젣???쒓? ?붾떎怨??섎뒗 嫄??섍린???뚯뿉","right":"臾댁젣???ш? ?붾떎怨??섎뒗 嫄??섍린???뚯뿉","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/12. ??꽦濡?- ?좎젙??txt","wrong":"臾댁젣???쒓? ???,"right":"臾댁젣???ш? ???,"note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/12. ??꽦濡?- ?좎젙??txt","wrong":"洹??쒓? ???愿??愿?쇰줈 ?쒕? 媛먮떦?섍퀬","right":"洹??ш? ???愿??愿?쇰줈 ?щ? 媛먮떦?섍퀬","note":"Context-bound ?ш?/?щ? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/12. ??꽦濡?- ?좎젙??txt","wrong":"洹몃윴???쒓? ????닿? ?곌퀬 ?띠? 嫄곗뿉 留욎떠??,"right":"洹몃윴???ш? ????닿? ?곌퀬 ?띠? 嫄곗뿉 留욎떠??,"note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/13. ??꽦濡?- ?≪젙??txt","wrong":"???쒓? ?ш툑???ㅻ（??寃껋씠 遺?댁뒪?쎌옏?꾩슂.","right":"???ш? ?좉툑???ㅻ（??寃껋씠 遺?댁뒪?쎌옏?꾩슂.","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"?댁? ?쒖옄 ?쎌궡??寃쎌슦媛 ?꾨땲硫?,"right":"?댁? ?ш? ?쎌궡??寃쎌슦媛 ?꾨땲硫?,"note":"Context-bound ?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"?쇱젣 ?뺤젣媛 諛쒕떖???덉뼱??","right":"?쇱? ?뺤옱媛 諛쒕떖???덉뼱??","note":"Context-bound ?쇱? ?뺤옱 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"洹?紐낆씠 ?대젃寃??쒓? ?덈뒗??","right":"洹?紐낆씠 ?대젃寃??ш? ?덈뒗??","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"愿???섑빐???쒓? ??蹂댄샇?섏뼱 ?덈떎?좎?","right":"愿???섑빐???ш? ??蹂댄샇?섏뼱 ?덈떎?좎?","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"?쒓? 媛꾩뿉 ?섏솕?ㅻ뒗 寃껋?","right":"?ш? 媛꾩뿉 ?섏솕?ㅻ뒗 寃껋?","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"怨듭젣 媛숈씠 ?곌쿋??","right":"怨듭옱 媛숈씠 ?곌쿋??","note":"Context-bound 怨듭옱 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"洹몃깷 紐낆뿉 ?쒖슫??????쒓? ?대뼸???대젃寃??섍린?섎뒗 寃??꾨땲怨??쒖슫???붾뒗??洹??쒓? ?대뵒??洹쇨굅?덈뒓??,"right":"洹몃깷 紐낆뿉 ?ъ슫??????ш? ?대뼸???대젃寃??섍린?섎뒗 寃??꾨땲怨??ъ슫???붾뒗??洹??ш? ?대뵒??洹쇨굅?덈뒓??,"note":"Context-bound ?ъ슫/?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"洹멸쾶 ?곗젣???덈떎??寃껋?","right":"洹멸쾶 ?곗????덈떎??寃껋?","note":"Context-bound ?곗? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"? ?붿젣 ?뺤옱濡?,"right":"? ?붿? ?뺤옱濡?,"note":"Context-bound ?붿? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"洹??쒓? 遺?댁뒪?ъ썙???ㅻ０ ?섎쭔 ?덈떎硫?異⑸텇???쒕? ?먭린 嫄몃줈","right":"洹??ш? 遺?댁뒪?ъ썙???ㅻ０ ?섎쭔 ?덈떎硫?異⑸텇???щ? ?먭린 嫄몃줈","note":"Context-bound ?ш?/?щ? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"???쒓? 湲띿젙?곸쑝濡??묒슜?섍퀬 ???ㅻ（?댁????뺥깭濡?援ъ꽦???섏뼱 ?덈떎硫?,"right":"???ш? 湲띿젙?곸쑝濡??묒슜?섍퀬 ???ㅻ（?댁????뺥깭濡?援ъ꽦???섏뼱 ?덈떎硫?,"note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"?뺤젣???꾩묠???쒓? ?꾩꽦??寃??꾨땲怨?,"right":"?뺤옱???꾩묠???ш? ?꾩꽦??寃??꾨땲怨?,"note":"Context-bound ?뺤옱/?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"?대젃寃??쒖감?곸쑝濡??쒓? 吏꾪뻾??嫄곗옏?꾩슂.","right":"?대젃寃??쒖감?곸쑝濡??ш? 吏꾪뻾??嫄곗옏?꾩슂.","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"?쒖뿉 ?쒓? ?덉쑝硫댁?","right":"?쒖뿉 ?ш? ?덉쑝硫댁?","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"???쒕뒗 ?쒕? 媛먮떦?????덉뼱???쒕씪怨좎슂.","right":"???щ뒗 ?щ? 媛먮떦?????덉뼱???щ씪怨좎슂.","note":"Context-bound ??fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"?쒓? ?대젃寃??쒓? ?덇퀬","right":"?쒓? ?대젃寃??ш? ?덇퀬","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/15. ??꽦濡?- ??젙??txt","wrong":"?쒖쓽 嫄닿컯?","right":"?ъ쓽 嫄닿컯?","note":"Context-bound ?ъ쓽 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?쒓? ?욎뿉 ?덈뒗 ?쒓? ?덇퀬 ?ㅼ뿉 ?덈뒗 ?쒓? ?덈떎怨좎슂.","right":"?ш? ?욎뿉 ?덈뒗 ?ш? ?덇퀬 ?ㅼ뿉 ?덈뒗 ?ш? ?덈떎怨좎슂.","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"洹몃윭硫??ㅼ뿉 ?덈뒗 ?쒕씪??嫄?萸먯삁?? ?쒕? 痍⑦븯硫댁?","right":"洹몃윭硫??ㅼ뿉 ?덈뒗 ?щ씪??嫄?萸먯삁?? ?щ? 痍⑦븯硫댁?","note":"Context-bound ?щ씪???щ? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?닿? ?ъ“濡??곷떞???댁꽌","right":"?닿? ?ъ＜濡??곷떞???댁꽌","note":"Context-bound ?ъ＜/??fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?ъ“瑜??濡??곗떎 ???덉뼱???쇱슂.","right":"?ъ＜瑜??대줈 ?곗떎 ???덉뼱???쇱슂.","note":"Context-bound ?ъ＜/??fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?곷떞?濡?","right":"?곷떞 ?대줈.","note":"Context-bound ?ъ＜/??fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"?쒖옄?쎌궡.","right":"?ш? ?쎌궡.","note":"Context-bound ?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"洹몃윭硫??대젃寃??쒖옄 ?쎌궡?섎떎媛","right":"洹몃윭硫??대젃寃??ш? ?쎌궡?섎떎媛","note":"Context-bound ?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"?쒖옄 ?쎌궡??","right":"?ш? ?쎌궡??","note":"Context-bound ?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"?쒖옄 ?쎌궗猷⑤? ?대떎??嫄?,"right":"?ш? ?쎌궡???대떎??嫄?,"note":"Context-bound ?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"?쒖옄 ?쎌궗瑜????곕뜕 紐낅룄","right":"?ш? ?쎌궡?????곕뜕 紐낅룄","note":"Context-bound ?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"?쒖옄 ?쎌궡???뚮뒗","right":"?ш? ?쎌궡???뚮뒗","note":"Context-bound ?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"洹몃읆 ?ы썕??????쒖옄 ?쎌궡??????,"right":"洹몃읆 ?ъ슫??????ш? ?쎌궡??????,"note":"Context-bound ?ъ슫/?ш? ?쎌궡 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"洹몄쟾???쒕줈 ?댁떖????踰뚯뼱??,"right":"洹몄쟾???щ줈 ?댁떖????踰뚯뼱??,"note":"Context-bound ?щ줈 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"洹몃윭?덇퉴 ?쒓? 而ㅼ졇???댁쓣 留??ㅼ슦??嫄곗삁??","right":"洹몃윭?덇퉴 ?ш? 而ㅼ졇???댁쓣 留??ㅼ슦??嫄곗삁??","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/28. ??꽦濡?- ???멸???沅곷???txt","wrong":"?ъ깮?댁씠 ?쒓? ?쏀븷 ?뚮뒗","right":"?ъ깮?댁씠 ?ш? ?쏀븷 ?뚮뒗","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/32. ??꽦濡?- ???뺤씤??沅곷???txt","wrong":"?붽컙???쒓? ?덇퀬 ?붿???愿???덈떎.","right":"?붽컙???ш? ?덇퀬 ?붿???愿???덈떎.","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/38. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 2.txt","wrong":"?뺤젣媛 諛쒕떖?섏뼱 ?덇퀬 ?쇱젣 ?뺤젣媛 ?대젃寃??앸Ъ??媛뽮퀬 ?덈뒗 紐낅뱾?","right":"?뺤옱媛 諛쒕떖?섏뼱 ?덇퀬 ?쇱? ?뺤옱媛 ?대젃寃??앸Ъ??媛뽮퀬 ?덈뒗 紐낅뱾?","note":"Context-bound ?뺤옱/?쇱? fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/38. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 2.txt","wrong":"洹몃윭硫??쇱젣 ?뺤젣???덈뒗 ?щ엺?쒗뀒","right":"洹몃윭硫??쇱? ?뺤옱???덈뒗 ?щ엺?쒗뀒","note":"Context-bound ?쇱? ?뺤옱 fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??28 - 沅곸뿉 ????댄빐2.txt","wrong":"?붿뿉 ?쒓? ?덉쑝硫?洹??쒓? ?낆씠?먯슂.","right":"?붿뿉 ?ш? ?덉쑝硫?洹??ш? ?낆씠?먯슂.","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??32 - ?댁텛濡?.txt","wrong":"洹몃윴???쒓? ?붾떎??寃껋? ?먭린媛 ?꾩옣?먯꽌 ?쒕? ?ㅻ（怨??띕떎???살씠?먯슂.","right":"洹몃윴???ш? ?붾떎??寃껋? ?먭린媛 ?꾩옣?먯꽌 ?щ? ?ㅻ（怨??띕떎???살씠?먯슂.","note":"Context-bound ?ш?/?щ? fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??32 - ?댁텛濡?.txt","wrong":"?곗썝?먯꽌 ?뚭꺽?섎땲源?,"right":"?곗썡?먯꽌 ?뚭꺽?섎땲源?,"note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??32 - ?댁텛濡?.txt","wrong":"?깃꺽 ?⑷구濡?,"right":"?깃꺽?쒓구濡?,"note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??32 - ?댁텛濡?.txt","wrong":"?곗슫?댁꽌 寃곗젙?섍쾶 ?섏짛","right":"?곗슫?먯꽌 寃곗젙?섍쾶 ?섏짛","note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??32 - ?댁텛濡?.txt","wrong":"?대끂 湲몄씠","right":"?대줈, 湲몄씠","note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??32 - ?댁텛濡?.txt","wrong":"洹??곗썝?먯꽌 ??대컢????留욎떠二쇰㈃?","right":"洹??곗슫?먯꽌 ??대컢????留욎떠二쇰㈃?","note":"User-confirmed phrase reconstruction from direct review"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/16. ?뚯뼇?ㅽ뻾 - 湲덉쓽 ?앷레?쒗솕 ??txt","wrong":"洹멸쾶 ?쒖쓽 ??븷?ㅼ씠?먯슂.","right":"洹멸쾶 ?ъ쓽 ??븷?ㅼ씠?먯슂.","note":"Context-bound ?ъ쓽 fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/16. ?뚯뼇?ㅽ뻾 - 湲덉쓽 ?앷레?쒗솕 ??txt","wrong":"?쒓? ?덈뒗?? 蹂몄씤???쒕줈 ?뺤씤?????섎㈃?","right":"?ш? ?덈뒗?? 蹂몄씤???щ줈 ?뺤씤?????섎㈃?","note":"Context-bound ?ш?/?щ줈 fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/16. ?뚯뼇?ㅽ뻾 - 湲덉쓽 ?앷레?쒗솕 ??txt","wrong":"?쇱???泥섏쓽 ?먮━???쒓? ?덇퀬","right":"?쇱???泥섏쓽 ?먮━???ш? ?덇퀬","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/16. ?뚯뼇?ㅽ뻾 - 湲덉쓽 ?앷레?쒗솕 ??txt","wrong":"洹멸쾶 ?쒕? 諛붾씪蹂닿퀬 ?덈뒗 嫄곗삁??","right":"洹멸쾶 ?щ? 諛붾씪蹂닿퀬 ?덈뒗 嫄곗삁??","note":"Context-bound ?щ? fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/39. ?뚯뼇?ㅽ뻾 - ?좎쓽 ?앷레?쒗솕 ?뺣━.txt","wrong":"??嫄곕씪怨?梨숆린?ㅺ퀬 ?섎㈃? ?대뼸寃??섍쿋?댁슂? ?쒓? ?쇱뼱?섍쿋二?","right":"??嫄곕씪怨?梨숆린?ㅺ퀬 ?섎㈃? ?대뼸寃??섍쿋?댁슂? ?ш? ?쇱뼱?섍쿋二?","note":"Context-bound ?ш? fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/39. ?뚯뼇?ㅽ뻾 - ?좎쓽 ?앷레?쒗솕 ?뺣━.txt","wrong":"踰뺤젣, 踰뺤젣?댁씠 ?붾뒗??,"right":"寃곸옱, 寃곸옱?댁씠 ?붾뒗??,"note":"Context-bound 寃곸옱??fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/39. ?뚯뼇?ㅽ뻾 - ?좎쓽 ?앷레?쒗솕 ?뺣━.txt","wrong":"洹몃윭?덇퉴 ?곕━媛 ?ъ＜瑜?怨듬??섎뒗??踰뺤젣?댁씠 ?쇱꽌 留앺뻽??","right":"洹몃윭?덇퉴 ?곕━媛 ?ъ＜瑜?怨듬??섎뒗??寃곸옱?댁씠 ?쇱꽌 留앺뻽??","note":"Context-bound 寃곸옱??fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"?앹떊?몃줈","right":"?앹떊?쇰줈","note":"User-confirmed Hallasan term fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/01. ??꽦濡?- ?좊퉬寃?txt","wrong":"?ъ“瑜??댁꽍?섎뒗 嫄곗뿉 留?泥섏쓬?닿퀬","right":"?ъ＜瑜??댁꽍?섎뒗 寃껋쓽 留?泥섏쓬?닿퀬","note":"Context-bound ?ъ＜ ?댁꽍 phrasing fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/01. ??꽦濡?- ?좊퉬寃?txt","wrong":"?ъ“瑜??댁꽍??留?留덉?留됯퉴吏","right":"?ъ＜ ?댁꽍??留?留덉?留됯퉴吏","note":"Context-bound ?ъ＜ ?댁꽍 phrasing fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??03 - ?ㅽ뻾???쒕궃議곗뒿.txt","wrong":"議고븳?좉??ъ“瑜?吏諛고븯怨??덉뼱??","right":"議고븳?좉? ?ъ＜瑜?吏諛고븯怨??덉뼱??","note":"Context-bound 議고븳 ?ъ＜ fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??23 - 吏吏 珥앸줎 1 (?앹솗怨?愿??.txt","wrong":"洹??ъ“??泥쒓???4媛쒕컰???녿뒗??洹몄쨷??2媛쒓? 洹몃윴 ?덈뱾???덉쑝硫댁? ?ъ“瑜??먭린媛 二쇰룄?댁꽌 紐??곌쿋二?","right":"洹??ъ＜??泥쒓컙??4媛쒕컰???녿뒗??洹몄쨷??2媛쒓? 洹몃윴 ?덈뱾???덉쑝硫댁? ?ъ＜瑜??먭린媛 二쇰룄?댁꽌 紐??곌쿋二?","note":"Context-bound ?ъ＜/泥쒓컙 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/23. ??꽦濡?- ???뺢?????꽦???txt","wrong":"?ъ“???쒕? 泥섎줈 遺꾨쪟?섏옏?꾩슂.","right":"?ъ＜???щ? 泥섎줈 遺꾨쪟?섏옏?꾩슂.","note":"Context-bound ?ъ＜/??fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/23. ??꽦濡?- ???뺢?????꽦???txt","wrong":"洹몃윭硫??뺤젣???덉뿉 ?덈뒗 ? ?몄젣??,"right":"洹몃윭硫??뺤옱???덉뿉 ?덈뒗 ? ?몄옱??,"note":"Context-bound ?뺤옱/?몄옱 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/23. ??꽦濡?- ???뺢?????꽦???txt","wrong":"?쇨컙???뺤젣瑜??쇱????먭퀬 ?덇퀬","right":"?쇨컙???뺤옱瑜??쇱????먭퀬 ?덇퀬","note":"Context-bound ?뺤옱 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/23. ??꽦濡?- ???뺢?????꽦???txt","wrong":"洹??뺤젣 以묒떖?쇰줈 ???덈떎硫댁?","right":"洹??뺤옱 以묒떖?쇰줈 ???덈떎硫댁?","note":"Context-bound ?뺤옱 fix"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/32. ??꽦濡?- ???뺤씤??沅곷???txt","wrong":"???ъ“ ?붾뱾 湲?먭? 洹??щ엺???섍쿋二?","right":"???ъ＜ ?щ뜜 湲?먭? 洹??щ엺???섍쿋二?","note":"Context-bound ?ъ＜ ?щ뜜 湲??fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/46. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣??湲덉깮??txt","wrong":"湲? 湲?紐??섎뒗 ?곹깭 湲덇레紐??곕뒗 ?곹깭?덇퉴","right":"湲덇레紐??섎뒗 ?곹깭, 湲덇레紐????곹깭?덇퉴","note":"Context-bound 湲덇레紐?phrasing fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??16 - ?뺥솕? ?ㅻⅨ 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"洹멸구 ?먭린 嫄몃줈 梨꾩슜?뷀븯二?","right":"洹멸구 ?먭린 嫄몃줈 泥댁슜?뷀븯二?","note":"Context-bound 泥댁슜??fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??18 - 藥? 佯? 渦쏄낵 ?ㅻⅨ 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"?먭씀 梨꾩슜梨꾩슜?섎뒗??,"right":"?먭씀 泥댁슜泥댁슜?섎뒗??,"note":"Context-bound 泥댁슜 諛섎났 fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/06. ?뚯뼇?ㅽ뻾.txt","wrong":"洹몃젃寃??댁꽌 ?ъ“???덈뒗 寃?媛吏怨?,"right":"洹몃젃寃??댁꽌 ?ъ＜???덈뒗 寃?媛吏怨?,"note":"Context-bound ?ъ＜ tool phrasing fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/18. ?뚯뼇?ㅽ뻾 - ?섏쓽 ?앷레?쒗솕 ??txt","wrong":"???ъ“ 遺瑜??대０ 留뚰븯??,"right":"???ъ＜, 遺瑜??대０ 留뚰븯??,"note":"Context-bound ?ъ＜/遺 fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/29. ?뚯뼇?ㅽ뻾 - 泥쒓컙 ?앷레?쒗솕 ??3).txt","wrong":"?? ?ъ“??洹??댁씠?쇨퀬??","right":"?? ?ъ＜??洹??댁씠?쇨퀬??","note":"Context-bound ?ъ＜ tool fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??17 - 臾댄넗? ?ㅻⅨ 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"湲고넗媛 ?ъ“???먯씠???? ??媛꾩씠??吏?????대뵒???덈뱺","right":"湲고넗媛 ?ъ＜???붿씠???? ?곌컙?대굹 吏?????대뵒???덈뱺","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/03. ??꽦濡?- ??퉬寃?txt","wrong":"吏??뿉 梨꾩슜?쒕떎. ?⑺빐???쇱슂.","right":"嫄대줉寃⑹뿉 泥댁슜?쒕떎. ?⑺빐???쇱슂.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/02. ??꽦濡?- ?〓퉬寃?txt","wrong":"吏湲?湲?鍮꾧껄?대땲源?","right":"吏湲????닿쾶 湲?鍮꾧껄?대땲源?","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/02. ??꽦濡?- ?〓퉬寃?txt","wrong":"臾댁닠?쇱“, ?좎씤??臾댁닠?쇱“??","right":"臾댁닠?쇱＜, ?좎씤??臾댁닠?쇱＜??","note":"High-confidence ?쇱＜ normalization"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/02. ??꽦濡?- ?〓퉬寃?txt","wrong":"二쏀넗??湲곕낯???숉빐??","right":"異뺥넗??湲곕낯???숉빐??","note":"High-confidence 異뺥넗 normalization"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/02. ??꽦濡?- ?〓퉬寃?txt","wrong":"洹몃윴??二쇳넗?????덉뿉 ?먮꼫吏媛 ?덉뼱??","right":"洹몃윴??異뺥넗?????덉뿉 ?먮꼫吏媛 ?덉뼱??","note":"High-confidence 異뺥넗 normalization"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/02. ??꽦濡?- ?〓퉬寃?txt","wrong":"二쏀넗??? ?덉뿉 ?덈뒗 洹몃윴 洹쇱쑁??,"right":"異뺥넗??? ?덉뿉 ?덈뒗 洹몃윴 洹쇱쑁??,"note":"High-confidence 異뺥넗 normalization"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/02. ??꽦濡?- ?〓퉬寃?txt","wrong":"以묐?瑜?蹂댁떆硫?,"right":"異뺣?瑜?蹂댁떆硫?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??07 - ?댁젣留??ъ＜遺꾩꽍, ?좎쓽 媛뺤솗.txt","wrong":"?ы넠? 萸먯삁?? ?룹쓣濡??곌껐?섏옏?꾩슂.","right":"?좏넗??萸먯삁?? 臾댁닠濡??곌껐?섏옏?꾩슂.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??05 - 紐⑹쓽 ?뺤뇿媛뺤빟.txt","wrong":"紐??앺솢??,"right":"紐⑹깮?붾?","note":"Conservative spacing fix for moksaenghwa term"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/08. ??꽦濡?- ?곴?.txt","wrong":"紐??앺솢??,"right":"紐⑹깮?붾?","note":"Conservative spacing fix for moksaenghwa term"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/09. ?뚯뼇?ㅽ뻾.txt","wrong":"4二?4二쇨? ?대뼸寃????덉뼱??","right":"?ъ＜媛 ?대뼸寃????덉뼱??","note":"User-requested 4ju->saju cleanup for duplicated opener"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/14. ?뚯뼇?ㅽ뻾 - 湲덉쓽 ?쒕궃議곗뒿.txt","wrong":"?쒖쓣","right":"?붾?","note":"User-requested file-specific hwal->hwa normalization"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??01 - ?쒕궃議곗뒿?대?竊?txt","wrong":"4二??꾩뿉","right":"?ъ＜??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??25 - 吏吏 珥앸줎 4, ?뺤땐?뚰빐.txt","wrong":"??二쇱삁??","right":"???ъ＜?덉슂.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??09 - 湲덉닔???뺤뇿媛뺤빟.txt","wrong":"湲덉깮 ?섑샇 ?섎뒗 寃?,"right":"湲덉깮?섎줈 ?섎뒗 寃?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/30. ??꽦濡?- ???뺤씤???앷레?쒗솕.txt","wrong":"?쒖쓣 ?대━?ㅼ슂.","right":"?붾? ?대━?ㅼ슂.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/32. ??꽦濡?- ???뺤씤??沅곷???txt","wrong":"?앷레, ?ы솢??????,"right":"?앷레?쒗솕瑜?????,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/06. ?뚯뼇?ㅽ뻾.txt","wrong":"?ш린???쒖쓣 ?곕뒗 寃껋? ?좊컻?????議곌굔??媛쒖꽑?섎뒗 嫄곗짛.","right":"?ш린???붾? ?곕뒗 寃껋? ?좊컻?????議곌굔??媛쒖꽑?섎뒗 嫄곗짛.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/05. ?뚯뼇?ㅽ뻾.txt","wrong":"?쒖쓣","right":"?붾?","note":"User-confirmed file-scoped hwal->hwa normalization"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/51. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 紐⑹깮??txt","wrong":"紐⑹깮?섏븘???몃ぉ????,"right":"紐⑹깮?붽? ?몃ぉ????,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/54. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 湲?txt","wrong":"?좎썡???붽툒寃???묒슜","right":"?좎썡???붽레湲덉쓽 ?묒슜","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/54. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 湲?txt","wrong":"?섍린?쒓툑","right":"?섍린??湲?,"note":"User-confirmed spacing reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??09 - 湲덉닔???뺤뇿媛뺤빟.txt","wrong":"?덈??댁쭊 ?덈떎.","right":"?덈??댁졇 ?덈떎.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??09 - 湲덉닔???뺤뇿媛뺤빟.txt","wrong":"?붽툒洹쇰Т?섎뒗 諛쒕떖??紐?,"right":"?붽레湲덈쭔 諛쒕떖??紐?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??09 - 湲덉닔???뺤뇿媛뺤빟.txt","wrong":"?붽툒洹쇱씠 留롮? 蹂?,"right":"?붽레湲덉씠 留롮? 紐?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??09 - 湲덉닔???뺤뇿媛뺤빟.txt","wrong":"湲덉깮 ?섎━ ?댁쨾???⑸땲??","right":"湲덉깮?섎? ?댁쨾???⑸땲??","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??27 - 沅곸뿉 ????댄빐1.txt","wrong":"?섍린?쒓툑?붽탳??,"right":"?섍린??湲덊솕援먯뿭","note":"User-confirmed spacing reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/30. ??꽦濡?- ???뺤씤???앷레?쒗솕.txt","wrong":"?쒖쓣 ?대━?뽰븘??","right":"?붾? ?대━?뽰븘??","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/17. ??꽦濡?- ???몄옱.txt","wrong":"湲덉깮?섑솕???댁슜??嫄곗짛","right":"湲덉깮?섑븯???댁슜??嫄곗짛","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?붽레??湲덉? ?붽레湲덉?","right":"?붽레湲덉?","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?쒖쓣 援щ텇?섍퀬 ?덈뒗 寃? ?쒖쓣 ?ъ옣?섍퀬 ?덈뒗 寃?,"right":"?붾? 援щ텇?섍퀬 ?덈뒗 寃? ?붾? ?ъ옣?섍퀬 ?덈뒗 寃?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??10 - ?ㅽ뻾 珥앹젙由?txt","wrong":"洹몃윭硫?湲덉? 萸먯삁?? 媛먮쪟. 媛묎컩瑜?","right":"洹몃윭硫?湲덉? 萸먯삁?? 媛묐쪟. 媛묎컖瑜?","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??10 - ?ㅽ뻾 珥앹젙由?txt","wrong":"?댁쑀?뺤씠??","right":"媛묐쪟.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??10 - ?ㅽ뻾 珥앹젙由?txt","wrong":"?멸? ?댁쑀?뺣뱾","right":"?멸컯?댁쑀?뺣뱾","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??10 - ?ㅽ뻾 珥앹젙由?txt","wrong":"湲덊삎? ?대젃寃?媛먮쪟?뽰븘?? 媛먮쪟.","right":"湲덊삎? ?대젃寃?媛묐쪟?뽰븘?? 媛묐쪟.","note":"Same-file 媛묐쪟 normalization"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?붿깮?좏솕硫댁?","right":"?붿깮?좏븯硫댁?","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??15 - 蹂묓솕? ?ㅻⅨ 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"?붿깮?좏솕 ????,"right":"?붿깮?좏븷 ??,"note":"Conservative same-family cleanup for hwa-saeng-to term"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/06. ?뚯뼇?ㅽ뻾.txt","wrong":"??紐?,"right":"?쒕ぉ","note":"File-scoped user-approved normalization to avoid global overcorrection"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/06. ?뚯뼇?ㅽ뻾.txt","wrong":"??紐?,"right":"?쒕ぉ","note":"File-scoped user-approved normalization to avoid global overcorrection"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/51. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 紐⑹깮??txt","wrong":"?쒖쓣 ?ν븳?ㅻ뒗 ??,"right":"?붾? ?ν븳?ㅻ뒗 ??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/55. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ??txt","wrong":"洹몃윭?덇퉴 蹂몃옒 踰쎌뵪???곹깭濡??덈뒗 寃??꾨땲?뽰븘??","right":"洹몃윭?덇퉴 蹂몃옒 蹂띿뵪???곹깭濡??덈뒗 寃??꾨땲?뽰븘??","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/55. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ??txt","wrong":"吏꾪닾???ㅼ뼱媛붾떎??寃?,"right":"吏꾪넗???ㅼ뼱媛붾떎??寃?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/06. ?뚯뼇?ㅽ뻾.txt","wrong":"?섎굹??紐⑹쓽 ?뱀쭠??,"right":"?쒗븳 紐⑹쓽 ?뱀쭠??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??05 - 紐⑹쓽 ?뺤뇿媛뺤빟.txt","wrong":"紐⑹뿉??異쒕컻?댁꽌 ?쒖쓣 ?덈떎硫?,"right":"紐⑹뿉??異쒕컻?댁꽌 ?붾? ?덈떎硫?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??16 - ?뺥솕? ?ㅻⅨ 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"洹멸쾶 ??留욎쑝硫댁? 洹멸구 ?뺥솕??湲곗슫???ㅺ린由곕떎, ?꾩꽕湲곕┛??,"right":"洹멸쾶 ??留욎쑝硫댁? 洹멸구 ?뺥솕??湲곗슫???ㅺ린?쒕떎, ?꾩꽕?쒕떎","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??16 - ?뺥솕? ?ㅻⅨ 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"?덈뵒?붾뜲","right":"???섎뒗 ??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??07 - ?댁젣留??ъ＜遺꾩꽍, ?좎쓽 媛뺤솗.txt","wrong":"吏꾪닾??留덈떦???ㅼ뼱??嫄곗삁??","right":"吏꾪넗??留덈떦???ㅼ뼱??嫄곗삁??","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/10. ??꽦濡?- ??긽愿.txt","wrong":"怨쏀넗?곴?","right":"?뷀넗?곴?","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/10. ??꽦濡?- ??긽愿.txt","wrong":"?좉??곴?","right":"?좉툑?곴?","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?붽레湲덈뵒??,"right":"?붽레湲덈릺??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?덈뵒??,"right":"???섎뒗","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/17. ??꽦濡?- ???몄옱.txt","wrong":"?쒖쓣","right":"?붾?","note":"User-approved file-scoped hwal->hwa normalization"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/42. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕.txt","wrong":"?앹쑁泥댄솕媛 ?????덈뒗??,"right":"?앷레?쒗솕媛 ?????덈뒗??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/42. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕.txt","wrong":"?앹쑁 ?ы솢???섎뒗 嫄곗삁??,"right":"?앷레?쒗솕瑜??섎뒗 嫄곗삁??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/47. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣??紐?txt","wrong":"臾듭깮?쒖쓣 ?쒕몢瑜닿퀬 ?덈뒗??,"right":"紐⑹깮?붾? ?쒕몢瑜닿퀬 ?덈뒗??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/48. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ?붿깮??txt","wrong":"?앷컖 ?ы솢??諛붾씪蹂대뒗 愿??,"right":"?앷레?쒗솕瑜?諛붾씪蹂대뒗 愿??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"湲띻렐紐?,"right":"湲덇레紐?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/18. ??꽦濡?- ???몄옱.txt","wrong":"?몄꽦遺","right":"?몄꽦 遺","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/01. ??꽦濡?- ?좊퉬寃?txt","wrong":"二꾨? ?섎늻??嫄?,"right":"?щ? ?섎늻??嫄?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/01. ??꽦濡?- ?좊퉬寃?txt","wrong":"遺꾧??붾뒗","right":"遺꾧??섎뒗","note":"Standardized from spoken dialectal ending to document form"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/06. ??꽦濡?- ?≪떇??txt","wrong":"???붾뒗","right":"???섎뒗","note":"Standardized from spoken dialectal ending to document form"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/06. ??꽦濡?- ?≪떇??txt","wrong":"?섏깋 紐??섎뒗???ㅻ?","right":"?섏깮紐⑺븯?붾뜲 ?щ?","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/08. ?뚯뼇?ㅽ뻾.txt","wrong":"???붾뒗","right":"???섎뒗","note":"Standardized from spoken dialectal ending to document form"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/37. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 1.txt","wrong":"?蹂꾨뵒??,"right":"?蹂꾨릺??,"note":"Standardized from spoken dialectal ending to document form"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??07 - ?댁젣留??ъ＜遺꾩꽍, ?좎쓽 媛뺤솗.txt","wrong":"洹몃윭?덇퉴 洹멸굅???고넗媛 ?좉툑???앹?媛 ?쇱슂. ?몄닔? ?ш툑???앹??뽰븘?? 臾댁뒯 ?ш툑???앹?媛 ?????덉쑝?덇퉴.","right":"洹몃윭?덇퉴 萸먯뿉?? 臾댄넗媛 ?좉툑???앹?媛 ?쇱슂. ?꾩닔媛 ?좉툑???앹??뽰븘?? 臾댄넗媛 ?좉툑???앹?媛 ?????덉쑝?덇퉴.","note":"User-confirmed phrase reconstruction for mu-to/sin-geum context"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??25 - 吏吏 珥앸줎 4, ?뺤땐?뚰빐.txt","wrong":"?좉?","right":"?≪엫","note":"User-confirmed terminology reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??25 - 吏吏 珥앸줎 4, ?뺤땐?뚰빐.txt","wrong":"吏?섍? 吏?섏삩 ???濡??ㅼ떆 媛??寃껋? ?덈뵖?ㅺ? ?κ뎔?댁씠?먯슂.","right":"吏?섍? 吏?섏삩 ???濡??ㅼ떆 媛??寃껋? ???쒕떎??寃??κ뎔?댁씠?먯슂.","note":"User-confirmed phrase reconstruction for janggunsal explanation"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/02. ??꽦濡?- ?〓퉬寃?txt","wrong":"以묒꺽?붿쫰 ?꾨땲?먯슂","right":"以묒꺽?섏? ?딆븘??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/11. ??꽦濡?- ?ｌ긽愿.txt","wrong":"?쇨?????긽 ???몄젣??怨좊Т???곴??앹젣?쇰뒗","right":"?쇨컙? ??긽 ???몄옱??怨좊Т???곴??앹옱?쇰뒗","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??01 - ?쒕궃議곗뒿?대?竊?txt","wrong":"?뺤븙 ?고삎 ?쎌쟾怨??묎턿??洹??媛??嫄곗?. ?뺤빟???좎깮? ?묒궛二쇱뿉??二쎌뒿?덈떎. 洹?묒? ?대? ?덈뵒怨??곕━媛 ?뚭퀬 ?덈뒗 ?먯궛?대낫. ?닿쾶 ?먯옄瑜??쎌옏?꾩슂. 嫄대Ъ ?꾩옄瑜??쎌쑝?붿빞 ?쒕떎怨?","right":"?뺥븯怨? ?????쎌쟾怨??쎌슜??洹??媛??嫄곗?. ?뺤빟???좎깮? ?묒궛?꾩뿉??二쎌뒿?덈떎. 洹?묒? ?대룄 ?덈릺怨??곕━媛 ?뚭퀬 ?덈뒗 ?먯궛?대낫. ?닿쾶 ?먯옄濡??쎌옏?꾩슂. 寃???꾩옄瑜??쎌쑝?붿빞 ?쒕떎怨?","note":"User-confirmed phrase reconstruction for Jeong Yak-yong exile context"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/49. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣????txt","wrong":"?곗썝?먯꽌 ?쇱뼱?쒕떎怨?洹몃옱?뽰븘??","right":"?곗썡?먯꽌 ?쇱뼱?쒕떎怨?洹몃옱?뽰븘??","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/49. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣????txt","wrong":"OR??而⑦듃濡ㅽ븷 ???덉쑝硫?,"right":"?ㅽ솕瑜?而⑦듃濡ㅽ븷 ???덉쑝硫?,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??07 - ?댁젣留??ъ＜遺꾩꽍, ?좎쓽 媛뺤솗.txt","wrong":"?곗썝?먯꽌 ?쇱뼱?⑸땲??","right":"?곗썡?먯꽌 ?쇱뼱?⑸땲??","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??11 - ?쒕룞???좎깮???ъ＜ ?덉떆.txt","wrong":"嫄몃━?섏짛","right":"嫄몃젮?쇱짛","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??32 - ?댁텛濡?.txt","wrong":"湲곗슜 臾몄젣?쇨퀬??,"right":"湲명쓨 臾몄젣?쇨퀬??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??12 - 泥쒓컙 珥앸줎.txt","wrong":"臾섑쉶???ㅻⅨ 留뚯빟??1???덈떎?좎? ?고쉶 ?덈떎?좎? ?쒖뿉 ?덉쑝硫?臾섑쉶??媛묐ぉ???녿떎怨좎슂.","right":"臾섏뿉???ㅻⅨ 留뚯빟???쇱뿉 ?덈떎?좎? ?곗뿉 ?덈떎?좎? ?쒖뿉 ?덉쑝硫?臾섏뿉??媛묐ぉ???녿떎怨좎슂.","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/14. ??꽦濡?- ??젙??txt","wrong":"?쇰쭏吏쒕━??臾몄꽌濡??먮뒗 ?쒕씪怨??섎뒗 嫄곗뿉 ?ㅼ쭏???쒖쓽 ?낆옣?먯꽌??,"right":"?쇰쭏吏쒕━??臾몄꽌濡??먮뒗 ?щ씪怨??섎뒗 嫄곗뿉 ?ㅼ쭏???ъ쓽 ?낆옣?먯꽌??,"note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/37. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 1.txt","wrong":"MBTI 媛숈? 寃쎌삤?붽퀬","right":"MBTI 媛숈? 寃쎌슦?섍퀬","note":"User-confirmed phrase reconstruction"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??05 - 紐⑹쓽 ?뺤뇿媛뺤빟.txt","wrong":"洹몃읆 洹몃븣 ?쒕쭏???섎㈃ ?딆쑝硫??⑸땲??","right":"洹몃읆 洹몃븣 ?쒕쭏???섎㈃ ?볦쑝硫??⑸땲??","note":"User-confirmed Basic Digest sentence fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??05 - 紐⑹쓽 ?뺤뇿媛뺤빟.txt","wrong":"?뺥솕媛 ?대줈 ?묒슜?섍퀬 ?섎몢濡??묒슜?섎㈃","right":"?뺥솕媛 ?대줈 ?묒슜?섍퀬 ?듭쑝濡??묒슜?섎㈃","note":"User-confirmed Basic Digest sentence fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??03 - ?ㅽ뻾???쒕궃議곗뒿.txt","wrong":"??諛곗썱?뽰븘?? ?꾧뎄?쒗뀒 洹몃깷 ?뚯븘?ㅻ땲???섍린 ??洹몃젃寃????덉뼱??","right":"??諛곗썱?뽰븘?? ?꾧뎄?쒗뀒? 洹몃깷 ?뚯븘?ㅻ땲???섍린 ??洹몃젃寃????덉뼱??","note":"User-confirmed punctuation fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??03 - ?ㅽ뻾???쒕궃議곗뒿.txt","wrong":"?섎? 蹂댁짛. ?섑샇.","right":"?섎? 蹂댁짛. ??","note":"User-confirmed Basic Digest phrase fix"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??11 - ?쒕룞???좎깮???ъ＜ ?덉떆.txt","wrong":"泥?컙??愿?먯쓣 ?띠쓽 ?낆옣?먯꽌 蹂닿쿋?? ??洹몃윭硫댁? 媛묐ぉ???묓빐?? ?꾨ぉ???묓빐 ?꾨ぉ 臾댁뒯 ?낆옣?먯꽌?","right":"泥쒓컙??愿?먯쓣 ?띠쓽 ?낆옣?먯꽌 蹂닿쿋?? ??洹몃윭硫댁? 媛묐ぉ???묓빐?? ?꾨ぉ???묓빐? ?꾨ぉ 臾댁뒯 ?낆옣?먯꽌?","note":"User-confirmed Basic Digest sentence fix"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/02. ?뚯뼇?ㅽ뻾.txt","wrong":"?κ컙?쇰줈遺??異쒕컻?댁꽌","right":"?κ컯?쇰줈遺??異쒕컻?댁꽌","note":"User-confirmed file-scoped override for reviewed Jirisan anatomy metaphor"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/08. ?뚯뼇?ㅽ뻾.txt","wrong":"泥?컙? ?깊뙣 以묒떖?쇰줈 ?듬?吏??以묒슂??遺遺?,"right":"泥쒓컙? ?깊뙣 以묒떖?쇰줈 ?듬??섎뒗 以묒슂??遺遺?,"note":"User-confirmed sentence reconstruction from Jirisan review todo"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/08. ?뚯뼇?ㅽ뻾.txt","wrong":"?뺤땐?뚯쓽 ?앷레泥댁?","right":"?뺤땐?뚯쓽 ?앷레?쒗솕","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/46. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣??湲덉깮??txt","wrong":"洹?泥쒓????앷레?쒗솕留??덉?","right":"洹?泥쒓컙? ?앷레?쒗솕留??덉?","note":"User-confirmed sentence reconstruction from Jirisan review todo"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/49. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣????txt","wrong":"?앹꽑濡??곌껐怨좊━","right":"?앹꽕濡??곌껐怨좊━","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/49. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣????txt","wrong":"湲덉깮?섎뵖 ?곸뿭","right":"湲덉깮?섎맂 ?곸뿭","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/49. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 ???낆옣????txt","wrong":"?좉났","right":"?좉툑","note":"User-confirmed file-scoped normalization for Jirisan metal branch context"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/29. ?뚯뼇?ㅽ뻾 - 泥쒓컙 ?앷레?쒗솕 ??3).txt","wrong":"泥쒓컙??泥?컙?????놁옏?꾩슂.","right":"泥쒓컙?????놁옏?꾩슂.","note":"User-confirmed sentence cleanup after cheonggan normalization"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/29. ?뚯뼇?ㅽ뻾 - 泥쒓컙 ?앷레?쒗솕 ??3).txt","wrong":"泥쒓컙??泥쒓컙?????놁옏?꾩슂.","right":"泥쒓컙?????놁옏?꾩슂.","note":"User-confirmed post-normalization cleanup for duplicated cheongan phrase"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/54. ?뚯뼇?ㅽ뻾 - 吏吏 ?앷레?쒗솕 湲?txt","wrong":"臾듭씠 ?섎? ?뚭퀬 媛??寃껋쓣","right":"紐⑹씠 ?섎? ?뚭퀬 媛??寃껋쓣","note":"User-confirmed phrase reconstruction from Jirisan review todo"}
+{"path":"?뚯썝?꾩슜 - 吏由ъ궛 肄붿뒪 (?뚯뼇?ㅽ뻾)/40. ?뚯뼇?ㅽ뻾 - 湲덉쓽 泥쒓컙 ?앷레?쒗솕 ?뺣━.txt","wrong":"蹂묓솕?쒖옣","right":"?됲솕?쒖옣","note":"Keep proper market name while globally normalizing pyeonghwa->byeonghwa OCR noise"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??19 - ?섏? 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"蹂묓솕????,"right":"?됲솕????,"note":"Keep proper noun after global pyeonghwa->byeonghwa normalization"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??19 - ?섏? 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"蹂묓솕???뚮Ц??,"right":"?됲솕???뚮Ц??,"note":"Keep spoken proper-noun reference after global pyeonghwa->byeonghwa normalization"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/湲곕낯 ?ㅼ씠?쒖뒪??19 - ?섏? 泥쒓컙怨쇱쓽 愿怨?txt","wrong":"蹂묓솕??醫?,"right":"?됲솕??醫?,"note":"Keep proper noun after global pyeonghwa->byeonghwa normalization"}
+{"path":"?뚯썝?꾩슜 - 湲곕낯?ㅼ씠?쒖뒪??(怨꾨！???깅컲)/?쒓?怨??깅챸??1.txt","wrong":"蹂묓솕, ?됰벑","right":"?됲솕, ?됰벑","note":"Keep general Korean word pair in naming lecture after global pyeonghwa->byeonghwa normalization"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/07. ??꽦濡?- ??떇??txt","wrong":"蹂묓솕濡쒖슫 留덉쓣","right":"?됲솕濡쒖슫 留덉쓣","note":"Keep ordinary adjective phrase after global pyeonghwa->byeonghwa normalization"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/03. ??꽦濡?- ??퉬寃?txt","wrong":"?멸컙怨??곌컙??媛숈븘議뚯옏?꾩슂","right":"?쇨컙怨??곌컙??媛숈븘議뚯옏?꾩슂","note":"User-confirmed Hallasan sentence reconstruction from review todo"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/03. ??꽦濡?- ??퉬寃?txt","wrong":"嫄대끃?닿퀬??,"right":"嫄대줉?닿퀬??,"note":"User-confirmed Hallasan terminology fix from review todo"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/09. ??꽦濡?- ?≪긽愿.txt","wrong":"洹몃윭?????곴? 洹몃윭???곴??","right":"洹몃윭???곴??","note":"User-confirmed Hallasan phrase cleanup from review todo"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/09. ??꽦濡?- ?≪긽愿.txt","wrong":"議고삁??,"right":"議곗뿴??,"note":"User-confirmed Hallasan term normalization from review todo"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/20. ??꽦濡?- ???뺢?.txt","wrong":"???쒕ぉ??,"right":"????紐⑹닲","note":"User-confirmed Hallasan spacing fix from review todo"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/37. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 1.txt","wrong":"洹몃┛踰⑥뿉","right":"洹몃┛踰좊젅","note":"User-confirmed Hallasan phrase reconstruction from review todo"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/37. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 1.txt","wrong":"寃ъ옣李⑥짛","right":"寃ъ옣 李⑥짛","note":"User-confirmed Hallasan spacing fix from review todo"}
+{"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/38. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 2.txt","wrong":"??愿??愿?깆쓽 怨듦컙 愿?깆쓽 怨듦컙? ?대뵒??洹몃깷 ?앷컖??蹂댁꽭??","right":"愿?? 愿?깆쓽 怨듦컙? ?대뵒?먯슂? 洹몃깷. ?앷컖??蹂댁꽭??","note":"User-confirmed Hallasan sentence reconstruction from review todo"}
