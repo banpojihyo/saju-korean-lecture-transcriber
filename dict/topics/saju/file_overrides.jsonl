@@ -294,3 +294,5 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"반국과 삼합으로 결정된다는 뜻이에요.","right":"방국과 삼합으로 결정된다는 뜻이에요.","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"지지의 작용의 큰 두 축이 삼합과 반국으로 형성된다는 뜻이에요.","right":"지지의 작용의 큰 두 축이 삼합과 방국으로 형성된다는 뜻이에요.","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 26 - 형충파해.txt","wrong":"다정지압이라고 다정충이라고","right":"다정충이라고","note":"User-confirmed Basic Digest phrase cleanup from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 26 - 형충파해.txt","wrong":"방북","right":"방국","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 active review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 26 - 형충파해.txt","wrong":"육함","right":"육합","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 active review todo"}
