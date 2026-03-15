@@ -246,3 +246,34 @@
 {"path":"?뚯썝?꾩슜 - ?쒕씪??肄붿뒪 (??꽦濡?/38. ??꽦濡?- ??꽦 臾쇱긽 ?쒖슜 2.txt","wrong":"??愿??愿?깆쓽 怨듦컙 愿?깆쓽 怨듦컙? ?대뵒??洹몃깷 ?앷컖??蹂댁꽭??","right":"愿?? 愿?깆쓽 怨듦컙? ?대뵒?먯슂? 洹몃깷. ?앷컖??蹂댁꽭??","note":"User-confirmed Hallasan sentence reconstruction from review todo"}
 {"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"병목이 어떻게 작용하는지를 보는 게","right":"금목이 어떻게 작용하는지를 보는 게","note":"User-confirmed Hallasan sentence fix for mixed metal-wood phrase"}
 {"path":"회원전용 - 지리산 코스 (음양오행)/14. 음양오행 - 금의 한난조습.txt","wrong":"황금은","right":"한금은","note":"User-confirmed Jirisan term fix while preserving literal massage sentence"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"수두로","right":"습으로","note":"User-confirmed Basic Digest sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"끊으면","right":"끓으면","note":"User-confirmed Basic Digest sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 05 - 목의 왕쇠강약.txt","wrong":"슬로일 상정","right":"습을상정","note":"User-confirmed Basic Digest sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"누구한테","right":"누구한테?","note":"User-confirmed punctuation fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"수로","right":"수","note":"User-confirmed file-scoped Basic Digest fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"수호를 보죠","right":"수를 보죠","note":"User-confirmed Basic Digest sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"면에 보면","right":"연에 보면","note":"User-confirmed Basic Digest sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 03 - 오행의 한난조습.txt","wrong":"순등을","right":"신금을","note":"User-confirmed Basic Digest sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 11 - 한동석 선생님 사주 예시.txt","wrong":"야가 골목과","right":"얘가 을목과","note":"User-confirmed Basic Digest sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 11 - 한동석 선생님 사주 예시.txt","wrong":"을목이 양해","right":"을목이 양해?","note":"User-confirmed punctuation fix from 2026-03-15 session"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/02. 음양오행.txt","wrong":"장간으로부터 출발해서","right":"장강으로부터 출발해서","note":"User-confirmed file-scoped reversal after overcorrection on 2026-03-15"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"청간은 성패 중심으로 통변지는 중요한 부분","right":"천간은 성패 중심으로 통변되는 중요한 부분","note":"User-confirmed Jirisan sentence reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/08. 음양오행.txt","wrong":"형충파의 생극체와","right":"형충파의 생극제화","note":"User-confirmed Jirisan phrase reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"그 천가는 생극제화만 있지","right":"그 천간은 생극제화만 있지","note":"User-confirmed Jirisan sentence reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"생선로 연결고리","right":"생설로 연결고리","note":"User-confirmed Jirisan phrase reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/49. 음양오행 - 지지 생극제화 화 입장의 수.txt","wrong":"금생수딘 영역","right":"금생수된 영역","note":"User-confirmed Jirisan phrase reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/54. 음양오행 - 지지 생극제화 금.txt","wrong":"묵이 수를 끌고 가는 것을","right":"목이 수를 끌고 가는 것을","note":"User-confirmed Jirisan phrase reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 한라산 코스 (십성론)/03. 십성론 - ③비견.txt","wrong":"인간과 연간이 같아졌잖아요","right":"일간과 연간이 같아졌잖아요","note":"User-confirmed Hallasan sentence reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 한라산 코스 (십성론)/09. 십성론 - ②상관.txt","wrong":"그러한 상 상관 그러한 상관은","right":"그러한 상관은","note":"User-confirmed Hallasan phrase cleanup from 2026-03-15 review"}
+{"path":"회원전용 - 한라산 코스 (십성론)/20. 십성론 - ① 정관.txt","wrong":"내 한목숨","right":"내 한 목숨","note":"User-confirmed Hallasan spacing fix from 2026-03-15 review"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"그린벨에","right":"그린베레","note":"User-confirmed Hallasan phrase reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"견장차죠","right":"견장 차죠","note":"User-confirmed Hallasan spacing fix from 2026-03-15 review"}
+{"path":"회원전용 - 한라산 코스 (십성론)/38. 십성론 - 십성 물상 활용 2.txt","wrong":"정 관성 관성의 공간 관성의 공간은 어디에 그냥 생각해 보세요.","right":"관성, 관성의 공간은 어디에요? 그냥. 생각해 보세요.","note":"User-confirmed Hallasan sentence reconstruction from 2026-03-15 review"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"고객 변수가 없어요.","right":"그게 변수가 없어요.","note":"User-confirmed Jirisan sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/41. 음양오행 - 수의 천간 생극제화 정리.txt","wrong":"그게 우리가 얘기하는 소와 화의 힘이에요.","right":"그게 우리가 얘기하는 수와 화의 힘이에요.","note":"User-confirmed Jirisan sentence fix from 2026-03-15 session"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/40. 음양오행 - 금의 천간 생극제화 정리.txt","wrong":"병화시장","right":"평화시장","note":"Keep proper market name while globally normalizing 평화->병화 OCR noise"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 19 - 수와 천간과의 관계.txt","wrong":"병화의 댐","right":"평화의 댐","note":"Keep proper noun after global 평화->병화 normalization"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 19 - 수와 천간과의 관계.txt","wrong":"병화의 때문에","right":"평화의 때문에","note":"Keep contextual phrase tied to proper noun after global 평화->병화 normalization"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 19 - 수와 천간과의 관계.txt","wrong":"병화의 종","right":"평화의 종","note":"Keep proper noun after global 평화->병화 normalization"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/한글과 성명학 1.txt","wrong":"병화, 평등","right":"평화, 평등","note":"Keep general Korean word pair after global 평화->병화 normalization"}
+{"path":"회원전용 - 한라산 코스 (십성론)/07. 십성론 - ③식신.txt","wrong":"병화로운 마을","right":"평화로운 마을","note":"Keep ordinary adjective phrase after global 평화->병화 normalization"}
