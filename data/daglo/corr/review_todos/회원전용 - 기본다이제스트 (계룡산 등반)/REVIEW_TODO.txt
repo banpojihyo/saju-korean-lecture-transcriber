@@ -10,6 +10,7 @@
 [처리 이력]
 - 2026-03-15: 이전 항목 [1]~[9]를 `corr/corrected`, 대응 `corr/script`, `replace.csv`, `file_overrides.jsonl`에 반영했습니다.
 - 2026-03-15: 남아 있던 `긴장간 -> 긴장감` 전역 잔여를 `corr/corrected`, 대응 `corr/script`, `replace.csv` 기준으로 일괄 반영했습니다.
+- 2026-03-15: `청간 -> 천간`, `건룩/건녹 -> 건록`, `젖록/젖묵 -> 전록` 전역 잔여를 `corr/corrected`, 대응 `corr/script`, `replace.csv`에 반영했습니다.
 
 [정리]
 - `기본다이제스트`는 “직접 수정 최종본” 기준으로는 이미 usable한 편입니다.
