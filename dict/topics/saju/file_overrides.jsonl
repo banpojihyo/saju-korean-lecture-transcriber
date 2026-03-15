@@ -278,6 +278,16 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/한글과 성명학 1.txt","wrong":"병화, 평등","right":"평화, 평등","note":"Keep general Korean word pair after global 평화->병화 normalization"}
 {"path":"회원전용 - 한라산 코스 (십성론)/07. 십성론 - ③식신.txt","wrong":"병화로운 마을","right":"평화로운 마을","note":"Keep ordinary adjective phrase after global 평화->병화 normalization"}
 {"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"정임합대 있다면은","right":"정임합돼 있다면은","note":"User-confirmed Hallasan phrase fix from 2026-03-15 session"}
+{"path":"회원전용 - 한라산 코스 (십성론)/04. 십성론 - 겁재.txt","wrong":"코인해서 거짓이잖아요","right":"코인해서 거지 되잖아요","note":"User-confirmed Hallasan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/32. 십성론 - ④ 정인의 궁대응.txt","wrong":"일지비견이면","right":"일지 비견이면","note":"User-confirmed Hallasan spacing fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"임수가 김수가 목을 거쳐서 목을 거쳐서","right":"임수가 목을 거쳐서","note":"User-confirmed Hallasan sentence cleanup from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"제수의 유연성","right":"계수의 유연성","note":"User-confirmed Hallasan terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"오로 내린다","right":"오르내린다","note":"User-confirmed Hallasan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"인수가 병아를","right":"임수가 병화를","note":"User-confirmed Hallasan phrase reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"식습성","right":"십성","note":"User-confirmed Hallasan terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"누나가 선생이고요","right":"누구나가 선생이고요","note":"User-confirmed Hallasan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"법관인 사람이 시인이 시인이 안 되면 시인이 되면 안 되나요?","right":"법관인 사람이 시인이 되면 안 되나요?","note":"User-confirmed Hallasan sentence cleanup from 2026-03-15 review todo"}
+{"path":"회원전용 - 한라산 코스 (십성론)/37. 십성론 - 십성 물상 활용 1.txt","wrong":"제가 도종하는 그런","right":"도종환은 그러면","note":"User-confirmed Hallasan phrase reconstruction from 2026-03-15 review todo"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"사막과 방국을 기존으로","right":"삼합과 방국을 기준으로","note":"User-confirmed Basic Digest phrase reconstruction from 2026-03-15 review todo"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"사막과 방국","right":"삼합과 방국","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"방북","right":"방국","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
