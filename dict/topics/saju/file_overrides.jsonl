@@ -296,3 +296,24 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 26 - 형충파해.txt","wrong":"다정지압이라고 다정충이라고","right":"다정충이라고","note":"User-confirmed Basic Digest phrase cleanup from 2026-03-15 review todo"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 26 - 형충파해.txt","wrong":"방북","right":"방국","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 active review todo"}
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 26 - 형충파해.txt","wrong":"육함","right":"육합","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 active review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/07. 음양오행.txt","wrong":"단체 지압","right":"단체지합","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/07. 음양오행.txt","wrong":"방북은 그래서 물질적 개념이 강하고요","right":"방국은 그래서 물질적 개념이 강하고요","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/07. 음양오행.txt","wrong":"산업은 정신적 코드가 더 강하게 일어납니다","right":"삼합은 정신적 코드가 더 강하게 일어납니다","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/09. 음양오행.txt","wrong":"예기의 핵심","right":"얘기의 핵심","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"방북과 삼합의 관계","right":"방국과 삼합의 관계","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"방북은 새를 논하는 거고요","right":"방국은 세를 논하는 거고요","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"사막과 방국","right":"삼합과 방국","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"삼합과 방북의 관계들","right":"삼합과 방국의 관계들","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"반한살","right":"반안살","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/42. 음양오행 - 지지 생극제화.txt","wrong":"삼자가 들어든 때","right":"삼자가 든 때","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/45. 음양오행 - 지지 생극제화 수 입장의 토.txt","wrong":"반북을 이루고 있어요","right":"방국을 이루고 있어요","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/45. 음양오행 - 지지 생극제화 수 입장의 토.txt","wrong":"사막과 방국","right":"삼합과 방국","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/45. 음양오행 - 지지 생극제화 수 입장의 토.txt","wrong":"진토에 갇히지 아니에요","right":"진토에 갇히지 않아요","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"방북","right":"방국","note":"User-confirmed Jirisan terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"반국","right":"방국","note":"User-confirmed Jirisan terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"월 월로 얘기하고요","right":"월로 얘기하고요","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/46. 음양오행 - 지지 생극제화 수 입장의 금생수.txt","wrong":"연원해서는 아니에요","right":"연월에서는 아니에요","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt","wrong":"어떤 유형은 사막으로 가고 어떤 유형은 방북으로 가고 그래요.","right":"어떤 유형은 삼합으로 가고 어떤 유형은 방국으로 가고 그래요.","note":"User-confirmed Jirisan sentence reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt","wrong":"이렇게 많은 다양 다양성을 끌어내겠죠. 모기 인목이 인목이 이걸 끌어내겠죠.","right":"이렇게 많은 다양성을 끌어내겠죠. 인목이 이걸 끌어내겠죠.","note":"User-confirmed Jirisan sentence reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt","wrong":"방복과 삼합","right":"방국과 삼합","note":"User-confirmed Jirisan phrase fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 지리산 코스 (음양오행)/52. 음양오행 - 지지 생극제화 목 입장의 수생목.txt","wrong":"그 예 쓴다고요. 방북 왼손에 방북 오른손에 삼합","right":"예 쓴다고요. 왼손에 방국 오른손에 삼합","note":"User-confirmed Jirisan sentence cleanup from 2026-03-15 review todo"}
