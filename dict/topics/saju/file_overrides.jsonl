@@ -278,3 +278,19 @@
 {"path":"회원전용 - 기본다이제스트 (계룡산 등반)/한글과 성명학 1.txt","wrong":"병화, 평등","right":"평화, 평등","note":"Keep general Korean word pair after global 평화->병화 normalization"}
 {"path":"회원전용 - 한라산 코스 (십성론)/07. 십성론 - ③식신.txt","wrong":"병화로운 마을","right":"평화로운 마을","note":"Keep ordinary adjective phrase after global 평화->병화 normalization"}
 {"path":"회원전용 - 한라산 코스 (십성론)/13. 십성론 - ②정재.txt","wrong":"정임합대 있다면은","right":"정임합돼 있다면은","note":"User-confirmed Hallasan phrase fix from 2026-03-15 session"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"사막과 방국을 기존으로","right":"삼합과 방국을 기준으로","note":"User-confirmed Basic Digest phrase reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"사막과 방국","right":"삼합과 방국","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"방북","right":"방국","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"반북","right":"방국","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"장관을 쓰는 건지","right":"장간을 쓰는 건지","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"지지장관이 대응하는 게 아니라고요","right":"지지장간이 대응하는 게 아니라고요","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"장관이 투관한 게 아니고","right":"장간이 투관한 게 아니고","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"용역이 아니고 기적결합","right":"영역이 아니고 기적 결합","note":"User-confirmed Basic Digest sentence reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"국을 지지해","right":"지지에","note":"User-confirmed Basic Digest sentence cleanup from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"지지는 그 기와 새로 구성돼 있어요","right":"지지는 기와 세로 구성돼 있어요","note":"User-confirmed Basic Digest sentence reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"중진 에너지","right":"집중된 에너지","note":"User-confirmed Basic Digest phrase reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"올해 삼대살인 분","right":"올해 삼재인 분","note":"User-confirmed Basic Digest phrase reconstruction from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"예기의 핵심","right":"얘기의 핵심","note":"User-confirmed Basic Digest phrase cleanup from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"반국과 삼합으로 결정된다는 뜻이에요.","right":"방국과 삼합으로 결정된다는 뜻이에요.","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 25 - 지지 총론 4, 형충파해.txt","wrong":"지지의 작용의 큰 두 축이 삼합과 반국으로 형성된다는 뜻이에요.","right":"지지의 작용의 큰 두 축이 삼합과 방국으로 형성된다는 뜻이에요.","note":"User-confirmed Basic Digest terminology fix from 2026-03-15 review todo"}
+{"path":"회원전용 - 기본다이제스트 (계룡산 등반)/기본 다이제스트 26 - 형충파해.txt","wrong":"다정지압이라고 다정충이라고","right":"다정충이라고","note":"User-confirmed Basic Digest phrase cleanup from 2026-03-15 review todo"}
